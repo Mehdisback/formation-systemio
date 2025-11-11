@@ -259,116 +259,190 @@ graph TD
 
 ---
 
-## 3. Modification des images
+## 🖼️ Modification des images
 
-### 3.1 Remplacer l'image principale
+### Remplacer l'image principale
 
-**Image actuelle :** Photo d'Armelle (si présente)
+!!! info "📸 Image actuelle"
+    Photo d'Armelle Bodénès (photo de profil professionnelle)
 
-#### Procédure :
+=== "📤 Télécharger depuis votre ordinateur"
 
-1. **Cliquez sur l'image** à modifier
-2. Dans le panneau de droite, cliquez sur **"Changer l'image"** ou icône 🖼️
-3. Deux options s'affichent :
-    - **Télécharger** : depuis votre ordinateur
-    - **Bibliothèque** : images déjà uploadées
+**Procédure complète :**
 
-#### Option 1 : Télécharger depuis votre ordinateur
+1. :material-cursor-default-click: **Cliquez sur l'image** à modifier
+2. :material-image: Dans le panneau de droite, cliquez sur **"Changer l'image"**
+3. :material-upload: Sélectionnez **"Télécharger"**
+4. :material-folder: Naviguez dans vos fichiers
+5. :material-check: Sélectionnez l'image et cliquez **"Ouvrir"**
+6. :material-loading: L'image est automatiquement uploadée
 
-```
-1. Cliquez sur [Télécharger]
-2. Naviguez dans vos fichiers
-3. Sélectionnez l'image
-4. Cliquez sur [Ouvrir]
-5. L'image est automatiquement uploadée
-```
+!!! success "✅ Upload réussi"
+    L'image apparaît immédiatement dans votre éditeur !
 
-#### Option 2 : Depuis la bibliothèque Systeme.io
+=== "📚 Depuis la bibliothèque"
 
-```
-1. Cliquez sur [Bibliothèque]
-2. Parcourez vos images existantes
-3. Cliquez sur l'image souhaitée
-4. Cliquez sur [Insérer]
-```
+**Utiliser des images déjà uploadées :**
 
-### 3.2 Critères de qualité des images
+1. :material-cursor-default-click: Cliquez sur l'image
+2. :material-image: Cliquez sur **"Changer l'image"**
+3. :material-folder-image: Sélectionnez **"Bibliothèque"**
+4. :material-view-grid: Parcourez vos images existantes
+5. :material-check-circle: Cliquez sur l'image souhaitée
+6. :material-import: Cliquez sur **"Insérer"**
 
-#### Format et taille recommandés :
+!!! tip "Avantage"
+    Réutilisez vos images sans re-uploader !
 
-|Type d'image|Format|Dimensions|Poids max|
-|---|---|---|---|
-|Photo principale|JPG|1200x800px|200 Ko|
-|Photo de profil|JPG/PNG|600x600px|100 Ko|
-|Illustrations|PNG|Variable|150 Ko|
-|Icônes|SVG/PNG|200x200px|50 Ko|
+### Critères de qualité des images
 
-#### Optimisation avant upload :
+!!! warning "📊 Formats et tailles recommandés"
+
+| Type d'image | Format | Dimensions optimales | Poids max | Usage |
+|--------------|--------|---------------------|-----------|-------|
+| **Photo principale** | JPG | 1200x800px | ==200 Ko== | Header, hero |
+| **Photo de profil** | JPG/PNG | 600x600px | ==100 Ko== | À propos, équipe |
+| **Illustrations** | PNG | Variable | ==150 Ko== | Icônes, graphismes |
+| **Logos** | SVG/PNG | 200x200px | ==50 Ko== | Logo, favicons |
+
+### Optimisation des images
+
+!!! danger "🐌 Images trop lourdes = Page lente"
+    **Conséquences des images non optimisées :**
+
+    - ❌ Temps de chargement > 5 secondes
+    - ❌ Mauvais référencement Google
+    - ❌ Taux de rebond élevé
+    - ❌ Expérience mobile catastrophique
 
 **Outils gratuits recommandés :**
 
-- **TinyPNG** : https://tinypng.com (compression sans perte de qualité)
-- **Squoosh** : https://squoosh.app (Google)
-- **ImageOptim** (Mac) : https://imageoptim.com
+<div class="grid cards" markdown>
 
-**Pourquoi optimiser ?**
+-   :material-image-size-select-small: **[TinyPNG](https://tinypng.com)**
 
-- ✅ Chargement de page plus rapide
-- ✅ Meilleur référencement SEO
-- ✅ Économie de bande passante
-- ✅ Meilleure expérience mobile
+    ---
 
-### 3.3 Paramètres de l'image
+    **Gratuit**
 
-Une fois l'image insérée, configurez :
+    - Compression intelligente
+    - Sans perte de qualité
+    - Drag & drop simple
+    - Jusqu'à 5 Mo par image
 
-```
-┌─────────────────────────────┐
-│ PROPRIÉTÉS DE L'IMAGE       │
-├─────────────────────────────┤
-│ Image                       │
-│ ├─ Source: [image.jpg]     │
-│ │                           │
-│ Dimensions                  │
-│ ├─ Largeur: [100%]         │
-│ ├─ Hauteur: [Auto]         │
-│ ├─ Ajustement: [Cover ▼]   │
-│ │                           │
-│ Accessibilité               │
-│ ├─ Texte alternatif (Alt): │
-│ │  [Description de l'image] │
-│ │                           │
-│ Lien (optionnel)            │
-│ └─ URL: [...]              │
-└─────────────────────────────┘
-```
+    [:octicons-arrow-right-24: Accéder](https://tinypng.com){ .md-button }
 
-#### Texte alternatif (Alt text) - Crucial pour le SEO !
+-   :material-google: **[Squoosh](https://squoosh.app)**
+
+    ---
+
+    **Gratuit - Google**
+
+    - Interface avancée
+    - Comparaison avant/après
+    - Multiples formats
+    - Compression personnalisée
+
+    [:octicons-arrow-right-24: Accéder](https://squoosh.app){ .md-button }
+
+-   :material-apple: **[ImageOptim](https://imageoptim.com)**
+
+    ---
+
+    **Gratuit - Mac uniquement**
+
+    - Application native
+    - Batch processing
+    - Métadonnées nettoyées
+    - Ultra-rapide
+
+    [:octicons-arrow-right-24: Accéder](https://imageoptim.com){ .md-button }
+
+</div>
+
+!!! example "📋 Processus d'optimisation type"
+
+**Workflow recommandé :**
+
+1. :material-camera: Prenez/récupérez votre photo
+2. :material-crop: Recadrez aux bonnes dimensions (Canva, Photoshop)
+3. :material-compress: Compressez avec TinyPNG
+4. :material-check: Vérifiez le poids final (< 200 Ko)
+5. :material-upload: Uploadez sur Systeme.io
+
+**Gain :** Jusqu'à -70% de poids sans perte visuelle !
+
+### Paramètres de l'image
+
+Une fois l'image insérée, **configurez ces paramètres essentiels** :
+
+=== "📐 Dimensions"
+
+**Réglages de taille :**
+
+| Paramètre | Valeur recommandée | Effet |
+|-----------|-------------------|-------|
+| **Largeur** | 100% | Pleine largeur du conteneur |
+| **Hauteur** | Auto | Proportion conservée |
+| **Ajustement** | Cover | Remplit l'espace sans déformation |
+
+!!! info "Options d'ajustement"
+    - **Cover** : Remplit le cadre (recommandé)
+    - **Contain** : Image entière visible
+    - **Fill** : Étire l'image (éviter)
+
+=== "♿ Accessibilité"
+
+**Texte alternatif (Alt text) - CRUCIAL !**
 
 Le texte alternatif décrit l'image pour :
 
-- Les moteurs de recherche (Google)
-- Les lecteurs d'écran (accessibilité)
-- L'affichage si l'image ne charge pas
+- :material-google: **Les moteurs de recherche** (SEO)
+- :material-account-voice: **Les lecteurs d'écran** (accessibilité)
+- :material-image-off: **L'affichage** si l'image ne charge pas
 
-**Exemples de bons textes alternatifs :**
+!!! example "✅ Exemples de bons textes alternatifs"
 
-| Image         | ❌ Mauvais Alt | ✅ Bon Alt                                  |
-| ------------- | ------------- | ------------------------------------------ |
-| Photo profil  | "photo"       | "Armelle Bodénès, coach certifiée ICF"     |
-| Image service | "image1"      | "Séance de coaching individuel"            |
-| Illustration  | "img"         | "Accompagnement ménopause et image de soi" |
+    | Image | ❌ Mauvais Alt | ✅ Bon Alt |
+    |-------|---------------|-----------|
+    | Photo profil | "photo" | "Armelle Bodénès, coach certifiée ICF spécialisée en coaching féminin" |
+    | Image service | "image1" | "Séance de coaching individuel en visioconférence" |
+    | Illustration | "img" | "Accompagnement ménopause et image de soi - L'Essentiel en Soi" |
 
-### 3.4 Ajouter une nouvelle image
+!!! danger "🚫 Alt text à éviter"
+    - "image", "photo", "img"
+    - Répétition du nom de fichier
+    - Description trop longue (> 125 caractères)
+    - Bourrage de mots-clés
 
-Pour insérer une image dans une section :
+=== "🔗 Lien (optionnel)"
 
-1. Cliquez sur le **"+"** où vous voulez l'ajouter
-2. Sélectionnez **"Image"**
-3. Téléchargez ou choisissez depuis la bibliothèque
-4. Ajustez la taille et l'alignement
+**Rendre une image cliquable :**
+
+1. Dans les propriétés, section **"Lien"**
+2. Collez l'URL de destination
+3. Cochez **"Ouvrir dans un nouvel onglet"** si externe
+4. Enregistrez
+
+**Cas d'usage :**
+- Galerie photo → agrandissement
+- Logo partenaire → site partenaire
+- Certification → page détails
+
+### Ajouter une nouvelle image
+
+!!! example "➕ Insérer une image dans une section"
+
+**Procédure :**
+
+1. :material-plus-circle: Cliquez sur le **"+"** où vous voulez l'ajouter
+2. :material-image: Sélectionnez **"Image"**
+3. :material-upload: Téléchargez ou choisissez depuis la bibliothèque
+4. :material-resize: Ajustez la taille et l'alignement
+5. :material-content-save: Enregistrez
 
 ---
+
 
 ## 4. Modification des témoignages
 
