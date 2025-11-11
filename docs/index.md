@@ -42,7 +42,7 @@ Consultez d'abord la **[FAQ et résolution de problèmes](09-FAQ-TROUBLESHOOTING
 
 | Guide | Description | Durée estimée |
 |-------|-------------|---------------|
-| **[01 - Démarrage rapide](01-GUIDE-DEMARRAGE-RAPIDE.md)** | Connexion et navigation dans Systeme.io | 15 min |
+| **[01 - Démarrage rapide](01-GUIDE-DEMARRAGE-RAPIDE.md)** | Connexion et navigation dans Systeme.io | 15 min | :material-star: Débutant
 | **[02 - Modification du contenu](02-MODIFICATION-CONTENU.md)** | Éditer textes, images et témoignages | 30 min |
 | **[03 - Gestion CTA et Calendly](03-GESTION-CTA-CALENDLY.md)** | Gérer les boutons de réservation | 20 min |
 | **[04 - Design et mise en page](04-DESIGN-MISE-EN-PAGE.md)** | Personnaliser couleurs et polices | 45 min |
