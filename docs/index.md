@@ -2,6 +2,9 @@
 
 ## L'Essentiel en Soi - Documentation complète
 
+!!! success "🎉 Bienvenue dans votre espace de formation"
+    Cette documentation complète vous permettra de gérer et maintenir votre tunnel de vente Systeme.io **en toute autonomie**. Formation développée par [A-Tek Universe](https://a-tek-universe.fr) 🚀
+
 **Client :** Armelle Bodénès - Coaching au Féminin
 **Landing Page :** [https://bodenesgram.systeme.io/essentiel-en-soi](https://bodenesgram.systeme.io/essentiel-en-soi)
 **Version :** 1.0 - Novembre 2025
@@ -205,7 +208,7 @@ Cette documentation est un **document vivant** qui évolue avec :
 <div class="welcome-banner">
 <h2>🚀 Prêt(e) à devenir autonome ?</h2>
 <p>Cette formation vous donnera toutes les clés pour gérer votre landing page comme un(e) pro !</p>
-<p><strong>👉 Commencez dès maintenant avec le <a href="01-GUIDE-DEMARRAGE-RAPIDE.md" style="color: white; text-decoration: underline;">Guide de démarrage rapide</a></strong></p>
+<p><strong>👉 Commencez dès maintenant avec le <a href="01-GUIDE-DEMARRAGE-RAPIDE" style="color: white; text-decoration: underline;">Guide de démarrage rapide</a></strong></p>
 </div>
 
 ---

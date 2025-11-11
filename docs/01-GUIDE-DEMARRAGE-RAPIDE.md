@@ -1,32 +1,94 @@
-## 🎯 Objectif de ce guide
+# 🚀 Guide 01 - Démarrage Rapide
 
-Ce guide vous permettra de vous connecter à Systeme.io et de comprendre les bases de la plateforme en 15 minutes.
-
----
-
-## 1. Connexion à votre compte Systeme.io
-
-### Étape 1 : Accéder à la plateforme
-
-1. Ouvrez votre navigateur web (Chrome, Firefox, Safari, Edge)
-2. Allez sur : **https://systeme.io/login**
-3. Entrez vos identifiants :
-    - **Email :** Votre adresse email de connexion
-    - **Mot de passe :** Votre mot de passe sécurisé
-
-> ⚠️ **Important :** Gardez vos identifiants en lieu sûr. Utilisez un gestionnaire de mots de passe (LastPass, 1Password, Bitwarden) pour plus de sécurité.
-
-### Étape 2 : Sécurité du compte
-
-**Recommandations :**
-
-- Activez l'authentification à deux facteurs (2FA) si disponible
-- Ne partagez jamais vos identifiants
-- Changez votre mot de passe tous les 3-6 mois
+!!! success "🎉 Bienvenue dans votre formation Systeme.io"
+    **Durée estimée :** 15 minutes
+    **Niveau :** :material-star: Débutant
+    **Objectif :** Vous connecter et maîtriser les bases de Systeme.io en un temps record !
 
 ---
 
-## 2. Vue d'ensemble du tableau de bord
+## 🎯 Ce que vous allez apprendre
+
+À la fin de ce guide, vous saurez :
+
+- [x] Vous connecter à votre compte Systeme.io en toute sécurité
+- [x] Naviguer efficacement dans le tableau de bord
+- [x] Accéder à votre landing page "L'Essentiel en Soi"
+- [x] Utiliser l'éditeur visuel et comprendre le système de blocs
+- [x] Enregistrer et publier vos modifications en toute confiance
+
+---
+
+## 🔐 Connexion à votre compte Systeme.io
+
+### Accès à la plateforme
+
+=== "🌐 Première connexion"
+
+    **Étapes détaillées pour débutants :**
+
+    1. :material-web: Ouvrez votre navigateur web (Chrome, Firefox, Safari, Edge)
+    2. :material-link: Allez sur : **https://systeme.io/login**
+    3. :material-email: Entrez votre **adresse email** de connexion
+    4. :material-lock: Saisissez votre **mot de passe sécurisé**
+    5. :material-login: Cliquez sur **"Se connecter"**
+
+    [:octicons-arrow-right-24: Accès direct Systeme.io](https://systeme.io/login){ .md-button .md-button--primary }
+
+=== "⚡ Accès rapide"
+
+    **Pour les utilisateurs réguliers :**
+
+    Ajoutez l'URL de connexion à vos favoris pour un accès en 1 clic :
+
+    1. Appuyez sur ++ctrl+d++ (Windows) ou ++cmd+d++ (Mac)
+    2. Nommez le favoris "Systeme.io"
+    3. Enregistrez dans votre barre de favoris
+
+    **Gain de temps :** -20 secondes par connexion !
+
+### Sécurité de votre compte
+
+!!! danger "🔒 Sécurité critique - À lire absolument"
+    **Gardez vos identifiants en lieu sûr.** Votre compte contient des données sensibles.
+
+    **Règles de sécurité essentielles :**
+
+    - :material-check-circle: Mot de passe **unique** (jamais utilisé ailleurs)
+    - :material-check-circle: Minimum **12 caractères**
+    - :material-check-circle: Mélange de lettres, chiffres et symboles
+    - :material-close-circle: Pas de mots du dictionnaire
+    - :material-close-circle: Pas d'informations personnelles évidentes
+
+!!! tip "💡 Gestionnaire de mots de passe recommandé"
+    Utilisez un **gestionnaire de mots de passe** professionnel pour sécuriser tous vos accès :
+
+    | Solution | Prix | Avantages |
+    |----------|------|-----------|
+    | **[Bitwarden](https://bitwarden.com)** | Gratuit | Open-source, complet |
+    | **[1Password](https://1password.com)** | ~3€/mois | Interface élégante |
+    | **[LastPass](https://lastpass.com)** | Gratuit/Payant | Très populaire |
+
+    **Bénéfices :**
+    - :material-shield-check: Sécurité maximale
+    - :material-timer: Connexion automatique
+    - :material-sync: Synchronisation multi-appareils
+    - :material-key: Un seul mot de passe maître à retenir
+
+### Bonnes pratiques de sécurité
+
+!!! info "🛡️ Recommandations avancées"
+    **Pour une sécurité optimale :**
+
+    - [ ] Activez l'authentification à deux facteurs (2FA) si disponible
+    - [ ] Ne partagez **JAMAIS** vos identifiants avec quiconque
+    - [ ] Changez votre mot de passe tous les 3-6 mois
+    - [ ] Déconnectez-vous sur les ordinateurs partagés
+    - [ ] Vérifiez l'URL (https://systeme.io) avant de saisir vos identifiants
+
+---
+
+## 🏠 Vue d'ensemble du tableau de bord
 
 ### Interface principale
 
