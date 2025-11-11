@@ -149,65 +149,113 @@
 
 ---
 
-## 2. Modification des sections de services
+## 🎯 Modification des sections de services
 
-Votre page contient 2 sections principales :
+### Structure de vos services
 
-1. **Accompagnements Juridiques**
-2. **Accompagnements "Essentiel en soi"**
+Votre page contient **2 sections principales** :
 
-### 2.1 Éditer les titres de sections
+<div class="grid cards" markdown>
 
-**Exemple :** "ACCOMPAGNEMENTS JURIDIQUES"
+-   :material-gavel: **Accompagnements Juridiques**
 
-#### Procédure :
+    ---
 
-1. Cliquez sur le titre de section
-2. Le panneau de droite affiche les propriétés
-3. Modifiez :
-    - Le texte
-    - La couleur (généralement un accent)
-    - La taille de police
-    - L'alignement
+    Services liés aux aspects juridiques :
+    - Problématiques légales
+    - Accompagnement spécialisé
+    - Liste des bénéfices
 
-### 2.2 Modifier les descriptions de services
+-   :material-heart: **Accompagnements "Essentiel en soi"**
 
-**Structure actuelle :**
+    ---
 
+    Services de développement personnel :
+    - Coaching individuel
+    - Accompagnement transformation
+    - Bénéfices personnels
+
+</div>
+
+### Éditer les titres de sections
+
+!!! example "📝 Exemple : Modifier "ACCOMPAGNEMENTS JURIDIQUES""
+
+    **Procédure :**
+
+    1. :material-cursor-default-click: Cliquez sur le titre de section
+    2. :material-menu: Le panneau de droite affiche les propriétés
+    3. :material-pencil: Modifiez :
+        - Le texte du titre
+        - La couleur (généralement un accent de votre charte)
+        - La taille de police (recommandé : 32-48px pour H2)
+        - L'alignement (centré recommandé pour les sections)
+
+### Modifier les descriptions de services
+
+**Structure type d'une section :**
+
+```mermaid
+graph TD
+    A[Titre de section H2] --> B[Introduction/Problématique]
+    B --> C[Description de l'offre]
+    C --> D[Liste à puces - Bénéfices]
+    D --> E[Call-to-action]
 ```
-Accompagnements Juridiques
-├─ Introduction (problématique)
-├─ Description de l'offre
-└─ Liste à puces (bénéfices)
-```
 
-#### Pour modifier la liste à puces :
+=== "✏️ Éditer le texte"
 
-1. Cliquez sur la liste
-2. Pour ajouter un élément :
-    - Placez le curseur en fin de ligne
-    - Appuyez sur **Entrée**
-    - Tapez le nouvel élément
-3. Pour supprimer un élément :
-    - Sélectionnez la ligne entière
-    - Appuyez sur **Suppr**
+**Pour modifier la description :**
 
-#### Bonnes pratiques pour les listes :
+1. Cliquez sur le paragraphe
+2. Éditez le contenu
+3. Structurez avec des phrases courtes
+4. Enregistrez
 
-- ✅ Maximum 5-7 points par liste
-- ✅ Phrases courtes et percutantes
-- ✅ Commencez par un verbe d'action
-- ✅ Utilisez des mots-clés importants
-- ❌ Évitez les phrases trop longues
+=== "📝 Modifier la liste à puces"
 
-### 2.3 Ajouter une nouvelle section de service
+**Ajouter un élément :**
 
-Si vous créez un nouveau type d'accompagnement :
+1. :material-cursor-text: Placez le curseur en fin de ligne
+2. ++enter++ Appuyez sur **Entrée**
+3. :material-keyboard: Tapez le nouvel élément
+4. :material-content-save: Enregistrez
 
-1. Cliquez sur le **"+"** entre deux blocs
-2. Choisissez **"Section"** ou **"Bloc de contenu"**
-3. Sélectionnez un modèle similaire à vos sections existantes
-4. Remplissez le contenu
+**Supprimer un élément :**
+
+1. :material-select: Sélectionnez la ligne entière
+2. ++delete++ Appuyez sur **Suppr**
+
+!!! tip "✅ Bonnes pratiques pour les listes"
+
+**À faire :**
+- ✅ Maximum **5-7 points** par liste
+- ✅ Phrases **courtes et percutantes**
+- ✅ Commencez par un **verbe d'action**
+- ✅ Utilisez des **mots-clés** importants
+
+**À éviter :**
+- ❌ Phrases trop longues (> 15 mots)
+- ❌ Jargon technique incompréhensible
+- ❌ Listes interminables (> 10 points)
+
+### Ajouter une nouvelle section de service
+
+!!! example "➕ Créer un nouveau service"
+
+**Procédure :**
+
+1. :material-plus-circle: Cliquez sur le **"+"** entre deux blocs
+2. :material-view-module: Choisissez **"Section"** ou **"Bloc de contenu"**
+3. :material-content-copy: Sélectionnez un modèle similaire à vos sections existantes
+4. :material-pencil: Remplissez le contenu :
+    - Titre de la section
+    - Description
+    - Liste des bénéfices
+    - CTA spécifique
+5. :material-content-save: Enregistrez
+
+**Idéal pour :** Lancer une nouvelle offre ou service complémentaire
 
 ---
 
