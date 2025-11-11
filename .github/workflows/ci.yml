@@ -1,0 +1,29 @@
+﻿name: Publier la documentation
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Configurer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.x
+      
+      - name: Installer les dépendances
+        run: |
+          pip install mkdocs-material
+          pip install mkdocs-minify-plugin
+      
+      - name: Déployer sur GitHub Pages
+        run: mkdocs gh-deploy --force
