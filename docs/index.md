@@ -53,7 +53,7 @@ Consultez d'abord la **[FAQ et résolution de problèmes](09-FAQ-TROUBLESHOOTING
 | **[09 - FAQ](09-FAQ-TROUBLESHOOTING.md)** | Résolution de problèmes | Consultation | :material-help-circle: Référence |
 | **[10 - Glossaire](10-GLOSSAIRE.md)** | Terminologie et définitions | Référence | :material-book-open: Référence |
 
-!!! info **Durée totale de formation :** ~5 heures
+!!! info "Durée totale de formation : ~5 heures"
 
 ---
 
@@ -111,6 +111,25 @@ Consultez d'abord la **[FAQ et résolution de problèmes](09-FAQ-TROUBLESHOOTING
 
 ---
 
+📋 Checklist de formation
+Suivez votre progression :
+
+ ✅ J'ai consulté le guide de démarrage rapide
+ ✅ Je sais me connecter à Systeme.io
+ ✅ Je peux modifier un texte sur ma landing page
+ ✅ Je peux changer une image
+ ✅ Je comprends comment fonctionnent les CTA
+ ✅ J'ai testé un bouton Calendly
+ ✅ Je peux personnaliser les couleurs
+ ✅ Je sais où trouver mes statistiques
+ ✅ J'ai fait une première sauvegarde
+ ✅ Je sais où chercher de l'aide en cas de problème
+
+!!! success "Formation terminée ?"
+Une fois toutes les cases cochées, vous êtes autonome sur Systeme.io ! 🎉
+
+---
+
 ## 🆘 Besoin d'aide ?
 
 ### Support technique Systeme.io
@@ -121,26 +140,33 @@ Consultez d'abord la **[FAQ et résolution de problèmes](09-FAQ-TROUBLESHOOTING
 
 ### Support développeur (maintenance avancée)
 
-Contactez votre développeur pour :
-- Modifications complexes de design
-- Intégrations tierces avancées
-- Résolution de problèmes techniques spécifiques
+Pour des modifications complexes ou un accompagnement personnalisé :
+<a href="https://a-tek-universe.fr" target="_blank" class="atek-signature">
+Contactez A-Tek Universe
+</a>
+Services proposés :
+
+⚙️ Modifications techniques avancées
+🔌 Intégrations tierces personnalisées
+🎨 Refonte graphique complète
+📚 Formation complémentaire sur-mesure
+🛡️ Maintenance et support prioritaire
 
 ---
 
-## 📝 Checklist de formation
+## 📚 Ressources complémentaires
+### Documentation officielle
 
-Cochez au fur et à mesure de votre progression :
+Blog Systeme.io - Actualités et best practices
+Chaîne YouTube Systeme.io - Tutoriels vidéo
+Communauté Facebook - Entraide utilisateurs
 
-- [ ] Connexion et navigation dans Systeme.io
-- [ ] Modification du contenu texte
-- [ ] Changement d'images
-- [ ] Gestion des boutons CTA
-- [ ] Configuration Calendly
-- [ ] Personnalisation du design
-- [ ] Tests de la landing page
-- [ ] Suivi des statistiques
-- [ ] Mise à jour régulière du contenu
+### Outils recommandés
+
+Canva - Création de visuels professionnels
+TinyPNG - Compression d'images
+Google Analytics - Analyse de trafic approfondie
+PageSpeed Insights - Test de performances
 
 ---
 
@@ -156,10 +182,18 @@ Cette documentation est un document vivant qui sera mis à jour selon :
 
 ---
 
-## 🚀 Commencez maintenant !
+<div class="welcome-banner">
+<h2>🚀 Prêt(e) à devenir autonome ?</h2>
+<p>Cette formation vous donnera toutes les clés pour gérer votre landing page comme un(e) pro !</p>
+<p><strong>👉 Commencez dès maintenant avec le <a href="01-demarrage-rapide.md" style="color: white; text-decoration: underline;">Guide de démarrage rapide</a></strong></p>
+</div>
 
-Prêt(e) à devenir autonome sur votre landing page ?
+---
 
-👉 **[Commencer par le guide de démarrage rapide](01-GUIDE-DEMARRAGE-RAPIDE.md)**
-
-Bonne formation ! 🎉
+<div style="text-align: center; padding: 2rem 0; color: #666;">
+<p><strong>Formation développée avec ❤️ par</strong></p>
+<a href="https://a-tek-universe.fr" target="_blank" style="display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, #3949AB 0%, #7E57C2 100%); color: white; text-decoration: none; border-radius: 0.5rem; font-weight: 600; margin-top: 1rem; box-shadow: 0 4px 12px rgba(57, 73, 171, 0.3);">
+⚡ A-Tek Universe - Développeur WordPress Freelance
+</a>
+<p style="margin-top: 1rem; font-size: 0.9rem;">Au service des PME et artisans depuis 8+ ans</p>
+</div>
