@@ -9,7 +9,9 @@ repo_name: formation-systemeio
 repo_url: https://github.com/Mehdisback/formation-systemio
 
 # Copyright
-copyright: Copyright &copy; 2025 - Armelle Bodénès - Coaching au Féminin
+copyright:
+  Copyright &copy; 2025 - <strong>Armelle Bodénès - Coaching au Féminin</strong><br>
+  Formation développée par <a href="https://a-tek-universe.fr" target="_blank">A-Tek Universe</a> - Développeur WordPress Freelance
 
 # Thème
 theme:
@@ -19,33 +21,41 @@ theme:
   # Couleurs (adaptez à la charte graphique)
   palette:
     # Mode clair
-    - scheme: default
-      primary: pink
-      accent: purple
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep-purple
       toggle:
         icon: material/brightness-7
         name: Passer en mode sombre
 
     # Mode sombre
     - scheme: slate
-      primary: pink
-      accent: purple
+      primary: indigo
+      accent: deep-purple
       toggle:
         icon: material/brightness-4
         name: Passer en mode clair
 
   # Fonctionnalités
   features:
+    - announce.dismiss
     - navigation.instant        # Navigation fluide
+    - navigation.instant.progress  # Barre de progression
     - navigation.tracking       # Suivi URL
     - navigation.tabs           # Onglets de navigation
+    - navigation.tabs.sticky       # Onglets collants
     - navigation.sections       # Sections dans le menu
     - navigation.expand         # Menu déroulant automatique
+    - navigation.path              # Breadcrumb
     - navigation.top            # Bouton retour en haut
     - search.suggest            # Suggestions de recherche
     - search.highlight          # Surlignage des résultats
+    - search.share                 # Partage recherche
     - content.code.copy         # Bouton copier pour le code
+    - content.code.annotate        # Annotations code
     - content.tabs.link         # Onglets liés
+    - content.tooltips
 
   # Logo et favicon (optionnel)
   # logo: assets/logo.png
@@ -54,54 +64,128 @@ theme:
   # Icône
   icon:
     repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
 
 # Plugins
 plugins:
   - search:
       lang: fr
-      separator: '[\s\-\.]'
+      separator: '[\s\-\.,!?\u200b]+'
+      pipeline:
+        - stemmer
+        - stopWordFilter
+        - trimmer
   - minify:
       minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
 
 # Extensions Markdown
 markdown_extensions:
   - admonition              # Boîtes d'alerte
   - pymdownx.details        # Boîtes pliables
-  - pymdownx.superfences    # Code avec syntaxe
-  - pymdownx.highlight      # Coloration syntaxique
+  - pymdownx.superfences:    # Code avec syntaxe
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+  # Code highlighting
+  - pymdownx.highlight:      # Coloration syntaxique
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
   - pymdownx.emoji:         # Emojis
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tasklist:      # Checklists
       custom_checkbox: true
+      clickable_checkbox: true
   - tables                  # Tableaux
   - attr_list               # Attributs HTML
+  - md_in_html
   - def_list                # Listes de définitions
+
+  # Formatage avancé
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+
   - toc:                    # Table des matières
       permalink: true
+      permalink_title: Ancre vers cette section
       toc_depth: 3
+
+  # Notes de bas de page
+  - footnotes
+
+  # Abréviations
+  - abbr
 
 # Navigation
 nav:
-  - Accueil: "index.md"
-  - Guides de formation:
-    - 01 - Démarrage rapide: "01-GUIDE-DEMARRAGE-RAPIDE.md"
-    - 02 - Modification du contenu: "02-MODIFICATION-CONTENU.md"
-    - 03 - Gestion CTA et Calendly: "03-GESTION-CTA-CALENDLY.md"
-    - 04 - Design et mise en page: "04-DESIGN-MISE-EN-PAGE.md"
-    - 05 - Formulaires: "05-FORMULAIRES-DONNEES.md"
-    - 06 - SEO et référencement: "06-SEO-REFERENCEMENT.md"
-    - 07 - Suivi et analytics: "07-SUIVI-ANALYTICS.md"
-    - 08 - Maintenance: "08-MAINTENANCE-BONNES-PRATIQUES.md"
-    - 09 - FAQ: "09-FAQ-TROUBLESHOOTING.md"
-    - 10 - Glossaire: "10-GLOSSAIRE.md"
+  - 🏠 Accueil: "index.md"
+  - 📚 Guides de formation:
+    - 🚀 01 - Démarrage rapide: "01-GUIDE-DEMARRAGE-RAPIDE.md"
+    - ✏️ 02 - Modification du contenu: "02-MODIFICATION-CONTENU.md"
+    - 🔘 03 - Gestion CTA et Calendly: "03-GESTION-CTA-CALENDLY.md"
+    - 🎨 04 - Design et mise en page: "04-DESIGN-MISE-EN-PAGE.md"
+    - 📝 05 - Formulaires: "05-FORMULAIRES-DONNEES.md"
+    - 🔍 06 - SEO et référencement: "06-SEO-REFERENCEMENT.md"
+    - 📊 07 - Suivi et analytics: "07-SUIVI-ANALYTICS.md"
+    - 🛠️ 08 - Maintenance: "08-MAINTENANCE-BONNES-PRATIQUES.md"
+    - ❓ 09 - FAQ: "09-FAQ-TROUBLESHOOTING.md"
+    - 📖 10 - Glossaire: "10-GLOSSAIRE.md"
 
 # CSS personnalisé (optionnel)
-# extra_css:
-#   - stylesheets/extra.css
+extra_css:
+    - stylesheets/extra.css
 
-# Analytics (optionnel)
-# extra:
-#   analytics:
-#     provider: google
-#     property: G-XXXXXXXXXX
+# Informations supplémentaires
+extra:
+  # Liens réseaux sociaux / contact
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://a-tek-universe.fr
+      name: A-Tek Universe
+    - icon: fontawesome/brands/github
+      link: https://github.com/MehdisBack
+      name: GitHub
+    - icon: fontawesome/solid/envelope
+      link: mailto:contact@a-tek-universe.fr
+      name: Contact
+
+  # Informations projet
+  generator: false  # Masquer "Made with Material for MkDocs"
+
+  # Consentement cookies
+  consent:
+    title: Consentement aux cookies
+    description: >-
+      Nous utilisons des cookies pour améliorer votre expérience de navigation,
+      analyser le trafic du site et comprendre d'où viennent nos visiteurs.
+    actions:
+      - accept
+      - reject
+      - manage
+
+# Configuration avancée
+validation:
+  nav:
+    omitted_files: info
+    not_found: warn
+    absolute_links: info
+  links:
+    not_found: warn
+    absolute_links: info
+    unrecognized_links: info
