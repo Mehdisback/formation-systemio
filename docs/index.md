@@ -40,8 +40,8 @@ Consultez d'abord la **[FAQ et résolution de problèmes](09-FAQ-TROUBLESHOOTING
 
 ## 📚 Les 10 guides de formation
 
-| Guide | Description | Durée estimée |
-|-------|-------------|---------------|
+| Guide | Description | Durée estimée | Niveau |
+|-------|-------------|---------------|--------|
 | **[01 - Démarrage rapide](01-GUIDE-DEMARRAGE-RAPIDE.md)** | Connexion et navigation dans Systeme.io | 15 min | :material-star: Débutant
 | **[02 - Modification du contenu](02-MODIFICATION-CONTENU.md)** | Éditer textes, images et témoignages | 30 min |
 | **[03 - Gestion CTA et Calendly](03-GESTION-CTA-CALENDLY.md)** | Gérer les boutons de réservation | 20 min |
