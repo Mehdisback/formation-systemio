@@ -120,20 +120,32 @@
 
 **Évitez le souligné** qui est souvent confondu avec un lien cliquable.
 
-### 1.3 Ajouter ou supprimer du texte
+### Ajouter ou supprimer du texte
+
+=== "➕ Ajouter du texte"
 
 **Pour ajouter un paragraphe :**
 
-1. Positionnez le curseur à l'endroit souhaité
-2. Appuyez sur **Entrée** pour créer une nouvelle ligne
-3. Tapez votre nouveau contenu
+1. :material-cursor-text: Positionnez le curseur à l'endroit souhaité
+2. ++enter++ Appuyez sur **Entrée** pour créer une nouvelle ligne
+3. :material-keyboard: Tapez votre nouveau contenu
+4. :material-content-save: Enregistrez
 
-**Pour supprimer du texte :**
+!!! example "Exemple d'usage"
+    Ajoutez un paragraphe d'introduction avant votre offre principale pour améliorer le contexte.
 
-1. Sélectionnez le texte
-2. Appuyez sur **Suppr** ou **Backspace**
+=== "➖ Supprimer du texte"
 
-> ⚠️ **Attention :** Ne supprimez pas les blocs entiers par erreur. Si cela arrive, utilisez `Ctrl+Z` pour annuler.
+**Suppression sélective :**
+
+1. :material-select: Sélectionnez le texte à supprimer
+2. ++delete++ ou ++backspace++ Appuyez sur **Suppr** ou **Backspace**
+3. :material-content-save: Enregistrez
+
+!!! danger "⚠️ Attention aux suppressions"
+    Ne supprimez pas les blocs entiers par erreur !
+
+**En cas d'erreur :** ++ctrl+z++ pour annuler immédiatement
 
 ---
 
