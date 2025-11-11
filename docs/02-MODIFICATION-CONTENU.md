@@ -33,13 +33,13 @@
 
 **Procédure en 4 étapes :**
 
-    1. :material-cursor-default-click: **Cliquez** directement sur le titre dans l'éditeur
-    2. :material-cursor-text: Le texte devient éditable (curseur clignotant)
-    3. :material-keyboard: **Modifiez** le texte comme dans Word
-    4. :material-check: Cliquez en dehors ou appuyez sur ++esc++ pour valider
+1. :material-cursor-default-click: **Cliquez** directement sur le titre dans l'éditeur
+2. :material-cursor-text: Le texte devient éditable (curseur clignotant)
+3. :material-keyboard: **Modifiez** le texte comme dans Word
+4. :material-check: Cliquez en dehors ou appuyez sur ++esc++ pour valider
 
-    !!! tip "Validation rapide"
-        Appuyez sur ++esc++ pour sortir du mode édition rapidement
+!!! tip "Validation rapide"
+    Appuyez sur ++esc++ pour sortir du mode édition rapidement
 
 === "🎨 Personnalisation avancée"
 
@@ -89,30 +89,36 @@
     **Un seul H1 par page !** Les moteurs de recherche utilisent cette hiérarchie pour comprendre votre contenu.
 
 
-### 1.2 Modifier les paragraphes de texte
+### Modifier les paragraphes
 
-**Exemple :** Modifier "J'accompagne les femmes et les adolescents..."
+**Exemple pratique :** Modifier "J'accompagne les femmes et les adolescents..."
 
-#### Procédure :
+=== "📝 Édition de texte"
 
-1. Cliquez sur le paragraphe
-2. Sélectionnez le texte à modifier (comme dans Word)
-3. Tapez le nouveau texte
-4. Utilisez la mini-barre d'outils pour :
-    - **Gras** : `Ctrl+B`
-    - **Italique** : `Ctrl+I`
-    - **Lien** : icône 🔗
-    - **Liste à puces** : icône ●
-    - **Couleur** : icône 🎨
+**Procédure :**
 
-#### Mise en forme du texte :
+1. :material-cursor-default-click: Cliquez sur le paragraphe
+2. :material-select: Sélectionnez le texte à modifier (comme dans Word)
+3. :material-keyboard: Tapez le nouveau texte
+4. :material-content-save: Enregistrez avec ++ctrl+s++
 
-|Format|Raccourci|Utilité|
-|---|---|---|
-|Gras|`Ctrl+B`|Mettre en évidence|
-|Italique|`Ctrl+I`|Emphase légère|
-|Souligné|`Ctrl+U`|À éviter (confusion avec liens)|
-|Lien|`Ctrl+K`|Créer un lien hypertexte|
+=== "🎨 Mise en forme"
+
+**Mini-barre d'outils disponible :**
+
+| Format | Raccourci | Icône | Usage |
+|--------|-----------|-------|-------|
+| **Gras** | ++ctrl+b++ | :material-format-bold: | Mettre en évidence |
+| **Italique** | ++ctrl+i++ | :material-format-italic: | Emphase légère |
+| **Souligné** | ++ctrl+u++ | :material-format-underline: | À éviter (confusion avec liens) |
+| **Lien** | ++ctrl+k++ | :material-link: | Créer un lien hypertexte |
+| **Liste** | - | :material-format-list-bulleted: | Liste à puces |
+| **Couleur** | - | :material-palette: | Changer la couleur du texte |
+
+!!! tip "💡 Astuce de mise en forme"
+    Utilisez ==le gras pour les mots-clés importants== et l'*italique pour l'emphase subtile*.
+
+**Évitez le souligné** qui est souvent confondu avec un lien cliquable.
 
 ### 1.3 Ajouter ou supprimer du texte
 
