@@ -240,9 +240,9 @@ Assurez-vous d'avoir fait ces étapes :
 
 Maintenant que vous maîtrisez les bases, passez aux guides suivants :
 
-1. **[[Guide 02 - Modification du Contenu de la Landing Page]]** : Modification du contenu (textes, images)
-2. **[[Guide 03 - Gestion des CTA et Calendly]]** : Gestion des CTA et Calendly
-3. **[[Guide 04 - Design et Mise en Page]]** : Design et mise en page
+1. **[Guide 02 - Modification du Contenu de la Landing Page](https://mehdisback.github.io/formation-systemio/02-MODIFICATION-CONTENU/)** : Modification du contenu (textes, images)
+2. **[Guide 03 - Gestion des CTA et Calendly](https://mehdisback.github.io/formation-systemio/03-GESTION-CTA-CALENDLY/)** : Gestion des CTA et Calendly
+3. **[Guide 04 - Design et Mise en Page](https://mehdisback.github.io/formation-systemio/04-DESIGN-MISE-EN-PAGE/)** : Design et mise en page
 
 ---
 
@@ -250,15 +250,15 @@ Maintenant que vous maîtrisez les bases, passez aux guides suivants :
 
 **Questions fréquentes :**
 
-**Q : Je ne trouve pas mon tunnel dans la liste**  
+**Q : Je ne trouve pas mon tunnel dans la liste**
 R : Utilisez la barre de recherche en haut de la liste des funnels, tapez "essentiel"
 
-**Q : J'ai modifié mais rien ne change sur la page publique**  
+**Q : J'ai modifié mais rien ne change sur la page publique**
 R : Vous avez probablement enregistré mais pas publié. Cliquez sur [Publier]
 
-**Q : L'éditeur ne s'affiche pas correctement**  
+**Q : L'éditeur ne s'affiche pas correctement**
 R : Essayez de vider le cache de votre navigateur (Ctrl+F5) ou utilisez un autre navigateur
 
 ---
 
-**Prêt à continuer ? Passez au [[Guide 02 - Modification du Contenu de la Landing Page]] ! 🚀**
+**Prêt à continuer ? Passez au [Guide 02 - Modification du Contenu de la Landing Page](https://mehdisback.github.io/formation-systemio/02-MODIFICATION-CONTENU/) ! 🚀**
