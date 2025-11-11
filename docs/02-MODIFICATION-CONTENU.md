@@ -1,52 +1,93 @@
-## 🎯 Objectif de ce guide
+# ✏️ Guide 02 - Modification du Contenu
 
-Apprendre à modifier tous les éléments de contenu de votre landing page : textes, titres, images, témoignages et descriptions de services.
+!!! success "🎨 Devenez autonome sur votre contenu"
+    **Durée estimée :** 30 minutes
+    **Niveau :** :material-star: Débutant
+    **Objectif :** Maîtriser la modification de tous les éléments de votre landing page
 
 ---
 
-## 1. Modification des textes et titres
+## 🎯 Ce que vous allez apprendre
 
-### 1.1 Éditer le titre principal
+À la fin de ce guide, vous saurez modifier :
 
-**Titre actuel :** "L'ESSENTIEL EN SOI - LE COACHING AU FÉMININ"
+- [x] Les textes et titres de votre page
+- [x] Les sections de services et descriptions
+- [x] Les images (remplacement et optimisation)
+- [x] Les témoignages clients
+- [x] La section FAQ
+- [x] Les call-to-actions (CTA)
 
-#### Procédure :
+---
 
-1. Dans l'éditeur, **cliquez directement sur le titre**
-2. Le texte devient éditable (curseur clignotant)
-3. Modifiez le texte comme dans un traitement de texte
-4. Cliquez en dehors du bloc ou appuyez sur **Échap** pour valider
+## 📝 Modification des textes et titres
 
-#### Options de style du titre :
+### Éditer le titre principal
 
-Un panneau s'affiche à droite avec :
+!!! example "🎯 Titre actuel de votre page"
+    **"L'ESSENTIEL EN SOI - LE COACHING AU FÉMININ"**
 
-```
-┌─────────────────────────────┐
-│ PROPRIÉTÉS DU BLOC TEXTE    │
-├─────────────────────────────┤
-│ Contenu                     │
-│ ├─ Texte: [votre texte]    │
-│ │                           │
-│ Style                       │
-│ ├─ Police: [Montserrat ▼]  │
-│ ├─ Taille: [48px]          │
-│ ├─ Couleur: [■ #000000]   │
-│ ├─ Gras: [✓]              │
-│ ├─ Italique: [ ]          │
-│ ├─ Alignement: [≡ Centre] │
-│ │                           │
-│ Espacement                  │
-│ ├─ Haut: [20px]            │
-│ └─ Bas: [20px]             │
-└─────────────────────────────┘
-```
+    C'est votre titre H1, le plus important pour le SEO !
 
-> 💡 **Conseil :** Respectez la hiérarchie des titres pour le SEO :
-> 
-> - H1 (titre principal) : 1 seul sur la page
-> - H2 (sous-titres majeurs) : sections principales
-> - H3 (sous-titres secondaires) : sous-sections
+=== "✏️ Modification simple"
+
+**Procédure en 4 étapes :**
+
+    1. :material-cursor-default-click: **Cliquez** directement sur le titre dans l'éditeur
+    2. :material-cursor-text: Le texte devient éditable (curseur clignotant)
+    3. :material-keyboard: **Modifiez** le texte comme dans Word
+    4. :material-check: Cliquez en dehors ou appuyez sur ++esc++ pour valider
+
+    !!! tip "Validation rapide"
+        Appuyez sur ++esc++ pour sortir du mode édition rapidement
+
+=== "🎨 Personnalisation avancée"
+
+**Options disponibles dans le panneau de droite :**
+
+<div class="grid cards" markdown>
+
+-   :material-format-text: **Contenu**
+
+    ---
+
+    - Texte modifiable
+    - Balises HTML (H1, H2, H3)
+
+-   :material-palette: **Style**
+
+    ---
+
+    - Police de caractères
+    - Taille (en pixels)
+    - Couleur personnalisée
+    - Gras / Italique
+    - Alignement (gauche, centre, droite)
+
+-   :material-arrow-expand-vertical: **Espacement**
+
+    ---
+
+    - Marge haute
+    - Marge basse
+    - Padding intérieur
+
+</div>
+
+### Hiérarchie des titres
+
+!!! info "📊 Structure SEO optimale"
+
+    | Balise | Usage | Nombre | Exemple |
+    |--------|-------|--------|---------|
+    | **H1** | Titre principal | ==1 seul== | "L'Essentiel en Soi" |
+    | **H2** | Sections majeures | 3-6 | "Accompagnements Juridiques" |
+    | **H3** | Sous-sections | Illimité | "Bénéfices de l'accompagnement" |
+    | **H4-H6** | Détails | Si nécessaire | Rarement utilisés |
+
+!!! warning "⚠️ Règle d'or SEO"
+    **Un seul H1 par page !** Les moteurs de recherche utilisent cette hiérarchie pour comprendre votre contenu.
+
 
 ### 1.2 Modifier les paragraphes de texte
 
@@ -404,11 +445,11 @@ CTA principaux sur votre page :
 
 1. Cliquez sur le bouton
 2. Dans le panneau de droite :
-    
+
     ```
     ┌─────────────────────────┐│ PROPRIÉTÉS DU BOUTON    │├─────────────────────────┤│ Texte                   ││ ├─ [Réservez votre...] ││ │                       ││ Style                   ││ ├─ Couleur: [■ Accent] ││ ├─ Taille: [Grand ▼]   ││ ├─ Forme: [Arrondi ▼]  ││ │                       ││ Lien                    ││ └─ URL: [calendly.com...│└─────────────────────────┘
     ```
-    
+
 3. Modifiez le texte
 4. Ne touchez pas à l'URL Calendly (voir Guide 03)
 
@@ -551,27 +592,27 @@ Pour gagner du temps sur des sections similaires :
 ### Mission : Mettre à jour votre page
 
 1. **Modifier un titre** :
-    
+
     - Changez un sous-titre de service
     - Testez différentes tailles
     - Enregistrez
 2. **Remplacer une image** :
-    
+
     - Optimisez une photo (TinyPNG)
     - Uploadez-la
     - Ajoutez un Alt text pertinent
 3. **Ajouter une question FAQ** :
-    
+
     - Créez une nouvelle question
     - Rédigez une réponse claire
     - Enregistrez
 4. **Tester la page** :
-    
+
     - Aperçu Desktop
     - Aperçu Mobile
     - Vérifier tous les éléments
 5. **Publier** :
-    
+
     - Si tout est OK, publiez
     - Visitez la page en ligne
     - Vérifiez le résultat
@@ -580,16 +621,16 @@ Pour gagner du temps sur des sections similaires :
 
 ## 🆘 Problèmes courants
 
-**Q : Le texte ne se modifie pas quand je clique**  
+**Q : Le texte ne se modifie pas quand je clique**
 R : Essayez de double-cliquer, ou cliquez sur l'icône "crayon" ✏️ dans la barre d'outils
 
-**Q : Mon image est déformée après l'upload**  
+**Q : Mon image est déformée après l'upload**
 R : Vérifiez le paramètre "Ajustement" (Cover/Contain/Fill) dans les propriétés
 
-**Q : J'ai supprimé un bloc par erreur**  
+**Q : J'ai supprimé un bloc par erreur**
 R : `Ctrl+Z` immédiatement pour annuler. Si vous avez quitté, contactez votre développeur
 
-**Q : Les modifications n'apparaissent pas en ligne**  
+**Q : Les modifications n'apparaissent pas en ligne**
 R : Videz le cache de votre navigateur (`Ctrl+F5`) ou testez en navigation privée
 
 ---
