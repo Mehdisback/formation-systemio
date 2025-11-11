@@ -2,11 +2,11 @@
 site_name: Formation Systeme.io - L'Essentiel en Soi
 site_description: Guide complet pour gérer votre landing page en autonomie
 site_author: Mehdi SLAYKI
-site_url: https://MehdisBack.github.io/formation-systemeio/
+#site_url: https://mehdisback.github.io/formation-systemeio/
 
 # Repository
 repo_name: formation-systemeio
-repo_url: https://github.com/MehdisBack/formation-systemeio
+repo_url: https://github.com/Mehdisback/formation-systemio
 
 # Copyright
 copyright: Copyright &copy; 2025 - Armelle Bodénès - Coaching au Féminin
@@ -83,18 +83,18 @@ markdown_extensions:
 
 # Navigation
 nav:
-  - Accueil: "Guide de Formation Systeme.io - L'Essentiel en Soi.md"
+  - Accueil: "index.md"
   - Guides de formation:
-    - 01 - Démarrage rapide: "Guide 01 - Démarrage Rapide Systeme.io.md"
-    - 02 - Modification du contenu: "Guide 02 - Modification du Contenu de la Landing Page.md"
-    - 03 - Gestion CTA et Calendly: "Guide 03 - Gestion des CTA et Calendly.md"
-    - 04 - Design et mise en page: "Guide 04 - Design et Mise en Page.md"
-    - 05 - Formulaires: "Guide 05 - Formulaires et Collecte de Données.md"
-    - 06 - SEO et référencement: "Guide 06 - SEO et Référencement.md"
-    - 07 - Suivi et analytics: "Guide 07 - Suivi et Analyse des Performances.md"
-    - 08 - Maintenance: "Guide 08 - Maintenance et Bonnes Pratiques.md"
-    - 09 - FAQ: "Guide 09 - Résolution de Problèmes (FAQ).md"
-    - 10 - Glossaire: "Guide 10 - Glossaire et Terminologie.md"
+    - 01 - Démarrage rapide: "01-GUIDE-DEMARRAGE-RAPIDE.md"
+    - 02 - Modification du contenu: "02-MODIFICATION-CONTENU.md"
+    - 03 - Gestion CTA et Calendly: "03-GESTION-CTA-CALENDLY.md"
+    - 04 - Design et mise en page: "04-DESIGN-MISE-EN-PAGE.md"
+    - 05 - Formulaires: "05-FORMULAIRES-DONNEES.md"
+    - 06 - SEO et référencement: "06-SEO-REFERENCEMENT.md"
+    - 07 - Suivi et analytics: "07-SUIVI-ANALYTICS.md"
+    - 08 - Maintenance: "08-MAINTENANCE-BONNES-PRATIQUES.md"
+    - 09 - FAQ: "09-FAQ-TROUBLESHOOTING.md"
+    - 10 - Glossaire: "10-GLOSSAIRE.md"
 
 # CSS personnalisé (optionnel)
 # extra_css:
