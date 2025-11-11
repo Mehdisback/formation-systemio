@@ -205,7 +205,7 @@ Cette documentation est un **document vivant** qui évolue avec :
 <div class="welcome-banner">
 <h2>🚀 Prêt(e) à devenir autonome ?</h2>
 <p>Cette formation vous donnera toutes les clés pour gérer votre landing page comme un(e) pro !</p>
-<p><strong>👉 Commencez dès maintenant avec le <a href="01-demarrage-rapide.md" style="color: white; text-decoration: underline;">Guide de démarrage rapide</a></strong></p>
+<p><strong>👉 Commencez dès maintenant avec le <a href="01-GUIDE-DEMARRAGE-RAPIDE.md" style="color: white; text-decoration: underline;">Guide de démarrage rapide</a></strong></p>
 </div>
 
 ---
