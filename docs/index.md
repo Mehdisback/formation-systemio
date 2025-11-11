@@ -57,75 +57,92 @@ Consultez d'abord la **[FAQ et résolution de problèmes](09-FAQ-TROUBLESHOOTING
 
 ---
 
-🚀 Par où commencer ?
+## 🚀 Par où commencer ?
+
 === "Je débute complètement"
-**Parcours recommandé :**
 
-1. 📖 Lisez cette page d'accueil pour comprendre la structure
-2. 🚀 Suivez le [Guide 01 - Démarrage rapide](01-demarrage-rapide.md)
-3. ✏️ Pratiquez avec le [Guide 02 - Modification du contenu](02-modification-contenu.md)
-4. 🔘 Testez les [CTA et Calendly](03-cta-calendly.md)
-5. 📊 Consultez les autres guides selon vos besoins
+    **Parcours recommandé :**
+
+    1. 📖 Lisez cette page d'accueil pour comprendre la structure
+    2. 🚀 Suivez le [Guide 01 - Démarrage rapide](01-demarrage-rapide.md)
+    3. ✏️ Pratiquez avec le [Guide 02 - Modification du contenu](02-modification-contenu.md)
+    4. 🔘 Testez les [CTA et Calendly](03-cta-calendly.md)
+    5. 📊 Consultez les autres guides selon vos besoins
+
 === "J'ai déjà des bases"
-**Accès direct aux guides avancés :**
 
-- 🎨 [Design et mise en page](04-design.md) - Personnalisation visuelle
-- 📝 [Formulaires](05-formulaires.md) - Collecte de données
-- 🔍 [SEO](06-seo.md) - Référencement naturel
-- 📊 [Analytics](07-analytics.md) - Analyse de performances
+    **Accès direct aux guides avancés :**
+
+    - 🎨 [Design et mise en page](04-design.md) - Personnalisation visuelle
+    - 📝 [Formulaires](05-formulaires.md) - Collecte de données
+    - 🔍 [SEO](06-seo.md) - Référencement naturel
+    - 📊 [Analytics](07-analytics.md) - Analyse de performances
+
 === "Je rencontre un problème"
-**Résolution rapide :**
 
-1. ❓ Consultez la [FAQ](09-faq.md) pour les problèmes courants
-2. 📖 Recherchez dans le [Glossaire](10-glossaire.md) les termes techniques
-3. 💬 Contactez le [Support](support.md) si le problème persiste
+    **Résolution rapide :**
 
-💡 Conseils d'utilisation
-!!! tip "Optimisez votre apprentissage"
-**✅ Bonnes pratiques :**
-
-- 📱 Gardez cette documentation ouverte pendant que vous pratiquez
-- 🔖 Ajoutez cette page à vos favoris pour un accès rapide
-- 🔍 Utilisez la barre de recherche en haut pour trouver l'info rapidement
-- ✍️ Prenez des notes sur ce qui fonctionne pour vous
-- 🎯 Validez chaque module avec les exercices pratiques
-!!! warning "Points d'attention"
-**⚠️ Avant de modifier votre site :**
-
-- 💾 Faites toujours une sauvegarde avant une modification majeure
-- 🧪 Testez vos modifications sur desktop ET mobile
-- 👀 Relisez attentivement avant de publier
-- 📊 Consultez vos statistiques régulièrement
-
-🎯 Votre landing page
-
-## 🔧 Votre landing page
-
-**URL :** [https://bodenesgram.systeme.io/essentiel-en-soi](https://bodenesgram.systeme.io/essentiel-en-soi)
-
-**Caractéristiques :**
-- Tunnel de vente complet
-- Intégration Calendly pour les réservations
-- Formulaires de contact
-- Design responsive (mobile/tablette/desktop)
+    1. ❓ Consultez la [FAQ](09-faq.md) pour les problèmes courants
+    2. 📖 Recherchez dans le [Glossaire](10-glossaire.md) les termes techniques
+    3. 💬 Contactez le [Support](support.md) si le problème persiste
 
 ---
 
-📋 Checklist de formation
+## 💡 Conseils d'utilisation
+
+!!! tip "Optimisez votre apprentissage"
+
+**✅ Bonnes pratiques :**
+
+    - 📱 Gardez cette documentation ouverte pendant que vous pratiquez
+    - 🔖 Ajoutez cette page à vos favoris pour un accès rapide
+    - 🔍 Utilisez la barre de recherche en haut pour trouver l'info rapidement
+    - ✍️ Prenez des notes sur ce qui fonctionne pour vous
+    - 🎯 Validez chaque module avec les exercices pratiques
+
+!!! warning "Points d'attention"
+
+    **⚠️ Avant de modifier votre site :**
+
+    - 💾 Faites toujours une sauvegarde avant une modification majeure
+    - 🧪 Testez vos modifications sur desktop ET mobile
+    - 👀 Relisez attentivement avant de publier
+    - 📊 Consultez vos statistiques régulièrement
+
+---
+
+## 🎯 Votre landing page
+
+**URL de votre site :**
+🔗 [https://bodenesgram.systeme.io/essentiel-en-soi](https://bodenesgram.systeme.io/essentiel-en-soi)
+
+**Caractéristiques :**
+- ✅ Tunnel de vente optimisé pour la conversion
+- ✅ Intégration Calendly pour les réservations
+- ✅ Formulaires de collecte de données
+- ✅ Design 100% responsive (mobile, tablette, desktop)
+- ✅ SEO optimisé pour le référencement Google
+- ✅ Analytics intégré pour le suivi des performances
+
+---
+
+## 📋 Checklist de formation
+
 Suivez votre progression :
 
- ✅ J'ai consulté le guide de démarrage rapide
- ✅ Je sais me connecter à Systeme.io
- ✅ Je peux modifier un texte sur ma landing page
- ✅ Je peux changer une image
- ✅ Je comprends comment fonctionnent les CTA
- ✅ J'ai testé un bouton Calendly
- ✅ Je peux personnaliser les couleurs
- ✅ Je sais où trouver mes statistiques
- ✅ J'ai fait une première sauvegarde
- ✅ Je sais où chercher de l'aide en cas de problème
+- [ ] ✅ J'ai consulté le guide de démarrage rapide
+- [ ] ✅ Je sais me connecter à Systeme.io
+- [ ] ✅ Je peux modifier un texte sur ma landing page
+- [ ] ✅ Je peux changer une image
+- [ ] ✅ Je comprends comment fonctionnent les CTA
+- [ ] ✅ J'ai testé un bouton Calendly
+- [ ] ✅ Je peux personnaliser les couleurs
+- [ ] ✅ Je sais où trouver mes statistiques
+- [ ] ✅ J'ai fait une première sauvegarde
+- [ ] ✅ Je sais où chercher de l'aide en cas de problème
 
 !!! success "Formation terminée ?"
+
 Une fois toutes les cases cochées, vous êtes autonome sur Systeme.io ! 🎉
 
 ---
@@ -141,44 +158,47 @@ Une fois toutes les cases cochées, vous êtes autonome sur Systeme.io ! 🎉
 ### Support développeur (maintenance avancée)
 
 Pour des modifications complexes ou un accompagnement personnalisé :
+
 <a href="https://a-tek-universe.fr" target="_blank" class="atek-signature">
 Contactez A-Tek Universe
 </a>
-Services proposés :
 
-⚙️ Modifications techniques avancées
-🔌 Intégrations tierces personnalisées
-🎨 Refonte graphique complète
-📚 Formation complémentaire sur-mesure
-🛡️ Maintenance et support prioritaire
+**Services proposés :**
+- ⚙️ Modifications techniques avancées
+- 🔌 Intégrations tierces personnalisées
+- 🎨 Refonte graphique complète
+- 📚 Formation complémentaire sur-mesure
+- 🛡️ Maintenance et support prioritaire
 
 ---
 
 ## 📚 Ressources complémentaires
+
 ### Documentation officielle
 
-Blog Systeme.io - Actualités et best practices
-Chaîne YouTube Systeme.io - Tutoriels vidéo
-Communauté Facebook - Entraide utilisateurs
+- [Blog Systeme.io](https://systeme.io/blog) - Actualités et best practices
+- [Chaîne YouTube Systeme.io](https://youtube.com/@systemeio) - Tutoriels vidéo
+- [Communauté Facebook](https://facebook.com/groups/systemeio) - Entraide utilisateurs
 
 ### Outils recommandés
 
-Canva - Création de visuels professionnels
-TinyPNG - Compression d'images
-Google Analytics - Analyse de trafic approfondie
-PageSpeed Insights - Test de performances
+- **Canva** - Création de visuels professionnels
+- **TinyPNG** - Compression d'images
+- **Google Analytics** - Analyse de trafic approfondie
+- **PageSpeed Insights** - Test de performances
 
 ---
 
-## 🔄 Mises à jour de la documentation
+## 🔄 Mises à jour
+
+Cette documentation est un **document vivant** qui évolue avec :
+
+- ✨ Les nouvelles fonctionnalités de Systeme.io
+- 📣 Vos retours et suggestions d'amélioration
+- 🔧 Les mises à jour techniques
 
 **Dernière mise à jour :** Novembre 2025
 **Prochaine révision prévue :** Février 2026
-
-Cette documentation est un document vivant qui sera mis à jour selon :
-- Les évolutions de Systeme.io
-- Vos retours d'expérience
-- Les nouvelles fonctionnalités ajoutées
 
 ---
 
