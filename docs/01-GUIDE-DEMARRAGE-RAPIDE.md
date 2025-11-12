@@ -83,11 +83,11 @@ description: >-
 !!! info "🛡️ Recommandations avancées"
     **Pour une sécurité optimale :**
 
-- [ ] Activez l'authentification à deux facteurs (2FA) si disponible
-- [ ] Ne partagez **JAMAIS** vos identifiants avec quiconque
-- [ ] Changez votre mot de passe tous les 3-6 mois
-- [ ] Déconnectez-vous sur les ordinateurs partagés
-- [ ] Vérifiez l'URL (https://systeme.io) avant de saisir vos identifiants
+    - [ ] Activez l'authentification à deux facteurs (2FA) si disponible
+    - [ ] Ne partagez **JAMAIS** vos identifiants avec quiconque
+    - [ ] Changez votre mot de passe tous les 3-6 mois
+    - [ ] Déconnectez-vous sur les ordinateurs partagés
+    - [ ] Vérifiez l'URL (https://systeme.io) avant de saisir vos identifiants
 
 ---
 

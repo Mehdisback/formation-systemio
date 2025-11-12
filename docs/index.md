@@ -102,22 +102,22 @@ Consultez d'abord la **[FAQ et résolution de problèmes](09-FAQ-TROUBLESHOOTING
 
 !!! tip "Optimisez votre apprentissage"
 
-**✅ Bonnes pratiques :**
+    **✅ Bonnes pratiques :**
 
-- 📱 Gardez cette documentation ouverte pendant que vous pratiquez
-- 🔖 Ajoutez cette page à vos favoris pour un accès rapide
-- 🔍 Utilisez la barre de recherche en haut pour trouver l'info rapidement
-- ✍️ Prenez des notes sur ce qui fonctionne pour vous
-- 🎯 Validez chaque module avec les exercices pratiques
+    - 📱 Gardez cette documentation ouverte pendant que vous pratiquez
+    - 🔖 Ajoutez cette page à vos favoris pour un accès rapide
+    - 🔍 Utilisez la barre de recherche en haut pour trouver l'info rapidement
+    - ✍️ Prenez des notes sur ce qui fonctionne pour vous
+    - 🎯 Validez chaque module avec les exercices pratiques
 
 !!! warning "Points d'attention"
 
-**⚠️ Avant de modifier votre site :**
+    **⚠️ Avant de modifier votre site :**
 
-- 💾 Faites toujours une sauvegarde avant une modification majeure
-- 🧪 Testez vos modifications sur desktop ET mobile
-- 👀 Relisez attentivement avant de publier
-- 📊 Consultez vos statistiques régulièrement
+    - 💾 Faites toujours une sauvegarde avant une modification majeure
+    - 🧪 Testez vos modifications sur desktop ET mobile
+    - 👀 Relisez attentivement avant de publier
+    - 📊 Consultez vos statistiques régulièrement
 
 ---
 
@@ -153,7 +153,7 @@ Suivez votre progression :
 
 !!! success "Formation terminée ?"
 
-Une fois toutes les cases cochées, vous êtes autonome sur Systeme.io ! 🎉
+    Une fois toutes les cases cochées, vous êtes autonome sur Systeme.io ! 🎉
 
 ---
 

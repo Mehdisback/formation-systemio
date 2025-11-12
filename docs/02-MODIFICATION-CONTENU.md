@@ -243,17 +243,17 @@ graph TD
 
 !!! example "➕ Créer un nouveau service"
 
-**Procédure :**
+    **Procédure :**
 
-1. :material-plus-circle: Cliquez sur le **"+"** entre deux blocs
-2. :material-view-module: Choisissez **"Section"** ou **"Bloc de contenu"**
-3. :material-content-copy: Sélectionnez un modèle similaire à vos sections existantes
-4. :material-pencil: Remplissez le contenu :
-    - Titre de la section
-    - Description
-    - Liste des bénéfices
-    - CTA spécifique
-5. :material-content-save: Enregistrez
+    1. :material-plus-circle: Cliquez sur le **"+"** entre deux blocs
+    2. :material-view-module: Choisissez **"Section"** ou **"Bloc de contenu"**
+    3. :material-content-copy: Sélectionnez un modèle similaire à vos sections existantes
+    4. :material-pencil: Remplissez le contenu :
+        - Titre de la section
+        - Description
+        - Liste des bénéfices
+        - CTA spécifique
+    5. :material-content-save: Enregistrez
 
 **Idéal pour :** Lancer une nouvelle offre ou service complémentaire
 
@@ -362,13 +362,13 @@ graph TD
 
 !!! example "📋 Processus d'optimisation type"
 
-**Workflow recommandé :**
+    **Workflow recommandé :**
 
-1. :material-camera: Prenez/récupérez votre photo
-2. :material-crop: Recadrez aux bonnes dimensions (Canva, Photoshop)
-3. :material-compress: Compressez avec TinyPNG
-4. :material-check: Vérifiez le poids final (< 200 Ko)
-5. :material-upload: Uploadez sur Systeme.io
+    1. :material-camera: Prenez/récupérez votre photo
+    2. :material-crop: Recadrez aux bonnes dimensions (Canva, Photoshop)
+    3. :material-compress: Compressez avec TinyPNG
+    4. :material-check: Vérifiez le poids final (< 200 Ko)
+    5. :material-upload: Uploadez sur Systeme.io
 
 **Gain :** Jusqu'à -70% de poids sans perte visuelle !
 
@@ -433,13 +433,13 @@ Une fois l'image insérée, **configurez ces paramètres essentiels** :
 
     !!! example "➕ Insérer une image dans une section"
 
-    **Procédure :**
+        **Procédure :**
 
-    1. :material-plus-circle: Cliquez sur le **"+"** où vous voulez l'ajouter
-    2. :material-image: Sélectionnez **"Image"**
-    3. :material-upload: Téléchargez ou choisissez depuis la bibliothèque
-    4. :material-resize: Ajustez la taille et l'alignement
-    5. :material-content-save: Enregistrez
+        1. :material-plus-circle: Cliquez sur le **"+"** où vous voulez l'ajouter
+        2. :material-image: Sélectionnez **"Image"**
+        3. :material-upload: Téléchargez ou choisissez depuis la bibliothèque
+        4. :material-resize: Ajustez la taille et l'alignement
+        5. :material-content-save: Enregistrez
 
 ---
 
@@ -511,57 +511,57 @@ Vous avez **2 témoignages clients** :
 
     !!! tip "✅ Conseils pour des témoignages impactants"
 
-    **Caractéristiques d'un bon témoignage :**
+        **Caractéristiques d'un bon témoignage :**
 
-    | Critère | Description | Exemple |
-    |---------|-------------|---------|
-    | :material-account-heart: **Authenticité** | Langage naturel du client | "Au début, j'avais peur..." |
-    | :material-target: **Spécificité** | Résultats concrets mesurables | "J'ai retrouvé confiance en 3 mois" |
-    | :material-text: **Longueur** | 3-5 phrases, 80-150 mots max | Ni trop court, ni trop long |
-    | :material-arrow-up-bold: **Transformation** | Avant → Après visible | "J'étais... Maintenant je..." |
-    | :material-emoticon-happy: **Émotion** | Ressenti authentique | "Je me sens enfin moi-même" |
+        | Critère | Description | Exemple |
+        |---------|-------------|---------|
+        | :material-account-heart: **Authenticité** | Langage naturel du client | "Au début, j'avais peur..." |
+        | :material-target: **Spécificité** | Résultats concrets mesurables | "J'ai retrouvé confiance en 3 mois" |
+        | :material-text: **Longueur** | 3-5 phrases, 80-150 mots max | Ni trop court, ni trop long |
+        | :material-arrow-up-bold: **Transformation** | Avant → Après visible | "J'étais... Maintenant je..." |
+        | :material-emoticon-happy: **Émotion** | Ressenti authentique | "Je me sens enfin moi-même" |
 
-    **À éviter absolument :**
-    - ❌ Trop générique ("très bien", "super", "top")
-    - ❌ Trop long (> 200 mots = illisible)
-    - ❌ Pas de résultat concret
-    - ❌ Langage trop formel ou commercial
+        **À éviter absolument :**
+        - ❌ Trop générique ("très bien", "super", "top")
+        - ❌ Trop long (> 200 mots = illisible)
+        - ❌ Pas de résultat concret
+        - ❌ Langage trop formel ou commercial
 
 ### Ajouter un nouveau témoignage
 
 !!! example "➕ Insérer un témoignage supplémentaire"
 
-**Procédure :**
+    **Procédure :**
 
-1. :material-map-marker-radius: Localisez la **section des témoignages**
-2. :material-plus-circle: Cliquez sur le **"+"** après le dernier témoignage
-3. :material-format-quote-open: Cherchez **"Bloc témoignage"** ou **"Citation"**
-4. :material-content-copy: Sélectionnez le modèle similaire aux existants
-5. :material-pencil: Remplissez le contenu :
-    - Citation du client
-    - Prénom (ou initiales pour confidentialité)
-    - Contexte (âge, situation, durée accompagnement)
-    - Photo (optionnelle mais recommandée)
-6. :material-content-save: Enregistrez
+    1. :material-map-marker-radius: Localisez la **section des témoignages**
+    2. :material-plus-circle: Cliquez sur le **"+"** après le dernier témoignage
+    3. :material-format-quote-open: Cherchez **"Bloc témoignage"** ou **"Citation"**
+    4. :material-content-copy: Sélectionnez le modèle similaire aux existants
+    5. :material-pencil: Remplissez le contenu :
+        - Citation du client
+        - Prénom (ou initiales pour confidentialité)
+        - Contexte (âge, situation, durée accompagnement)
+        - Photo (optionnelle mais recommandée)
+    6. :material-content-save: Enregistrez
 
 !!! warning "📊 Nombre de témoignages optimal"
-**Recommandation :** Conservez entre **3 et 6 témoignages**
+    **Recommandation :** Conservez entre **3 et 6 témoignages**
 
-- **Moins de 3** : Manque de crédibilité
-- **Plus de 6** : Dilution de l'impact
-- **Optimal : 4-5** témoignages variés
+    - **Moins de 3** : Manque de crédibilité
+    - **Plus de 6** : Dilution de l'impact
+    - **Optimal : 4-5** témoignages variés
 
 ### Supprimer un témoignage
 
 !!! danger "🗑️ Suppression d'un témoignage"
 
-**Procédure :**
+    **Procédure :**
 
-1. :material-cursor-default-click: Cliquez sur le bloc témoignage
-2. :material-delete: Cliquez sur l'icône **corbeille** 🗑️ (en haut à droite du bloc)
-3. :material-alert: Une fenêtre de confirmation apparaît
-4. :material-check: Confirmez la suppression
-5. :material-content-save: Enregistrez
+    1. :material-cursor-default-click: Cliquez sur le bloc témoignage
+    2. :material-delete: Cliquez sur l'icône **corbeille** 🗑️ (en haut à droite du bloc)
+    3. :material-alert: Une fenêtre de confirmation apparaît
+    4. :material-check: Confirmez la suppression
+    5. :material-content-save: Enregistrez
 
 !!! warning "⚠️ Important"
     Conservez **toujours au moins 2 témoignages** pour maintenir la crédibilité sociale.
@@ -608,62 +608,62 @@ Vous avez **4 questions-réponses** :
 
     !!! tip "✅ Bonnes pratiques FAQ"
 
-**Pour des FAQ efficaces :**
+        **Pour des FAQ efficaces :**
 
-| Principe | Description | Exemple |
-|----------|-------------|---------|
-| :material-account-voice: **Questions claires** | Formulées comme vos clients les posent | "Combien coûte une séance ?" |
-| :material-text-short: **Réponses concises** | 2-4 phrases maximum | 50-100 mots |
-| :material-sort-numeric-ascending: **Ordre logique** | Questions fréquentes d'abord | Prix, durée, modalités |
-| :material-shield-check: **Réassurance** | Levez les objections | "C'est normal si..." |
-| :material-lightbulb: **Clarté** | Langage simple et accessible | Pas de jargon |
+        | Principe | Description | Exemple |
+        |----------|-------------|---------|
+        | :material-account-voice: **Questions claires** | Formulées comme vos clients les posent | "Combien coûte une séance ?" |
+        | :material-text-short: **Réponses concises** | 2-4 phrases maximum | 50-100 mots |
+        | :material-sort-numeric-ascending: **Ordre logique** | Questions fréquentes d'abord | Prix, durée, modalités |
+        | :material-shield-check: **Réassurance** | Levez les objections | "C'est normal si..." |
+        | :material-lightbulb: **Clarté** | Langage simple et accessible | Pas de jargon |
 
-**À éviter :**
-- ❌ Jargon technique incompréhensible
-- ❌ Réponses vagues ou évasives
-- ❌ Trop de questions (> 8)
-- ❌ Questions sans intérêt
+        **À éviter :**
+        - ❌ Jargon technique incompréhensible
+        - ❌ Réponses vagues ou évasives
+        - ❌ Trop de questions (> 8)
+        - ❌ Questions sans intérêt
 
 ### Ajouter une nouvelle question
 
 !!! example "➕ Créer une nouvelle question FAQ"
 
-**Procédure :**
+    **Procédure :**
 
-1. :material-map-marker-radius: Localisez la **section FAQ**
-2. :material-plus-circle: Cliquez sur **"Ajouter une question"** (bouton spécifique au bloc FAQ)
-3. :material-help-circle: Rédigez la question
-4. :material-text: Rédigez la réponse (concise !)
-5. :material-content-save: Enregistrez
+    1. :material-map-marker-radius: Localisez la **section FAQ**
+    2. :material-plus-circle: Cliquez sur **"Ajouter une question"** (bouton spécifique au bloc FAQ)
+    3. :material-help-circle: Rédigez la question
+    4. :material-text: Rédigez la réponse (concise !)
+    5. :material-content-save: Enregistrez
 
 **Exemples de questions pertinentes à ajouter :**
 
 !!! example "💡 Suggestions de questions FAQ"
 
-- :material-map-marker: "Les séances se déroulent-elles en présentiel ou en visio ?"
-- :material-currency-eur: "Quel est le tarif d'une séance découverte ?"
-- :material-calendar: "Comment se déroule la prise de rendez-vous ?"
-- :material-account-child: "À partir de quel âge accompagnez-vous les adolescents ?"
-- :material-credit-card: "Quels sont les moyens de paiement acceptés ?"
-- :material-phone: "Comment puis-je vous contacter ?"
+    - :material-map-marker: "Les séances se déroulent-elles en présentiel ou en visio ?"
+    - :material-currency-eur: "Quel est le tarif d'une séance découverte ?"
+    - :material-calendar: "Comment se déroule la prise de rendez-vous ?"
+    - :material-account-child: "À partir de quel âge accompagnez-vous les adolescents ?"
+    - :material-credit-card: "Quels sont les moyens de paiement acceptés ?"
+    - :material-phone: "Comment puis-je vous contacter ?"
 
 ### Réorganiser les questions
 
 !!! tip "🔄 Changer l'ordre des questions"
 
-**Procédure glisser-déposer :**
+    **Procédure glisser-déposer :**
 
-1. :material-cursor-default-click: Cliquez sur la question à déplacer
-2. :material-drag: Utilisez l'icône **déplacer** ⋮⋮ (qui apparaît au survol)
-3. :material-arrow-all: Glissez-déposez à la nouvelle position
-4. :material-check: La question se repositionne automatiquement
-5. :material-content-save: Enregistrez
+    1. :material-cursor-default-click: Cliquez sur la question à déplacer
+    2. :material-drag: Utilisez l'icône **déplacer** ⋮⋮ (qui apparaît au survol)
+    3. :material-arrow-all: Glissez-déposez à la nouvelle position
+    4. :material-check: La question se repositionne automatiquement
+    5. :material-content-save: Enregistrez
 
-**Ordre recommandé :**
-1. Questions sur les tarifs (le plus demandé)
-2. Questions sur les modalités pratiques
-3. Questions sur le processus
-4. Questions sur les résultats
+    **Ordre recommandé :**
+    1. Questions sur les tarifs (le plus demandé)
+    2. Questions sur les modalités pratiques
+    3. Questions sur le processus
+    4. Questions sur les résultats
 
 ---
 
@@ -673,9 +673,9 @@ Vous avez **4 questions-réponses** :
 
 !!! info "🔘 CTA principaux sur votre page"
 
-1. :material-calendar-check: **"Réservez votre séance découverte gratuite"** (bouton principal)
-2. :material-link: Liens Calendly intégrés dans le texte
-3. :material-phone: Boutons de contact secondaires
+    1. :material-calendar-check: **"Réservez votre séance découverte gratuite"** (bouton principal)
+    2. :material-link: Liens Calendly intégrés dans le texte
+    3. :material-phone: Boutons de contact secondaires
 
 ### Modifier le texte d'un bouton CTA
 
@@ -725,44 +725,44 @@ Vous avez **4 questions-réponses** :
 
     !!! tip "✅ Bonnes pratiques pour les textes de CTA"
 
-**Transformation des CTA génériques :**
+        **Transformation des CTA génériques :**
 
-| ❌ À éviter | ✅ À privilégier | Pourquoi |
-|-----------|----------------|----------|
-| "Cliquez ici" | "Réservez votre séance gratuite" | Spécifique et bénéfice clair |
-| "En savoir plus" | "Découvrir l'accompagnement" | Action précise |
-| "Valider" | "Je réserve ma séance découverte" | 1ère personne = engagement |
-| "Soumettre" | "Je prends rendez-vous maintenant" | Urgence douce |
-| "OK" | "Oui, je veux être accompagné(e)" | Désir exprimé |
+        | ❌ À éviter | ✅ À privilégier | Pourquoi |
+        |-----------|----------------|----------|
+        | "Cliquez ici" | "Réservez votre séance gratuite" | Spécifique et bénéfice clair |
+        | "En savoir plus" | "Découvrir l'accompagnement" | Action précise |
+        | "Valider" | "Je réserve ma séance découverte" | 1ère personne = engagement |
+        | "Soumettre" | "Je prends rendez-vous maintenant" | Urgence douce |
+        | "OK" | "Oui, je veux être accompagné(e)" | Désir exprimé |
 
-**Principes d'un CTA efficace :**
+        **Principes d'un CTA efficace :**
 
-1. :material-run: **Verbe d'action** à la 1ère personne ("Je réserve", "Je découvre")
-2. :material-gift: **Bénéfice clair** ("gratuite", "sans engagement", "offerte")
-3. :material-clock-fast: **Urgence douce** ("maintenant", "aujourd'hui") sans être agressif
-4. :material-target: **Spécificité** au contexte de la section
+        1. :material-run: **Verbe d'action** à la 1ère personne ("Je réserve", "Je découvre")
+        2. :material-gift: **Bénéfice clair** ("gratuite", "sans engagement", "offerte")
+        3. :material-clock-fast: **Urgence douce** ("maintenant", "aujourd'hui") sans être agressif
+        4. :material-target: **Spécificité** au contexte de la section
 
 ### Design du bouton
 
 !!! warning "🎨 Règles de design des CTA"
 
-**Couleur :**
-- ✅ Contraste fort avec le fond (ratio 4.5:1 minimum)
-- ✅ Couleur accent de votre charte graphique
-- ✅ Testez la visibilité sur mobile
-- ❌ Évitez le gris (= désactivé dans l'esprit des utilisateurs)
+    **Couleur :**
+    - ✅ Contraste fort avec le fond (ratio 4.5:1 minimum)
+    - ✅ Couleur accent de votre charte graphique
+    - ✅ Testez la visibilité sur mobile
+    - ❌ Évitez le gris (= désactivé dans l'esprit des utilisateurs)
 
-**Taille et hiérarchie :**
+    **Taille et hiérarchie :**
 
-| Type CTA | Taille | Nombre | Placement |
-|----------|--------|--------|-----------|
-| **Principal** | Grand | 1 seul | Above the fold + fin de page |
-| **Secondaire** | Moyen | 2-3 | Milieu de page |
-| **Tertiaire** | Petit | Illimité | Footer, navigation |
+    | Type CTA | Taille | Nombre | Placement |
+    |----------|--------|--------|-----------|
+    | **Principal** | Grand | 1 seul | Above the fold + fin de page |
+    | **Secondaire** | Moyen | 2-3 | Milieu de page |
+    | **Tertiaire** | Petit | Illimité | Footer, navigation |
 
-**Forme recommandée pour le coaching :**
-- :material-checkbox-blank-circle: **Arrondie** (20-30px border-radius) = Doux, accueillant, moderne
-- Évitez les formes trop carrées = trop corporate/froid
+    **Forme recommandée pour le coaching :**
+    - :material-checkbox-blank-circle: **Arrondie** (20-30px border-radius) = Doux, accueillant, moderne
+    - Évitez les formes trop carrées = trop corporate/froid
 
 ---
 
@@ -808,19 +808,19 @@ Vous avez **4 questions-réponses** :
 
 !!! success "🚀 Processus recommandé"
 
-```mermaid
-graph LR
-    A[1. Modifier] --> B[2. Enregistrer]
-    B --> C[3. Checklist]
-    C --> D{Tout OK ?}
-    D -->|Non| A
-    D -->|Oui| E[4. Aperçu]
-    E --> F[5. Test mobile]
-    F --> G{Parfait ?}
-    G -->|Non| A
-    G -->|Oui| H[6. Publier]
-    H --> I[7. Vérifier en ligne]
-```
+    ```mermaid
+    graph LR
+        A[1. Modifier] --> B[2. Enregistrer]
+        B --> C[3. Checklist]
+        C --> D{Tout OK ?}
+        D -->|Non| A
+        D -->|Oui| E[4. Aperçu]
+        E --> F[5. Test mobile]
+        F --> G{Parfait ?}
+        G -->|Non| A
+        G -->|Oui| H[6. Publier]
+        H --> I[7. Vérifier en ligne]
+    ```
 
 **Temps estimé :** 10-15 minutes pour une validation complète
 
@@ -859,12 +859,12 @@ graph LR
 
     !!! info "🔍 Fonction de recherche"
 
-    **Pour modifier un mot sur toute la page :**
+        **Pour modifier un mot sur toute la page :**
 
-    1. ++ctrl+f++ Ouvrez la recherche
-    2. :material-magnify: Tapez le mot à chercher
-    3. :material-pencil: Modifiez manuellement chaque occurrence
-    4. :material-arrow-down: Naviguez avec les flèches Suivant/Précédent
+        1. ++ctrl+f++ Ouvrez la recherche
+        2. :material-magnify: Tapez le mot à chercher
+        3. :material-pencil: Modifiez manuellement chaque occurrence
+        4. :material-arrow-down: Naviguez avec les flèches Suivant/Précédent
 
     !!! warning "Limitation Systeme.io"
         Pas de fonction "Remplacer tout" native. Modification manuelle nécessaire.
@@ -873,18 +873,18 @@ graph LR
 
     !!! tip "📋 Gagner du temps avec la duplication"
 
-    **Pour sections similaires (services, témoignages...) :**
+        **Pour sections similaires (services, témoignages...) :**
 
-    1. :material-cursor-default-click: Cliquez sur le bloc à dupliquer
-    2. :material-content-copy: Cliquez sur l'icône **"Dupliquer"** 📋
-    3. :material-arrow-down: La copie apparaît juste en dessous
-    4. :material-pencil: Modifiez le contenu de la copie
-    5. :material-content-save: Enregistrez
+        1. :material-cursor-default-click: Cliquez sur le bloc à dupliquer
+        2. :material-content-copy: Cliquez sur l'icône **"Dupliquer"** 📋
+        3. :material-arrow-down: La copie apparaît juste en dessous
+        4. :material-pencil: Modifiez le contenu de la copie
+        5. :material-content-save: Enregistrez
 
-    **Idéal pour :**
-    - Ajouter un nouveau service similaire
-    - Dupliquer un témoignage pour en ajouter un autre
-    - Répéter une structure de section
+        **Idéal pour :**
+        - Ajouter un nouveau service similaire
+        - Dupliquer un témoignage pour en ajouter un autre
+        - Répéter une structure de section
 
 ---
 
@@ -892,14 +892,14 @@ graph LR
 
 !!! danger "🚫 Top 6 des erreurs à ne PAS commettre"
 
-| Erreur | Conséquence | Solution |
-|--------|-------------|----------|
-| :material-content-save-off: **Ne pas enregistrer régulièrement** | Perte de modifications | ++ctrl+s++ **toutes les 5 min** |
-| :material-publish-off: **Publier sans tester** | Erreurs visibles publiquement | **Toujours** faire un aperçu complet |
-| :material-weight-lifter: **Images trop lourdes** | Page lente, mauvais SEO | Optimiser < 200 Ko avec TinyPNG |
-| :material-tag-off: **Oublier les Alt texts** | Mauvais SEO, accessibilité | Remplir **systématiquement** |
-| :material-cursor-default: **CTA peu clair** | Faible taux de conversion | Verbe d'action + bénéfice |
-| :material-format-font: **Trop de polices** | Design non professionnel | Maximum **2-3 polices** |
+    | Erreur | Conséquence | Solution |
+    |--------|-------------|----------|
+    | :material-content-save-off: **Ne pas enregistrer régulièrement** | Perte de modifications | ++ctrl+s++ **toutes les 5 min** |
+    | :material-publish-off: **Publier sans tester** | Erreurs visibles publiquement | **Toujours** faire un aperçu complet |
+    | :material-weight-lifter: **Images trop lourdes** | Page lente, mauvais SEO | Optimiser < 200 Ko avec TinyPNG |
+    | :material-tag-off: **Oublier les Alt texts** | Mauvais SEO, accessibilité | Remplir **systématiquement** |
+    | :material-cursor-default: **CTA peu clair** | Faible taux de conversion | Verbe d'action + bénéfice |
+    | :material-format-font: **Trop de polices** | Design non professionnel | Maximum **2-3 polices** |
 
 ---
 
@@ -909,43 +909,43 @@ graph LR
 
 !!! example "🎯 Exercice guidé complet"
 
-**Objectif :** Appliquer toutes les compétences acquises
+    **Objectif :** Appliquer toutes les compétences acquises
 
-**Étape 1 : Modifier un titre** (5 min)
+    **Étape 1 : Modifier un titre** (5 min)
 
-- [ ] Changez un sous-titre de service (H2)
-- [ ] Testez la taille 36px puis 42px
-- [ ] Choisissez la meilleure
-- [ ] Enregistrez avec ++ctrl+s++
+    - [ ] Changez un sous-titre de service (H2)
+    - [ ] Testez la taille 36px puis 42px
+    - [ ] Choisissez la meilleure
+    - [ ] Enregistrez avec ++ctrl+s++
 
-**Étape 2 : Remplacer une image** (10 min)
+    **Étape 2 : Remplacer une image** (10 min)
 
-- [ ] Choisissez une photo à remplacer
-- [ ] Optimisez-la avec [TinyPNG](https://tinypng.com)
-- [ ] Uploadez-la sur Systeme.io
-- [ ] Ajoutez un Alt text descriptif et pertinent
-- [ ] Vérifiez le rendu mobile
+    - [ ] Choisissez une photo à remplacer
+    - [ ] Optimisez-la avec [TinyPNG](https://tinypng.com)
+    - [ ] Uploadez-la sur Systeme.io
+    - [ ] Ajoutez un Alt text descriptif et pertinent
+    - [ ] Vérifiez le rendu mobile
 
-**Étape 3 : Ajouter une question FAQ** (5 min)
+    **Étape 3 : Ajouter une question FAQ** (5 min)
 
-- [ ] Créez une nouvelle question pertinente
-- [ ] Rédigez une réponse claire (2-3 phrases)
-- [ ] Placez-la au bon endroit (ordre logique)
-- [ ] Enregistrez
+    - [ ] Créez une nouvelle question pertinente
+    - [ ] Rédigez une réponse claire (2-3 phrases)
+    - [ ] Placez-la au bon endroit (ordre logique)
+    - [ ] Enregistrez
 
-**Étape 4 : Tester la page** (5 min)
+    **Étape 4 : Tester la page** (5 min)
 
-- [ ] Aperçu Desktop : vérifiez tout
-- [ ] Aperçu Mobile : testez la navigation
-- [ ] Cliquez sur tous les boutons CTA
-- [ ] Vérifiez les images chargées
+    - [ ] Aperçu Desktop : vérifiez tout
+    - [ ] Aperçu Mobile : testez la navigation
+    - [ ] Cliquez sur tous les boutons CTA
+    - [ ] Vérifiez les images chargées
 
-**Étape 5 : Publier** (2 min)
+    **Étape 5 : Publier** (2 min)
 
-- [ ] Si tout est OK, cliquez sur **Publier**
-- [ ] Visitez l'URL publique dans un nouvel onglet
-- [ ] Faites un dernier contrôle
-- [ ] ++ctrl+f5++ Videz le cache si besoin
+    - [ ] Si tout est OK, cliquez sur **Publier**
+    - [ ] Visitez l'URL publique dans un nouvel onglet
+    - [ ] Faites un dernier contrôle
+    - [ ] ++ctrl+f5++ Videz le cache si besoin
 
 ??? success "✅ Validation"
     **Bravo !** Vous maîtrisez maintenant la modification de contenu. 🎉
@@ -958,58 +958,58 @@ graph LR
 
 ??? question "❌ Le texte ne se modifie pas quand je clique"
 
-**Solutions possibles :**
+    **Solutions possibles :**
 
-1. :material-cursor-default-click-outline: Essayez de **double-cliquer** sur le texte
-2. :material-pencil: Cliquez sur l'icône **"crayon"** ✏️ dans la barre d'outils du bloc
-3. :material-refresh: Rafraîchissez la page (++f5++) et réessayez
-4. :material-web: Testez dans un autre navigateur (Chrome recommandé)
-5. :material-shield-off: Désactivez temporairement les extensions de navigateur
+    1. :material-cursor-default-click-outline: Essayez de **double-cliquer** sur le texte
+    2. :material-pencil: Cliquez sur l'icône **"crayon"** ✏️ dans la barre d'outils du bloc
+    3. :material-refresh: Rafraîchissez la page (++f5++) et réessayez
+    4. :material-web: Testez dans un autre navigateur (Chrome recommandé)
+    5. :material-shield-off: Désactivez temporairement les extensions de navigateur
 
 **Toujours un problème ?** Contactez le support Systeme.io
 
 ??? question "🖼️ Mon image est déformée après l'upload"
 
-**Diagnostic et solution :**
+    **Diagnostic et solution :**
 
-**Cause :** Mauvais paramètre d'ajustement
+    **Cause :** Mauvais paramètre d'ajustement
 
-**Solution :**
+    **Solution :**
 
-1. Cliquez sur l'image déformée
-2. Panneau de droite → Section **"Ajustement"**
-3. Testez ces options :
-    - **Cover** : Remplit l'espace (recommandé)
-    - **Contain** : Image entière visible
-    - **Fill** : Étire (éviter)
-4. Choisissez **Cover** dans la plupart des cas
-5. Si toujours déformé : recadrez l'image avant upload (ratio 16:9 ou 4:3)
+    1. Cliquez sur l'image déformée
+    2. Panneau de droite → Section **"Ajustement"**
+    3. Testez ces options :
+        - **Cover** : Remplit l'espace (recommandé)
+        - **Contain** : Image entière visible
+        - **Fill** : Étire (éviter)
+    4. Choisissez **Cover** dans la plupart des cas
+    5. Si toujours déformé : recadrez l'image avant upload (ratio 16:9 ou 4:3)
 
 ??? question "🗑️ J'ai supprimé un bloc par erreur"
 
-**Récupération d'urgence :**
+    **Récupération d'urgence :**
 
-1. :material-undo: **IMMÉDIATEMENT** : ++ctrl+z++ pour annuler
-2. :material-check: Vérifiez que le bloc est revenu
-3. :material-content-save: Enregistrez tout de suite
+    1. :material-undo: **IMMÉDIATEMENT** : ++ctrl+z++ pour annuler
+    2. :material-check: Vérifiez que le bloc est revenu
+    3. :material-content-save: Enregistrez tout de suite
 
-**Si vous avez déjà quitté l'éditeur :**
-- ❌ Systeme.io ne garde pas d'historique de versions
-- 💬 Contactez votre développeur si le bloc était complexe
-- 🔄 Sinon, recréez le bloc à partir de zéro
+    **Si vous avez déjà quitté l'éditeur :**
+    - ❌ Systeme.io ne garde pas d'historique de versions
+    - 💬 Contactez votre développeur si le bloc était complexe
+    - 🔄 Sinon, recréez le bloc à partir de zéro
 
 !!! tip "Prévention"
     Faites des **captures d'écran** de vos sections importantes avant modifications majeures !
 
 ??? question "🚫 Les modifications n'apparaissent pas en ligne"
 
-**Checklist de dépannage :**
+    **Checklist de dépannage :**
 
-1. :material-publish: Avez-vous bien cliqué sur **"Publier"** (pas juste Enregistrer) ?
-2. :material-timer: Attendez **30-60 secondes** après publication
-3. :material-refresh: Videz le cache : ++ctrl+f5++ (Windows) ou ++cmd+shift+r++ (Mac)
-4. :material-incognito: Testez en **navigation privée** (++ctrl+shift+n++)
-5. :material-web: Testez sur un **autre appareil** ou réseau
+    1. :material-publish: Avez-vous bien cliqué sur **"Publier"** (pas juste Enregistrer) ?
+    2. :material-timer: Attendez **30-60 secondes** après publication
+    3. :material-refresh: Videz le cache : ++ctrl+f5++ (Windows) ou ++cmd+shift+r++ (Mac)
+    4. :material-incognito: Testez en **navigation privée** (++ctrl+shift+n++)
+    5. :material-web: Testez sur un **autre appareil** ou réseau
 
 **Toujours invisible ?**
 - Vérifiez que vous êtes sur la bonne URL
@@ -1021,14 +1021,14 @@ graph LR
 
 !!! success "🏆 Vous avez terminé le Guide 02"
 
-**Compétences acquises :**
+    **Compétences acquises :**
 
-- ✅ Modification de textes et titres
-- ✅ Gestion des images (upload, optimisation, Alt text)
-- ✅ Édition des témoignages
-- ✅ Gestion de la FAQ
-- ✅ Personnalisation des CTA
-- ✅ Workflow de publication professionnel
+    - ✅ Modification de textes et titres
+    - ✅ Gestion des images (upload, optimisation, Alt text)
+    - ✅ Édition des témoignages
+    - ✅ Gestion de la FAQ
+    - ✅ Personnalisation des CTA
+    - ✅ Workflow de publication professionnel
 
 ---
 
@@ -1037,6 +1037,7 @@ graph LR
 Maintenant que vous maîtrisez le contenu, découvrez comment gérer vos call-to-actions et Calendly !
 
 **Vous allez apprendre à :**
+
 - 🔘 Optimiser vos boutons CTA
 - 📅 Configurer Calendly
 - 🔗 Gérer les liens de réservation
