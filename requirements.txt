@@ -2,17 +2,20 @@
 # Installation : pip install -r requirements.txt
 
 # Core MkDocs avec thème Material
-mkdocs>=1.5.0
-mkdocs-material>=9.0.0
+mkdocs>=1.6.0
+mkdocs-material>=9.7.0
 
 # Plugins essentiels
-mkdocs-minify-plugin>=0.7.0
-mkdocs-git-revision-date-localized-plugin>=1.2.0
+mkdocs-git-revision-date-localized-plugin>=1.5.0
+mkdocs-print-site-plugin>=2.8
 
-# Dépendance pour le plugin Git
-GitPython>=3.1.0
+# Dépendances pour les plugins
+GitPython>=3.1.44
 
-# Optionnel : Export PDF (décommenter si nécessaire)
+# Note: mkdocs-minify-plugin désactivé (problème d'installation avec Python 3.11+)
+# Peut être réactivé ultérieurement avec un environnement virtuel
+
+# Optionnel : Export PDF avancé (décommenter si nécessaire)
 # mkdocs-with-pdf>=0.9.0
 # weasyprint>=60.0
 
