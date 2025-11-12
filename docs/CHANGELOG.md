@@ -12,7 +12,63 @@ Le format est basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/)
 - Création des 24 screenshots manquants pour les guides
 - Tests utilisateurs avec le public cible
 - Ajout de vidéos tutorielles intégrées
-- Intégration commentaires et feedback utilisateurs
+
+---
+
+## [1.3.0] - 2025-11-12
+
+### ✨ Ajouté
+
+#### Boutons de partage social
+- **Implémentation complète sur les 10 guides** de formation
+  - Section "📤 Partager ce guide" avant Navigation
+  - 4 réseaux : Twitter, Facebook, LinkedIn, Email
+  - URLs personnalisées par guide avec titres encodés
+  - Design responsive (CSS v1.1.0)
+  - Attributs de sécurité (rel="noopener noreferrer")
+
+#### Tracking Google Analytics 4 personnalisé
+- **Fichier JavaScript** : `docs/javascripts/analytics-events.js` (310 lignes)
+- **9 types d'événements trackés** :
+  1. **Partage social** : Clics sur boutons de partage (network, page_title)
+  2. **Téléchargements PDF** : Fichiers téléchargés (fileName)
+  3. **Temps passé** : Durée de lecture par guide (timeSpent, guideNumber)
+     - Envoi au départ de la page (≥10s)
+     - Engagement toutes les 60 secondes
+  4. **Navigation** : Clics sur liens (Next Guide, Previous, Home, Internal)
+  5. **Admonitions** : Expansion des tips/warnings (type, titre)
+  6. **Scroll** : Profondeur de lecture (jalons : 25%, 50%, 75%, 90%, 100%)
+  7. **Liens externes** : Clics sortants (domain, target_url)
+  8. **Recherche** : Requêtes utilisateurs (search_term, debounce 1s)
+  9. **Checklists** : Items cochés/décochés (item_text, état)
+
+- **Fonctionnalités avancées** :
+  - Console logs pour debugging
+  - Désactivation automatique en localhost
+  - Protection contre gtag non chargé
+  - Identification automatique du numéro de guide
+  - Compteurs d'éléments trackés à l'initialisation
+
+### 🔧 Amélioré
+
+- **mkdocs.yml** : Section `extra_javascript` ajoutée
+  - Référence à `javascripts/analytics-events.js`
+  - Chargement automatique sur toutes les pages
+
+### 📊 Impact attendu
+
+- **~50-100+ événements GA4** par session utilisateur
+- **Métriques améliorées** :
+  - Taux d'engagement (scroll, temps passé)
+  - Viralité (partages sociaux)
+  - Navigation (flux entre guides)
+  - Interactivité (checklists, admonitions)
+
+### 🧪 Tests recommandés
+
+1. **Build local** : `mkdocs serve` → Console "[Analytics]"
+2. **Production** : GA4 > Temps réel > Événements
+3. **Événements clés** : share, navigation, scroll_depth, timing_complete
 
 ---
 

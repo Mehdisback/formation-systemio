@@ -1034,6 +1034,26 @@ Vous avez **4 questions-réponses** :
 
 ---
 
+## 📤 Partager ce guide
+
+<div class="share-buttons">
+  <span class="share-buttons-title">Partager ce guide</span>
+  <a href="https://twitter.com/intent/tweet?url=https://mehdisback.github.io/formation-systemio/02-MODIFICATION-CONTENU/&text=Formation%20Systeme.io%20-%20Modification%20du%20Contenu" class="share-button twitter" target="_blank" rel="noopener noreferrer">
+    🐦 Twitter
+  </a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://mehdisback.github.io/formation-systemio/02-MODIFICATION-CONTENU/" class="share-button facebook" target="_blank" rel="noopener noreferrer">
+    📘 Facebook
+  </a>
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://mehdisback.github.io/formation-systemio/02-MODIFICATION-CONTENU/" class="share-button linkedin" target="_blank" rel="noopener noreferrer">
+    💼 LinkedIn
+  </a>
+  <a href="mailto:?subject=Formation%20Systeme.io%20-%20Modification%20du%20Contenu&body=Je%20partage%20avec%20toi%20ce%20guide%20:%20https://mehdisback.github.io/formation-systemio/02-MODIFICATION-CONTENU/" class="share-button email">
+    ✉️ Email
+  </a>
+</div>
+
+---
+
 ## 🚀 Prochaine étape
 
 Maintenant que vous maîtrisez le contenu, découvrez comment gérer vos call-to-actions et Calendly !
