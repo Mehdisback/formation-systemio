@@ -90,19 +90,17 @@ plugins:
       minify_css: true
       htmlmin_opts:
         remove_comments: true
-  # Plugin pour génération automatique du sitemap XML
-  # Installation: pip install mkdocs-sitemap
-  # - sitemap:
-  #     changefreq: weekly
-  #     priority: 0.8
-  #     exclude:
-  #       - 404.html
+  # SITEMAP : Intégré dans MkDocs core, généré automatiquement
+  # Disponible à : /sitemap.xml (configuré via site_url)
+  # Aucun plugin supplémentaire nécessaire
+
   # Plugin pour afficher date dernière modification (basé sur Git)
   # Installation: pip install mkdocs-git-revision-date-localized-plugin
-  # - git-revision-date-localized:
-  #     enable_creation_date: true
-  #     type: date
-  #     locale: fr
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+      locale: fr
+      fallback_to_build_date: true
 
 # Extensions Markdown
 markdown_extensions:
