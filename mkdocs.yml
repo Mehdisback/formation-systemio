@@ -62,6 +62,7 @@ theme:
     - content.code.annotate        # Annotations code
     - content.tabs.link         # Onglets liés
     - content.tooltips
+    - content.tags              # Affichage des tags cliquables
 
   # Logo et favicon (optionnel)
   logo: assets/logo.png
@@ -187,6 +188,7 @@ extra_css:
 # JavaScript personnalisé
 extra_javascript:
     - javascripts/analytics-events.js
+    - javascripts/tags-clickable.js
 
 # Informations supplémentaires
 extra:
