@@ -15,6 +15,98 @@ Le format est basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/)
 
 ---
 
+## [1.3.1] - 2025-11-12
+
+### 🔧 Corrigé
+
+#### Diagnostic Google Analytics 4 amélioré
+
+- **Script Python de diagnostic** (`scripts/diagnose_analytics.py`) :
+  - ✅ Correction du parser YAML pour gérer les tags personnalisés de Material
+  - ✅ Utilisation de regex au lieu de `yaml.safe_load()`
+  - ✅ Supporte les extensions Material (emoji.twemoji, etc.)
+  - ✅ Détecte maintenant correctement l'ID placeholder `G-XXXXXXXXXX`
+  - ✅ Valide le format de l'ID (G- vs UA- vs placeholder)
+  - ✅ Vérifie la version de MkDocs Material dans requirements.txt
+
+- **Diagnostic automatique dans la console** (`docs/javascripts/analytics-events.js`) :
+  - ✅ Détection des scripts GA4 dans le DOM
+  - ✅ Différenciation entre problème de configuration et bloqueur de pub
+  - ✅ Diagnostic détaillé avec `console.group()`
+  - ✅ Messages d'aide contextuels selon la cause identifiée :
+    - Si "Scripts GA4: ❌ NON" → Problème de configuration (ID, syntaxe, version)
+    - Si "Scripts GA4: ✅ OUI" → Bloqueur de publicité probable (uBlock, AdBlock)
+  - ✅ Timeout augmenté à 10 secondes (100 tentatives × 100ms)
+  - ✅ Vérification DOM uniquement lors des dernières tentatives (optimisation)
+
+### 📚 Ajouté
+
+#### Documentation de dépannage
+
+- **Guide complet de troubleshooting** (`docs/TROUBLESHOOTING-ANALYTICS.md`) : 750 lignes
+  - 🔍 Arbre de décision pour identifier le problème
+  - 📋 Checklist de dépannage complète
+  - 🛠️ Solutions détaillées pour chaque cas :
+    - Cas 1 : Scripts GA4 non détectés (configuration)
+    - Cas 2 : Scripts GA4 détectés mais gtag non défini (bloqueur)
+    - Cas 3 : Localhost (mode développement)
+  - 🧪 Outils de diagnostic :
+    - Script Python `diagnose_analytics.py`
+    - Console navigateur (F12)
+    - Tag Assistant Chrome
+    - Inspection DOM et Network
+  - 💡 Solutions pour bloqueurs de pub (uBlock, AdBlock, Ghostery, Brave)
+  - 🔧 Migration syntaxe Material < 9.0 vers ≥ 9.0
+  - ⚙️ Troubleshooting YAML, indentation, version Material
+  - 📊 Validation finale dans GA4 Temps réel
+
+- **Document de résolution** (`docs/RESOLUTION-PROBLEME-GA4.md`) : 350 lignes
+  - 🎯 Résumé exécutif du problème identifié
+  - 📊 Diagnostic automatique expliqué
+  - ✅ Checklist de validation complète
+  - 🚀 Instructions de merge et déploiement
+  - 📚 Liste des fichiers modifiés et nouveaux outils
+
+- **Guide de test mis à jour** (`docs/GUIDE-TEST-ANALYTICS.md`) :
+  - 🔗 Référence au guide de troubleshooting complet
+  - ⚡ Instructions pour utiliser le diagnostic automatique
+  - 💡 Solutions rapides selon le message de diagnostic
+
+### 🛠️ Impact
+
+- **Diagnostic immédiat** : La cause du problème est identifiée en <5 secondes
+- **Autonomie utilisateur** : Plus besoin de deviner la cause (configuration vs bloqueur)
+- **Documentation exhaustive** : Toutes les causes possibles et solutions documentées
+- **Outils automatisés** : Script Python + diagnostic JS automatique
+
+### 📊 Utilisation
+
+#### Cas d'usage 1 : Vérifier la configuration
+
+```bash
+python scripts/diagnose_analytics.py
+```
+
+Affiche : Provider, Property (ID GA4), Version Material, Scripts JS.
+
+#### Cas d'usage 2 : Identifier le problème en production
+
+Ouvrir la console (F12) sur le site déployé. Le diagnostic automatique affiche :
+
+```
+[Analytics] 🔍 Diagnostic du problème
+Scripts GA4 détectés dans le DOM: ✅ OUI ou ❌ NON
+```
+
+- **NON** → Consulter `TROUBLESHOOTING-ANALYTICS.md` section "Cas 1"
+- **OUI** → Désactiver le bloqueur de pub
+
+#### Cas d'usage 3 : Guide complet
+
+Lire `docs/TROUBLESHOOTING-ANALYTICS.md` pour toutes les solutions possibles.
+
+---
+
 ## [1.3.0] - 2025-11-12
 
 ### ✨ Ajouté

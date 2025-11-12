@@ -4,55 +4,69 @@ Script de diagnostic Google Analytics
 Vérifie que GA4 est correctement configuré dans MkDocs
 """
 
-import yaml
+import re
 from pathlib import Path
 
 CONFIG_FILE = Path("mkdocs.yml")
 
 print("🔍 Diagnostic Google Analytics - MkDocs Material\n")
 
-# Lire mkdocs.yml
+# Lire mkdocs.yml comme texte brut (évite les problèmes avec les tags YAML personnalisés de Material)
 try:
     with open(CONFIG_FILE, 'r', encoding='utf-8') as f:
-        config = yaml.safe_load(f)
+        content = f.read()
 except Exception as e:
     print(f"❌ Erreur lecture mkdocs.yml : {e}")
     exit(1)
 
-# Vérifier la présence de analytics
+# Vérifier la présence de analytics avec regex
 has_analytics = False
 ga_id = None
+provider = None
 
-# Vérifier nouvelle syntaxe (Material 9.x)
-if 'extra' in config and 'analytics' in config['extra']:
+# Rechercher la section extra.analytics (Material 9.x)
+analytics_section = re.search(r'extra:\s*\n.*?analytics:\s*\n(.*?)(?=\n\S|\Z)', content, re.DOTALL)
+
+if analytics_section:
     has_analytics = True
-    analytics = config['extra']['analytics']
+    analytics_block = analytics_section.group(1)
 
     print("✅ Section 'extra.analytics' trouvée")
-    print(f"   Provider : {analytics.get('provider', 'NON DÉFINI')}")
 
-    ga_id = analytics.get('property')
-    print(f"   Property : {ga_id}")
-
-    if ga_id == 'G-XXXXXXXXXX':
-        print("   ⚠️  ID placeholder détecté - Remplacer par vrai ID GA4")
-    elif ga_id and ga_id.startswith('G-'):
-        print("   ✅ ID GA4 valide détecté")
-    elif ga_id and ga_id.startswith('UA-'):
-        print("   ❌ ID Universal Analytics (UA-) détecté - Utiliser GA4 (G-)")
+    # Extraire provider
+    provider_match = re.search(r'provider:\s*(\S+)', analytics_block)
+    if provider_match:
+        provider = provider_match.group(1)
+        print(f"   Provider : {provider}")
     else:
-        print("   ❌ ID GA4 invalide ou manquant")
+        print("   Provider : NON DÉFINI")
+
+    # Extraire property (ID GA4)
+    property_match = re.search(r'property:\s*(\S+)', analytics_block)
+    if property_match:
+        ga_id = property_match.group(1)
+        print(f"   Property : {ga_id}")
+
+        if ga_id == 'G-XXXXXXXXXX':
+            print("   ⚠️  ID placeholder détecté - Remplacer par vrai ID GA4")
+        elif ga_id.startswith('G-'):
+            print("   ✅ ID GA4 valide détecté")
+        elif ga_id.startswith('UA-'):
+            print("   ❌ ID Universal Analytics (UA-) détecté - Utiliser GA4 (G-)")
+        else:
+            print("   ❌ ID GA4 invalide")
+    else:
+        print("   Property : NON DÉFINI")
+        print("   ❌ ID GA4 manquant")
 
 # Vérifier ancienne syntaxe (Material < 9.0)
-if 'google_analytics' in config:
+old_analytics = re.search(r'google_analytics:\s*\n\s*-\s*(\S+)', content)
+if old_analytics:
     print("\n⚠️  Ancienne syntaxe 'google_analytics' trouvée")
     print("   Migrer vers 'extra.analytics' pour Material 9.x+")
+    print(f"   ID détecté : {old_analytics.group(1)}")
 
-    old_ga = config['google_analytics']
-    if isinstance(old_ga, list) and len(old_ga) > 0:
-        print(f"   ID détecté : {old_ga[0]}")
-
-if not has_analytics and 'google_analytics' not in config:
+if not has_analytics and not old_analytics:
     print("❌ Aucune configuration Google Analytics trouvée")
     print("   Ajouter dans mkdocs.yml :")
     print("""
@@ -64,8 +78,11 @@ extra:
 
 # Vérifier extra_javascript
 print("\n📜 Scripts JavaScript personnalisés :")
-if 'extra_javascript' in config:
-    for script in config['extra_javascript']:
+extra_js = re.findall(r'extra_javascript:\s*\n((?:\s*-\s*[^\n]+\n)+)', content)
+if extra_js:
+    scripts = re.findall(r'-\s*([^\n]+)', extra_js[0])
+    for script in scripts:
+        script = script.strip()
         print(f"   - {script}")
         if 'analytics' in script:
             print("     ✅ Script analytics détecté")
