@@ -599,6 +599,96 @@ html[data-md-color-scheme="default"],
   background-color: #FFFFFF;
 }
 
+/* Header en mode clair */
+[data-md-color-scheme="default"] .md-header {
+  background: linear-gradient(135deg, #3949AB 0%, #1E2870 100%);
+  color: #FFFFFF;
+}
+
+[data-md-color-scheme="default"] .md-header__title {
+  color: #FFFFFF;
+}
+
+[data-md-color-scheme="default"] .md-header__button {
+  color: #FFFFFF;
+}
+
+/* Tabs en mode clair */
+[data-md-color-scheme="default"] .md-tabs {
+  background: linear-gradient(135deg, #3949AB 0%, #1E2870 100%);
+}
+
+[data-md-color-scheme="default"] .md-tabs__link {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+[data-md-color-scheme="default"] .md-tabs__link:hover {
+  color: #FFFFFF;
+}
+
+[data-md-color-scheme="default"] .md-tabs__link--active {
+  color: #FFFFFF;
+}
+
+/* Navigation sidebar en mode clair */
+[data-md-color-scheme="default"] .md-nav {
+  background-color: #FFFFFF;
+}
+
+[data-md-color-scheme="default"] .md-nav__link {
+  color: #616161;
+}
+
+[data-md-color-scheme="default"] .md-nav__link:hover {
+  color: #6843A8;
+}
+
+[data-md-color-scheme="default"] .md-nav__item--active > .md-nav__link {
+  color: #2C3A8F;
+  font-weight: 600;
+}
+
+[data-md-color-scheme="default"] .md-sidebar {
+  background-color: #FFFFFF;
+}
+
+/* Footer en mode clair */
+[data-md-color-scheme="default"] .md-footer {
+  background: linear-gradient(135deg, #212121 0%, #424242 100%);
+  color: #FFFFFF;
+}
+
+[data-md-color-scheme="default"] .md-footer-meta {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+[data-md-color-scheme="default"] .md-footer__link,
+[data-md-color-scheme="default"] .md-footer-copyright,
+[data-md-color-scheme="default"] .md-footer-copyright__highlight {
+  color: #B39DDB;
+}
+
+[data-md-color-scheme="default"] .md-footer__link:hover,
+[data-md-color-scheme="default"] .md-footer-copyright a:hover {
+  color: #FFFFFF;
+}
+
+/* Search en mode clair */
+[data-md-color-scheme="default"] .md-search__input {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+}
+
+[data-md-color-scheme="default"] .md-search__input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+[data-md-color-scheme="default"] .md-search__input:focus {
+  background-color: #FFFFFF;
+  color: #212121;
+}
+
 /* === TRANSITIONS FLUIDES ENTRE MODES === */
 /* Transitions douces pour changement de thème */
 body,
