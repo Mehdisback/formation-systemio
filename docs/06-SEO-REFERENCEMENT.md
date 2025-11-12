@@ -690,7 +690,7 @@ Pour des optimisations SEO avancées (Schema markup, données structurées, redi
 
 ---
 
-**📌 Prochaine étape :** [Guide 07 - Suivi et analyse des performances](https://claude.ai/chat/07-SUIVI-ANALYTICS.md)
+**📌 Prochaine étape :** [Guide 07 - Suivi et analyse des performances](07-SUIVI-ANALYTICS.md)
 
 ---
 

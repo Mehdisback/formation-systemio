@@ -307,4 +307,4 @@ INTÉGRATIONS
 
 ---
 
-**Prochaine étape :** [09 - Résolution de problèmes (FAQ)](https://claude.ai/chat/09-FAQ-TROUBLESHOOTING.md)
+**Prochaine étape :** [09 - Résolution de problèmes (FAQ)](09-FAQ-TROUBLESHOOTING.md)

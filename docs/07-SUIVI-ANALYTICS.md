@@ -189,4 +189,4 @@ Configuration des rapports automatiques :
 
 ---
 
-**Prochaine étape :** [08 - Maintenance et bonnes pratiques](https://claude.ai/chat/08-MAINTENANCE-BONNES-PRATIQUES.md)
+**Prochaine étape :** [08 - Maintenance et bonnes pratiques](08-MAINTENANCE-BONNES-PRATIQUES.md)

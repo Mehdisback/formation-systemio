@@ -547,4 +547,4 @@ Avant de publier :
 
 ---
 
-**Prochaine étape : [Guide 05 - Formulaires et collecte de données](https://claude.ai/chat/05-FORMULAIRES-DONNEES.md) 📝**
+**Prochaine étape : [Guide 05 - Formulaires et collecte de données](05-FORMULAIRES-DONNEES.md) 📝**

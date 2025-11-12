@@ -70,7 +70,7 @@
 1. **Mode édition** : assurez-vous d'être en mode "Edit" ou "Modifier"
 2. **Cliquez directement sur l'élément** : la plupart des éléments sont éditables en cliquant dessus
 3. **Utilisez le panneau latéral** : les options de modification s'affichent à droite
-4. **Consultez le guide 02** : [Modification du contenu](https://claude.ai/chat/02-MODIFICATION-CONTENU.md)
+4. **Consultez le guide 02** : [Modification du contenu](02-MODIFICATION-CONTENU.md)
 
 ### Mon texte ne s'affiche pas comme je le veux
 
@@ -500,6 +500,6 @@ Avant de terminer la formation, assurez-vous de :
 
 ---
 
-**Prochaine étape :** [10 - Glossaire et terminologie](https://claude.ai/chat/10-GLOSSAIRE.md)
+**Prochaine étape :** [10 - Glossaire et terminologie](10-GLOSSAIRE.md)
 
-**Retour au sommaire :** [Guide principal](https://claude.ai/chat/Guide_de_Formation_Systeme_io.md)
+**Retour au sommaire :** [Guide principal](index.md)

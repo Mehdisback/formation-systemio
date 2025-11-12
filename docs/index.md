@@ -67,27 +67,27 @@ Consultez d'abord la **[FAQ et résolution de problèmes](09-FAQ-TROUBLESHOOTING
     **Parcours recommandé :**
 
     1. 📖 Lisez cette page d'accueil pour comprendre la structure
-    2. 🚀 Suivez le [Guide 01 - Démarrage rapide](01-demarrage-rapide.md)
-    3. ✏️ Pratiquez avec le [Guide 02 - Modification du contenu](02-modification-contenu.md)
-    4. 🔘 Testez les [CTA et Calendly](03-cta-calendly.md)
+    2. 🚀 Suivez le [Guide 01 - Démarrage rapide](01-GUIDE-DEMARRAGE-RAPIDE.md)
+    3. ✏️ Pratiquez avec le [Guide 02 - Modification du contenu](02-MODIFICATION-CONTENU.md)
+    4. 🔘 Testez les [CTA et Calendly](03-GESTION-CTA-CALENDLY.md)
     5. 📊 Consultez les autres guides selon vos besoins
 
 === "J'ai déjà des bases"
 
     **Accès direct aux guides avancés :**
 
-    - 🎨 [Design et mise en page](04-design.md) - Personnalisation visuelle
-    - 📝 [Formulaires](05-formulaires.md) - Collecte de données
-    - 🔍 [SEO](06-seo.md) - Référencement naturel
-    - 📊 [Analytics](07-analytics.md) - Analyse de performances
+    - 🎨 [Design et mise en page](04-DESIGN-MISE-EN-PAGE.md) - Personnalisation visuelle
+    - 📝 [Formulaires](05-FORMULAIRES-DONNEES.md) - Collecte de données
+    - 🔍 [SEO](06-SEO-REFERENCEMENT.md) - Référencement naturel
+    - 📊 [Analytics](07-SUIVI-ANALYTICS.md) - Analyse de performances
 
 === "Je rencontre un problème"
 
     **Résolution rapide :**
 
-    1. ❓ Consultez la [FAQ](09-faq.md) pour les problèmes courants
-    2. 📖 Recherchez dans le [Glossaire](10-glossaire.md) les termes techniques
-    3. 💬 Contactez le [Support](support.md) si le problème persiste
+    1. ❓ Consultez la [FAQ](09-FAQ-TROUBLESHOOTING.md) pour les problèmes courants
+    2. 📖 Recherchez dans le [Glossaire](10-GLOSSAIRE.md) les termes techniques
+    3. 💬 Contactez le support Systeme.io si le problème persiste
 
 ---
 

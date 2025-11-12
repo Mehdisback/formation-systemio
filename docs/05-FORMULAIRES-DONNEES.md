@@ -492,4 +492,4 @@ R : Chaque email automatique doit contenir un lien de désinscription en bas
 
 ---
 
-**Prochaine étape : [Guide 06 - SEO et Référencement](https://claude.ai/chat/06-SEO-REFERENCEMENT.md) 🔍**
+**Prochaine étape : [Guide 06 - SEO et Référencement](06-SEO-REFERENCEMENT.md) 🔍**

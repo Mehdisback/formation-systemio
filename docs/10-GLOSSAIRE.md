@@ -418,8 +418,8 @@ Félicitations ! Vous avez parcouru l'ensemble de la formation. Assurez-vous de 
 
 Vous avez maintenant toutes les connaissances nécessaires pour gérer et optimiser votre landing page Systeme.io en toute autonomie.
 
-**Retour au sommaire :** [Guide principal](https://claude.ai/chat/Guide_de_Formation_Systeme_io.md)
+**Retour au sommaire :** [Guide principal](index.md)
 
-**Besoin d'aide ?** Consultez la [FAQ (Guide 09)](https://claude.ai/chat/09-FAQ-TROUBLESHOOTING.md) ou le support Systeme.io.
+**Besoin d'aide ?** Consultez la [FAQ (Guide 09)](09-FAQ-TROUBLESHOOTING.md) ou le support Systeme.io.
 
 **Bonne continuation dans votre aventure digitale ! 🚀**

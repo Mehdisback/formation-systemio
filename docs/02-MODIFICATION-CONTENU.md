@@ -689,7 +689,7 @@ Vous avez **4 questions-réponses** :
 4. :material-content-save: Enregistrez
 
 !!! warning "⚠️ Ne touchez pas au lien Calendly"
-    La modification du lien est couverte dans le [Guide 03 - Gestion des CTA et Calendly](03-cta-calendly.md)
+    La modification du lien est couverte dans le [Guide 03 - Gestion des CTA et Calendly](03-GESTION-CTA-CALENDLY.md)
 
 === "🎨 Personnaliser le style"
 
@@ -950,7 +950,7 @@ Colle le texte brut directement !
 ??? success "✅ Validation"
     **Bravo !** Vous maîtrisez maintenant la modification de contenu. 🎉
 
-**Prochaine étape :** [Guide 03 - Gestion des CTA et Calendly](03-cta-calendly.md)
+**Prochaine étape :** [Guide 03 - Gestion des CTA et Calendly](03-GESTION-CTA-CALENDLY.md)
 
 ---
 
@@ -1042,8 +1042,8 @@ Maintenant que vous maîtrisez le contenu, découvrez comment gérer vos call-to
 - 🔗 Gérer les liens de réservation
 - 📊 Suivre les conversions
 
-[Guide 03 - Gestion des CTA et Calendly →](03-cta-calendly.md){ .md-button .md-button--primary }
+[Guide 03 - Gestion des CTA et Calendly →](03-GESTION-CTA-CALENDLY.md){ .md-button .md-button--primary }
 
-[← Retour au Guide 01](01-demarrage-rapide.md){ .md-button }
+[← Retour au Guide 01](01-GUIDE-DEMARRAGE-RAPIDE.md){ .md-button }
 
 [Retour à l'accueil](index.md){ .md-button }

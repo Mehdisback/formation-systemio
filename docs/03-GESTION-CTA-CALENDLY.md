@@ -685,4 +685,4 @@ https://calendly.com/armelle-bodenes/seance-decouverte-30min
 
 ---
 
-**Prochaine étape : [Guide 04 - Design et mise en page](https://claude.ai/chat/04-DESIGN-MISE-EN-PAGE.md) 🎨**
+**Prochaine étape : [Guide 04 - Design et mise en page](04-DESIGN-MISE-EN-PAGE.md) 🎨**
