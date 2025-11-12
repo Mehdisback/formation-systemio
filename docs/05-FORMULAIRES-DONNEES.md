@@ -428,7 +428,7 @@ Armelle Bodénès
 **Éléments obligatoires :**
 
 ```markdown
-# Politique de Confidentialité
+## 📋 Exemple de Politique de Confidentialité
 
 ## Données collectées
 - Nom, prénom, email, téléphone via formulaires
