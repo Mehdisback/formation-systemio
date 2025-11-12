@@ -1,5 +1,8 @@
 ---
 description: "Résolvez rapidement tous les problèmes de votre landing page Systeme.io : connexion, édition, formulaires, affichage. FAQ complète et solutions étape par étape."
+tags:
+  - tous-niveaux
+  - référence
 ---
 
 # 🆘 09 - FAQ et résolution de problèmes

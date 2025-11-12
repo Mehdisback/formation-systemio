@@ -1,3 +1,10 @@
+---
+tags:
+  - intermédiaire
+  - approfondi
+  - maintenance
+---
+
 # 🔧 08 - Maintenance et bonnes pratiques
 
 ⏱️ **Durée estimée** : 60 minutes

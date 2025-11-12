@@ -1,5 +1,9 @@
 ---
 description: "Apprenez à créer et optimiser vos boutons d'appel à l'action (CTA) et intégrer Calendly sur votre landing page Systeme.io. Guide pratique pour maximiser vos conversions."
+tags:
+  - intermédiaire
+  - moyen
+  - conversion
 ---
 
 # 🔘 03 - Gestion des CTA et Calendly

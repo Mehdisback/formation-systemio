@@ -58,8 +58,6 @@ theme:
     - search.suggest            # Suggestions de recherche
     - search.highlight          # Surlignage des résultats
     - search.share                 # Partage recherche
-    - content.action.edit       # Bouton "Modifier cette page"
-    - content.action.view       # Bouton "Voir la source"
     - content.code.copy         # Bouton copier pour le code
     - content.code.annotate        # Annotations code
     - content.tabs.link         # Onglets liés
