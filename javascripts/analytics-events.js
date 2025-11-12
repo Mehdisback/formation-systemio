@@ -10,14 +10,53 @@
  * - Expansion des admonitions (tips, warnings)
  */
 
-// Vérifier que gtag est disponible
-if (typeof gtag === 'undefined') {
-  console.warn('[Analytics] Google Analytics (gtag) n\'est pas chargé');
-} else {
-  console.log('[Analytics] Événements personnalisés activés');
+// === DÉTECTION DE L'ENVIRONNEMENT ===
+const isLocalhost = window.location.hostname === 'localhost' ||
+                   window.location.hostname === '127.0.0.1';
+
+// === ATTENDRE QUE GTAG SOIT DISPONIBLE ===
+function waitForGtag(callback, maxAttempts = 50, interval = 100) {
+  let attempts = 0;
+
+  const checkGtag = setInterval(() => {
+    attempts++;
+
+    if (typeof gtag !== 'undefined') {
+      clearInterval(checkGtag);
+      console.log('[Analytics] ✅ Google Analytics (gtag) chargé');
+      callback();
+    } else if (attempts >= maxAttempts) {
+      clearInterval(checkGtag);
+      if (isLocalhost) {
+        console.log('[Analytics] ℹ️ Mode développement - Simulation du tracking (gtag non chargé)');
+        // En dev local, créer un gtag factice pour le debugging
+        window.gtag = function(...args) {
+          console.log('[Analytics DEV]', ...args);
+        };
+        callback();
+      } else {
+        console.warn('[Analytics] ⚠️ Google Analytics (gtag) non disponible après', maxAttempts * interval, 'ms');
+        console.warn('[Analytics] Vérifiez que l\'ID GA4 est configuré dans mkdocs.yml');
+        console.log('[Analytics] Les événements ne seront pas trackés');
+      }
+    }
+  }, interval);
+}
+
+// === FONCTION D'INITIALISATION ===
+function initializeAnalytics() {
+  console.log('[Analytics] 🚀 Initialisation des événements personnalisés');
 
   // Attendre que le DOM soit chargé
-  document.addEventListener('DOMContentLoaded', function() {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupEventTracking);
+  } else {
+    setupEventTracking();
+  }
+}
+
+// === CONFIGURATION DES ÉVÉNEMENTS ===
+function setupEventTracking() {
 
     // === 1. TRACKING DES BOUTONS DE PARTAGE SOCIAL ===
     const shareButtons = document.querySelectorAll('.share-button');
@@ -293,22 +332,9 @@ if (typeof gtag === 'undefined') {
     }
 
 
-    console.log('[Analytics] ✅ Tous les événements personnalisés sont configurés');
-  });
+  console.log('[Analytics] ✅ Tous les événements personnalisés sont configurés');
 }
 
-
-// === DÉSACTIVATION DU TRACKING (POUR DÉVELOPPEMENT LOCAL) ===
-// Détecter si on est en dev local
-if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-  console.log('[Analytics] Mode développement détecté - tracking désactivé');
-
-  // Remplacer gtag par une fonction vide en dev
-  if (typeof gtag !== 'undefined') {
-    const originalGtag = gtag;
-    gtag = function(...args) {
-      console.log('[Analytics DEV]', ...args);
-      // Ne pas envoyer en production
-    };
-  }
-}
+// === POINT D'ENTRÉE ===
+// Attendre que gtag soit disponible, puis initialiser
+waitForGtag(initializeAnalytics);
