@@ -169,9 +169,13 @@ nav:
     - 📖 10 - Glossaire: "10-GLOSSAIRE.md"
   - 📋 Historique des versions: "CHANGELOG.md"
 
-# CSS personnalisé (optionnel)
+# CSS personnalisé
 extra_css:
     - stylesheets/extra.css
+
+# JavaScript personnalisé
+extra_javascript:
+    - javascripts/analytics-events.js
 
 # Informations supplémentaires
 extra:
