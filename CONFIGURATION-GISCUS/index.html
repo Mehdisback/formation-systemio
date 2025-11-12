@@ -12,7 +12,7 @@
         <meta name="author" content="Mehdi SLAYKI">
       
       
-        <link rel="canonical" href="https://mehdisback.github.io/formation-systemeio/CORRECTIONS-PLUGINS/">
+        <link rel="canonical" href="https://mehdisback.github.io/formation-systemeio/CONFIGURATION-GISCUS/">
       
       
       
@@ -25,7 +25,7 @@
     
     
       
-        <title>Corrections - Plugins MkDocs - Formation Systeme.io - L'Essentiel en Soi</title>
+        <title>💬 Configuration Giscus (Commentaires) - Formation Systeme.io - L'Essentiel en Soi</title>
       
     
     
@@ -92,7 +92,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#corrections-plugins-mkdocs" class="md-skip">
+        <a href="#configuration-giscus-commentaires" class="md-skip">
           Aller au contenu
         </a>
       
@@ -127,7 +127,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Corrections - Plugins MkDocs
+              💬 Configuration Giscus (Commentaires)
             
           </span>
         </div>
@@ -855,22 +855,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#erreur-commune-mkdocs-sitemap-nexiste-pas" class="md-nav__link">
+  <a href="#quest-ce-que-giscus" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ❌ Erreur commune : mkdocs-sitemap n'existe pas
+        🎯 Qu'est-ce que Giscus ?
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="❌ Erreur commune : mkdocs-sitemap n&#39;existe pas">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ Prérequis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#etapes-de-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 Étapes de configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📝 Étapes de configuration">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#le-probleme" class="md-nav__link">
+  <a href="#1-activer-github-discussions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔍 Le problème
+        1. Activer GitHub Discussions
       
     </span>
   </a>
@@ -878,10 +900,43 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#la-solution" class="md-nav__link">
+  <a href="#2-installer-lapplication-giscus" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ✅ La solution
+        2. Installer l'application Giscus
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-copier-les-identifiants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Copier les identifiants
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-mettre-a-jour-mkdocsyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Mettre à jour mkdocs.yml
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-activer-les-commentaires-sur-une-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Activer les commentaires sur une page
       
     </span>
   </a>
@@ -894,22 +949,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#plugin-git-revision-date-recommande" class="md-nav__link">
+  <a href="#personnalisation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ✅ Plugin Git Revision Date (recommandé)
+        🎨 Personnalisation
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="✅ Plugin Git Revision Date (recommandé)">
+    <nav class="md-nav" aria-label="🎨 Personnalisation">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#installation-correcte" class="md-nav__link">
+  <a href="#choisir-les-pages-avec-commentaires" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Installation correcte
+        Choisir les pages avec commentaires
       
     </span>
   </a>
@@ -917,32 +972,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#configuration-activee-dans-mkdocsyml" class="md-nav__link">
+  <a href="#exemple-dactivation-sur-un-guide" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Configuration activée dans mkdocs.yml
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ce-que-ca-fait" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Ce que ça fait
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#exemple-de-rendu" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exemple de rendu
+        Exemple d'activation sur un guide
       
     </span>
   </a>
@@ -955,22 +988,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#commandes-dinstallation-completes" class="md-nav__link">
+  <a href="#test" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📦 Commandes d'installation complètes
+        🧪 Test
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="📦 Commandes d&#39;installation complètes">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#depannage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔧 Dépannage
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Dépannage">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#installation-minimale-deja-installes-normalement" class="md-nav__link">
+  <a href="#les-commentaires-napparaissent-pas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Installation minimale (déjà installés normalement)
+        Les commentaires n'apparaissent pas
       
     </span>
   </a>
@@ -978,10 +1022,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#installation-avec-plugin-git-dates-recommande" class="md-nav__link">
+  <a href="#erreur-discussion-category-not-found" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Installation avec plugin Git dates (recommandé)
+        Erreur "Discussion category not found"
       
     </span>
   </a>
@@ -989,10 +1033,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#installation-complete-avec-export-pdf-optionnel" class="md-nav__link">
+  <a href="#les-commentaires-apparaissent-en-anglais" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Installation complète avec export PDF (optionnel)
+        Les commentaires apparaissent en anglais
       
     </span>
   </a>
@@ -1005,99 +1049,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#verification-de-linstallation" class="md-nav__link">
+  <a href="#ressources" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔧 Vérification de l'installation
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔧 Vérification de l&#39;installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#verifier-les-plugins-installes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Vérifier les plugins installés
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tester-le-build" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tester le build
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#build-et-deploiement" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🚀 Build et déploiement
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🚀 Build et déploiement">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#developpement-local" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Développement local
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#build-production" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Build production
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#deploiement-github-pages" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Déploiement GitHub Pages
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#plugins-disponibles-recapitulatif" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📊 Plugins disponibles (récapitulatif)
+        📚 Ressources
       
     </span>
   </a>
@@ -1105,82 +1060,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#erreurs-courantes-et-solutions" class="md-nav__link">
+  <a href="#checklist-finale" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ Erreurs courantes et solutions
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="⚠️ Erreurs courantes et solutions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#erreur-plugin-not-found" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Erreur : "Plugin not found"
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#erreur-no-module-named-git" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Erreur : "No module named 'git'"
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#erreur-sitemap-vide" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Erreur : Sitemap vide
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#warning-repository-not-found" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Warning : "Repository not found"
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#documentation-officielle" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📚 Documentation officielle
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#checklist-de-validation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ✅ Checklist de validation
+        ✅ Checklist finale
       
     </span>
   </a>
@@ -1212,7 +1095,7 @@
 
 
   
-    <a href="https://github.com/Mehdisback/formation-systemio/edit/master/docs/CORRECTIONS-PLUGINS.md" title="Editer cette page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/Mehdisback/formation-systemio/edit/master/docs/CONFIGURATION-GISCUS.md" title="Editer cette page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z"/></svg>
     </a>
@@ -1221,204 +1104,138 @@
     
       
     
-    <a href="https://github.com/Mehdisback/formation-systemio/raw/master/docs/CORRECTIONS-PLUGINS.md" title="Consulter la source de cette page" class="md-content__button md-icon">
+    <a href="https://github.com/Mehdisback/formation-systemio/raw/master/docs/CONFIGURATION-GISCUS.md" title="Consulter la source de cette page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"/></svg>
     </a>
   
 
 
-<h1 id="corrections-plugins-mkdocs">Corrections - Plugins MkDocs<a class="headerlink" href="#corrections-plugins-mkdocs" title="Ancre vers cette section">&para;</a></h1>
-<h2 id="erreur-commune-mkdocs-sitemap-nexiste-pas">❌ Erreur commune : mkdocs-sitemap n'existe pas<a class="headerlink" href="#erreur-commune-mkdocs-sitemap-nexiste-pas" title="Ancre vers cette section">&para;</a></h2>
-<h3 id="le-probleme">🔍 Le problème<a class="headerlink" href="#le-probleme" title="Ancre vers cette section">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-sitemap
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1"># ERROR: No matching distribution found for mkdocs-sitemap</span>
-</span></code></pre></div>
-<h3 id="la-solution">✅ La solution<a class="headerlink" href="#la-solution" title="Ancre vers cette section">&para;</a></h3>
-<p><strong>Le sitemap est INTÉGRÉ dans MkDocs core !</strong></p>
-<p>Aucun package séparé n'est nécessaire. Le fichier <code>sitemap.xml</code> est généré automatiquement lors du build si vous avez configuré :</p>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># mkdocs.yml</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nt">site_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://votre-domaine.com</span>
-</span></code></pre></div>
-<p><strong>Dans votre cas :</strong>
-- ✅ Déjà configuré : <code>site_url: https://mehdisback.github.io/formation-systemeio/</code>
-- ✅ Sitemap disponible à : <code>https://mehdisback.github.io/formation-systemio/sitemap.xml</code>
-- ✅ Aucune action requise</p>
-<hr />
-<h2 id="plugin-git-revision-date-recommande">✅ Plugin Git Revision Date (recommandé)<a class="headerlink" href="#plugin-git-revision-date-recommande" title="Ancre vers cette section">&para;</a></h2>
-<h3 id="installation-correcte">Installation correcte<a class="headerlink" href="#installation-correcte" title="Ancre vers cette section">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-git-revision-date-localized-plugin
-</span></code></pre></div>
-<h3 id="configuration-activee-dans-mkdocsyml">Configuration activée dans mkdocs.yml<a class="headerlink" href="#configuration-activee-dans-mkdocsyml" title="Ancre vers cette section">&para;</a></h3>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">plugins</span><span class="p">:</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">search</span><span class="p">:</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">      </span><span class="c1"># ... config recherche</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">minify</span><span class="p">:</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">      </span><span class="c1"># ... config minify</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">git-revision-date-localized</span><span class="p">:</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">      </span><span class="nt">enable_creation_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">date</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">      </span><span class="nt">locale</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">fr</span>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">      </span><span class="nt">fallback_to_build_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-</span></code></pre></div>
-<h3 id="ce-que-ca-fait">Ce que ça fait<a class="headerlink" href="#ce-que-ca-fait" title="Ancre vers cette section">&para;</a></h3>
-<p>Affiche automatiquement sur chaque page :
-- <strong>Date de dernière modification</strong> (via Git)
-- <strong>Date de création</strong> (premier commit)
-- <strong>Format</strong> : Format français (ex: "12 novembre 2025")
-- <strong>Fallback</strong> : Utilise la date de build si pas de Git</p>
-<h3 id="exemple-de-rendu">Exemple de rendu<a class="headerlink" href="#exemple-de-rendu" title="Ancre vers cette section">&para;</a></h3>
-<p>En bas de chaque page, vous verrez :
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Dernière mise à jour : 12 novembre 2025
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>Créé le : 10 novembre 2025
-</span></code></pre></div></p>
-<hr />
-<h2 id="commandes-dinstallation-completes">📦 Commandes d'installation complètes<a class="headerlink" href="#commandes-dinstallation-completes" title="Ancre vers cette section">&para;</a></h2>
-<h3 id="installation-minimale-deja-installes-normalement">Installation minimale (déjà installés normalement)<a class="headerlink" href="#installation-minimale-deja-installes-normalement" title="Ancre vers cette section">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-material
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-minify-plugin
-</span></code></pre></div>
-<h3 id="installation-avec-plugin-git-dates-recommande">Installation avec plugin Git dates (recommandé)<a class="headerlink" href="#installation-avec-plugin-git-dates-recommande" title="Ancre vers cette section">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-material
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-minify-plugin
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-git-revision-date-localized-plugin
-</span></code></pre></div>
-<h3 id="installation-complete-avec-export-pdf-optionnel">Installation complète avec export PDF (optionnel)<a class="headerlink" href="#installation-complete-avec-export-pdf-optionnel" title="Ancre vers cette section">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-material
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-minify-plugin
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-git-revision-date-localized-plugin
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-with-pdf
-</span></code></pre></div>
-<hr />
-<h2 id="verification-de-linstallation">🔧 Vérification de l'installation<a class="headerlink" href="#verification-de-linstallation" title="Ancre vers cette section">&para;</a></h2>
-<h3 id="verifier-les-plugins-installes">Vérifier les plugins installés<a class="headerlink" href="#verifier-les-plugins-installes" title="Ancre vers cette section">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>pip<span class="w"> </span>list<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>mkdocs
-</span></code></pre></div>
-<p>Vous devriez voir :
-<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>mkdocs                              1.5.x
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>mkdocs-material                     9.x.x
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>mkdocs-minify-plugin                0.7.x
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>mkdocs-git-revision-date-localized-plugin  1.2.x
-</span></code></pre></div></p>
-<h3 id="tester-le-build">Tester le build<a class="headerlink" href="#tester-le-build" title="Ancre vers cette section">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>mkdocs<span class="w"> </span>build<span class="w"> </span>--strict
-</span></code></pre></div>
-<p>Si le plugin git-revision-date n'est pas installé, vous verrez :
-<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>Error: Plugin &#39;git-revision-date-localized&#39; not found
-</span></code></pre></div></p>
-<p>Solution : Installer le plugin ou commenter la section dans mkdocs.yml</p>
-<hr />
-<h2 id="build-et-deploiement">🚀 Build et déploiement<a class="headerlink" href="#build-et-deploiement" title="Ancre vers cette section">&para;</a></h2>
-<h3 id="developpement-local">Développement local<a class="headerlink" href="#developpement-local" title="Ancre vers cette section">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>mkdocs<span class="w"> </span>serve
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="c1"># Ouvrir http://127.0.0.1:8000</span>
-</span></code></pre></div>
-<h3 id="build-production">Build production<a class="headerlink" href="#build-production" title="Ancre vers cette section">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>mkdocs<span class="w"> </span>build
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="c1"># Génère le dossier site/ avec sitemap.xml</span>
-</span></code></pre></div>
-<h3 id="deploiement-github-pages">Déploiement GitHub Pages<a class="headerlink" href="#deploiement-github-pages" title="Ancre vers cette section">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>mkdocs<span class="w"> </span>gh-deploy
-</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="c1"># Ou push vers main (CI/CD automatique)</span>
-</span></code></pre></div>
-<hr />
-<h2 id="plugins-disponibles-recapitulatif">📊 Plugins disponibles (récapitulatif)<a class="headerlink" href="#plugins-disponibles-recapitulatif" title="Ancre vers cette section">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Plugin</th>
-<th>Package</th>
-<th>Statut</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Sitemap</strong></td>
-<td><em>(intégré)</em></td>
-<td>✅ Actif</td>
-<td>Généré automatiquement</td>
-</tr>
-<tr>
-<td><strong>Search</strong></td>
-<td><em>(intégré)</em></td>
-<td>✅ Actif</td>
-<td>Recherche française</td>
-</tr>
-<tr>
-<td><strong>Minify</strong></td>
-<td><code>mkdocs-minify-plugin</code></td>
-<td>✅ Actif</td>
-<td>Compression HTML/CSS/JS</td>
-</tr>
-<tr>
-<td><strong>Git Dates</strong></td>
-<td><code>mkdocs-git-revision-date-localized-plugin</code></td>
-<td>✅ <strong>Maintenant actif</strong></td>
-<td>Dates de modification</td>
-</tr>
-<tr>
-<td><strong>PDF Export</strong></td>
-<td><code>mkdocs-with-pdf</code></td>
-<td>⏳ Optionnel</td>
-<td>Pour export PDF</td>
-</tr>
-<tr>
-<td><strong>Blog</strong></td>
-<td><em>(intégré Material 9.2+)</em></td>
-<td>⏳ Non configuré</td>
-<td>Fonctionnalité blog</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="erreurs-courantes-et-solutions">⚠️ Erreurs courantes et solutions<a class="headerlink" href="#erreurs-courantes-et-solutions" title="Ancre vers cette section">&para;</a></h2>
-<h3 id="erreur-plugin-not-found">Erreur : "Plugin not found"<a class="headerlink" href="#erreur-plugin-not-found" title="Ancre vers cette section">&para;</a></h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>Error: Plugin &#39;git-revision-date-localized&#39; not found
-</span></code></pre></div>
-<p><strong>Solution :</strong>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-git-revision-date-localized-plugin
-</span></code></pre></div></p>
-<h3 id="erreur-no-module-named-git">Erreur : "No module named 'git'"<a class="headerlink" href="#erreur-no-module-named-git" title="Ancre vers cette section">&para;</a></h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>ModuleNotFoundError: No module named &#39;git&#39;
-</span></code></pre></div>
-<p><strong>Solution :</strong>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>pip<span class="w"> </span>install<span class="w"> </span>GitPython
-</span></code></pre></div></p>
-<h3 id="erreur-sitemap-vide">Erreur : Sitemap vide<a class="headerlink" href="#erreur-sitemap-vide" title="Ancre vers cette section">&para;</a></h3>
-<p><strong>Cause :</strong> <code>site_url</code> manquant ou mal configuré</p>
-<p><strong>Solution :</strong> Vérifier dans mkdocs.yml :
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="nt">site_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://votre-domaine.com</span><span class="w">  </span><span class="c1"># OBLIGATOIRE pour sitemap</span>
-</span></code></pre></div></p>
-<h3 id="warning-repository-not-found">Warning : "Repository not found"<a class="headerlink" href="#warning-repository-not-found" title="Ancre vers cette section">&para;</a></h3>
-<p><strong>Cause :</strong> Le plugin git-revision-date cherche un dépôt Git</p>
-<p><strong>Solution :</strong>
-- Soit : Initialiser Git (<code>git init</code>)
-- Soit : Désactiver le plugin
-- Soit : Utiliser <code>fallback_to_build_date: true</code> (déjà configuré)</p>
-<hr />
-<h2 id="documentation-officielle">📚 Documentation officielle<a class="headerlink" href="#documentation-officielle" title="Ancre vers cette section">&para;</a></h2>
-<ul>
-<li><strong>MkDocs</strong> : https://www.mkdocs.org/</li>
-<li><strong>Material for MkDocs</strong> : https://squidfunk.github.io/mkdocs-material/</li>
-<li><strong>Git Revision Date Plugin</strong> : https://github.com/timvink/mkdocs-git-revision-date-localized-plugin</li>
-<li><strong>Minify Plugin</strong> : https://github.com/byrnereese/mkdocs-minify-plugin</li>
-</ul>
-<hr />
-<h2 id="checklist-de-validation">✅ Checklist de validation<a class="headerlink" href="#checklist-de-validation" title="Ancre vers cette section">&para;</a></h2>
+<h1 id="configuration-giscus-commentaires">💬 Configuration Giscus (Commentaires)<a class="headerlink" href="#configuration-giscus-commentaires" title="Ancre vers cette section">&para;</a></h1>
+<p>Ce guide explique comment activer les commentaires GitHub Discussions via Giscus sur votre documentation.</p>
+<h2 id="quest-ce-que-giscus">🎯 Qu'est-ce que Giscus ?<a class="headerlink" href="#quest-ce-que-giscus" title="Ancre vers cette section">&para;</a></h2>
+<p>Giscus est un système de commentaires basé sur GitHub Discussions qui permet aux visiteurs de laisser des commentaires directement sur vos pages de documentation.</p>
+<h2 id="prerequis">✅ Prérequis<a class="headerlink" href="#prerequis" title="Ancre vers cette section">&para;</a></h2>
 <ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <code>site_url</code> configuré dans mkdocs.yml</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Plugins nécessaires installés via pip</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <code>mkdocs build</code> passe sans erreur</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <code>site/sitemap.xml</code> généré</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Dates de modification visibles sur les pages</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Recherche française fonctionnelle</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> CSS/JS minifiés dans le build</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Le repository doit être <strong>public</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> GitHub Discussions doit être activé</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> L'application Giscus doit être installée</li>
 </ul>
-<hr />
-<p><strong>Date de ce document :</strong> 2025-11-12
-<strong>Version MkDocs testée :</strong> ≥ 1.5.0
-<strong>Version Material testée :</strong> ≥ 9.0.0</p>
+<h2 id="etapes-de-configuration">📝 Étapes de configuration<a class="headerlink" href="#etapes-de-configuration" title="Ancre vers cette section">&para;</a></h2>
+<h3 id="1-activer-github-discussions">1. Activer GitHub Discussions<a class="headerlink" href="#1-activer-github-discussions" title="Ancre vers cette section">&para;</a></h3>
+<ol>
+<li>Allez sur votre repository GitHub : <code>https://github.com/Mehdisback/formation-systemio</code></li>
+<li>Cliquez sur <strong>Settings</strong> (Paramètres)</li>
+<li>Descendez jusqu'à la section <strong>Features</strong></li>
+<li>Cochez la case <strong>Discussions</strong></li>
+<li>Cliquez sur <strong>Set up discussions</strong></li>
+</ol>
+<h3 id="2-installer-lapplication-giscus">2. Installer l'application Giscus<a class="headerlink" href="#2-installer-lapplication-giscus" title="Ancre vers cette section">&para;</a></h3>
+<ol>
+<li>Visitez <a href="https://giscus.app">https://giscus.app</a></li>
+<li>Faites défiler jusqu'à la section <strong>Configuration</strong></li>
+<li>Renseignez :</li>
+<li><strong>Repository</strong> : <code>Mehdisback/formation-systemio</code></li>
+<li><strong>Page ↔️ Discussions Mapping</strong> : <code>pathname</code></li>
+<li><strong>Discussion Category</strong> : Choisissez <code>General</code> (ou créez une catégorie dédiée)</li>
+<li>L'outil génèrera automatiquement :</li>
+<li>Un <code>data-repo-id</code></li>
+<li>Un <code>data-category-id</code></li>
+</ol>
+<h3 id="3-copier-les-identifiants">3. Copier les identifiants<a class="headerlink" href="#3-copier-les-identifiants" title="Ancre vers cette section">&para;</a></h3>
+<p>Copiez les valeurs fournies par Giscus :</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Exemple de valeurs (les vôtres seront différentes)</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nt">repo_id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;R_kgDOK1234567&quot;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nt">category_id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;DIC_kwDOK1234567890&quot;</span>
+</span></code></pre></div>
+<h3 id="4-mettre-a-jour-mkdocsyml">4. Mettre à jour mkdocs.yml<a class="headerlink" href="#4-mettre-a-jour-mkdocsyml" title="Ancre vers cette section">&para;</a></h3>
+<p>Ouvrez <code>mkdocs.yml</code> et remplacez dans la section <code>extra.giscus</code> :</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">giscus</span><span class="p">:</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="nt">repo_id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;REMPLACER_PAR_VOTRE_REPO_ID&quot;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span><span class="nt">category_id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;REMPLACER_PAR_VOTRE_CATEGORY_ID&quot;</span>
+</span></code></pre></div>
+<p>Par vos vraies valeurs :</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">giscus</span><span class="p">:</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">repo_id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;R_kgDOK1234567&quot;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="nt">category_id</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;DIC_kwDOK1234567890&quot;</span>
+</span></code></pre></div>
+<h3 id="5-activer-les-commentaires-sur-une-page">5. Activer les commentaires sur une page<a class="headerlink" href="#5-activer-les-commentaires-sur-une-page" title="Ancre vers cette section">&para;</a></h3>
+<p>Pour activer les commentaires sur une page spécifique, ajoutez en <strong>début de fichier</strong> markdown :</p>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>---
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="gu">comments: true</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="gu">---</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="gh"># Titre de votre page</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>Votre contenu...
+</span></code></pre></div>
+<h2 id="personnalisation">🎨 Personnalisation<a class="headerlink" href="#personnalisation" title="Ancre vers cette section">&para;</a></h2>
+<h3 id="choisir-les-pages-avec-commentaires">Choisir les pages avec commentaires<a class="headerlink" href="#choisir-les-pages-avec-commentaires" title="Ancre vers cette section">&para;</a></h3>
+<p>Par défaut, les commentaires sont désactivés. Activez-les uniquement sur :</p>
+<ul>
+<li>✅ Les guides de formation (pour questions techniques)</li>
+<li>✅ La FAQ (pour discussions communautaires)</li>
+<li>❌ La page d'accueil (généralement non pertinent)</li>
+<li>❌ Le glossaire (pas de discussion nécessaire)</li>
+</ul>
+<h3 id="exemple-dactivation-sur-un-guide">Exemple d'activation sur un guide<a class="headerlink" href="#exemple-dactivation-sur-un-guide" title="Ancre vers cette section">&para;</a></h3>
+<p><strong>Fichier : <code>docs/01-GUIDE-DEMARRAGE-RAPIDE.md</code></strong></p>
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>---
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="gu">comments: true</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="gu">---</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="gh"># 🎯 01 - Guide de démarrage rapide</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>⏱️ <span class="gs">**Durée estimée**</span> : 15 minutes
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>...
+</span></code></pre></div>
+<h2 id="test">🧪 Test<a class="headerlink" href="#test" title="Ancre vers cette section">&para;</a></h2>
+<ol>
+<li>
+<p>Lancez le serveur de développement :
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>mkdocs<span class="w"> </span>serve
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Ouvrez une page avec <code>comments: true</code></p>
+</li>
+<li>
+<p>Vérifiez que la section "💬 Commentaires et questions" apparaît en bas de page</p>
+</li>
+<li>
+<p>Testez en laissant un commentaire (nécessite un compte GitHub)</p>
+</li>
+</ol>
+<h2 id="depannage">🔧 Dépannage<a class="headerlink" href="#depannage" title="Ancre vers cette section">&para;</a></h2>
+<h3 id="les-commentaires-napparaissent-pas">Les commentaires n'apparaissent pas<a class="headerlink" href="#les-commentaires-napparaissent-pas" title="Ancre vers cette section">&para;</a></h3>
+<ul>
+<li>✅ Vérifiez que GitHub Discussions est bien activé</li>
+<li>✅ Vérifiez que <code>comments: true</code> est présent dans le frontmatter</li>
+<li>✅ Vérifiez que les IDs sont corrects dans <code>mkdocs.yml</code></li>
+<li>✅ Videz le cache du navigateur (Ctrl+Shift+R)</li>
+</ul>
+<h3 id="erreur-discussion-category-not-found">Erreur "Discussion category not found"<a class="headerlink" href="#erreur-discussion-category-not-found" title="Ancre vers cette section">&para;</a></h3>
+<ul>
+<li>Le <code>category_id</code> est incorrect</li>
+<li>Retournez sur https://giscus.app et régénérez les IDs</li>
+</ul>
+<h3 id="les-commentaires-apparaissent-en-anglais">Les commentaires apparaissent en anglais<a class="headerlink" href="#les-commentaires-apparaissent-en-anglais" title="Ancre vers cette section">&para;</a></h3>
+<p>Vérifiez que <code>data-lang="fr"</code> est bien défini dans <code>overrides/partials/comments.html</code></p>
+<h2 id="ressources">📚 Ressources<a class="headerlink" href="#ressources" title="Ancre vers cette section">&para;</a></h2>
+<ul>
+<li><a href="https://giscus.app">Documentation Giscus</a></li>
+<li><a href="https://docs.github.com/en/discussions">GitHub Discussions Guide</a></li>
+<li><a href="https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/">Material for MkDocs - Comments</a></li>
+</ul>
+<h2 id="checklist-finale">✅ Checklist finale<a class="headerlink" href="#checklist-finale" title="Ancre vers cette section">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> GitHub Discussions activé sur le repository</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> IDs Giscus copiés et collés dans <code>mkdocs.yml</code></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> <code>comments: true</code> ajouté sur les pages souhaitées</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Test local réussi</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Build et déploiement effectués</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox"/><span class="task-list-indicator"></span></label> Commentaires visibles sur GitHub Pages</li>
+</ul>
 
 
 
@@ -1441,7 +1258,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="12 novembre 2025 12:05:30 UTC">12 novembre 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="12 novembre 2025 17:18:25 UTC">12 novembre 2025</span>
   </span>
 
     
@@ -1451,7 +1268,7 @@
     <span class="md-icon" title="Créé">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="12 novembre 2025 12:05:30 UTC">12 novembre 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="12 novembre 2025 17:18:25 UTC">12 novembre 2025</span>
   </span>
 
     
