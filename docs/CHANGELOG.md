@@ -16,6 +16,22 @@ Le format est basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/)
 
 ---
 
+## [1.1.1] - 2025-11-12
+
+### 🔧 Corrigé
+- **Plugin Git Revision Date** : Activé le plugin `mkdocs-git-revision-date-localized-plugin`
+  - Affichage automatique des dates de dernière modification
+  - Format français avec fallback sur date de build
+- **Documentation Sitemap** : Clarification que le sitemap est intégré dans MkDocs core
+  - Correction du commentaire erroné sur `mkdocs-sitemap` (package inexistant)
+  - Documentation complète dans `CORRECTIONS-PLUGINS.md`
+
+### 📚 Documentation
+- Nouveau guide `docs/CORRECTIONS-PLUGINS.md` : Résolution des erreurs d'installation communes
+- Instructions d'installation corrigées pour les plugins
+
+---
+
 ## [1.1.0] - 2025-11-12
 
 ### ✨ Ajouté
