@@ -177,6 +177,25 @@ Vous devriez voir :
 
 ## ⚠️ Dépannage
 
+### ⚡ Diagnostic automatique amélioré (v1.3.0+)
+
+Depuis la version 1.3.0, le fichier `analytics-events.js` inclut un **diagnostic automatique** qui identifie la cause exacte du problème.
+
+**Ouvrir la console (F12) et lire** :
+
+```
+[Analytics] 🔍 Diagnostic du problème
+Hostname: mehdisback.github.io
+Scripts GA4 détectés dans le DOM: ✅ OUI ou ❌ NON
+```
+
+- **Si "Scripts GA4: ❌ NON"** → Problème de configuration (ID, syntaxe, version)
+- **Si "Scripts GA4: ✅ OUI"** → Bloqueur de publicité actif
+
+**📖 Pour un diagnostic complet, consultez : [`docs/TROUBLESHOOTING-ANALYTICS.md`](TROUBLESHOOTING-ANALYTICS.md)**
+
+---
+
 ### Problème : Aucun log dans la console
 
 **Cause** : JavaScript désactivé ou erreur de syntaxe
@@ -195,12 +214,19 @@ mkdocs serve
 
 ### Problème : "gtag n'est pas chargé" en production
 
-**Cause** : ID GA4 non configuré ou incorrect dans mkdocs.yml
+**Cause** : ID GA4 non configuré OU bloqueur de publicité
 
-**Solution** :
-1. Vérifier `mkdocs.yml` ligne 227
-2. S'assurer que l'ID commence par `G-` (pas `UA-`)
-3. Rebuild et redéployer
+**Solution rapide** :
+
+1. **Lire le diagnostic automatique** dans la console (F12)
+2. **Si "Scripts GA4: ❌ NON"** :
+   - Vérifier `mkdocs.yml` ligne 227
+   - S'assurer que l'ID commence par `G-` (pas `UA-`)
+   - Rebuild et redéployer
+3. **Si "Scripts GA4: ✅ OUI"** :
+   - Désactiver uBlock Origin, AdBlock ou autre bloqueur
+   - Tester en navigation privée
+   - Voir le guide complet : [`TROUBLESHOOTING-ANALYTICS.md`](TROUBLESHOOTING-ANALYTICS.md)
 
 ---
 
