@@ -25,10 +25,21 @@ Le format est basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/)
 - **Documentation Sitemap** : Clarification que le sitemap est intégré dans MkDocs core
   - Correction du commentaire erroné sur `mkdocs-sitemap` (package inexistant)
   - Documentation complète dans `CORRECTIONS-PLUGINS.md`
+- **CI/CD GitHub Actions** : Correction erreur de déploiement
+  - Installation du plugin git-revision-date-localized dans le workflow
+  - Ajout de `fetch-depth: 0` pour historique Git complet
+  - Utilisation de `requirements.txt` pour gestion des dépendances
+  - Ajout du cache pip pour builds plus rapides
 
 ### 📚 Documentation
 - Nouveau guide `docs/CORRECTIONS-PLUGINS.md` : Résolution des erreurs d'installation communes
 - Instructions d'installation corrigées pour les plugins
+
+### ✨ Ajouté
+- **requirements.txt** : Gestion centralisée des dépendances Python
+  - Versions minimales spécifiées pour tous les packages
+  - Documentation inline pour chaque dépendance
+  - Support export PDF (commenté, optionnel)
 
 ---
 
