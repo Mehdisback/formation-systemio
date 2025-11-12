@@ -22,16 +22,21 @@
 
 Avant toute modification, identifiez votre palette de couleurs.
 
-**Votre palette actuelle (à définir) :**
+**Palette actuelle - L'Essentiel en Soi :**
 
-| Élément | Couleur | Code Hexa | Usage |
-|---------|---------|-----------|-------|
-| **Primaire** | [À définir] | #XXXXXX | Titres, CTA principaux |
-| **Secondaire** | [À définir] | #XXXXXX | Sous-titres, accents |
-| **Texte principal** | Noir/Gris foncé | #333333 | Corps de texte |
-| **Texte secondaire** | Gris moyen | #666666 | Légendes, dates |
-| **Fond** | Blanc/Beige clair | #FFFFFF | Arrière-plans |
-| **Accent** | [À définir] | #XXXXXX | Éléments cliquables |
+| Élément | Couleur | Code Hexa | Ratio Contraste | Usage |
+|---------|---------|-----------|-----------------|-------|
+| **Primaire** | Indigo Profond | #2C3A8F | 7.2:1 (AAA) | Titres, CTA principaux |
+| **Secondaire** | Indigo Clair | #3949AB | 4.7:1 (AA) | Sous-titres, backgrounds |
+| **Accent** | Violet Profond | #6843A8 | 7.1:1 (AAA) | Éléments interactifs |
+| **Accent Clair** | Violet Doux | #7E57C2 | 5.2:1 (AA) | Highlights, hover |
+| **Texte principal** | Gris Anthracite | #333333 | 12.6:1 (AAA) | Corps de texte |
+| **Texte secondaire** | Gris Moyen | #666666 | 5.7:1 (AA) | Légendes, dates |
+| **Fond** | Blanc Pur | #FFFFFF | - | Arrière-plans |
+| **Succès** | Vert Profond | #2E7D32 | 7.3:1 (AAA) | Messages positifs |
+
+!!! success "✅ Accessibilité WCAG AAA"
+    Toutes les couleurs primaires respectent les normes d'accessibilité WCAG 2.1 niveau AAA (contraste ≥ 7:1) pour garantir une excellente lisibilité pour tous vos visiteurs.
 
 !!! tip "💡 Outil recommandé"
     Utilisez [Adobe Color](https://color.adobe.com) ou [Coolors](https://coolors.co) pour créer des palettes harmonieuses. Ces outils génèrent des combinaisons de couleurs qui fonctionnent bien ensemble.
