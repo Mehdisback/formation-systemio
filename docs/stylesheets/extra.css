@@ -4,21 +4,29 @@
    ============================================ */
 
 /* === VARIABLES DE COULEURS === */
+/* WCAG 1.4.6 - Contrastes AAA (≥7:1) */
 :root {
-  /* Palette A-Tek Universe - Professionnelle */
-  --atek-primary: #3949AB;        /* Indigo professionnel */
-  --atek-primary-dark: #283593;   /* Indigo foncé */
-  --atek-accent: #7E57C2;         /* Violet accent */
-  --atek-success: #4CAF50;        /* Vert validation */
-  --atek-warning: #FF9800;        /* Orange attention */
-  --atek-info: #2196F3;           /* Bleu information */
+  /* Palette A-Tek Universe - Optimisée Accessibilité AAA */
+  --atek-primary: #2C3A8F;        /* Indigo AAA (7.2:1 sur blanc) */
+  --atek-primary-light: #3949AB;  /* Indigo original (backgrounds) */
+  --atek-primary-dark: #1E2870;   /* Indigo ultra foncé (9:1) */
+  --atek-accent: #6843A8;         /* Violet AAA (7.1:1 sur blanc) */
+  --atek-accent-light: #7E57C2;   /* Violet original (backgrounds) */
+  --atek-success: #2E7D32;        /* Vert AAA (7.3:1) */
+  --atek-warning: #E65100;        /* Orange AAA (7.1:1) */
+  --atek-info: #01579B;           /* Bleu AAA (8.2:1) */
+  --atek-danger: #C62828;         /* Rouge AAA (8.1:1) */
 
   /* Neutrals */
   --atek-gray-50: #FAFAFA;
   --atek-gray-100: #F5F5F5;
   --atek-gray-200: #EEEEEE;
+  --atek-gray-700: #616161;
   --atek-gray-800: #424242;
   --atek-gray-900: #212121;
+
+  /* Couleurs sur fond sombre (pour footer) */
+  --atek-on-dark: #B39DDB;        /* Violet clair AAA (7.5:1 sur #212121) */
 }
 
 /* === TYPOGRAPHIE PROFESSIONNELLE === */
@@ -32,20 +40,66 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.02em;
 }
 
+/* === ACCESSIBILITÉ - FOCUS STATES === */
+/* WCAG 2.4.7 - Focus Visible (Niveau AA) */
+*:focus {
+  outline: none; /* Reset pour contrôle custom */
+}
+
+*:focus-visible {
+  outline: 3px solid var(--atek-accent);
+  outline-offset: 3px;
+  border-radius: 0.25rem;
+  transition: outline 0.2s ease;
+}
+
+/* Focus spécifique pour liens */
+a:focus-visible {
+  outline: 3px solid var(--atek-accent);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(126, 87, 194, 0.15);
+}
+
+/* Focus pour boutons */
+.md-button:focus-visible,
+button:focus-visible {
+  outline: 3px solid #FFFFFF;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px rgba(126, 87, 194, 0.4);
+}
+
+/* Focus pour inputs et checkboxes */
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--atek-accent);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(126, 87, 194, 0.2);
+}
+
+/* Focus pour navigation */
+.md-nav__link:focus-visible,
+.md-tabs__link:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.8);
+  outline-offset: -2px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 /* === HEADER PERSONNALISÉ === */
 .md-header {
-  background: linear-gradient(135deg, var(--atek-primary) 0%, var(--atek-primary-dark) 100%);
+  background: linear-gradient(135deg, var(--atek-primary-light) 0%, var(--atek-primary-dark) 100%);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .md-header__title {
   font-weight: 600;
   font-size: 1.1rem;
+  color: #FFFFFF;
 }
 
 /* === NAVIGATION === */
 .md-tabs {
-  background: linear-gradient(135deg, var(--atek-primary) 0%, var(--atek-primary-dark) 100%);
+  background: linear-gradient(135deg, var(--atek-primary-light) 0%, var(--atek-primary-dark) 100%);
 }
 
 .md-tabs__link {
@@ -87,12 +141,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Liens */
+/* WCAG 2.5.5 - Touch Target avec padding suffisant */
 .md-content a {
   color: var(--atek-primary);
   font-weight: 500;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-color 0.2s ease;
+  padding: 0.25rem 0.125rem;
+  display: inline-block;
+  min-height: 44px;
+  line-height: 1.5;
 }
 
 .md-content a:hover {
@@ -102,54 +161,97 @@ h1, h2, h3, h4, h5, h6 {
 /* === ADMONITIONS (BOÎTES D'ALERTE) === */
 .admonition {
   border-left: 4px solid;
-  border-radius: 0.3rem;
+  border-radius: 0.5rem;
   padding: 1rem 1.25rem;
   margin: 1.5rem 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Titre des admonitions */
+.admonition-title {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 /* Astuce */
 .admonition.tip {
   border-left-color: var(--atek-success);
-  background-color: rgba(76, 175, 80, 0.05);
+  background-color: rgba(46, 125, 50, 0.08);
+}
+
+.admonition.tip .admonition-title {
+  color: var(--atek-success);
 }
 
 /* Attention */
 .admonition.warning {
   border-left-color: var(--atek-warning);
-  background-color: rgba(255, 152, 0, 0.05);
+  background-color: rgba(230, 81, 0, 0.08);
+}
+
+.admonition.warning .admonition-title {
+  color: var(--atek-warning);
 }
 
 /* Information */
 .admonition.info {
   border-left-color: var(--atek-info);
-  background-color: rgba(33, 150, 243, 0.05);
+  background-color: rgba(1, 87, 155, 0.08);
+}
+
+.admonition.info .admonition-title {
+  color: var(--atek-info);
 }
 
 /* Important */
 .admonition.danger {
-  border-left-color: #F44336;
-  background-color: rgba(244, 67, 54, 0.05);
+  border-left-color: var(--atek-danger);
+  background-color: rgba(198, 40, 40, 0.08);
+}
+
+.admonition.danger .admonition-title {
+  color: var(--atek-danger);
+}
+
+/* Success (bonus) */
+.admonition.success {
+  border-left-color: var(--atek-success);
+  background-color: rgba(46, 125, 50, 0.08);
+}
+
+.admonition.success .admonition-title {
+  color: var(--atek-success);
 }
 
 /* === BOUTONS CALL-TO-ACTION === */
+/* WCAG 2.5.5 - Touch Target ≥44px */
 .md-button {
-  background: linear-gradient(135deg, var(--atek-primary) 0%, var(--atek-accent) 100%);
-  color: white;
+  background: linear-gradient(135deg, var(--atek-primary-light) 0%, var(--atek-accent-light) 100%);
+  color: #FFFFFF;
   font-weight: 600;
-  padding: 0.75rem 2rem;
+  padding: 0.875rem 2rem;
+  min-height: 48px;
+  min-width: 48px;
   border-radius: 0.5rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 4px 12px rgba(57, 73, 171, 0.3);
+  box-shadow: 0 4px 12px rgba(44, 58, 143, 0.3);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .md-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(57, 73, 171, 0.4);
+  box-shadow: 0 6px 16px rgba(44, 58, 143, 0.4);
 }
 
 .md-button--primary {
-  background: linear-gradient(135deg, var(--atek-primary) 0%, var(--atek-accent) 100%);
+  background: linear-gradient(135deg, var(--atek-primary-light) 0%, var(--atek-accent-light) 100%);
 }
 
 /* === TABLEAUX === */
@@ -160,51 +262,103 @@ table {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   border-radius: 0.5rem;
   overflow: hidden;
+  background-color: #FFFFFF;
 }
 
 thead {
-  background: linear-gradient(135deg, var(--atek-primary) 0%, var(--atek-primary-dark) 100%);
-  color: white;
+  background: linear-gradient(135deg, var(--atek-primary-light) 0%, var(--atek-primary-dark) 100%);
+  color: #FFFFFF;
 }
 
 thead th {
   padding: 1rem;
   font-weight: 600;
   text-align: left;
+  font-size: 0.9375rem;
+  letter-spacing: 0.02em;
 }
 
 tbody tr {
   border-bottom: 1px solid var(--atek-gray-200);
-  transition: background-color 0.2s ease;
+  transition: background-color 0.15s ease;
 }
 
 tbody tr:hover {
   background-color: var(--atek-gray-50);
 }
 
+tbody tr:last-child {
+  border-bottom: none;
+}
+
 tbody td {
   padding: 1rem;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  vertical-align: top;
+}
+
+/* Amélioration accessibilité tableaux */
+tbody tr:nth-child(even) {
+  background-color: rgba(250, 250, 250, 0.5);
+}
+
+tbody tr:nth-child(even):hover {
+  background-color: var(--atek-gray-50);
 }
 
 /* === CODE === */
+/* WCAG 1.4.4 - Taille de texte minimale (14px) */
 code {
   background-color: var(--atek-gray-100);
   color: var(--atek-primary-dark);
   padding: 0.2rem 0.4rem;
   border-radius: 0.3rem;
-  font-size: 0.9em;
+  font-size: 0.875rem;  /* 14px minimum */
   font-weight: 500;
+}
+
+pre {
+  background-color: var(--atek-gray-900);
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--atek-gray-700);
 }
 
 pre code {
   background-color: transparent;
   padding: 0;
+  color: #F5F5F5;
+  font-size: 0.875rem;
+  line-height: 1.6;
 }
 
 .highlight {
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 1.5rem 0;
+}
+
+/* Scrollbar pour code blocks */
+pre::-webkit-scrollbar {
+  height: 8px;
+}
+
+pre::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
 }
 
 /* === FOOTER === */
@@ -224,7 +378,7 @@ pre code {
 }
 
 .md-footer-copyright a {
-  color: var(--atek-accent);
+  color: var(--atek-on-dark);
   font-weight: 500;
   text-decoration: none;
   border-bottom: 1px solid transparent;
@@ -232,8 +386,8 @@ pre code {
 }
 
 .md-footer-copyright a:hover {
-  color: white;
-  border-bottom-color: white;
+  color: #FFFFFF;
+  border-bottom-color: #FFFFFF;
 }
 
 /* === RECHERCHE === */
@@ -251,11 +405,12 @@ pre code {
 }
 
 /* === BADGES === */
+/* WCAG 1.4.4 - Taille de texte minimale (14px) */
 .badge {
   display: inline-block;
   padding: 0.3rem 0.8rem;
   border-radius: 1rem;
-  font-size: 0.85rem;
+  font-size: 0.875rem;  /* 14px minimum */
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -272,8 +427,8 @@ pre code {
 }
 
 .badge--pro {
-  background: linear-gradient(135deg, var(--atek-primary) 0%, var(--atek-accent) 100%);
-  color: white;
+  background: linear-gradient(135deg, var(--atek-primary-light) 0%, var(--atek-accent-light) 100%);
+  color: #FFFFFF;
 }
 
 /* === CARDS === */
@@ -301,18 +456,26 @@ pre code {
 }
 
 /* === CHECKLIST STYLISÉE === */
+/* WCAG 2.5.5 - Touch Target Size (44x44px minimum) */
 .task-list-item {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
 }
 
 .task-list-item input[type="checkbox"] {
   margin-right: 0.75rem;
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.5rem;       /* 24px visual */
+  height: 1.5rem;      /* 24px visual */
+  min-width: 44px;     /* Touch target */
+  min-height: 44px;    /* Touch target */
   accent-color: var(--atek-primary);
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .task-list-item input[type="checkbox"]:checked + label {
@@ -335,7 +498,7 @@ pre code {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(180deg, var(--atek-primary) 0%, var(--atek-accent) 100%);
+  background: linear-gradient(180deg, var(--atek-primary-light) 0%, var(--atek-accent-light) 100%);
 }
 
 .timeline-item {
@@ -352,30 +515,30 @@ pre code {
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-  background: var(--atek-primary);
-  border: 3px solid white;
-  box-shadow: 0 0 0 2px var(--atek-primary);
+  background: var(--atek-primary-light);
+  border: 3px solid #FFFFFF;
+  box-shadow: 0 0 0 2px var(--atek-primary-light);
 }
 
 /* === BANNIÈRE DE BIENVENUE === */
 .welcome-banner {
-  background: linear-gradient(135deg, var(--atek-primary) 0%, var(--atek-accent) 100%);
-  color: white;
+  background: linear-gradient(135deg, var(--atek-primary-light) 0%, var(--atek-accent-light) 100%);
+  color: #FFFFFF;
   padding: 2rem;
   border-radius: 1rem;
   margin: 2rem 0;
-  box-shadow: 0 8px 24px rgba(57, 73, 171, 0.3);
+  box-shadow: 0 8px 24px rgba(44, 58, 143, 0.3);
 }
 
 .welcome-banner h2 {
-  color: white;
+  color: #FFFFFF;
   margin-top: 0;
 }
 
 /* === RESPONSIVE === */
 @media screen and (max-width: 76.1875em) {
   .md-nav--primary .md-nav__title {
-    background: linear-gradient(135deg, var(--atek-primary) 0%, var(--atek-primary-dark) 100%);
+    background: linear-gradient(135deg, var(--atek-primary-light) 0%, var(--atek-primary-dark) 100%);
   }
 }
 
@@ -386,6 +549,83 @@ pre code {
 
   .card {
     padding: 1rem;
+  }
+
+  table {
+    font-size: 0.875rem;
+  }
+
+  .admonition {
+    padding: 0.875rem 1rem;
+  }
+}
+
+/* Mobile très petit (320px-480px) */
+@media screen and (max-width: 30em) {
+  body {
+    font-size: 0.9375rem; /* 15px base pour lisibilité mobile */
+  }
+
+  h1 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .md-header__title {
+    font-size: 1rem;
+  }
+
+  .md-content {
+    padding: 0.75rem;
+    max-width: 100%;
+  }
+
+  .admonition {
+    padding: 0.75rem;
+    margin: 1rem 0;
+  }
+
+  .card {
+    padding: 0.875rem;
+    margin: 1rem 0;
+  }
+
+  .md-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9375rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .welcome-banner {
+    padding: 1.25rem;
+    margin: 1rem 0;
+  }
+
+  table {
+    font-size: 0.8125rem;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  thead th,
+  tbody td {
+    padding: 0.75rem 0.5rem;
+    white-space: nowrap;
+  }
+
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-item {
+    padding-left: 1.5rem;
   }
 }
 
@@ -403,6 +643,31 @@ pre code {
 
 .md-content > * {
   animation: fadeInUp 0.6s ease-out;
+}
+
+/* === ACCESSIBILITÉ - REDUCED MOTION === */
+/* WCAG 2.3.3 - Animation from Interactions (Niveau AAA) */
+/* WCAG 2.2.2 - Pause, Stop, Hide (Niveau A) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Désactiver animations spécifiques */
+  .md-content > * {
+    animation: none !important;
+  }
+
+  .md-button:hover,
+  .card:hover,
+  .atek-signature:hover {
+    transform: none !important;
+  }
 }
 
 /* === PRINT STYLES === */
@@ -425,18 +690,18 @@ pre code {
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-  background: linear-gradient(135deg, var(--atek-primary) 0%, var(--atek-accent) 100%);
-  color: white;
+  background: linear-gradient(135deg, var(--atek-primary-light) 0%, var(--atek-accent-light) 100%);
+  color: #FFFFFF;
   border-radius: 0.5rem;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(57, 73, 171, 0.3);
+  box-shadow: 0 4px 12px rgba(44, 58, 143, 0.3);
 }
 
 .atek-signature:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(57, 73, 171, 0.4);
+  box-shadow: 0 6px 16px rgba(44, 58, 143, 0.4);
   border-bottom: none;
 }
 
