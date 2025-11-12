@@ -92,6 +92,8 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:         # Onglets de contenu
+      alternate_style: true
 
   # Code highlighting
   - pymdownx.highlight:      # Coloration syntaxique
