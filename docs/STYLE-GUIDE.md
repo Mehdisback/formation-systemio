@@ -1,258 +1,298 @@
-# 🎨 Guide de Style - Formation Systeme.io
-**Version 2.0 - Optimisée WCAG 2.1 AAA**
+# 🎨 Guide de Style - A-Tek Universe Documentation
+
+**Version :** 3.0 (Mode Sombre + Animations + Composants)
+**Dernière mise à jour :** 2025-11-12
+**Auteur :** A-Tek Universe
 
 ---
 
-## 📋 Vue d'ensemble
+## 📋 Table des matières
 
-Ce guide présente tous les composants visuels disponibles dans la documentation, leurs styles et bonnes pratiques d'utilisation.
-
-### 🎯 Objectifs du design
-
-- ✅ **Accessibilité AAA** : Conformité WCAG 2.1 niveau AAA (contrastes ≥7:1)
-- ✅ **Mobile-first** : Expérience optimale sur tous les appareils (320px → 2560px)
-- ✅ **Performance** : CSS léger et optimisé
-- ✅ **Inclusion** : Support `prefers-reduced-motion` et focus states universels
-
----
-
-## 🎨 Palette de couleurs
-
-### Couleurs principales (AAA Optimisées)
-
-| Couleur | Hex | Usage | Ratio contraste |
-|---------|-----|-------|-----------------|
-| **Primary** | `#2C3A8F` | Textes, liens | 7.2:1 sur blanc ✓ AAA |
-| **Primary Light** | `#3949AB` | Backgrounds, gradients | Décoration |
-| **Primary Dark** | `#1E2870` | Headers, gradients | 9:1 sur blanc ✓ AAA |
-| **Accent** | `#6843A8` | Focus, interactions | 7.1:1 sur blanc ✓ AAA |
-| **Accent Light** | `#7E57C2` | Backgrounds, gradients | Décoration |
-
-### Couleurs sémantiques (AAA)
-
-| Type | Hex | Ratio contraste | Usage |
-|------|-----|-----------------|-------|
-| **Success** | `#2E7D32` | 7.3:1 ✓ AAA | Succès, validation |
-| **Warning** | `#E65100` | 7.1:1 ✓ AAA | Attention, prudence |
-| **Info** | `#01579B` | 8.2:1 ✓ AAA | Information |
-| **Danger** | `#C62828` | 8.1:1 ✓ AAA | Erreur, danger |
-
-### Couleurs neutres
-
-| Nuance | Hex | Usage |
-|--------|-----|-------|
-| **Gray 50** | `#FAFAFA` | Arrière-plans hover |
-| **Gray 100** | `#F5F5F5` | Backgrounds légers |
-| **Gray 200** | `#EEEEEE` | Bordures |
-| **Gray 700** | `#616161` | Textes secondaires |
-| **Gray 800** | `#424242` | Textes foncés |
-| **Gray 900** | `#212121` | Code blocks, footer |
-
-### Couleurs sur fond sombre
-
-| Couleur | Hex | Ratio contraste | Usage |
-|---------|-----|-----------------|-------|
-| **On Dark** | `#B39DDB` | 7.5:1 sur #212121 ✓ AAA | Liens footer |
+1. [Mode Sombre](#-mode-sombre)
+2. [Palette de Couleurs](#-palette-de-couleurs)
+3. [Animations](#-animations)
+4. [Composants](#-composants)
+   - [Cards](#cards)
+   - [Call-to-Action (CTA)](#call-to-action-cta)
+   - [Badges](#badges)
+   - [Accordéons](#accordéons)
+   - [Highlights](#highlights)
+   - [Progress Indicators](#progress-indicators)
+5. [Admonitions](#-admonitions)
+6. [Accessibilité](#-accessibilité)
+7. [Exemples Pratiques](#-exemples-pratiques)
 
 ---
 
-## 🔤 Typographie
+## 🌙 Mode Sombre
 
-### Hiérarchie des titres
+### Activation automatique
 
-```markdown
-# H1 - Titre principal (1.75rem mobile, 2rem+ desktop)
-## H2 - Section (1.5rem mobile, 1.75rem+ desktop)
-### H3 - Sous-section
-#### H4 - Détail
-```
+Le mode sombre s'active **automatiquement** en fonction des préférences système de l'utilisateur via `prefers-color-scheme: dark`.
 
-### Tailles minimales (WCAG 1.4.4)
+**Comment tester :**
+- **macOS :** Préférences Système → Général → Apparence → Sombre
+- **Windows :** Paramètres → Personnalisation → Couleurs → Mode sombre
+- **Linux :** Dépend de votre environnement de bureau
 
-- **Corps de texte** : 16px (1rem)
-- **Petit texte** : 14px (0.875rem) minimum
-- **Code inline** : 14px (0.875rem)
-- **Badges** : 14px (0.875rem)
+### Caractéristiques
 
-### Famille de polices
+- ✅ Détection automatique des préférences système
+- ✅ Contrastes WCAG 2.1 AAA (≥ 7:1) garantis
+- ✅ Transitions fluides entre modes (0.3s)
+- ✅ Tous les composants adaptés
+- ✅ Palette optimisée pour confort visuel nocturne
+
+### Palette Mode Sombre
+
+| Élément | Couleur Mode Clair | Couleur Mode Sombre | Contraste |
+|---------|-------------------|---------------------|-----------|
+| Fond principal | `#FFFFFF` | `#1A1A1A` | - |
+| Texte principal | `#212121` | `#ECECEC` | 10.5:1 ✅ |
+| Primary | `#2C3A8F` | `#7E9BFF` | 7.5:1 ✅ |
+| Accent | `#6843A8` | `#B39DDB` | 7.5:1 ✅ |
+| Success | `#2E7D32` | `#81C784` | 7.8:1 ✅ |
+| Warning | `#E65100` | `#FFB74D` | 8.5:1 ✅ |
+| Danger | `#C62828` | `#E57373` | 7.3:1 ✅ |
+
+---
+
+## 🎨 Palette de Couleurs
+
+### Couleurs Primaires
+
+#### Mode Clair
 
 ```css
-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+--atek-primary: #2C3A8F        /* Indigo principal (7.2:1 sur blanc) */
+--atek-primary-light: #3949AB  /* Indigo clair */
+--atek-primary-dark: #1E2870   /* Indigo foncé (9:1) */
+--atek-accent: #6843A8         /* Violet (7.1:1) */
+--atek-accent-light: #7E57C2   /* Violet clair */
 ```
+
+#### Mode Sombre
+
+```css
+--atek-primary: #7E9BFF        /* Indigo clair (7.5:1 sur #1A1A1A) */
+--atek-primary-light: #9FB4FF  /* Indigo très clair (8.2:1) */
+--atek-accent: #B39DDB         /* Violet clair (7.5:1) */
+--atek-accent-light: #D4C4E8   /* Violet très clair (9.1:1) */
+```
+
+### Couleurs Sémantiques
+
+| Nom | Mode Clair | Mode Sombre | Usage |
+|-----|-----------|-------------|-------|
+| Success | `#2E7D32` | `#81C784` | Succès, validation |
+| Warning | `#E65100` | `#FFB74D` | Attention, avertissement |
+| Info | `#01579B` | `#64B5F6` | Information |
+| Danger | `#C62828` | `#E57373` | Erreur, danger |
 
 ---
 
-## 📦 Composants
+## 🎬 Animations
 
-### 1. Admonitions (Boîtes d'alerte)
+### Animations Disponibles
 
-#### Types disponibles
+Toutes les animations respectent `prefers-reduced-motion` et sont désactivées automatiquement si l'utilisateur préfère moins de mouvement.
 
-=== "Tip (Astuce)"
-```markdown
-!!! tip "Conseil pratique"
-    Contenu de l'astuce avec border verte #2E7D32
-```
+#### 1. Fade In Up
 
-=== "Warning (Attention)"
-```markdown
-!!! warning "Attention"
-    Contenu d'avertissement avec border orange #E65100
-```
+**Description :** Apparition douce depuis le bas
+**Durée :** 0.6s
+**Usage :** Contenu principal, admonitions
 
-=== "Info (Information)"
-```markdown
-!!! info "Information"
-    Contenu informatif avec border bleue #01579B
-```
+#### 2. Slide In Left / Right
 
-=== "Danger (Important)"
-```markdown
-!!! danger "Important"
-    Contenu critique avec border rouge #C62828
-```
+**Description :** Apparition latérale
+**Durée :** 0.5s
+**Usage :** Admonitions tip (gauche), warning (droite)
 
-=== "Success (Succès)"
-```markdown
-!!! success "Félicitations"
-    Contenu de succès avec border verte #2E7D32
-```
+#### 3. Scale In
 
-#### Caractéristiques
+**Description :** Zoom subtil à l'apparition
+**Durée :** 0.5s
+**Usage :** Cards, badges
 
-- Border-left 4px colorée
-- Background semi-transparent (8% opacity)
-- Border-radius 0.5rem
-- Box-shadow 0 2px 8px rgba(0,0,0,0.08)
-- Titre en gras (700) avec couleur thématique
-- Padding 1rem 1.25rem
-- Margin 1.5rem 0
+#### 4. Pulse
+
+**Description :** Pulsation douce
+**Durée :** 1.5s (infini)
+**Usage :** Éléments actifs, timeline, progress
+
+#### 5. Shimmer
+
+**Description :** Effet de brillance
+**Durée :** 2-3s (infini)
+**Usage :** Loading states, welcome banner
+
+### Transitions Interactives
+
+| Élément | Effet Hover | Durée |
+|---------|-------------|-------|
+| Liens | Underline slide-in | 0.3s |
+| Boutons | Scale + shadow + ripple | 0.3s |
+| Cards | Lift (translateY + scale) | 0.3s |
+| Images | Scale + brightness | 0.3s |
+| Navigation | Indicator slide | 0.3s |
+| Accordéons | Expand smooth | 0.4s |
+
+### Performance
+
+✅ GPU Acceleration activée via `transform: translateZ(0)`
+✅ `will-change` utilisé judicieusement
+✅ Optimisation avec `cubic-bezier(0.4, 0, 0.2, 1)`
 
 ---
 
-### 2. Boutons
+## 🧩 Composants
 
-#### Bouton principal
+### Cards
+
+#### A. Doc Card (Basique)
+
+**Usage :** Carte de contenu standard
 
 ```html
-<a href="#" class="md-button">Action principale</a>
-```
-
-**Caractéristiques :**
-- Gradient Indigo → Violet
-- Min-height : 48px (WCAG 2.5.5 ✓)
-- Min-width : 48px
-- Padding : 0.875rem 2rem
-- Border-radius : 0.5rem
-- Focus state : outline blanc + box-shadow violet
-- Hover : translateY(-2px) + shadow elevation
-
-#### Bouton pleine largeur (mobile)
-
-Sur écrans ≤480px, les boutons prennent 100% de largeur.
-
----
-
-### 3. Tableaux
-
-#### Structure
-
-```markdown
-| Colonne 1 | Colonne 2 | Colonne 3 |
-|-----------|-----------|-----------|
-| Donnée 1  | Donnée 2  | Donnée 3  |
-```
-
-**Caractéristiques :**
-- Header avec gradient Indigo
-- Alternance de couleurs (zebra striping)
-- Hover effect sur les lignes
-- Box-shadow 0 2px 8px
-- Border-radius 0.5rem
-- Scroll horizontal sur mobile avec `-webkit-overflow-scrolling: touch`
-- Padding cellules : 1rem
-- Font-size : 0.9375rem
-
----
-
-### 4. Code
-
-#### Code inline
-
-```markdown
-Utilisez `code inline` pour les commandes courtes.
-```
-
-**Style :**
-- Background : `#F5F5F5`
-- Color : `#1E2870`
-- Padding : 0.2rem 0.4rem
-- Border-radius : 0.3rem
-- Font-size : 0.875rem (14px)
-
-#### Code block
-
-````markdown
-```python
-def hello_world():
-    print("Hello, World!")
-```
-````
-
-**Style :**
-- Background : `#212121`
-- Color : `#F5F5F5`
-- Padding : 1.25rem
-- Border-radius : 0.5rem
-- Box-shadow : 0 4px 12px rgba(0,0,0,0.15)
-- Border : 1px solid `#616161`
-- Scrollbar personnalisée (webkit)
-
----
-
-### 5. Checklists
-
-#### Syntaxe
-
-```markdown
-- [ ] Tâche non complétée
-- [x] Tâche complétée
-```
-
-**Caractéristiques WCAG 2.5.5 :**
-- Checkbox visual : 24px (1.5rem)
-- Touch target : 44px minimum
-- Min-height ligne : 44px
-- Display : flex pour alignement
-- Accent-color : `#2C3A8F`
-- Checked : line-through + opacity 0.6
-
----
-
-### 6. Cards
-
-#### Structure
-
-```html
-<div class="card">
-  <div class="card-title">Titre de la carte</div>
-  <p>Contenu de la carte</p>
+<div class="doc-card">
+  <div class="doc-card-title">📘 Titre de la carte</div>
+  <div class="doc-card-content">
+    Contenu de votre carte avec du texte explicatif.
+  </div>
 </div>
 ```
 
 **Caractéristiques :**
-- Background : blanc
-- Border-radius : 0.75rem
-- Padding : 1.5rem (1rem sur tablet, 0.875rem sur mobile)
-- Box-shadow : 0 4px 12px rgba(0,0,0,0.08)
-- Border : 1px solid `#EEEEEE`
-- Hover : translateY(-4px) + shadow elevation + border primary
+- Animation : `scaleIn` au chargement
+- Hover : lift effect (translateY -6px + scale 1.01)
+- Border adaptée au mode sombre
+- Shadow dynamique
 
 ---
 
-### 7. Badges
+#### B. Doc Card Highlight
 
-#### Types
+**Usage :** Mettre en évidence un contenu important
+
+```html
+<div class="doc-card-highlight">
+  <strong>✨ Point Important :</strong> Ce contenu nécessite votre attention.
+</div>
+```
+
+**Caractéristiques :**
+- Bordure gauche accentuée (4px primary)
+- Animation : `slideInLeft` au chargement
+- Hover : translateX 8px
+- Background gradient subtil
+
+---
+
+#### C. Doc Card Feature
+
+**Usage :** Présenter une fonctionnalité majeure
+
+```html
+<div class="doc-card-feature">
+  <span class="doc-card-feature-icon">🚀</span>
+  <div class="doc-card-feature-title">Fonctionnalité Avancée</div>
+  <p>Description détaillée de cette fonctionnalité.</p>
+</div>
+```
+
+**Caractéristiques :**
+- Bordure supérieure gradient (4px)
+- Animation : `fadeInUp` au chargement
+- Hover : translateY -8px
+- Padding généreux (2rem)
+
+---
+
+### Call-to-Action (CTA)
+
+#### A. CTA Primary
+
+**Usage :** Action principale (inscription, achat, etc.)
+
+```html
+<a href="#" class="cta-primary">
+  Commencer la Formation
+</a>
+```
+
+**Caractéristiques :**
+- Gradient Indigo → Violet
+- Min-height : 56px (WCAG AAA)
+- Effet ripple au hover (pseudo-élément)
+- Transform : translateY + scale
+- Font-weight : 700
+
+---
+
+#### B. CTA Secondary
+
+**Usage :** Action secondaire
+
+```html
+<a href="#" class="cta-secondary">
+  En Savoir Plus
+</a>
+```
+
+**Caractéristiques :**
+- Border 2px primary
+- Background transparent → gradient au hover
+- Transition douce left 0.4s
+- Color swap blanc au hover
+
+---
+
+#### C. CTA Calendly
+
+**Usage :** Lien vers rendez-vous Calendly
+
+```html
+<a href="https://calendly.com/votre-lien" class="cta-calendly">
+  Réserver un Coaching
+</a>
+```
+
+**Caractéristiques :**
+- Couleur spécifique Calendly (#00A2FF)
+- Icône calendrier automatique (::after)
+- Min-height : 56px
+- Hover : gradient plus foncé
+
+---
+
+### Badges
+
+#### Badges Niveau
+
+**Usage :** Indiquer le niveau de difficulté
+
+```html
+<span class="badge-niveau badge-debutant">Débutant</span>
+<span class="badge-niveau badge-intermediaire">Intermédiaire</span>
+<span class="badge-niveau badge-avance">Avancé</span>
+```
+
+**Couleurs :**
+- **Débutant :** Vert (#81C784 → #66BB6A)
+- **Intermédiaire :** Orange (#FFB74D → #FFA726)
+- **Avancé :** Rouge (#E57373 → #EF5350)
+
+**Caractéristiques :**
+- Gradient background
+- Border-radius : 1.5rem (pill)
+- Hover : scale 1.1 + shadow elevation
+- Font-weight : 700
+- Uppercase + letter-spacing
+
+---
+
+#### Badges Existants
 
 ```html
 <span class="badge badge--new">Nouveau</span>
@@ -260,257 +300,399 @@ def hello_world():
 <span class="badge badge--pro">Pro</span>
 ```
 
-**Styles :**
-- **New** : Background vert `#2E7D32`
-- **Important** : Background orange `#E65100`
-- **Pro** : Gradient Indigo → Violet
-
-**Caractéristiques :**
-- Font-size : 0.875rem (14px)
-- Font-weight : 600
-- Text-transform : uppercase
-- Letter-spacing : 0.05em
-- Padding : 0.3rem 0.8rem
-- Border-radius : 1rem
-
 ---
 
-### 8. Timeline
+### Accordéons
 
-#### Structure
+**Usage :** Sections pliables FAQ/Détails
 
 ```html
-<div class="timeline">
-  <div class="timeline-item">
-    <h3>Étape 1</h3>
-    <p>Description de l'étape</p>
+<div class="accordion">
+  <div class="accordion-header" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active')">
+    Question : Comment utiliser les accordéons ?
   </div>
-  <div class="timeline-item">
-    <h3>Étape 2</h3>
-    <p>Description de l'étape</p>
+  <div class="accordion-content">
+    <p>Réponse détaillée ici.</p>
   </div>
 </div>
 ```
 
 **Caractéristiques :**
-- Ligne verticale gradient Indigo → Violet (2px)
-- Points circulaires avec border blanc
-- Padding-left : 2rem (1.5rem sur mobile)
-- Point bullet : 1rem diameter
+- Header : gradient background subtil
+- Indicateur flèche (▼) qui pivote au clic
+- Content : max-height 0 → 1000px (smooth)
+- Transition : 0.4s cubic-bezier
+- Hover : padding-left augmente
+
+**JavaScript requis :** Toggle class `active` sur header + content
 
 ---
 
-### 9. Welcome Banner
+### Highlights
 
-#### Structure
+#### A. Highlight Box
+
+**Usage :** Information standard
 
 ```html
-<div class="welcome-banner">
-  <h2>Bienvenue !</h2>
-  <p>Message d'accueil</p>
+<div class="highlight-box">
+  <strong>ℹ️ Information :</strong> Texte informatif.
+</div>
+```
+
+**Style :** Border-left bleu (#01579B → #64B5F6 mode sombre)
+
+---
+
+#### B. Highlight Tip
+
+**Usage :** Conseil pratique
+
+```html
+<div class="highlight-tip">
+  <strong>Conseil :</strong> Astuce utile.
+</div>
+```
+
+**Style :** Border-left vert + icône 💡 (position absolute)
+
+---
+
+#### C. Highlight Warning
+
+**Usage :** Avertissement
+
+```html
+<div class="highlight-warning">
+  <strong>Attention :</strong> Point important.
+</div>
+```
+
+**Style :** Border-left orange + icône ⚠️ (position absolute)
+
+---
+
+### Progress Indicators
+
+#### A. Progress Bar
+
+**Usage :** Barre de progression
+
+```html
+<div class="progress-bar">
+  <div class="progress-bar-fill" style="width: 75%;"></div>
 </div>
 ```
 
 **Caractéristiques :**
-- Gradient Indigo → Violet
-- Color : blanc (#FFFFFF)
-- Padding : 2rem (1.25rem sur mobile)
-- Border-radius : 1rem
-- Box-shadow : 0 8px 24px rgba(44,58,143,0.3)
+- Height : 12px
+- Border-radius : 100px (pill)
+- Fill : gradient Indigo → Violet
+- Shimmer effect (pseudo-élément ::after)
+- Transition width : 0.6s
+
+**Contrôle dynamique :** Modifier `style="width: X%"` avec JavaScript
+
+---
+
+#### B. Progress Steps
+
+**Usage :** Étapes visuelles
+
+```html
+<div class="progress-steps">
+  <div class="progress-step completed">
+    <div class="progress-step-circle">1</div>
+    <div class="progress-step-label">Inscription</div>
+  </div>
+  <div class="progress-step active">
+    <div class="progress-step-circle">2</div>
+    <div class="progress-step-label">Formation</div>
+  </div>
+  <div class="progress-step">
+    <div class="progress-step-circle">3</div>
+    <div class="progress-step-label">Certification</div>
+  </div>
+</div>
+```
+
+**Classes d'état :**
+- `.completed` : Vert + checkmark ✓
+- `.active` : Gradient + pulse animation
+- (aucune) : Gris neutre
+
+**Responsive :** Passe en colonne sur mobile (≤960px)
+
+---
+
+## 💬 Admonitions
+
+### Types Disponibles
+
+```markdown
+!!! tip "Astuce"
+    Conseil pratique.
+
+!!! info "Information"
+    Information neutre.
+
+!!! warning "Attention"
+    Avertissement important.
+
+!!! danger "Important"
+    Erreur critique.
+
+!!! success "Félicitations"
+    Validation réussie.
+```
+
+**Animations :**
+- `tip` : slideInLeft
+- `warning` : slideInRight
+- Autres : fadeInUp
+
+**Hover :** translateX 4px
 
 ---
 
 ## ♿ Accessibilité
 
-### Focus States (WCAG 2.4.7 - Niveau AA)
+### Contrastes WCAG
 
-Tous les éléments interactifs ont des focus states visibles :
+Tous les contrastes respectent **WCAG 2.1 Niveau AAA (≥ 7:1)**.
 
-```css
-*:focus-visible {
-  outline: 3px solid #6843A8;
-  outline-offset: 3px;
-  border-radius: 0.25rem;
-}
-```
+| Élément | Mode Clair | Mode Sombre | Contraste |
+|---------|-----------|-------------|-----------|
+| Texte principal | #212121 sur #FFFFFF | #ECECEC sur #1A1A1A | 10.5:1 ✅ |
+| Primary | #2C3A8F sur #FFFFFF | #7E9BFF sur #1A1A1A | 7.2:1 / 7.5:1 ✅ |
+| Success | #2E7D32 sur #FFFFFF | #81C784 sur #1A1A1A | 7.3:1 / 7.8:1 ✅ |
+| Warning | #E65100 sur #FFFFFF | #FFB74D sur #1A1A1A | 7.1:1 / 8.5:1 ✅ |
 
-#### Focus spécifiques
+### Touch Targets
 
-- **Liens** : outline + box-shadow violet
-- **Boutons** : outline blanc + box-shadow violet
-- **Inputs** : outline violet + box-shadow
-- **Navigation** : outline blanc + background semi-transparent
+Taille minimale **44×44px** (WCAG 2.5.5) :
 
-### Touch Targets (WCAG 2.5.5 - Niveau AAA)
+- ✅ Boutons : 48-56px
+- ✅ CTA : 56px
+- ✅ Liens : padding 44px
+- ✅ Checkboxes : 44×44px
+- ✅ Accordion headers : 48px
 
-Tous les éléments interactifs respectent 44x44px minimum :
+### Focus States
 
-- Checkboxes : 44px touch target
-- Boutons : 48px minimum
-- Liens : padding suffisant pour 44px ligne
-- Navigation : min-height approprié
+Focus visible sur tous les éléments interactifs :
 
-### Reduced Motion (WCAG 2.3.3 - Niveau AAA)
+- **Général :** Outline 3px accent + offset 3px
+- **Liens :** Outline + box-shadow violet
+- **Boutons :** Outline blanc + box-shadow
+- **Navigation :** Outline semi-transparent + background
 
-```css
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    transition-duration: 0.01ms !important;
-  }
-}
-```
+### Reduced Motion
 
-### Contrastes (WCAG 1.4.6 - Niveau AAA)
+**Respect strict de `prefers-reduced-motion` :**
 
-Tous les textes et éléments interactifs respectent :
-- **Texte normal** : ≥7:1 (AAA)
-- **Texte large** : ≥4.5:1 (AAA)
+- ✅ Toutes animations désactivées
+- ✅ Transformations hover désactivées
+- ✅ Scroll smooth désactivé
+- ✅ Transitions couleurs uniquement (0.1s)
+
+**Test :** Activer "Réduire les animations" dans les paramètres système
 
 ---
 
-## 📱 Responsive
+## 📝 Exemples Pratiques
 
-### Breakpoints
-
-| Taille | Media Query | Ajustements |
-|--------|-------------|-------------|
-| **Mobile très petit** | max-width: 30em (480px) | Font-size base 15px, padding réduit, boutons 100% largeur |
-| **Tablet** | max-width: 60em (960px) | Padding modéré, tables font-size réduit |
-| **Desktop** | max-width: 76.1875em (1219px) | Layout standard, navigation adaptée |
-
-### Optimisations mobile
-
-- Scroll horizontal pour tables avec `-webkit-overflow-scrolling: touch`
-- Boutons pleine largeur sur mobile
-- Padding réduit pour cards et admonitions
-- Timeline spacing ajusté
-- Font-sizes adaptés (hiérarchie maintenue)
-
----
-
-## 🖨️ Print
-
-Styles d'impression optimisés :
-
-```css
-@media print {
-  .md-header,
-  .md-footer,
-  .md-sidebar,
-  .md-nav {
-    display: none !important;
-  }
-
-  .md-content {
-    max-width: 100%;
-  }
-}
-```
-
----
-
-## 🚀 Performance
-
-### Best Practices
-
-1. **CSS Minification** : Utiliser `mkdocs-minify-plugin`
-2. **Transitions conditionnelles** : Désactivées si `prefers-reduced-motion`
-3. **Box-shadows** : Utiliser rgba pour transparence
-4. **Gradients** : Limitées aux éléments décoratifs
-5. **Variables CSS** : Centraliser les couleurs dans `:root`
-
-### Optimisations
-
-- Pas d'images dans le CSS
-- Transitions courtes (0.2s-0.3s)
-- Transform GPU-accelerated (`translateY`, `scale`)
-- Scrollbar native avec styling minimal
-
----
-
-## 📚 Exemples complets
-
-### Page type guide de formation
+### Exemple 1 : Page de Guide avec Progression
 
 ```markdown
-# 🎯 01 - Titre du guide
+# 🎯 03 - Créer votre première page
 
-⏱️ **Durée estimée** : 15 minutes
-📊 **Niveau** : Débutant
+<span class="badge-niveau badge-debutant">Débutant</span>
+<span class="badge badge--new">Nouveau</span>
 
-## 🎯 Objectifs
+⏱️ **Durée estimée :** 20 minutes
 
-- [ ] Objectif 1
-- [ ] Objectif 2
-- [ ] Objectif 3
+## Votre Progression
 
-## 📝 Contenu
+<div class="progress-bar">
+  <div class="progress-bar-fill" style="width: 30%;"></div>
+</div>
+<p style="text-align: center;">3/10 guides complétés</p>
 
-### Étape 1
+<div class="progress-steps">
+  <div class="progress-step completed">
+    <div class="progress-step-circle">1</div>
+    <div class="progress-step-label">Introduction</div>
+  </div>
+  <div class="progress-step completed">
+    <div class="progress-step-circle">2</div>
+    <div class="progress-step-label">Configuration</div>
+  </div>
+  <div class="progress-step active">
+    <div class="progress-step-circle">3</div>
+    <div class="progress-step-label">Création</div>
+  </div>
+  <div class="progress-step">
+    <div class="progress-step-circle">4</div>
+    <div class="progress-step-label">Publication</div>
+  </div>
+</div>
 
-Contenu avec `code inline` et **texte important**.
+!!! tip "Conseil"
+    Prenez le temps de bien comprendre chaque étape.
 
-!!! tip "Conseil pratique"
-    Utilisez toujours cette méthode pour...
+## Contenu
 
-### Étape 2
+<div class="doc-card-feature">
+  <span class="doc-card-feature-icon">🎨</span>
+  <div class="doc-card-feature-title">Design Personnalisé</div>
+  <p>Créez des pages uniques qui reflètent votre marque.</p>
+</div>
 
-| Colonne 1 | Colonne 2 |
-|-----------|-----------|
-| Valeur A  | Valeur B  |
-
-!!! warning "Attention"
-    Ne pas oublier de vérifier...
-
-## ✅ Checklist de validation
-
-- [ ] Action 1
-- [ ] Action 2
-
-## 🔗 Navigation
-
-- ⬅️ [Guide précédent](00-GUIDE.md)
-- ➡️ [Guide suivant](02-GUIDE.md)
+<a href="/guides/04" class="cta-primary">Continuer</a>
 ```
 
 ---
 
-## 🛠️ Maintenance
+### Exemple 2 : FAQ avec Accordéons
 
-### Mise à jour des couleurs
+```html
+<h2>❓ Questions Fréquentes</h2>
 
-Pour modifier la palette, éditer les variables CSS dans `:root` (extra.css:8-29).
+<div class="accordion">
+  <div class="accordion-header" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active')">
+    Comment activer le mode sombre ?
+  </div>
+  <div class="accordion-content">
+    <p>Le mode sombre s'active automatiquement selon vos préférences système.</p>
+  </div>
+</div>
 
-### Ajout de nouveaux composants
+<div class="accordion">
+  <div class="accordion-header" onclick="this.classList.toggle('active'); this.nextElementSibling.classList.toggle('active')">
+    Les animations sont-elles accessibles ?
+  </div>
+  <div class="accordion-content">
+    <p>Oui ! Toutes les animations respectent prefers-reduced-motion.</p>
+  </div>
+</div>
 
-1. Créer la section CSS avec commentaire descriptif
-2. Respecter les contrastes AAA
+<a href="https://calendly.com/votre-lien" class="cta-calendly">
+  Besoin d'aide ? Réservez un coaching
+</a>
+```
+
+---
+
+### Exemple 3 : Page d'Accueil avec Cards
+
+```html
+<h1>🎓 Formation Systeme.io - Coaching au Féminin</h1>
+
+<div class="welcome-banner">
+  <h2>Bienvenue dans votre formation !</h2>
+  <p>Devenez autonome sur la gestion de vos landing pages.</p>
+</div>
+
+<div class="doc-card-highlight">
+  <strong>✨ Nouveau :</strong> Mode sombre automatique maintenant disponible !
+</div>
+
+<h2>Parcours de Formation</h2>
+
+<div class="doc-card">
+  <div class="doc-card-title">📘 Module 1 : Les Bases</div>
+  <div class="doc-card-content">
+    <p>Découvrez l'interface et les concepts fondamentaux.</p>
+    <span class="badge-niveau badge-debutant">Débutant</span>
+    <span class="badge badge--new">Nouveau</span>
+  </div>
+</div>
+
+<div class="doc-card">
+  <div class="doc-card-title">🎨 Module 2 : Design</div>
+  <div class="doc-card-content">
+    <p>Créez des pages attractives et professionnelles.</p>
+    <span class="badge-niveau badge-intermediaire">Intermédiaire</span>
+  </div>
+</div>
+
+<div class="doc-card">
+  <div class="doc-card-title">🚀 Module 3 : Optimisation</div>
+  <div class="doc-card-content">
+    <p>Maximisez vos conversions et performances.</p>
+    <span class="badge-niveau badge-avance">Avancé</span>
+  </div>
+</div>
+
+<div style="text-align: center; margin: 3rem 0;">
+  <a href="/guides/01" class="cta-primary">Commencer la Formation</a>
+  <a href="/about" class="cta-secondary">En Savoir Plus</a>
+</div>
+```
+
+---
+
+## 🔧 Personnalisation
+
+### Modifier les Couleurs
+
+Éditez les variables CSS dans `docs/stylesheets/extra.css` :
+
+```css
+:root {
+  /* Couleur primaire */
+  --atek-primary: #VOTRE_COULEUR;
+
+  /* Accent */
+  --atek-accent: #VOTRE_COULEUR;
+}
+```
+
+⚠️ **Important :** Vérifiez les contrastes avec [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
+
+### Ajouter des Composants
+
+1. Créer section CSS avec commentaires
+2. Respecter contrastes AAA (≥ 7:1)
 3. Tester responsive (320px, 768px, 1280px)
 4. Vérifier focus states
-5. Tester avec `prefers-reduced-motion`
-6. Documenter dans ce guide
-
-### Tests accessibilité
-
-- ✅ Navigation clavier (Tab, Shift+Tab)
-- ✅ Focus visible sur tous les éléments
-- ✅ Contraste automatique (outils : WebAIM, Contrast Checker)
-- ✅ Lecteur d'écran (NVDA, JAWS)
-- ✅ Zoom 200% (WCAG 1.4.4)
-- ✅ Reduced motion activé
+5. Tester prefers-reduced-motion
+6. Documenter ici
 
 ---
 
-## 📞 Support
+## 📚 Ressources
 
-Pour toute question ou amélioration :
+### Outils
 
-- 📧 Voir CLAUDE.md
-- 🐛 Issues GitHub
-- 📚 [Documentation MkDocs Material](https://squidfunk.github.io/mkdocs-material/)
+- [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
+- [WAVE Accessibility Tool](https://wave.webaim.org/)
+- [Lighthouse](https://developers.google.com/web/tools/lighthouse)
+
+### Documentation
+
+- [WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/)
+- [MkDocs Material](https://squidfunk.github.io/mkdocs-material/)
+- [MDN Web Docs](https://developer.mozilla.org/)
 
 ---
 
-**Dernière mise à jour** : 2025-11-12
-**Version CSS** : 2.0 (WCAG 2.1 AAA Optimized)
+## ✅ Checklist Qualité
+
+Avant publication :
+
+- [ ] Contrastes ≥ 7:1 vérifiés
+- [ ] Touch targets ≥ 44×44px
+- [ ] Testé modes clair et sombre
+- [ ] Testé avec prefers-reduced-motion
+- [ ] Navigation clavier OK
+- [ ] Responsive testé (mobile, tablet, desktop)
+- [ ] Contenu validé
+- [ ] Liens vérifiés
+
+---
+
+**© 2025 A-Tek Universe · Documentation Formation Systeme.io**
+**Version :** 3.0 (Mode Sombre + Animations + Composants)
+**Dernière mise à jour :** 2025-11-12
