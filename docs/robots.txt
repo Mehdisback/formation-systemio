@@ -1,18 +1,64 @@
 # Robots.txt - Formation Systeme.io
-# https://mehdisback.github.io/formation-systemeio/
+# L'Essentiel en Soi - Coaching au Féminin
+# https://mehdisback.github.io/formation-systemio/
 
+# Règles par défaut pour tous les robots
 User-agent: *
 Allow: /
 
-# Sitemap XML (sera généré automatiquement par le plugin mkdocs-sitemap)
-Sitemap: https://mehdisback.github.io/formation-systemeio/sitemap.xml
+# Désindexer les pages d'erreur et de recherche
+Disallow: /404.html
+Disallow: /search/
 
-# Crawl-delay (optionnel, pour limiter la fréquence de crawl)
-# Crawl-delay: 10
+# Sitemap XML (généré automatiquement par MkDocs)
+Sitemap: https://mehdisback.github.io/formation-systemio/sitemap.xml
 
-# Bloquer certains bots agressifs (optionnel)
+# Crawl-delay pour robots respectueux (optionnel)
+Crawl-delay: 1
+
+# === BOTS IA ET MACHINE LEARNING ===
+# Autoriser les crawlers IA pour entraînement de modèles
+# (Contenu pédagogique libre d'accès)
+
+# OpenAI GPT
+User-agent: GPTBot
+Allow: /
+
+# ChatGPT User Agent
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic Claude
+User-agent: Claude-Web
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+
+# Google Bard/Gemini
+User-agent: Google-Extended
+Allow: /
+
+# Common Crawl (archive web publique)
+User-agent: CCBot
+Allow: /
+
+# === BOTS SEO AGRESSIFS (OPTIONNEL) ===
+# Décommenter pour bloquer certains crawlers SEO intensifs
+# qui consomment beaucoup de bande passante
+
 # User-agent: AhrefsBot
 # Disallow: /
 
 # User-agent: SemrushBot
 # Disallow: /
+
+# User-agent: DotBot
+# Disallow: /
+
+# User-agent: MJ12bot
+# Disallow: /
+
+# === INFORMATIONS COMPLÉMENTAIRES ===
+# Site créé avec MkDocs Material
+# Documentation mise à jour régulièrement
+# Contact : via le site L'Essentiel en Soi

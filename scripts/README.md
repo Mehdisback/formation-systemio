@@ -90,23 +90,131 @@ Le script peut être étendu pour :
 
 ---
 
-## 🔮 Futurs scripts prévus
+### `optimize_images.py` - Optimisation d'images
 
-### `check_images.py` (TODO)
-Vérifier que toutes les images référencées existent et ont un alt text.
+Compresse et optimise les images pour le web.
 
-### `optimize_images.py` (TODO)
-Compresser automatiquement les images PNG/JPG avec TinyPNG API.
+#### Installation des dépendances
 
-### `validate_frontmatter.py` (TODO)
-Vérifier que tous les guides ont une meta description dans le frontmatter YAML.
+```bash
+pip install Pillow
+```
 
-### `generate_stats.py` (TODO)
-Générer statistiques projet :
-- Nombre total de mots
-- Nombre de guides
-- Durée totale formation
-- Score SEO estimé
+#### Usage
+
+```bash
+# Optimiser toutes les images dans docs/assets
+python scripts/optimize_images.py
+
+# Avec conversion WebP
+python scripts/optimize_images.py --webp
+
+# Personnaliser la qualité
+python scripts/optimize_images.py --quality 85 --max-size 100
+
+# Générer versions responsive
+python scripts/optimize_images.py --responsive
+```
+
+#### Fonctionnalités
+
+- Compression PNG/JPG avec réduction de taille
+- Conversion vers WebP (optionnel)
+- Génération de versions responsive (320px, 640px, 1024px, 1920px)
+- Rapport d'optimisation avec gains en KB
+
+---
+
+### `validate_frontmatter.py` - Validation des métadonnées
+
+Vérifie le frontmatter YAML des fichiers Markdown.
+
+#### Installation des dépendances
+
+```bash
+pip install PyYAML
+```
+
+#### Usage
+
+```bash
+# Validation normale (warnings pour frontmatter manquant)
+python scripts/validate_frontmatter.py
+
+# Mode strict (erreur si pas de frontmatter)
+python scripts/validate_frontmatter.py --strict
+
+# Vérifier un répertoire spécifique
+python scripts/validate_frontmatter.py --dir docs/
+```
+
+#### Validations effectuées
+
+- Syntaxe YAML correcte
+- Présence des champs requis (title)
+- Champs recommandés (description)
+- Longueur de description SEO (50-160 caractères)
+
+---
+
+### `generate_stats.py` - Statistiques de documentation
+
+Génère des statistiques complètes sur la documentation.
+
+#### Usage
+
+```bash
+# Afficher les statistiques
+python scripts/generate_stats.py
+
+# Exporter en JSON
+python scripts/generate_stats.py --export stats.json
+
+# Analyser un répertoire spécifique
+python scripts/generate_stats.py --dir docs/
+```
+
+#### Statistiques générées
+
+- Nombre total de pages et de mots
+- Temps de lecture estimé (à 200 mots/minute)
+- Éléments de contenu (code blocks, images, liens, admonitions)
+- Couverture des assets (images, screenshots)
+- Top 5 des pages les plus longues
+- Moyennes par page
+
+---
+
+### `check_spelling.py` - Vérification orthographique
+
+Vérifie l'orthographe française avec dictionnaire personnalisé.
+
+#### Installation des dépendances
+
+```bash
+pip install pyspellchecker
+```
+
+#### Usage
+
+```bash
+# Vérifier toute la documentation
+python scripts/check_spelling.py
+
+# Vérifier un fichier spécifique
+python scripts/check_spelling.py --file docs/01-GUIDE-DEMARRAGE-RAPIDE.md
+
+# Ajouter un mot au dictionnaire personnalisé
+python scripts/check_spelling.py --add-word "Systeme.io"
+```
+
+#### Fonctionnalités
+
+- Dictionnaire français intégré
+- Dictionnaire personnalisé pour termes techniques
+- Suggestions de corrections
+- Rapport des erreurs fréquentes
+- Exclut automatiquement code, URLs, balises HTML
 
 ---
 
