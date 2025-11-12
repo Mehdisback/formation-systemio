@@ -28,5 +28,17 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Valider la documentation
+        run: |
+          echo "🔍 Validation de la structure et du build..."
+          mkdocs build --strict
+          echo "✅ Build validé avec succès"
+
+      - name: Vérifier les liens
+        run: |
+          echo "🔗 Vérification des liens internes..."
+          python scripts/check_links.py
+          echo "✅ Liens vérifiés avec succès"
+
       - name: Déployer sur GitHub Pages
         run: mkdocs gh-deploy --force

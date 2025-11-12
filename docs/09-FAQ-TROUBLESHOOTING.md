@@ -1,3 +1,7 @@
+---
+description: "Résolvez rapidement tous les problèmes de votre landing page Systeme.io : connexion, édition, formulaires, affichage. FAQ complète et solutions étape par étape."
+---
+
 # 🆘 09 - FAQ et résolution de problèmes
 
 ⏱️ **Durée estimée** : Référence permanente (consultation selon besoin)

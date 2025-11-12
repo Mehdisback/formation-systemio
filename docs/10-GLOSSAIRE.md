@@ -1,3 +1,7 @@
+---
+description: "Glossaire complet du vocabulaire Systeme.io, landing pages et marketing digital. Définitions claires et exemples concrets pour maîtriser tous les termes techniques."
+---
+
 # 📖 10 - Glossaire et terminologie
 
 ⏱️ **Durée estimée** : Référence permanente (consultation selon besoin)
