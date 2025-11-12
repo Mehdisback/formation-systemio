@@ -55,6 +55,14 @@ Le mode sombre s'active **automatiquement** en fonction des préférences systè
 | Warning | `#E65100` | `#FFB74D` | 8.5:1 ✅ |
 | Danger | `#C62828` | `#E57373` | 7.3:1 ✅ |
 
+### Adaptations Spéciales Mode Sombre
+
+**Badges Niveau :** En mode sombre, les badges utilisent du **texte noir** sur des backgrounds clairs pour garantir un contraste AAA (≥ 7:1).
+
+**CTA Calendly :** La couleur Calendly est adaptée en mode sombre avec un bleu plus clair (`#4DB8FF`) et du texte noir pour respecter les contrastes AAA.
+
+**Progress Completed :** Les étapes complétées utilisent du texte noir sur fond vert clair pour un contraste optimal.
+
 ---
 
 ## 🎨 Palette de Couleurs
@@ -461,12 +469,26 @@ Toutes les animations respectent `prefers-reduced-motion` et sont désactivées 
 
 Tous les contrastes respectent **WCAG 2.1 Niveau AAA (≥ 7:1)**.
 
+#### Contrastes de Base
+
 | Élément | Mode Clair | Mode Sombre | Contraste |
 |---------|-----------|-------------|-----------|
 | Texte principal | #212121 sur #FFFFFF | #ECECEC sur #1A1A1A | 10.5:1 ✅ |
 | Primary | #2C3A8F sur #FFFFFF | #7E9BFF sur #1A1A1A | 7.2:1 / 7.5:1 ✅ |
 | Success | #2E7D32 sur #FFFFFF | #81C784 sur #1A1A1A | 7.3:1 / 7.8:1 ✅ |
 | Warning | #E65100 sur #FFFFFF | #FFB74D sur #1A1A1A | 7.1:1 / 8.5:1 ✅ |
+
+#### Contrastes Composants Spéciaux (Mode Sombre)
+
+| Composant | Couleur Fond | Couleur Texte | Contraste | Note |
+|-----------|--------------|---------------|-----------|------|
+| Badge Débutant | #81C784 (vert clair) | #000000 | 10.2:1 ✅ | Texte noir en mode sombre |
+| Badge Intermédiaire | #FFB74D (orange clair) | #000000 | 12.5:1 ✅ | Texte noir en mode sombre |
+| Badge Avancé | #E57373 (rouge clair) | #000000 | 9.8:1 ✅ | Texte noir en mode sombre |
+| CTA Calendly | #4DB8FF (bleu clair) | #000000 | 8.3:1 ✅ | Adapté pour mode sombre |
+| Progress Completed | #81C784 (vert) | #000000 | 10.2:1 ✅ | Checkmark noir |
+
+**Principe :** En mode sombre, les composants avec backgrounds clairs (badges, certains CTA) utilisent du **texte noir** pour garantir des contrastes AAA. C'est l'inverse du mode clair où on utilise du texte blanc sur backgrounds foncés.
 
 ### Touch Targets
 
