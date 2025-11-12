@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "2.0.0",
+  "description": "MkDocs Material documentation project - optimized for French technical documentation",
+  "installMode": "local",
+
+  "permissions": {
+    "allow": [
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git branch:*)",
+      "Bash(ls:*)",
+      "Bash(pwd:*)",
+      "Bash(mkdocs serve:*)",
+      "Bash(mkdocs build:*)",
+      "Bash(python -m mkdocs:*)",
+      "Bash(cat:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)"
+    ],
+    "ask": [
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(mkdocs gh-deploy:*)",
+      "Bash(pip install:*)",
+      "Bash(mkdir:*)"
+    ],
+    "deny": [
+      "Bash(rm -rf:*)",
+      "Bash(git push --force:*)",
+      "Bash(git reset --hard:*)"
+    ]
+  },
+
+  "agents": {
+    "allow": [
+      "@content-reviewer",
+      "@accessibility-checker",
+      "@documentation-writer"
+    ],
+    "ask": [],
+    "deny": []
+  },
+
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "{\"any\":true}",
+        "hooks": []
+      }
+    ]
+  },
+
+  "contextWindow": {
+    "autoCompact": true,
+    "compactThreshold": 0.95
+  },
+
+  "references": [
+    "mkdocs.yml",
+    "docs/",
+    "docs/stylesheets/extra.css",
+    ".github/workflows/ci.yml",
+    "CLAUDE.md"
+  ]
+}

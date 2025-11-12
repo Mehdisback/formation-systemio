@@ -1,200 +1,311 @@
-# CLAUDE.md
+# CLAUDE.md — MkDocs Material Documentation Project
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+**Stack**: MkDocs Material · Python · GitHub Pages · Markdown
 
-## Project Overview
+## ✅ Commandes rapides
+- `/serve` - Démarrer le serveur de développement avec live reload
+- `/build` - Builder la documentation
+- `/deploy` - Déployer sur GitHub Pages (nécessite confirmation)
+- `/add-guide` - Créer un nouveau guide de formation
+- `/validate-docs` - Valider l'intégrité de la documentation
+- `/check-links` - Vérifier tous les liens internes et externes
 
-This is a **MkDocs Material documentation site** for training Armelle Bodénès (Coaching au Féminin) on managing her Systeme.io landing page autonomously. The documentation is published to GitHub Pages and provides comprehensive guides for non-technical users.
+## 🗂️ Structure du projet
+| Répertoire/Fichier | Description | Notes importantes |
+| --- | --- | --- |
+| `docs/` | Contenu de la documentation | Tous les fichiers `.md` |
+| `docs/stylesheets/` | Styles CSS personnalisés | Branding et thème |
+| `mkdocs.yml` | Configuration MkDocs | Navigation, thème, plugins |
+| `.github/workflows/` | CI/CD GitHub Actions | Déploiement automatique |
+| `site/` | Build généré (ignoré Git) | Créé par `mkdocs build` |
+| `.claude/` | Configuration Claude Code | Commandes et agents |
 
-**Live Site:** https://mehdisback.github.io/formation-systemeio/
-**Landing Page:** https://bodenesgram.systeme.io/essentiel-en-soi
+## 🔧 Stack technique
+- **MkDocs Material** : Générateur de documentation statique
+- **Python 3.x** : Runtime requis pour MkDocs
+- **GitHub Pages** : Hébergement de la documentation
+- **GitHub Actions** : CI/CD pour déploiement automatique
+- **Markdown** : Format de rédaction
+- **Material Extensions** : Admonitions, emojis, tabs, etc.
 
-## Technology Stack
+## 🎨 Configuration MkDocs
+### Theme et couleurs
+- **Theme** : Material for MkDocs
+- **Langue** : Français (`fr`)
+- **Palette primaire** : Indigo (#3949AB)
+- **Palette accent** : Deep Purple (#7E57C2)
 
-- **MkDocs Material** - Static site generator for documentation
-- **Python 3.x** - Required for MkDocs
-- **GitHub Actions** - CI/CD pipeline for automatic deployment
-- **GitHub Pages** - Hosting platform
+### Plugins actifs
+- `search` : Recherche en français
+- `minify` : Optimisation HTML/CSS/JS
 
-## Development Commands
+### Extensions Markdown
+- **Admonitions** : Callouts (tip, warning, info, danger, success)
+- **CodeHilite** : Coloration syntaxique
+- **Tasklists** : Checklists interactives
+- **Emoji** : Support emojis Material
+- **Tabs** : Onglets de contenu
+- **Tables** : Tableaux avancés
 
-### Local Development
+## 📝 Conventions de rédaction
 
+### Fichiers
+- Nomenclature : `XX-NOM-EN-MAJUSCULES.md`
+- Numérotation : 01, 02, 03... (deux chiffres)
+- Langue : **Français uniquement**
+
+### Structure d'un guide
+```markdown
+# 🎯 [Numéro] - [Titre]
+
+⏱️ **Durée estimée** : X minutes
+📊 **Niveau** : Débutant/Intermédiaire/Avancé
+
+## 🎯 Objectifs
+- [ ] Objectif 1
+- [ ] Objectif 2
+
+## 📝 Contenu
+### Section 1
+Contenu...
+
+!!! tip "Conseil"
+    Votre conseil ici
+
+## ✅ Checklist de validation
+- [ ] Action 1
+- [ ] Action 2
+
+## 🔗 Navigation
+- ⬅️ [Guide précédent](XX-GUIDE.md)
+- ➡️ [Guide suivant](XX-GUIDE.md)
+```
+
+### Admonitions recommandées
+- `!!! success` - Félicitations, réussites
+- `!!! tip` - Conseils pratiques, astuces
+- `!!! warning` - Attention, points importants
+- `!!! danger` - Erreurs critiques à éviter
+- `!!! info` - Informations complémentaires
+
+### Style de contenu
+- ✍️ **Public** : Non-technique (coaching professionnel)
+- 🗣️ **Ton** : Professionnel, bienveillant, encourageant
+- 📖 **Langage** : Simple, clair, sans jargon technique
+- 🎯 **Focus** : Actions concrètes et guidées
+
+## 🚀 Workflows
+
+### Édition de contenu
 ```bash
-# Install dependencies
+/serve                          # Lancer serveur local
+# Éditer les fichiers .md dans docs/
+# Vérifier les changements dans le navigateur (http://127.0.0.1:8000)
+/validate-docs                  # Valider avant commit
+git add . && git commit -m "..."
+git push                        # Déploiement auto via GitHub Actions
+```
+
+### Création d'un nouveau guide
+```bash
+/add-guide 11 "Titre du guide"  # Créer nouveau guide avec template
+# Rédiger le contenu
+@content-reviewer analyze       # Review du contenu français
+/serve                          # Prévisualiser
+/validate-docs                  # Valider
+git commit && git push
+```
+
+### Audit de qualité complet
+```bash
+/validate-docs --full           # Validation complète
+/check-links                    # Vérifier tous les liens
+@content-reviewer review-all    # Review du contenu
+@accessibility-checker audit    # Audit accessibilité
+```
+
+### Modification de styles
+```bash
+# Éditer docs/stylesheets/extra.css
+@accessibility-checker check-contrast  # Vérifier contrastes
+/serve                          # Tester visuellement
+/build                          # Build de validation
+git commit && git push
+```
+
+## 🧪 Validation avant commit
+
+### Checklist manuelle
+- [ ] Testé localement avec `/serve`
+- [ ] Liens internes fonctionnels
+- [ ] Captures d'écran à jour
+- [ ] Français correct (grammaire, orthographe)
+- [ ] Admonitions bien formatées
+- [ ] Navigation précédent/suivant correcte
+- [ ] Responsive testé (mobile, tablet, desktop)
+
+### Validation automatique
+```bash
+/build                    # Build doit passer sans erreur
+/validate-docs            # Vérifier syntaxe et structure
+/check-links              # Vérifier liens internes
+```
+
+## 🎯 Agents spécialisés
+
+### @content-reviewer
+**Quand** : Après rédaction ou modification de contenu
+**Vérifie** :
+- Grammaire et orthographe française
+- Clarté pour public non-technique
+- Ton adapté au coaching
+- Cohérence terminologique
+- Utilisation appropriée des admonitions
+
+**Usage** :
+```
+@content-reviewer analyze docs/05-FORMULAIRES.md
+@content-reviewer review-all
+```
+
+### @accessibility-checker
+**Quand** : Avant déploiement majeur ou après modif CSS
+**Vérifie** :
+- Conformité WCAG 2.1 AA
+- Contraste des couleurs (≥ 4.5:1)
+- Navigation au clavier
+- Alternatives textuelles images
+- Responsive design
+- Hiérarchie des titres
+
+**Usage** :
+```
+@accessibility-checker audit docs/
+@accessibility-checker check-contrast
+@accessibility-checker full-report
+```
+
+## 🔄 Déploiement
+
+### Automatique (recommandé)
+1. Push vers `main` branch
+2. GitHub Actions déclenché automatiquement
+3. Build et déploiement sur GitHub Pages
+4. Site mis à jour en ~2 minutes
+
+**Workflow** : `.github/workflows/ci.yml`
+
+### Manuel (dépannage)
+```bash
+/deploy                   # Nécessite confirmation
+# ou
+mkdocs gh-deploy --force
+```
+
+⚠️ **Note** : Déploiement manuel uniquement pour corrections urgentes. Privilégier le workflow automatique.
+
+## ♻️ Discipline de tokens
+
+### Optimisations activées
+- **Auto-compact** : Activé à 95% du contexte
+- **Références ciblées** : Fichiers spécifiques dans settings.json
+- **Commandes** : Workflows répétitifs automatisés
+- **Agents** : Analyses approfondies uniquement
+
+### Bonnes pratiques
+- Utiliser `/serve` au lieu de multiples `/build`
+- Combiner validations : `/validate-docs && /check-links`
+- Agents pour reviews, pas pour simple lecture
+- Commandes slash pour workflows standards
+
+## 📊 Métriques de qualité
+
+### Contenu
+- ✅ Français grammaticalement correct (100%)
+- ✅ Vocabulaire adapté au public (0 jargon non expliqué)
+- ✅ Cohérence terminologique
+- ✅ Ton professionnel et bienveillant
+
+### Technique
+- ✅ Build MkDocs sans erreur ni warning
+- ✅ Tous les liens internes valides
+- ✅ Liens externes vérifiés hebdomadairement
+- ✅ Validation Markdown stricte
+
+### Accessibilité
+- ✅ WCAG 2.1 Niveau AA
+- ✅ Contraste ≥ 4.5:1 (AA) ou ≥ 7:1 (AAA)
+- ✅ Navigation clavier complète
+- ✅ Responsive 320px → 2560px
+- ✅ Lighthouse Accessibility ≥ 90
+
+## 🔧 Dépendances
+
+### Installation
+```bash
 pip install mkdocs-material
 pip install mkdocs-minify-plugin
-
-# Serve documentation locally with live reload
-mkdocs serve
-
-# Build the documentation site
-mkdocs build
-
-# Deploy to GitHub Pages manually
-mkdocs gh-deploy --force
 ```
 
-The site will be available at `http://127.0.0.1:8000` when running locally.
+### Versions recommandées
+- Python : ≥ 3.8
+- MkDocs : ≥ 1.5.0
+- MkDocs Material : ≥ 9.0.0
 
-### Testing Changes
+## 🆘 Dépannage
 
-Always preview changes locally with `mkdocs serve` before committing, especially:
-- Navigation structure changes in `mkdocs.yml`
-- Custom CSS modifications in `docs/stylesheets/extra.css`
-- New markdown features or extensions
+### Build échoue
+1. Vérifier syntaxe Markdown : `/validate-docs`
+2. Vérifier mkdocs.yml (indentation YAML)
+3. Vérifier dépendances : `pip list | grep mkdocs`
 
-## Project Structure
+### Liens cassés
+1. `/check-links` pour identifier
+2. Corriger dans fichiers .md
+3. Revalider avec `/check-links`
 
-```
-formation-systemeio/
-├── docs/                           # All documentation content
-│   ├── index.md                    # Homepage/welcome page
-│   ├── 01-GUIDE-DEMARRAGE-RAPIDE.md
-│   ├── 02-MODIFICATION-CONTENU.md
-│   ├── ... (guides 03-10)
-│   └── stylesheets/
-│       └── extra.css              # Custom A-Tek Universe branding
-├── mkdocs.yml                     # MkDocs configuration
-├── .github/workflows/ci.yml       # Auto-deploy on push to main
-└── .gitignore
-```
+### Styles CSS ne s'appliquent pas
+1. Vérifier chemin dans mkdocs.yml
+2. Vider cache navigateur (Ctrl+Shift+R)
+3. Rebuild avec `/build --clean`
 
-## MkDocs Configuration Architecture
+### Déploiement GitHub Pages échoue
+1. Vérifier permissions GitHub Actions
+2. Vérifier branche gh-pages existe
+3. Vérifier GitHub Pages activé dans settings
+4. Consulter logs Actions dans GitHub
 
-### Key Configuration (`mkdocs.yml`)
+## 📚 Documentation externe
 
-- **Theme:** Material for MkDocs with custom color palette (Indigo/Deep Purple)
-- **Language:** French (`fr`)
-- **Navigation:** 10 structured training guides with emoji prefixes
-- **Plugins:**
-  - `search` with French language support
-  - `minify` for HTML/CSS/JS optimization
-- **Markdown Extensions:**
-  - Admonitions for callout boxes (tip, warning, info, danger)
-  - Code highlighting with syntax support
-  - Task lists with clickable checkboxes
-  - Emoji support via Material extensions
-  - Tabs, tables, and tooltips
+- [MkDocs Material](https://squidfunk.github.io/mkdocs-material/)
+- [Guide Markdown](https://squidfunk.github.io/mkdocs-material/reference/)
+- [Admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/)
+- [GitHub Pages](https://docs.github.com/en/pages)
+- [WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/)
 
-### Custom Styling
+## 🎓 Public cible
 
-The `docs/stylesheets/extra.css` file contains A-Tek Universe branding:
-- CSS variables for consistent color palette
-- Gradient headers and navigation
-- Custom admonition styling
-- Enhanced tables, buttons, and cards
-- Print-friendly styles
-- Responsive design for mobile/tablet/desktop
+**Utilisateur final** : Professionnel du coaching (non-technique)
+**Cas d'usage** : Formation autonome gestion landing page Systeme.io
+**Objectif** : Autonomie complète sur la gestion de contenu
 
-## Documentation Structure
+## 📝 Notes importantes
 
-All documentation is written in **French** and follows a progressive learning path:
+- ⚠️ **Langue** : Français obligatoire (public francophone)
+- 🎨 **Branding** : Coaching au Féminin + A-Tek Universe
+- 📱 **Mobile-first** : Audience majoritairement mobile
+- ♿ **Accessibilité** : Conformité légale RGAA/WCAG
+- 🚫 **Pas de code** : Documentation pure, pas d'application
 
-1. **01-GUIDE-DEMARRAGE-RAPIDE.md** - Login and basic navigation
-2. **02-MODIFICATION-CONTENU.md** - Content editing (text, images, testimonials)
-3. **03-GESTION-CTA-CALENDLY.md** - CTA button and Calendly management
-4. **04-DESIGN-MISE-EN-PAGE.md** - Visual customization
-5. **05-FORMULAIRES-DONNEES.md** - Form and data management
-6. **06-SEO-REFERENCEMENT.md** - SEO optimization
-7. **07-SUIVI-ANALYTICS.md** - Analytics tracking
-8. **08-MAINTENANCE-BONNES-PRATIQUES.md** - Maintenance best practices
-9. **09-FAQ-TROUBLESHOOTING.md** - FAQ and troubleshooting
-10. **10-GLOSSAIRE.md** - Terminology glossary
+## ✅ Checklist projet en bonne santé
 
-## Deployment
-
-### Automatic Deployment
-
-- **Triggers:** Push to `main` branch or pull request
-- **Workflow:** `.github/workflows/ci.yml`
-- **Process:**
-  1. Checks out code
-  2. Sets up Python 3.x
-  3. Installs `mkdocs-material` and `mkdocs-minify-plugin`
-  4. Runs `mkdocs gh-deploy --force`
-- **Result:** Published to GitHub Pages at https://mehdisback.github.io/formation-systemeio/
-
-### Manual Deployment
-
-If needed, deploy manually with:
-```bash
-mkdocs gh-deploy --force
-```
-
-## Content Guidelines
-
-### Markdown Style
-
-- Use **French language** for all content
-- Include emoji icons in headers for visual appeal
-- Use admonitions extensively for important information:
-  - `!!! success` - Welcome messages, achievements
-  - `!!! tip` - Helpful advice, pro tips
-  - `!!! warning` - Caution, important notes
-  - `!!! danger` - Security warnings, critical information
-  - `!!! info` - Additional context, advanced features
-
-### Navigation and Links
-
-- All guide files use capitalized filenames (e.g., `01-GUIDE-DEMARRAGE-RAPIDE.md`)
-- Internal links reference the `.md` extension
-- External links include full URLs with target site
-- Navigation in `mkdocs.yml` uses emoji prefixes for visual hierarchy
-
-### Branding
-
-- **Client:** Armelle Bodénès - Coaching au Féminin
-- **Developer:** A-Tek Universe (https://a-tek-universe.fr)
-- **Color Scheme:** Indigo (#3949AB) and Deep Purple (#7E57C2)
-- Maintain professional, supportive tone suitable for non-technical coaching clients
-
-## Common Modifications
-
-### Adding a New Guide
-
-1. Create new `.md` file in `docs/` (e.g., `11-NEW-GUIDE.md`)
-2. Add to navigation in `mkdocs.yml` under `nav` section
-3. Follow existing structure with emoji prefix
-4. Include estimated duration and difficulty level
-5. Test locally with `mkdocs serve`
-
-### Updating Navigation
-
-Edit the `nav` section in `mkdocs.yml`. Structure follows:
-```yaml
-nav:
-  - 🏠 Accueil: "index.md"
-  - 📚 Guides de formation:
-    - 🚀 01 - Démarrage rapide: "01-GUIDE-DEMARRAGE-RAPIDE.md"
-    # ... additional guides
-```
-
-### Modifying Styles
-
-Edit `docs/stylesheets/extra.css`. Key sections:
-- `:root` variables for color palette
-- Header/navigation gradients
-- Admonition border colors
-- Table styling
-- Button/CTA styling
-
-## Validation
-
-Before committing changes:
-
-- [ ] Test locally with `mkdocs serve`
-- [ ] Check all internal links work
-- [ ] Verify responsive design (desktop, tablet, mobile views in browser)
-- [ ] Ensure French language content is grammatically correct
-- [ ] Confirm admonitions render properly
-- [ ] Check code blocks and syntax highlighting
-- [ ] Verify emoji icons display correctly
-
-## Important Notes
-
-- **No code/scripts:** This is a pure documentation project with no application code
-- **Static site:** All content is pre-rendered Markdown to HTML
-- **French-first:** All user-facing content must be in French
-- **Non-technical audience:** Write for coaching professionals, not developers
-- **GitHub Pages:** Changes to `main` branch auto-deploy within ~2 minutes
+- [ ] `/serve` démarre sans erreur
+- [ ] `/build` passe sans warning
+- [ ] `/validate-docs` 100% OK
+- [ ] `/check-links` 0 lien cassé
+- [ ] @content-reviewer score ≥ 95%
+- [ ] @accessibility-checker WCAG AA
+- [ ] CI/CD GitHub Actions fonctionnel
+- [ ] Site GitHub Pages accessible
+- [ ] Lighthouse Performance ≥ 90
+- [ ] Lighthouse Accessibility ≥ 90
