@@ -109,21 +109,27 @@ Pour la protection des données :
 
 Pour chaque screenshot, rédiger un alt text descriptif :
 
+````markdown
 ```markdown
 ![Capture d'écran montrant [ACTION/ÉLÉMENT PRINCIPAL], avec [ANNOTATIONS/INDICATIONS] surlignées en rouge, dans l'interface [CONTEXTE]](chemin/screenshot.png)
 ```
+````
 
 **Exemples** :
 
 ✅ **Bon** :
+````markdown
 ```markdown
 ![Capture d'écran de la page de connexion Systeme.io avec les champs Email et Mot de passe encadrés en rouge, et le bouton "Se connecter" surligné](01-page-connexion-systemio.png)
 ```
+````
 
 ❌ **Mauvais** :
+````markdown
 ```markdown
 ![screenshot](01-page-connexion-systemio.png)
 ```
+````
 
 ## 🔄 Workflow de création
 
