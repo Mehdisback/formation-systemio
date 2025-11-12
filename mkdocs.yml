@@ -80,6 +80,10 @@ plugins:
         - stemmer
         - stopWordFilter
         - trimmer
+      # Options avancées pour améliorer la recherche
+      min_search_length: 2
+      indexing: 'full'
+      prebuild_index: true
   - minify:
       minify_html: true
       minify_js: true
@@ -165,6 +169,7 @@ nav:
     - 🛠️ 08 - Maintenance: "08-MAINTENANCE-BONNES-PRATIQUES.md"
     - ❓ 09 - FAQ: "09-FAQ-TROUBLESHOOTING.md"
     - 📖 10 - Glossaire: "10-GLOSSAIRE.md"
+  - 📋 Historique des versions: "CHANGELOG.md"
 
 # CSS personnalisé (optionnel)
 extra_css:

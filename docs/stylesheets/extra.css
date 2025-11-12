@@ -1835,15 +1835,215 @@ img,
 
 /* === PRINT STYLES === */
 @media print {
+  /* Masquer les éléments interactifs et navigation */
   .md-header,
   .md-footer,
   .md-sidebar,
-  .md-nav {
+  .md-nav,
+  .md-search,
+  .share-buttons,
+  .feedback-widget,
+  .md-dialog,
+  .md-tooltip,
+  button,
+  .md-top {
     display: none !important;
+  }
+
+  /* Optimisation de la mise en page pour impression */
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 12pt;
+    line-height: 1.5;
   }
 
   .md-content {
     max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .md-content__inner {
+    padding: 0;
+  }
+
+  /* Améliorer la lisibilité des titres */
+  h1, h2, h3, h4, h5, h6 {
+    color: black !important;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+
+  h1 {
+    font-size: 24pt;
+    margin-top: 0;
+    border-bottom: 2px solid #000;
+    padding-bottom: 0.5em;
+  }
+
+  h2 {
+    font-size: 18pt;
+    margin-top: 1em;
+    border-bottom: 1px solid #666;
+  }
+
+  h3 {
+    font-size: 14pt;
+    margin-top: 0.8em;
+  }
+
+  /* Éviter les coupures de page inappropriées */
+  p, blockquote, ul, ol, dl, table, pre, .admonition {
+    page-break-inside: avoid;
+  }
+
+  img, figure, .highlight {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+
+  /* Améliorer l'affichage des admonitions */
+  .admonition {
+    border: 2px solid #000 !important;
+    background: white !important;
+    page-break-inside: avoid;
+    margin: 1em 0;
+  }
+
+  .admonition-title {
+    background: #f0f0f0 !important;
+    color: black !important;
+    font-weight: bold;
+  }
+
+  /* Afficher les URLs des liens externes */
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+    word-wrap: break-word;
+  }
+
+  /* Ne pas afficher les URLs pour les liens internes */
+  a[href^="#"]:after,
+  a[href^="/"]:after {
+    content: "";
+  }
+
+  /* Optimiser les tableaux pour l'impression */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+  }
+
+  table, th, td {
+    border: 1px solid #000 !important;
+  }
+
+  th {
+    background: #f0f0f0 !important;
+    color: black !important;
+    font-weight: bold;
+    padding: 0.5em;
+  }
+
+  td {
+    padding: 0.4em;
+  }
+
+  /* Améliorer les blocs de code */
+  pre, code {
+    background: #f5f5f5 !important;
+    border: 1px solid #ddd !important;
+    color: black !important;
+    font-family: 'Courier New', monospace;
+    font-size: 10pt;
+  }
+
+  pre {
+    padding: 1em;
+    overflow: visible;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  /* Listes à puces et numérotées */
+  ul, ol {
+    margin-left: 1.5em;
+  }
+
+  li {
+    margin: 0.3em 0;
+  }
+
+  /* Checklists */
+  .task-list-item {
+    list-style-type: none;
+  }
+
+  /* Améliorer les checkboxes pour impression */
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1em;
+    height: 1em;
+    border: 2px solid #000;
+    margin-right: 0.5em;
+    vertical-align: middle;
+    position: relative;
+  }
+
+  input[type="checkbox"]:checked:after {
+    content: "✓";
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  /* Gestion des numéros de page */
+  @page {
+    margin: 2cm 1.5cm;
+    size: A4;
+
+    @bottom-right {
+      content: "Page " counter(page);
+      font-size: 10pt;
+      color: #666;
+    }
+
+    @top-center {
+      content: "Formation Systeme.io - L'Essentiel en Soi";
+      font-size: 9pt;
+      color: #666;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.3em;
+    }
+  }
+
+  /* Première page sans en-tête */
+  @page :first {
+    @top-center {
+      content: "";
+    }
+  }
+
+  /* Éviter les orphelins et veuves */
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Forcer le saut de page pour les sections principales */
+  article > h1 {
+    page-break-before: always;
+  }
+
+  article > h1:first-child {
+    page-break-before: avoid;
   }
 }
 
@@ -2404,4 +2604,97 @@ img,
 .atek-signature::before {
   content: '⚡';
   font-size: 1.2em;
+}
+
+/* === BOUTONS DE PARTAGE SOCIAL === */
+.share-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: var(--atek-bg-secondary);
+  border-radius: 0.75rem;
+  border: 1px solid var(--atek-border);
+  align-items: center;
+}
+
+.share-buttons-title {
+  width: 100%;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--atek-text-primary);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.share-buttons-title::before {
+  content: '🔗';
+  font-size: 1.2em;
+}
+
+.share-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: linear-gradient(135deg, var(--atek-primary) 0%, var(--atek-accent) 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(44, 58, 143, 0.2);
+}
+
+.share-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(44, 58, 143, 0.3);
+  color: white;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.share-button:active {
+  transform: translateY(0);
+}
+
+/* Variantes de couleurs pour chaque réseau social */
+.share-button.twitter {
+  background: linear-gradient(135deg, #1DA1F2 0%, #0d8bd9 100%);
+}
+
+.share-button.facebook {
+  background: linear-gradient(135deg, #1877F2 0%, #0c63d4 100%);
+}
+
+.share-button.linkedin {
+  background: linear-gradient(135deg, #0A66C2 0%, #004182 100%);
+}
+
+.share-button.email {
+  background: linear-gradient(135deg, #6B7280 0%, #4B5563 100%);
+}
+
+/* Responsive design pour mobile */
+@media screen and (max-width: 768px) {
+  .share-buttons {
+    padding: 1rem;
+  }
+
+  .share-button {
+    flex: 1 1 calc(50% - 0.375rem);
+    justify-content: center;
+    padding: 0.65rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .share-button {
+    flex: 1 1 100%;
+  }
 }
