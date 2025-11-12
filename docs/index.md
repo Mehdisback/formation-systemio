@@ -1,3 +1,9 @@
+---
+description: >-
+  Formation complète Systeme.io : 10 guides pratiques pour gérer votre landing page en autonomie.
+  Apprenez à modifier le contenu, optimiser vos CTA, améliorer le SEO. Public non-technique, 5h de formation.
+---
+
 # Guide de Formation Systeme.io
 
 ## L'Essentiel en Soi - Documentation complète

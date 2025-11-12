@@ -1,3 +1,9 @@
+---
+description: >-
+  Guide de démarrage rapide Systeme.io : connexion sécurisée, navigation dans le dashboard,
+  accès à votre landing page, utilisation de l'éditeur visuel. 15 min, niveau débutant.
+---
+
 # 🚀 01 - Démarrage Rapide
 
 ⏱️ **Durée estimée** : 15 minutes
