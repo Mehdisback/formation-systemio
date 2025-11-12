@@ -2698,3 +2698,39 @@ img,
     flex: 1 1 100%;
   }
 }
+/* === TAGS CLIQUABLES === */
+/* Styliser les tags pour qu'ils soient visuellement cliquables */
+.md-tag {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  margin: 0.25rem;
+  background: linear-gradient(135deg, var(--atek-primary-light) 0%, var(--atek-accent-light) 100%);
+  color: #FFFFFF;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: lowercase;
+  letter-spacing: 0.02em;
+  box-shadow: 0 2px 6px rgba(44, 58, 143, 0.2);
+}
+
+.md-tag:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 12px rgba(44, 58, 143, 0.4);
+  background: linear-gradient(135deg, var(--atek-primary) 0%, var(--atek-accent) 100%);
+}
+
+.md-tag:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Container des tags */
+.md-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+}
