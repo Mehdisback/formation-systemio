@@ -80,10 +80,6 @@ plugins:
         - stemmer
         - stopWordFilter
         - trimmer
-      # Options avancées pour améliorer la recherche
-      min_search_length: 2
-      indexing: 'full'
-      prebuild_index: true
   - minify:
       minify_html: true
       minify_js: true
