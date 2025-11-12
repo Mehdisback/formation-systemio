@@ -61,6 +61,15 @@
 
 /* === MODE SOMBRE === */
 /* Détection automatique des préférences système */
+/* Surcharger MkDocs Material scheme "slate" */
+[data-md-color-scheme="slate"] {
+  /* Forcer les couleurs mode sombre */
+  --md-default-bg-color: #1A1A1A;
+  --md-default-fg-color: #ECECEC;
+  --md-code-bg-color: #0D0D0D;
+  --md-code-fg-color: #E8E8E8;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     /* Palette adaptée mode sombre - Contrastes AAA (≥7:1 sur #1A1A1A) */
@@ -496,55 +505,98 @@
 }
 
 /* === MODE CLAIR PAR DÉFAUT - FORCER L'APPLICATION === */
-/* Forcer l'application des variables en mode clair pour surcharger MkDocs Material */
-html,
-body {
-  background-color: var(--atek-bg-primary) !important;
-  color: var(--atek-text-primary) !important;
+/* Surcharger MkDocs Material avec des valeurs hardcodées pour le scheme "default" */
+[data-md-color-scheme="default"] {
+  /* Forcer les couleurs mode clair */
+  --md-default-bg-color: #FFFFFF;
+  --md-default-fg-color: #212121;
+  --md-code-bg-color: #F5F5F5;
+  --md-code-fg-color: #1E2870;
 }
 
-.md-main,
-.md-main__inner {
-  background-color: var(--atek-bg-primary) !important;
+/* Application stricte mode clair sur body et conteneurs principaux */
+html[data-md-color-scheme="default"],
+[data-md-color-scheme="default"] body {
+  background-color: #FFFFFF !important;
+  color: #212121 !important;
 }
 
-.md-content {
+[data-md-color-scheme="default"] .md-main,
+[data-md-color-scheme="default"] .md-main__inner {
+  background-color: #FFFFFF !important;
+}
+
+[data-md-color-scheme="default"] .md-content {
   background-color: transparent !important;
-  color: var(--atek-text-primary) !important;
+  color: #212121 !important;
 }
 
-.md-content__inner {
-  color: var(--atek-text-primary) !important;
+[data-md-color-scheme="default"] .md-content__inner {
+  color: #212121 !important;
 }
 
 /* Tableaux en mode clair */
-table {
+[data-md-color-scheme="default"] table {
   background-color: #FFFFFF;
-  border: 1px solid var(--atek-border);
+  border: 1px solid #E0E0E0;
 }
 
-tbody td {
-  color: var(--atek-text-primary);
+[data-md-color-scheme="default"] tbody td {
+  color: #212121;
 }
 
 /* Code blocks en mode clair */
-code {
-  background-color: var(--atek-gray-100);
-  color: var(--atek-primary-dark);
+[data-md-color-scheme="default"] code {
+  background-color: #F5F5F5;
+  color: #1E2870;
 }
 
-pre {
-  background-color: var(--atek-gray-900);
+[data-md-color-scheme="default"] pre {
+  background-color: #212121;
 }
 
 /* Cards en mode clair */
-.card {
+[data-md-color-scheme="default"] .card {
   background-color: #FFFFFF;
-  border-color: var(--atek-gray-200);
+  border-color: #EEEEEE;
 }
 
-.card-title {
-  color: var(--atek-primary);
+[data-md-color-scheme="default"] .card-title {
+  color: #2C3A8F;
+}
+
+/* Composants personnalisés en mode clair */
+[data-md-color-scheme="default"] .doc-card {
+  background-color: #FFFFFF;
+  border-color: #E0E0E0;
+}
+
+[data-md-color-scheme="default"] .doc-card-title {
+  color: #2C3A8F;
+}
+
+[data-md-color-scheme="default"] .badge-debutant {
+  background: linear-gradient(135deg, #2E7D32 0%, #1B5E20 100%);
+  color: #FFFFFF;
+}
+
+[data-md-color-scheme="default"] .badge-intermediaire {
+  background: linear-gradient(135deg, #E65100 0%, #BF360C 100%);
+  color: #FFFFFF;
+}
+
+[data-md-color-scheme="default"] .badge-avance {
+  background: linear-gradient(135deg, #C62828 0%, #B71C1C 100%);
+  color: #FFFFFF;
+}
+
+[data-md-color-scheme="default"] .cta-calendly {
+  background: linear-gradient(135deg, #00A2FF 0%, #0085D1 100%);
+  color: #FFFFFF;
+}
+
+[data-md-color-scheme="default"] .admonition {
+  background-color: #FFFFFF;
 }
 
 /* === TRANSITIONS FLUIDES ENTRE MODES === */
