@@ -179,6 +179,9 @@ nav:
     - 📖 10 - Glossaire: "10-GLOSSAIRE.md"
   - 🏷️ Index des tags: "tags.md"
   - 📋 Historique des versions: "CHANGELOG.md"
+  - 💼 À propos:
+    - 👨‍💻 A-Tek Universe: "A-PROPOS-ATEK.md"
+    - ⚖️ Mentions légales: "MENTIONS-LEGALES.md"
 
 # CSS personnalisé
 extra_css:
@@ -253,13 +256,16 @@ extra:
   social:
     - icon: fontawesome/solid/globe
       link: https://a-tek-universe.fr
-      name: A-Tek Universe
+      name: A-Tek Universe - Site officiel
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/[À-COMPLÉTER]
+      name: LinkedIn - Mehdi SLAYKI
     - icon: fontawesome/brands/github
       link: https://github.com/MehdisBack
-      name: GitHub
+      name: GitHub - Portfolio
     - icon: fontawesome/solid/envelope
       link: mailto:contact@a-tek-universe.fr
-      name: Contact
+      name: Contact par email
 
   # Informations projet
   generator: false  # Masquer "Made with Material for MkDocs"

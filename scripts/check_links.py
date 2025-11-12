@@ -182,6 +182,12 @@ def main():
             # Déterminer le type de lien
             parsed = urlparse(url)
             is_external = parsed.scheme in ('http', 'https')
+            is_special_protocol = parsed.scheme in ('mailto', 'tel', 'ftp', 'data', 'javascript')
+
+            # Ignorer les protocoles spéciaux (mailto:, tel:, etc.)
+            if is_special_protocol:
+                print(f"  {YELLOW}⊘{RESET} Ligne {line_num}: {url[:60]}... (protocole spécial, ignoré)")
+                continue
 
             if is_external:
                 if args.external:
