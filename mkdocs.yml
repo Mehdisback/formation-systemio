@@ -20,6 +20,7 @@ copyright:
 theme:
   name: material
   language: fr
+  custom_dir: overrides
 
   # Couleurs (adaptez à la charte graphique)
   palette:
@@ -45,7 +46,7 @@ theme:
   features:
     - announce.dismiss
     - navigation.instant        # Navigation fluide
-    - navigation.instant.progress  # Barre de progression
+    - navigation.instant.progress  # Barre de progression en haut
     - navigation.tracking       # Suivi URL
     - navigation.tabs           # Onglets de navigation
     - navigation.tabs.sticky       # Onglets collants
@@ -53,9 +54,12 @@ theme:
     - navigation.expand         # Menu déroulant automatique
     - navigation.path              # Breadcrumb
     - navigation.top            # Bouton retour en haut
+    - navigation.footer         # Navigation footer (précédent/suivant)
     - search.suggest            # Suggestions de recherche
     - search.highlight          # Surlignage des résultats
     - search.share                 # Partage recherche
+    - content.action.edit       # Bouton "Modifier cette page"
+    - content.action.view       # Bouton "Voir la source"
     - content.code.copy         # Bouton copier pour le code
     - content.code.annotate        # Annotations code
     - content.tabs.link         # Onglets liés
@@ -80,12 +84,29 @@ plugins:
         - stemmer
         - stopWordFilter
         - trimmer
-  - minify:
-      minify_html: true
-      minify_js: true
-      minify_css: true
-      htmlmin_opts:
-        remove_comments: true
+  - tags
+  - print-site:
+      add_to_navigation: true
+      print_page_title: 'Version imprimable'
+      add_print_site_banner: true
+      print_site_banner_template: "docs/snippets/print-banner.html"
+      add_full_urls: false
+      enumerate_headings: true
+      enumerate_figures: true
+      add_table_of_contents: true
+      toc_title: 'Table des matières'
+      toc_depth: 3
+      add_cover_page: true
+      cover_page_template: "docs/snippets/print-cover.html"
+      path_to_pdf: "formation-systemio.pdf"
+      enabled: true
+  # minify: Temporairement désactivé - problème d'installation
+  # - minify:
+  #     minify_html: true
+  #     minify_js: true
+  #     minify_css: true
+  #     htmlmin_opts:
+  #       remove_comments: true
   # SITEMAP : Intégré dans MkDocs core, généré automatiquement
   # Disponible à : /sitemap.xml (configuré via site_url)
   # Aucun plugin supplémentaire nécessaire
@@ -163,6 +184,7 @@ nav:
     - 🛠️ 08 - Maintenance: "08-MAINTENANCE-BONNES-PRATIQUES.md"
     - ❓ 09 - FAQ: "09-FAQ-TROUBLESHOOTING.md"
     - 📖 10 - Glossaire: "10-GLOSSAIRE.md"
+  - 🏷️ Index des tags: "tags.md"
   - 📋 Historique des versions: "CHANGELOG.md"
 
 # CSS personnalisé
@@ -258,6 +280,19 @@ extra:
       - accept
       - reject
       - manage
+
+  # Configuration Giscus (commentaires GitHub Discussions)
+  # IMPORTANT: Pour activer les commentaires sur une page, ajoutez dans le frontmatter:
+  # ---
+  # comments: true
+  # ---
+  giscus:
+    # Ces IDs seront fournis par https://giscus.app après configuration
+    # 1. Activez GitHub Discussions sur le repo
+    # 2. Visitez https://giscus.app et suivez les instructions
+    # 3. Remplacez les valeurs ci-dessous
+    repo_id: "REMPLACER_PAR_REPO_ID"
+    category_id: "REMPLACER_PAR_CATEGORY_ID"
 
 # Configuration avancée
 validation:
