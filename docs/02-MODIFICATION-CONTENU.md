@@ -228,16 +228,18 @@ graph TD
 
     !!! tip "✅ Bonnes pratiques pour les listes"
 
-    **À faire :**
-    - ✅ Maximum **5-7 points** par liste
-    - ✅ Phrases **courtes et percutantes**
-    - ✅ Commencez par un **verbe d'action**
-    - ✅ Utilisez des **mots-clés** importants
+        **À faire :**
 
-    **À éviter :**
-    - ❌ Phrases trop longues (> 15 mots)
-    - ❌ Jargon technique incompréhensible
-    - ❌ Listes interminables (> 10 points)
+        - ✅ Maximum **5-7 points** par liste
+        - ✅ Phrases **courtes et percutantes**
+        - ✅ Commencez par un **verbe d'action**
+        - ✅ Utilisez des **mots-clés** importants
+
+        **À éviter :**
+
+        - ❌ Phrases trop longues (> 15 mots)
+        - ❌ Jargon technique incompréhensible
+        - ❌ Listes interminables (> 10 points)
 
 ### Ajouter une nouvelle section de service
 
@@ -298,12 +300,12 @@ graph TD
 
 !!! warning "📊 Formats et tailles recommandés"
 
-| Type d'image | Format | Dimensions optimales | Poids max | Usage |
-|--------------|--------|---------------------|-----------|-------|
-| **Photo principale** | JPG | 1200x800px | ==200 Ko== | Header, hero |
-| **Photo de profil** | JPG/PNG | 600x600px | ==100 Ko== | À propos, équipe |
-| **Illustrations** | PNG | Variable | ==150 Ko== | Icônes, graphismes |
-| **Logos** | SVG/PNG | 200x200px | ==50 Ko== | Logo, favicons |
+    | Type d'image | Format | Dimensions optimales | Poids max | Usage |
+    |--------------|--------|---------------------|-----------|-------|
+    | **Photo principale** | JPG | 1200x800px | ==200 Ko== | Header, hero |
+    | **Photo de profil** | JPG/PNG | 600x600px | ==100 Ko== | À propos, équipe |
+    | **Illustrations** | PNG | Variable | ==150 Ko== | Icônes, graphismes |
+    | **Logos** | SVG/PNG | 200x200px | ==50 Ko== | Logo, favicons |
 
 ### Optimisation des images
 
@@ -966,7 +968,7 @@ Vous avez **4 questions-réponses** :
     4. :material-web: Testez dans un autre navigateur (Chrome recommandé)
     5. :material-shield-off: Désactivez temporairement les extensions de navigateur
 
-**Toujours un problème ?** Contactez le support Systeme.io
+    **Toujours un problème ?** Contactez le support Systeme.io
 
 ??? question "🖼️ Mon image est déformée après l'upload"
 
@@ -998,8 +1000,8 @@ Vous avez **4 questions-réponses** :
     - 💬 Contactez votre développeur si le bloc était complexe
     - 🔄 Sinon, recréez le bloc à partir de zéro
 
-!!! tip "Prévention"
-    Faites des **captures d'écran** de vos sections importantes avant modifications majeures !
+    !!! tip "Prévention"
+        Faites des **captures d'écran** de vos sections importantes avant modifications majeures !
 
 ??? question "🚫 Les modifications n'apparaissent pas en ligne"
 
@@ -1011,9 +1013,9 @@ Vous avez **4 questions-réponses** :
     4. :material-incognito: Testez en **navigation privée** (++ctrl+shift+n++)
     5. :material-web: Testez sur un **autre appareil** ou réseau
 
-**Toujours invisible ?**
-- Vérifiez que vous êtes sur la bonne URL
-- Contactez le support Systeme.io
+    **Toujours invisible ?**
+    - Vérifiez que vous êtes sur la bonne URL
+    - Contactez le support Systeme.io
 
 ---
 
