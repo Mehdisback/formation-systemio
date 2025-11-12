@@ -24,6 +24,7 @@
 ### Je ne parviens pas à me connecter à mon compte
 
 **Causes possibles :**
+
 - Mot de passe incorrect ou oublié
 - Compte non activé
 - Problème de cache navigateur
@@ -31,11 +32,13 @@
 **Solutions étape par étape :**
 
 **1. Vérifier l'identifiant**
+
 - Utilisez bien votre **email de connexion** (pas votre nom)
 - Vérifiez qu'il n'y a pas de faute de frappe
 - Attention aux espaces avant ou après l'email
 
 **2. Réinitialiser le mot de passe**
+
 1. Sur la page de connexion, cliquez sur **"Mot de passe oublié ?"**
 2. Entrez votre adresse email
 3. Consultez votre boîte email (vérifiez le dossier **spam**)
@@ -43,11 +46,13 @@
 5. Créez un nouveau mot de passe fort (min 8 caractères)
 
 **3. Vider le cache du navigateur**
+
 - **Chrome/Edge** : Ctrl+Maj+Suppr → Cochez "Cookies" et "Images/fichiers" → "Effacer les données"
 - **Firefox** : Ctrl+Maj+Suppr → Cochez "Cookies" et "Cache" → "Effacer maintenant"
 - **Safari** : Cmd+Option+E pour vider le cache
 
 **4. Essayer un autre navigateur**
+
 - Testez avec Chrome, Firefox, ou Safari
 - Désactivez temporairement les extensions de navigateur
 
@@ -59,16 +64,19 @@
 **Solutions :**
 
 **1. Vérifier l'heure du téléphone**
+
 - Les codes 2FA sont sensibles au décalage horaire
 - Paramètres → Date et heure → **Activer le réglage automatique**
 - Redémarrez l'application d'authentification après correction
 
 **2. Utiliser les codes de secours**
+
 - Lors de l'activation du 2FA, vous avez reçu 10 codes de secours
 - Utilisez l'un de ces codes à la place du code à 6 chiffres
 - **Important** : Chaque code ne fonctionne qu'une fois
 
 **3. Contacter le support pour désactiver temporairement le 2FA**
+
 - Email : support@systeme.io
 - Mentionnez votre adresse email de compte
 - Fournissez une preuve d'identité (dernier paiement, date de création du compte)
@@ -98,6 +106,7 @@
 ### Mes modifications ne s'enregistrent pas
 
 **Causes possibles :**
+
 - Connexion internet instable
 - Session expirée après inactivité prolongée
 - Bug temporaire de l'éditeur
@@ -105,21 +114,25 @@
 **Solutions :**
 
 **1. Vérifier la connexion internet**
+
 - Testez avec un site externe (google.com)
 - Redémarrez votre box/routeur si nécessaire
 - Évitez le WiFi public instable
 
 **2. Sauvegarder manuellement régulièrement**
+
 - Cliquez sur **"Enregistrer"** toutes les 5-10 minutes
 - Ne comptez pas uniquement sur la sauvegarde automatique
 - Habitude à prendre : Ctrl+S après chaque modification importante
 
 **3. Rafraîchir la page en cas de blocage**
+
 - F5 ou Ctrl+R pour recharger
 - ⚠️ **Attention** : Vous perdrez les modifications non sauvegardées
 - Utilisez cette solution en dernier recours
 
 **4. Se déconnecter et se reconnecter**
+
 - Peut réinitialiser une session bloquée
 - Vos dernières sauvegardes seront préservées
 
@@ -131,18 +144,22 @@
 **Solutions :**
 
 **1. Assurez-vous d'être en mode édition**
+
 - Bouton **"Edit"** ou **"Modifier"** doit être actif
 - Le mode prévisualisation ne permet pas l'édition
 
 **2. Cliquez directement sur l'élément**
+
 - La plupart des textes, images et boutons sont éditables au clic
 - Un cadre bleu apparaît autour de l'élément sélectionné
 
 **3. Utilisez le panneau latéral droit**
+
 - Les options avancées s'affichent dans la barre latérale
 - Onglets : Contenu, Style, Avancé
 
 **4. Consultez le Guide 02**
+
 - [Guide 02 - Modification du contenu](02-MODIFICATION-CONTENU.md)
 - Tutoriels visuels détaillés pour chaque type d'élément
 
@@ -164,6 +181,7 @@
 **Problème spécifique : Le texte dépasse sur mobile**
 
 Solutions :
+
 1. Mode édition → **Icône mobile** en haut à droite
 2. Ajustez la taille de police spécifiquement pour mobile (souvent 14-16px)
 3. Réduisez la longueur des phrases si nécessaire
@@ -174,25 +192,30 @@ Solutions :
 **Vérifications et solutions :**
 
 **1. Vérifier la taille du fichier**
+
 - **Limite Systeme.io** : 10 Mo par image
 - **Taille recommandée** : < 500 Ko (compressez avec TinyPNG)
 - Fichier trop lourd = échec d'upload
 
 **2. Vérifier le format**
+
 - **Formats acceptés** : JPG, JPEG, PNG, GIF, WEBP
 - **Non acceptés** : BMP, TIFF, SVG (SVG via code uniquement)
 - Convertissez si nécessaire (utilisez Squoosh ou Convertio)
 
 **3. Compresser l'image avant upload**
+
 - TinyPNG : https://tinypng.com/ (gratuit, jusqu'à 70% de compression)
 - Squoosh : https://squoosh.app/ (contrôle total de la qualité)
 
 **4. Renommer le fichier**
+
 - ❌ **Mauvais** : `Mon Image Été 2024 (1).jpg`
 - ✅ **Bon** : `image-coaching-ete-2024.jpg`
 - Évitez : accents, espaces, caractères spéciaux, parenthèses
 
 **5. Vérifier la connexion pendant l'upload**
+
 - Une connexion instable peut interrompre l'upload
 - Attendez la fin complète du téléchargement (barre de progression 100%)
 
@@ -208,18 +231,22 @@ Solutions :
 **Solutions :**
 
 **1. Vérifier que le formulaire est publié**
+
 - Dashboard → Formulaires → Vérifiez le statut
 - Statut doit être **"Publié"** et non "Brouillon"
 
 **2. Actualiser la page**
+
 - F5 pour forcer le rechargement
 - Ctrl+F5 pour vider le cache ET recharger
 
 **3. Tester sur un autre navigateur**
+
 - Possible incompatibilité avec certaines extensions
 - Testez en mode navigation privée
 
 **4. Vérifier les paramètres de visibilité**
+
 - Éditeur → Bloc formulaire → Paramètres
 - Vérifiez qu'il n'est pas masqué sur certains appareils (mobile/desktop)
 
@@ -230,6 +257,7 @@ Solutions :
 **1. Email de notification mal configuré**
 
 Vérifications :
+
 - Paramètres du formulaire → **Notifications**
 - Email destinataire correct ? (vérifiez les fautes de frappe)
 - Notifications **activées** ?
@@ -237,6 +265,7 @@ Vérifications :
 **2. Emails bloqués par les filtres anti-spam**
 
 Actions :
+
 1. Vérifiez votre dossier **Spam/Courrier indésirable**
 2. Ajoutez `noreply@systeme.io` et `notifications@systeme.io` à vos contacts
 3. Créez une règle pour marquer ces emails comme "Non spam"
@@ -245,12 +274,14 @@ Actions :
 **3. Tester avec un autre email**
 
 Pour isoler le problème :
+
 - Modifiez temporairement l'email de notification (utilisez Gmail ou Outlook)
 - Soumettez un test
 - Si ça fonctionne → problème avec votre email principal
 - Si ça ne fonctionne pas → problème avec le formulaire lui-même
 
 **4. Vérifier que le formulaire est bien connecté**
+
 - Paramètres → **Liste de contacts**
 - Le formulaire doit être lié à votre liste principale
 
@@ -262,18 +293,22 @@ Pour isoler le problème :
 **Solutions :**
 
 **1. Vérifier l'activation du message**
+
 - Éditeur de formulaire → **Message de confirmation**
 - Case "Afficher un message de confirmation" doit être **cochée**
 
 **2. Personnaliser le message si vide**
+
 - Entrez un texte : "Merci ! Votre message a bien été envoyé. Je vous réponds sous 24h."
 - Ajoutez de l'émotion : "🎉 Merci pour votre message !"
 
 **3. Vérifier le type de redirection**
+
 - Si "Rediriger vers une page" est activé, le message ne s'affichera PAS
 - Choisissez : soit message de confirmation, soit redirection (pas les deux)
 
 **4. Tester en conditions réelles**
+
 - Ouvrez la page en navigation privée
 - Soumettez le formulaire avec des données test
 - Vérifiez l'affichage du message
@@ -283,19 +318,23 @@ Pour isoler le problème :
 **Diagnostic et solutions :**
 
 **1. Vérifier l'onglet Contacts**
+
 - Dashboard → **Contacts**
 - Filtrez par **Date** → Dernières 24 heures
 - Cherchez le nom/email que vous avez testé
 
 **2. Vérifier les paramètres du formulaire**
+
 - Le formulaire doit être **lié à une liste de contacts**
 - Paramètres → Contact list → Sélectionnez votre liste principale
 
 **3. Tester avec plusieurs soumissions**
+
 - Parfois le premier test n'enregistre pas
 - Soumettez 2-3 formulaires test pour vérifier
 
 **4. Contacter le support si le problème persiste**
+
 - Après avoir vérifié tous les points ci-dessus
 - Fournissez : date et heure du test, email utilisé, captures d'écran
 
@@ -310,6 +349,7 @@ Pour isoler le problème :
 **1. Vérifier le lien Calendly**
 
 Processus complet :
+
 1. Ouvrez votre compte **Calendly**
 2. Allez sur votre type d'événement (ex : "Appel découverte")
 3. Cliquez sur **"Copier le lien"**
@@ -319,12 +359,14 @@ Processus complet :
 7. **Sauvegardez** et **publiez**
 
 **2. Tester le lien directement**
+
 - Copiez le lien du bouton
 - Ouvrez-le dans un nouvel onglet
 - Si Calendly s'ouvre correctement → problème avec le bouton
 - Si Calendly ne s'ouvre pas → problème avec le lien lui-même
 
 **3. Vérifier les paramètres du bouton**
+
 - Type de lien : **"Externe"** ou **"URL"**
 - Ouvrir dans : **"Nouvelle fenêtre"** ou **"Pop-up"** (recommandé)
 - Ne pas sélectionner "Même fenêtre" (mauvaise expérience utilisateur)
@@ -335,6 +377,7 @@ Processus complet :
 ### Calendly s'ouvre mais n'affiche rien (page blanche)
 
 **Causes possibles :**
+
 - Compte Calendly suspendu ou inactif
 - Événement supprimé ou archivé
 - Lien expiré ou modifié
@@ -343,22 +386,26 @@ Processus complet :
 **Solutions :**
 
 **1. Vérifier le statut de votre compte Calendly**
+
 - Connectez-vous à **calendly.com**
 - Vérifiez qu'il n'y a pas de message d'avertissement
 - Assurez-vous que votre abonnement est actif
 
 **2. Vérifier que l'événement existe toujours**
+
 - Calendly → **Event Types**
 - Trouvez votre événement (ex : "Appel découverte")
 - Statut doit être **"Active"** (vert)
 - S'il est archivé → Réactivez-le
 
 **3. Générer un nouveau lien**
+
 - Depuis Calendly → Événement → **Copy link**
 - Mettez à jour ce lien sur TOUS vos boutons CTA de la landing page
 - Sauvegardez et republiez
 
 **4. Vérifier vos disponibilités**
+
 - Calendly → **Availability**
 - Assurez-vous d'avoir des créneaux disponibles
 - Étendez vos horaires si trop limités
@@ -372,20 +419,24 @@ Processus complet :
 **Solutions :**
 
 **1. Vérifier les paramètres de notifications Calendly**
+
 1. Calendly → Settings → **Notifications & Workflows**
 2. Activez **"Email confirmation to invitee"** (confirmation au client)
 3. Vérifiez le modèle d'email (Email templates)
 
 **2. Vérifier le modèle d'email**
+
 - Calendly → Notifications → **Email notifications**
 - Prévisualisez l'email de confirmation
 - Assurez-vous qu'il contient les infos essentielles (date, heure, lien de RDV)
 
 **3. Demander aux clients de vérifier leurs spams**
+
 - Les emails Calendly peuvent être filtrés
 - Demandez au client d'ajouter `no-reply@calendly.com` à ses contacts
 
 **4. Tester avec votre propre email**
+
 - Réservez un créneau avec votre email personnel
 - Vérifiez la réception et le contenu de l'email
 - Annulez ensuite ce rendez-vous test
@@ -414,21 +465,25 @@ Processus complet :
 **Solutions :**
 
 **1. Utiliser le mode édition responsive**
+
 - Éditeur → Cliquez sur l'**icône mobile** en haut à droite
 - Prévisualisez et ajustez chaque élément spécifiquement pour mobile
 - Sauvegardez les modifications mobiles séparément
 
 **2. Vérifier les tailles de police**
+
 - **Minimum mobile** : 16px pour le texte principal
 - **Titres** : 24-32px
 - Texte trop petit = illisible sur smartphone = visiteurs partent
 
 **3. Vérifier que les images sont responsives**
+
 - Les images doivent **s'adapter automatiquement** à la largeur de l'écran
 - Évitez les largeurs fixes en pixels
 - Utilisez "Largeur: 100%" ou "Responsive: activé"
 
 **4. Tester sur un vrai smartphone**
+
 - Les émulateurs (F12) ne sont pas toujours fiables
 - Envoyez-vous l'URL par email/SMS
 - Testez sur iPhone ET Android (les rendus diffèrent légèrement)
@@ -450,24 +505,29 @@ Processus complet :
 **Solutions :**
 
 **1. Vérifier que l'upload est terminé**
+
 - Attendez la fin de la barre de progression (100%)
 - Ne sauvegardez pas avant la fin de l'upload
 
 **2. Vider le cache et recharger**
+
 - Ctrl+F5 pour forcer le rechargement complet
 - Ou Ctrl+Shift+R sur Mac
 
 **3. Vérifier le format de l'image**
+
 - **Acceptés** : JPG, PNG, GIF, WEBP
 - **Refusés** : BMP, TIFF, PSD, AI
 - Convertissez avec un outil en ligne si nécessaire
 
 **4. Re-uploader l'image**
+
 - Supprimez l'image problématique
 - Attendez 10 secondes
 - Réuploadez l'image (éventuellement compressée avec TinyPNG)
 
 **5. Tester avec une autre image**
+
 - Pour vérifier si le problème vient de l'image spécifique ou du système
 - Uploadez une image de test (photo simple)
 
@@ -476,18 +536,22 @@ Processus complet :
 **Causes et solutions :**
 
 **1. Problème de cache navigateur**
+
 - Solution : Ctrl+F5 pour vider le cache
 
 **2. Thème par défaut qui s'applique**
+
 - Vérifiez les paramètres globaux de thème
 - Désactivez l'héritage des couleurs si nécessaire
 
 **3. Code hexadécimal incorrect**
+
 - Format correct : `#RRGGBB` (exemple : `#3949AB`)
 - 6 caractères après le #
 - Utilisez le sélecteur de couleur intégré pour éviter les erreurs
 
 **4. Modifications non publiées**
+
 - Cliquez sur **"Publier"** après chaque modification
 - Le mode "Enregistrer" ne rend pas les changements publics
 
@@ -499,17 +563,21 @@ Processus complet :
 **Solutions :**
 
 **1. Vérifier que la police est disponible dans Systeme.io**
+
 - Toutes les polices ne sont pas disponibles
 - Polices garanties : Open Sans, Roboto, Lato, Montserrat, Arial
 
 **2. Appliquer la police au bon élément**
+
 - Sélectionnez précisément le texte à modifier
 - Appliquez la police depuis la barre d'outils ou le panneau Style
 
 **3. Publier et vider le cache**
+
 - Sauvegardez → Publiez → Ctrl+F5
 
 **4. Utiliser une police standard en cas de problème persistant**
+
 - **Open Sans** : Moderne, lisible, safe
 - **Roboto** : Très lisible sur mobile
 - **Arial** : Classique, universellement compatible
@@ -525,10 +593,12 @@ Processus complet :
 **1. Images trop lourdes (cause n°1 à 90%)**
 
 Diagnostic :
+
 - Outils → PageSpeed Insights : https://pagespeed.web.dev/
 - Section "Diagnostics" → "Properly size images"
 
 Solutions :
+
 - **Compressez TOUTES les images** avant upload
 - Outils : TinyPNG (https://tinypng.com/) ou Squoosh (https://squoosh.app/)
 - **Taille recommandée** : < 500 Ko par image
@@ -537,6 +607,7 @@ Solutions :
 **2. Trop d'éléments sur la page**
 
 Solutions :
+
 - Supprimez les sections peu consultées (vérifiez avec les heatmaps)
 - Limitez à 5-7 sections maximum
 - Réduisez le nombre d'animations
@@ -544,6 +615,7 @@ Solutions :
 **3. Vidéos uploadées directement**
 
 Solutions :
+
 - **Ne JAMAIS uploader de vidéos directement** sur Systeme.io
 - Hébergez sur **YouTube** ou **Vimeo**
 - Intégrez par **iframe** (lien d'intégration, pas lien normal)
@@ -551,6 +623,7 @@ Solutions :
 **4. Scripts externes trop nombreux**
 
 Si vous avez ajouté :
+
 - Google Analytics
 - Pixel Facebook
 - Hotjar ou autres tracking
@@ -576,24 +649,29 @@ Limitez au strict nécessaire (2-3 scripts maximum).
 **Solutions :**
 
 **1. Vérifier la source de la vidéo**
+
 - **YouTube/Vimeo** : Recommandé (optimisé automatiquement)
 - **Upload direct** : À éviter (limite de taille, non optimisé)
 
 **2. Utiliser un lien d'intégration (embed) et non le lien normal**
 
 YouTube :
+
 - Ouvrez la vidéo → **Partager** → **Intégrer**
 - Copiez le code `<iframe src="...">` OU l'URL d'intégration
 - Exemple : `https://www.youtube.com/embed/ABC123`
 
 Vimeo :
+
 - Même processus : **Share** → **Embed**
 
 **3. Vérifier la taille si upload direct**
+
 - Limite : 100 Mo
 - Si dépassé → Compressez avec HandBrake ou uploadez sur YouTube
 
 **4. Activer le "Lazy loading" (chargement différé)**
+
 - La vidéo ne se charge que lorsqu'elle devient visible
 - Paramètre souvent activé par défaut sur Systeme.io
 
@@ -606,19 +684,23 @@ Vimeo :
 **Solutions :**
 
 **1. Attendre 24-48 heures après la première publication**
+
 - Les stats ne sont pas instantanées
 - Le système doit d'abord collecter des données
 
 **2. Vérifier que la page est publiée**
+
 - Les brouillons ne génèrent PAS de statistiques
 - Statut de la page doit être **"Publiée"**
 
 **3. Consulter la bonne période**
+
 - Filtrez par dates pertinentes
 - Par défaut : 7 derniers jours
 - Élargissez si vous avez peu de trafic : 30 derniers jours
 
 **4. Rafraîchir le dashboard**
+
 - F5 pour recharger
 - Les stats se mettent à jour toutes les 2-3 heures (pas en temps réel)
 
