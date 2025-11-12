@@ -1,44 +1,60 @@
-## 🎯 Objectif de ce guide
+# 🎨 04 - Design et mise en page
 
-Personnaliser l'apparence visuelle de votre landing page : couleurs, polices, espacements et responsive design.
+⏱️ **Durée estimée** : 60 minutes
+📊 **Niveau** : Intermédiaire
+
+## 🎯 Objectifs
+
+À la fin de ce guide, vous saurez :
+
+- [ ] Définir et appliquer votre charte graphique
+- [ ] Modifier les couleurs, polices et espacements
+- [ ] Créer un design responsive (adaptatif mobile/tablette)
+- [ ] Utiliser les bordures, ombres et effets visuels
+- [ ] Optimiser les images et médias
+- [ ] Garantir l'accessibilité et la cohérence visuelle
 
 ---
 
-## 1. Charte graphique et cohérence visuelle
+## 🎨 Charte graphique et cohérence visuelle
 
-### 1.1 Définir votre identité visuelle
+### Définir votre identité visuelle
 
-Avant toute modification, identifiez votre palette de couleurs :
+Avant toute modification, identifiez votre palette de couleurs.
 
 **Votre palette actuelle (à définir) :**
 
-|Élément|Couleur|Code Hexa|Usage|
-|---|---|---|---|
-|**Primaire**|[À définir]|#XXXXXX|Titres, CTA principaux|
-|**Secondaire**|[À définir]|#XXXXXX|Sous-titres, accents|
-|**Texte principal**|Noir/Gris foncé|#333333|Corps de texte|
-|**Texte secondaire**|Gris moyen|#666666|Légendes, dates|
-|**Fond**|Blanc/Beige clair|#FFFFFF|Arrière-plans|
-|**Accent**|[À définir]|#XXXXXX|Éléments cliquables|
+| Élément | Couleur | Code Hexa | Usage |
+|---------|---------|-----------|-------|
+| **Primaire** | [À définir] | #XXXXXX | Titres, CTA principaux |
+| **Secondaire** | [À définir] | #XXXXXX | Sous-titres, accents |
+| **Texte principal** | Noir/Gris foncé | #333333 | Corps de texte |
+| **Texte secondaire** | Gris moyen | #666666 | Légendes, dates |
+| **Fond** | Blanc/Beige clair | #FFFFFF | Arrière-plans |
+| **Accent** | [À définir] | #XXXXXX | Éléments cliquables |
 
-> 💡 **Outil recommandé :** Adobe Color (https://color.adobe.com) pour créer des palettes harmonieuses.
+!!! tip "💡 Outil recommandé"
+    Utilisez [Adobe Color](https://color.adobe.com) ou [Coolors](https://coolors.co) pour créer des palettes harmonieuses. Ces outils génèrent des combinaisons de couleurs qui fonctionnent bien ensemble.
 
-### 1.2 Psychologie des couleurs pour le coaching
+### Psychologie des couleurs pour le coaching
 
-|Couleur|Émotion|Recommandation|
-|---|---|---|
-|**Bleu**|Confiance, calme|✅ Excellent pour coaching juridique|
-|**Rose/Mauve**|Douceur, féminité|✅ Parfait pour coaching féminin|
-|**Vert**|Nature, équilibre|✅ Bien-être, transition|
-|**Or/Beige**|Élégance, chaleur|✅ Premium, accompagnement|
-|**Rouge**|Urgence, passion|⚠️ À utiliser avec parcimonie|
-|**Noir**|Luxe, sophistication|⚠️ Peut sembler froid seul|
+| Couleur | Émotion | Recommandation |
+|---------|---------|----------------|
+| **Bleu** | Confiance, calme | ✅ Excellent pour coaching professionnel |
+| **Rose/Mauve** | Douceur, féminité | ✅ Parfait pour coaching au féminin |
+| **Vert** | Nature, équilibre | ✅ Bien-être, transition de vie |
+| **Or/Beige** | Élégance, chaleur | ✅ Premium, accompagnement haut de gamme |
+| **Rouge** | Urgence, passion | ⚠️ À utiliser avec parcimonie |
+| **Noir** | Luxe, sophistication | ⚠️ Peut sembler froid seul |
+
+!!! info "ℹ️ Choix des couleurs"
+    Pour le coaching au féminin, privilégiez les teintes douces (rose, mauve, beige) qui évoquent la bienveillance et l'écoute. Évitez les couleurs trop agressives ou froides.
 
 ---
 
-## 2. Modifier les couleurs
+## 🎨 Modifier les couleurs
 
-### 2.1 Couleur d'un bloc de texte
+### Couleur d'un bloc de texte
 
 1. Cliquez sur le bloc de texte
 2. Panneau de droite > **Style** > **Couleur**
@@ -54,7 +70,7 @@ Couleur: [#] [4][A][9][0][E][2]
          ↑   ↑ Code hexadécimal
 ```
 
-### 2.2 Couleur de fond d'une section
+### Couleur de fond d'une section
 
 1. Cliquez sur la section (pas le texte, mais le bloc entier)
 2. Panneau > **Fond (Background)**
@@ -75,7 +91,10 @@ Couleur: [#] [4][A][9][0][E][2]
 └────────────────────────────┘
 ```
 
-### 2.3 Couleur des boutons CTA
+!!! tip "💡 Astuce dégradé"
+    Pour un effet subtil et élégant, utilisez deux nuances de la même couleur (exemple : #F8F8F8 vers #FFFFFF). Les dégradés prononcés peuvent sembler datés.
+
+### Couleur des boutons CTA
 
 1. Cliquez sur le bouton
 2. Panneau > **Style** > **Couleur**
@@ -87,18 +106,21 @@ Couleur: [#] [4][A][9][0][E][2]
 
 **États du bouton :**
 
-|État|Effet|Configuration|
-|---|---|---|
-|**Normal**|Au repos|Couleur primaire|
-|**Hover**|Souris dessus|10-20% plus foncé|
-|**Active**|Clic en cours|20-30% plus foncé|
-|**Focus**|Sélectionné (clavier)|Bordure visible|
+| État | Effet | Configuration |
+|------|-------|---------------|
+| **Normal** | Au repos | Couleur primaire |
+| **Hover** | Souris dessus | 10-20% plus foncé |
+| **Active** | Clic en cours | 20-30% plus foncé |
+| **Focus** | Sélectionné (clavier) | Bordure visible |
+
+!!! warning "⚠️ Accessibilité des boutons"
+    Assurez-vous que l'état "hover" est bien visible mais pas trop différent. Les utilisateurs doivent comprendre qu'ils peuvent cliquer sans être surpris par un changement trop brutal.
 
 ---
 
-## 3. Typographie (Polices)
+## 🔤 Typographie (Polices)
 
-### 3.1 Hiérarchie typographique
+### Hiérarchie typographique
 
 **Règle de base :**
 
@@ -110,7 +132,7 @@ Corps:       16px - Normal
 Légende:     14px - Normal
 ```
 
-### 3.2 Modifier la police d'un texte
+### Modifier la police d'un texte
 
 1. Sélectionnez le texte
 2. Panneau > **Police (Font Family)**
@@ -118,17 +140,18 @@ Légende:     14px - Normal
 
 **Polices recommandées pour coaching :**
 
-|Police|Style|Usage|Personnalité|
-|---|---|---|---|
-|**Montserrat**|Sans-serif|Titres|Moderne, clean|
-|**Open Sans**|Sans-serif|Textes|Lisible, neutre|
-|**Lora**|Serif|Titres élégants|Chaleureux, féminin|
-|**Raleway**|Sans-serif|Tout usage|Élégant, aéré|
-|**Playfair Display**|Serif|Titres premium|Luxe, sophistiqué|
+| Police | Style | Usage | Personnalité |
+|--------|-------|-------|--------------|
+| **Montserrat** | Sans-serif | Titres | Moderne, clean |
+| **Open Sans** | Sans-serif | Textes | Lisible, neutre |
+| **Lora** | Serif | Titres élégants | Chaleureux, féminin |
+| **Raleway** | Sans-serif | Tout usage | Élégant, aéré |
+| **Playfair Display** | Serif | Titres premium | Luxe, sophistiqué |
 
-> 💡 **Conseil :** Maximum 2 polices différentes sur la page (1 pour titres, 1 pour textes).
+!!! tip "💡 Conseil typographique"
+    Maximum 2 polices différentes sur la page : 1 pour les titres, 1 pour les textes. Plus de polices = design brouillon et amateur.
 
-### 3.3 Taille et style de texte
+### Taille et style de texte
 
 **Panneau de propriétés :**
 
@@ -150,12 +173,14 @@ Légende:     14px - Normal
 
 **Poids de police (Font Weight) :**
 
-- **300 (Light)** : Textes secondaires, légendes
-- **400 (Normal)** : Corps de texte standard
-- **600 (Semi-Bold)** : Mise en valeur dans le texte
-- **700 (Bold)** : Titres, CTA
+| Poids | Valeur | Usage |
+|-------|--------|-------|
+| **Light** | 300 | Textes secondaires, légendes |
+| **Normal** | 400 | Corps de texte standard |
+| **Semi-Bold** | 600 | Mise en valeur dans le texte |
+| **Bold** | 700 | Titres, CTA |
 
-### 3.4 Lisibilité et accessibilité
+### Lisibilité et accessibilité
 
 **Bonnes pratiques :**
 
@@ -166,11 +191,14 @@ Légende:     14px - Normal
 - ❌ Éviter texte en capitales sur plusieurs lignes
 - ❌ Éviter italique pour longs paragraphes
 
+!!! warning "⚠️ Lisibilité critique"
+    Un texte illisible fait fuir vos visiteurs. Privilégiez toujours la lisibilité au style. Testez votre page en conditions réelles (écran d'ordinateur à 1m de distance).
+
 ---
 
-## 4. Espacements et marges
+## 📐 Espacements et marges
 
-### 4.1 Types d'espacements
+### Types d'espacements
 
 ```
 ┌─────────────────────────────────────┐
@@ -186,31 +214,42 @@ Légende:     14px - Normal
 
 **Différence :**
 
-- **Margin** : Espace entre blocs
+- **Margin** : Espace entre blocs (extérieur)
 - **Padding** : Espace à l'intérieur du bloc
 
-### 4.2 Modifier les espacements d'un bloc
+### Modifier les espacements d'un bloc
 
 1. Cliquez sur le bloc
 2. Panneau > **Espacement (Spacing)**
 3. Configurez :
-    
-    ```
-    ┌────────────────────────────┐│ Margin (externe)          ││ ├─ Haut:    [20] px      ││ ├─ Droite:  [0] px       ││ ├─ Bas:     [20] px      ││ └─ Gauche:  [0] px       ││                           ││ Padding (interne)         ││ ├─ Haut:    [15] px      ││ ├─ Droite:  [15] px      ││ ├─ Bas:     [15] px      ││ └─ Gauche:  [15] px      │└────────────────────────────┘
-    ```
-    
 
-### 4.3 Espacements recommandés
+```
+┌────────────────────────────┐
+│ Margin (externe)          │
+│ ├─ Haut:    [20] px      │
+│ ├─ Droite:  [0] px       │
+│ ├─ Bas:     [20] px      │
+│ └─ Gauche:  [0] px       │
+│                           │
+│ Padding (interne)         │
+│ ├─ Haut:    [15] px      │
+│ ├─ Droite:  [15] px      │
+│ ├─ Bas:     [15] px      │
+│ └─ Gauche:  [15] px      │
+└────────────────────────────┘
+```
 
-|Élément|Margin Top|Margin Bottom|Padding|
-|---|---|---|---|
-|Titre H1|0px|30px|0px|
-|Titre H2|60px|20px|0px|
-|Paragraphe|0px|20px|0px|
-|Section|80px|80px|40px|
-|Bouton CTA|30px|30px|15px 30px|
+### Espacements recommandés
 
-### 4.4 Système d'espacement cohérent
+| Élément | Margin Top | Margin Bottom | Padding |
+|---------|------------|---------------|---------|
+| Titre H1 | 0px | 30px | 0px |
+| Titre H2 | 60px | 20px | 0px |
+| Paragraphe | 0px | 20px | 0px |
+| Section | 80px | 80px | 40px |
+| Bouton CTA | 30px | 30px | 15px 30px |
+
+### Système d'espacement cohérent
 
 Utilisez un système basé sur 8px :
 
@@ -220,16 +259,19 @@ Utilisez un système basé sur 8px :
 
 **Pourquoi ?**
 
-- ✅ Cohérence visuelle
+- ✅ Cohérence visuelle automatique
 - ✅ Proportions harmonieuses
 - ✅ Alignement pixel-perfect
 - ✅ Design professionnel
 
+!!! tip "💡 Règle du 8"
+    En utilisant toujours des multiples de 8px, votre design sera automatiquement plus cohérent et agréable à l'œil. C'est une règle utilisée par tous les grands designers.
+
 ---
 
-## 5. Responsive Design (Mobile/Tablette)
+## 📱 Responsive Design (Mobile/Tablette)
 
-### 5.1 Principe du Responsive
+### Principe du Responsive
 
 Votre page doit s'adapter à toutes les tailles d'écran :
 
@@ -240,34 +282,37 @@ Votre page doit s'adapter à toutes les tailles d'écran :
 └──────────────┘  └─────────┘  └────┘
 ```
 
-### 5.2 Basculer entre les vues
+!!! danger "🚨 Mobile prioritaire"
+    Plus de 60% de vos visiteurs sont sur mobile. Testez TOUJOURS votre page en vue mobile avant de publier. Une page cassée sur mobile = perte de clients.
+
+### Basculer entre les vues
 
 En bas de l'éditeur Systeme.io :
 
-|Icône|Vue|Largeur|Usage prioritaire|
-|---|---|---|---|
-|💻|Desktop|1920px|Ordinateurs|
-|📱|Tablet|768px|Tablettes, iPad|
-|📱|Mobile|375px|Smartphones|
+| Icône | Vue | Largeur | Usage prioritaire |
+|-------|-----|---------|-------------------|
+| 💻 | Desktop | 1920px | Ordinateurs |
+| 📱 | Tablet | 768px | Tablettes, iPad |
+| 📱 | Mobile | 375px | Smartphones |
 
-### 5.3 Règles d'adaptation mobile
+### Règles d'adaptation mobile
 
 #### Tailles de police
 
-|Élément|Desktop|Mobile|
-|---|---|---|
-|H1|48px|32px|
-|H2|36px|28px|
-|H3|28px|22px|
-|Corps|16px|16px|
+| Élément | Desktop | Mobile |
+|---------|---------|--------|
+| H1 | 48px | 32px |
+| H2 | 36px | 28px |
+| H3 | 28px | 22px |
+| Corps | 16px | 16px |
 
 #### Espacements
 
-|Élément|Desktop|Mobile|
-|---|---|---|
-|Section padding|80px|40px|
-|Margin entre blocs|60px|30px|
-|CTA height|56px|48px|
+| Élément | Desktop | Mobile |
+|---------|---------|--------|
+| Section padding | 80px | 40px |
+| Margin entre blocs | 60px | 30px |
+| CTA height | 56px | 48px |
 
 #### Disposition
 
@@ -291,7 +336,7 @@ En bas de l'éditeur Systeme.io :
 └────────────────────────┘
 ```
 
-### 5.4 Vérifier le responsive
+### Vérifier le responsive
 
 **Checklist mobile :**
 
@@ -311,11 +356,14 @@ En bas de l'éditeur Systeme.io :
 4. Testez tous les CTA
 5. Notez les problèmes
 
+!!! tip "💡 Test réel indispensable"
+    L'aperçu mobile de l'éditeur est utile, mais ne remplace jamais un test sur un vrai téléphone. Testez avec votre propre smartphone et demandez à 2-3 personnes de faire de même.
+
 ---
 
-## 6. Bordures, ombres et effets
+## ✨ Bordures, ombres et effets
 
-### 6.1 Bordures (Borders)
+### Bordures (Borders)
 
 **Configuration :**
 
@@ -331,10 +379,12 @@ En bas de l'éditeur Systeme.io :
 
 **Styles de bordure :**
 
-- **Solid** : Trait continu (standard)
-- **Dashed** : Pointillés
-- **Dotted** : Points
-- **None** : Aucune bordure
+| Style | Description | Usage |
+|-------|-------------|-------|
+| **Solid** | Trait continu | Standard, recommandé |
+| **Dashed** | Pointillés | Séparation légère |
+| **Dotted** | Points | Décoratif |
+| **None** | Aucune bordure | Design minimaliste |
 
 **Utilisation :**
 
@@ -342,14 +392,14 @@ En bas de l'éditeur Systeme.io :
 - Mettre en évidence une zone
 - Créer des cartes (cards)
 
-### 6.2 Ombres (Shadows)
+### Ombres (Shadows)
 
 **Pourquoi utiliser des ombres ?**
 
 - ✅ Profondeur visuelle
 - ✅ Hiérarchie des éléments
-- ✅ Effet moderne
-- ✅ Mise en avant
+- ✅ Effet moderne et professionnel
+- ✅ Mise en avant de CTA
 
 **Configuration ombre :**
 
@@ -367,14 +417,17 @@ En bas de l'éditeur Systeme.io :
 
 **Exemples d'ombres :**
 
-|Usage|Configuration|Rendu|
-|---|---|---|
-|**Subtile**|Y:2px Flou:4px|Élégant, discret|
-|**Card**|Y:4px Flou:12px|Carte, bloc|
-|**Forte**|Y:8px Flou:24px|CTA, popup|
-|**Intérieure**|Type:Interne|Effet enfoncé|
+| Usage | Configuration | Rendu |
+|-------|---------------|-------|
+| **Subtile** | Y:2px Flou:4px | Élégant, discret |
+| **Card** | Y:4px Flou:12px | Carte, bloc de contenu |
+| **Forte** | Y:8px Flou:24px | CTA, popup |
+| **Intérieure** | Type:Interne | Effet enfoncé |
 
-### 6.3 Arrondir les coins
+!!! warning "⚠️ Modération des ombres"
+    Trop d'ombres = design surchargé. Réservez les ombres prononcées aux éléments vraiment importants (CTA principaux, popups).
+
+### Arrondir les coins
 
 **Configuration :**
 
@@ -384,12 +437,14 @@ Border Radius: [8] px
 
 **Degrés d'arrondi :**
 
-- **0px** : Coins carrés (strict, formel)
-- **4-8px** : Légèrement arrondi (moderne, doux)
-- **12-16px** : Arrondi prononcé (friendly, accueillant)
-- **50%** : Cercle parfait (si carré) ou pilule
+| Valeur | Style | Personnalité |
+|--------|-------|--------------|
+| **0px** | Coins carrés | Strict, formel |
+| **4-8px** | Légèrement arrondi | Moderne, doux |
+| **12-16px** | Arrondi prononcé | Friendly, accueillant |
+| **50%** | Cercle/pilule | Dynamique, jeune |
 
-**Utilisation :**
+**Utilisation recommandée :**
 
 - Images : 8-12px
 - Boutons : 4-8px (ou 50% pour pilule)
@@ -398,9 +453,9 @@ Border Radius: [8] px
 
 ---
 
-## 7. Images et médias
+## 🖼️ Images et médias
 
-### 7.1 Filtres d'image
+### Filtres d'image
 
 Appliquer des effets visuels aux images :
 
@@ -421,13 +476,13 @@ Appliquer des effets visuels aux images :
 
 **Cas d'usage :**
 
-|Effet|Configuration|Usage|
-|---|---|---|
-|**Image en arrière-plan**|Opacité: 30%, Luminosité: 120%|Lisibilité du texte|
-|**Photo noir et blanc**|Niveaux de gris: 100%|Style intemporel|
-|**Image atténuée**|Saturation: 50%, Luminosité: 110%|Harmonie colorimétrique|
+| Effet | Configuration | Usage |
+|-------|---------------|-------|
+| **Image en arrière-plan** | Opacité: 30%, Luminosité: 120% | Lisibilité du texte par-dessus |
+| **Photo noir et blanc** | Niveaux de gris: 100% | Style intemporel, élégant |
+| **Image atténuée** | Saturation: 50%, Luminosité: 110% | Harmonie avec la charte graphique |
 
-### 7.2 Superposition (Overlay)
+### Superposition (Overlay)
 
 Ajouter une couche colorée sur une image de fond :
 
@@ -446,11 +501,14 @@ Ajouter une couche colorée sur une image de fond :
 - Image de fond + overlay noir 50% + texte blanc
 - Garantit lisibilité du texte sur toute image
 
+!!! tip "💡 Astuce overlay"
+    Pour un texte blanc sur image de fond, utilisez toujours un overlay noir à 40-60%. Cela garantit que le texte reste lisible même si l'image change.
+
 ---
 
-## 8. Thème et templates
+## 🎭 Thème et templates
 
-### 8.1 Utiliser un thème existant
+### Utiliser un thème existant
 
 Systeme.io propose des thèmes prédéfinis :
 
@@ -459,11 +517,12 @@ Systeme.io propose des thèmes prédéfinis :
 3. Survolez un thème pour prévisualiser
 4. Cliquez sur **"Appliquer"**
 
-> ⚠️ **Attention :** Appliquer un nouveau thème écrase le design actuel. Enregistrez une copie de votre page avant.
+!!! danger "🚨 Attention : Sauvegarde obligatoire"
+    Appliquer un nouveau thème écrase votre design actuel. **Enregistrez une copie de votre page avant** en dupliquant le funnel.
 
-### 8.2 Créer votre propre thème
+### Créer votre propre thème
 
-**Avantage :** Réutiliser les couleurs/polices sur d'autres pages.
+**Avantage :** Réutiliser vos couleurs/polices sur d'autres pages.
 
 **Procédure :**
 
@@ -475,76 +534,140 @@ Systeme.io propose des thèmes prédéfinis :
 
 **Votre thème contient :**
 
-- Palette de couleurs
+- Palette de couleurs complète
 - Polices (titres et corps)
 - Espacements par défaut
 - Styles de boutons
 
 ---
 
-## 9. Checklist Design
+## 🆘 Questions fréquentes et dépannage
 
-Avant de publier :
+### Mes couleurs ne s'affichent pas correctement
 
-### ✅ Cohérence visuelle
+**Causes possibles :**
 
-- [ ] Maximum 3 couleurs principales
-- [ ] Maximum 2 polices
+1. Code hexadécimal incorrect
+2. Cache du navigateur
+3. Thème qui surcharge les couleurs
+
+**Solutions :**
+
+1. Vérifiez que le code commence par # et contient 6 caractères
+2. Videz le cache (++ctrl+shift+r++)
+3. Réappliquez la couleur directement sur l'élément
+
+### Le texte est illisible sur mon image de fond
+
+**Cause :** Contraste insuffisant entre texte et image.
+
+**Solutions :**
+
+1. Ajoutez un overlay noir à 50%
+2. Augmentez la luminosité de l'image
+3. Utilisez du texte avec ombre portée
+4. Placez le texte sur une zone unie de l'image
+
+### Mon design est différent sur mobile
+
+**Cause :** Systeme.io adapte automatiquement certains éléments.
+
+**Solution :**
+
+1. Passez en vue mobile dans l'éditeur
+2. Ajustez les tailles/espacements spécifiquement pour mobile
+3. Testez sur un vrai appareil
+
+### Les espacements sont incohérents
+
+**Cause :** Valeurs arbitraires sans système.
+
+**Solution :**
+
+1. Adoptez le système des multiples de 8px
+2. Passez en revue tous vos blocs
+3. Uniformisez progressivement
+
+---
+
+## ✅ Checklist de validation
+
+Avant de publier, assurez-vous d'avoir :
+
+### Cohérence visuelle
+
+- [ ] Maximum 3 couleurs principales utilisées
+- [ ] Maximum 2 polices différentes
 - [ ] Espacements cohérents (système 8px)
 - [ ] Arrondi uniforme sur tous les boutons
 - [ ] Ombres similaires sur éléments similaires
+- [ ] Style visuel homogène sur toute la page
 
-### ✅ Accessibilité
+### Accessibilité
 
-- [ ] Contraste texte/fond ≥ 4.5:1
-- [ ] Taille de texte ≥ 16px
+- [ ] Contraste texte/fond ≥ 4.5:1 partout
+- [ ] Taille de texte ≥ 16px pour le corps
 - [ ] Boutons ≥ 44x44px (mobile)
-- [ ] Alt text sur toutes les images
+- [ ] Alt text sur toutes les images importantes
 - [ ] Navigation possible au clavier
+- [ ] Hiérarchie des titres respectée (H1 → H2 → H3)
 
-### ✅ Responsive
+### Responsive
 
 - [ ] Testé sur Desktop (1920px)
 - [ ] Testé sur Tablet (768px)
 - [ ] Testé sur Mobile (375px)
-- [ ] Aucun défilement horizontal
-- [ ] Textes lisibles sans zoom
-- [ ] Images non déformées
+- [ ] Aucun défilement horizontal sur aucune vue
+- [ ] Textes lisibles sans zoom sur mobile
+- [ ] Images non déformées sur toutes les vues
+- [ ] CTA accessibles facilement sur mobile
 
-### ✅ Performance
+### Performance
 
-- [ ] Images optimisées (< 200Ko)
+- [ ] Images optimisées (< 200Ko chacune)
 - [ ] Pas de vidéos en autoplay
-- [ ] Chargement de page < 3 sec
+- [ ] Chargement de page < 3 secondes
 - [ ] Fonts chargées efficacement
+- [ ] Pas d'animations lourdes
+
+!!! success "🎉 Félicitations !"
+    Votre page a maintenant un design professionnel, cohérent et accessible ! Un bon design augmente la crédibilité et les conversions de 40% en moyenne.
 
 ---
 
-## 10. Outils recommandés
+## 🔗 Navigation
 
-### Couleurs
-
-- **Adobe Color** : https://color.adobe.com
-- **Coolors** : https://coolors.co
-- **Contrast Checker** : https://webaim.org/resources/contrastchecker/
-
-### Polices
-
-- **Google Fonts** : https://fonts.google.com
-- **Font Pair** : https://fontpair.co
-
-### Images
-
-- **Unsplash** : https://unsplash.com (photos gratuites)
-- **Pexels** : https://www.pexels.com
-- **TinyPNG** : https://tinypng.com (optimisation)
-
-### Inspiration Design
-
-- **Dribbble** : https://dribbble.com
-- **Behance** : https://www.behance.net
-- **Awwwards** : https://www.awwwards.com
+- ⬅️ **Précédent** : [03 - Gestion des CTA et Calendly](03-GESTION-CTA-CALENDLY.md)
+- ➡️ **Suivant** : [05 - Formulaires et données](05-FORMULAIRES-DONNEES.md)
+- 🏠 **Accueil** : [Retour à l'accueil](index.md)
 
 ---
 
-**Prochaine étape : [Guide 05 - Formulaires et collecte de données](05-FORMULAIRES-DONNEES.md) 📝**
+## 📚 Ressources complémentaires
+
+### Outils couleurs
+
+- [Adobe Color](https://color.adobe.com) - Créateur de palettes
+- [Coolors](https://coolors.co) - Générateur de combinaisons
+- [Contrast Checker](https://webaim.org/resources/contrastchecker/) - Vérification accessibilité
+
+### Outils polices
+
+- [Google Fonts](https://fonts.google.com) - Polices gratuites
+- [Font Pair](https://fontpair.co) - Combinaisons de polices
+
+### Outils images
+
+- [Unsplash](https://unsplash.com) - Photos gratuites haute qualité
+- [Pexels](https://www.pexels.com) - Banque d'images libres
+- [TinyPNG](https://tinypng.com) - Optimisation d'images
+
+### Inspiration design
+
+- [Dribbble](https://dribbble.com) - Inspiration design
+- [Behance](https://www.behance.net) - Portfolios créatifs
+- [Awwwards](https://www.awwwards.com) - Meilleurs sites web
+
+---
+
+**Prêt à continuer ? Passez au [Guide 05 - Formulaires et données](05-FORMULAIRES-DONNEES.md) !** 📝
