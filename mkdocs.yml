@@ -62,8 +62,8 @@ theme:
     - content.tooltips
 
   # Logo et favicon (optionnel)
-  # logo: assets/logo.png
-  # favicon: assets/favicon.png
+  logo: assets/logo.png
+  favicon: assets/favicon.png
 
   # Icône
   icon:
