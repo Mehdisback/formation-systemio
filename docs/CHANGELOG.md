@@ -10,9 +10,82 @@ Le format est basé sur [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/)
 
 ### À venir
 - Création des 24 screenshots manquants pour les guides
-- Configuration finale de Google Analytics (GA4)
 - Tests utilisateurs avec le public cible
 - Ajout de vidéos tutorielles intégrées
+- Intégration commentaires et feedback utilisateurs
+
+---
+
+## [1.2.0] - 2025-11-12
+
+### ✨ Ajouté
+
+#### Documentation
+- **Guide Google Analytics 4** (`CONFIGURATION-GOOGLE-ANALYTICS.md`) : Guide complet étape par étape
+  - Création compte et propriété GA4
+  - Configuration du flux de données Web
+  - Intégration dans MkDocs
+  - Événements personnalisés (partages, téléchargements, temps passé)
+  - Conformité RGPD et bannière cookies
+  - Métriques clés à suivre
+  - Section dépannage complète
+  - Checklist de configuration
+
+#### Scripts d'automatisation (4 nouveaux)
+- **optimize_images.py** (225 lignes) : Optimisation d'images
+  - Compression PNG/JPG avec Pillow
+  - Conversion WebP optionnelle
+  - Génération versions responsive (320px → 1920px)
+  - Rapport gains en KB et pourcentage
+
+- **validate_frontmatter.py** (285 lignes) : Validation métadonnées YAML
+  - Vérification syntaxe YAML
+  - Champs requis et recommandés
+  - Validation longueur description SEO (50-160 car.)
+  - Mode normal vs strict
+
+- **generate_stats.py** (325 lignes) : Statistiques documentation
+  - Nombre pages, mots, temps de lecture
+  - Éléments de contenu (code, images, liens)
+  - Couverture assets
+  - Top 5 pages longues
+  - Export JSON
+
+- **check_spelling.py** (275 lignes) : Vérification orthographique française
+  - Dictionnaire français + personnalisé (50+ mots techniques)
+  - Suggestions de corrections
+  - Top 10 erreurs fréquentes
+  - Ajout de mots au dictionnaire
+
+### 🔧 Amélioré
+
+- **Palette de couleurs** (04-DESIGN-MISE-EN-PAGE.md)
+  - Codes hexadécimaux réels (fini les placeholders #XXXXXX)
+  - 8 couleurs définies avec noms descriptifs
+  - Ratios de contraste WCAG AA/AAA
+  - Note d'accessibilité ajoutée
+
+- **robots.txt** enrichi
+  - Règles pour crawlers IA (GPTBot, Claude, Gemini, CCBot)
+  - Désindexation /404.html et /search/
+  - Crawl-delay configuré (1 seconde)
+  - Documentation inline complète
+
+- **scripts/README.md** : Documentation 4 nouveaux scripts
+  - Installation dépendances
+  - Exemples d'usage
+  - Fonctionnalités détaillées
+
+- **requirements.txt** : Dépendances optionnelles ajoutées
+  - Pillow, PyYAML, pyspellchecker, requests
+  - Documentation inline
+
+### 📊 Statistiques
+
+- **+1,800 lignes de code** ajoutées
+- **5 nouveaux fichiers** créés
+- **4 fichiers existants** améliorés
+- **+9 nouveaux outils/guides**
 
 ---
 
