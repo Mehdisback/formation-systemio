@@ -21,7 +21,8 @@ description: >-
 
 Cette documentation complète vous permettra de gérer et maintenir votre tunnel de vente Systeme.io en toute autonomie.
 
-Vous apprendrez à :
+**Vous apprendrez à :**
+
 - ✅ Modifier le contenu de votre landing page
 - ✅ Gérer les boutons d'appel à l'action (CTA)
 - ✅ Personnaliser le design et les couleurs
@@ -70,30 +71,30 @@ Consultez d'abord la **[FAQ et résolution de problèmes](09-FAQ-TROUBLESHOOTING
 
 === "Je débute complètement"
 
-    **Parcours recommandé :**
+**Parcours recommandé :**
 
-    1. 📖 Lisez cette page d'accueil pour comprendre la structure
-    2. 🚀 Suivez le [Guide 01 - Démarrage rapide](01-GUIDE-DEMARRAGE-RAPIDE.md)
-    3. ✏️ Pratiquez avec le [Guide 02 - Modification du contenu](02-MODIFICATION-CONTENU.md)
-    4. 🔘 Testez les [CTA et Calendly](03-GESTION-CTA-CALENDLY.md)
-    5. 📊 Consultez les autres guides selon vos besoins
+1. 📖 Lisez cette page d'accueil pour comprendre la structure
+2. 🚀 Suivez le [Guide 01 - Démarrage rapide](01-GUIDE-DEMARRAGE-RAPIDE.md)
+3. ✏️ Pratiquez avec le [Guide 02 - Modification du contenu](02-MODIFICATION-CONTENU.md)
+4. 🔘 Testez les [CTA et Calendly](03-GESTION-CTA-CALENDLY.md)
+5. 📊 Consultez les autres guides selon vos besoins
 
 === "J'ai déjà des bases"
 
-    **Accès direct aux guides avancés :**
+**Accès direct aux guides avancés :**
 
-    - 🎨 [Design et mise en page](04-DESIGN-MISE-EN-PAGE.md) - Personnalisation visuelle
-    - 📝 [Formulaires](05-FORMULAIRES-DONNEES.md) - Collecte de données
-    - 🔍 [SEO](06-SEO-REFERENCEMENT.md) - Référencement naturel
-    - 📊 [Analytics](07-SUIVI-ANALYTICS.md) - Analyse de performances
+- 🎨 [Design et mise en page](04-DESIGN-MISE-EN-PAGE.md) - Personnalisation visuelle
+- 📝 [Formulaires](05-FORMULAIRES-DONNEES.md) - Collecte de données
+- 🔍 [SEO](06-SEO-REFERENCEMENT.md) - Référencement naturel
+- 📊 [Analytics](07-SUIVI-ANALYTICS.md) - Analyse de performances
 
 === "Je rencontre un problème"
 
-    **Résolution rapide :**
+**Résolution rapide :**
 
-    1. ❓ Consultez la [FAQ](09-FAQ-TROUBLESHOOTING.md) pour les problèmes courants
-    2. 📖 Recherchez dans le [Glossaire](10-GLOSSAIRE.md) les termes techniques
-    3. 💬 Contactez le support Systeme.io si le problème persiste
+1. ❓ Consultez la [FAQ](09-FAQ-TROUBLESHOOTING.md) pour les problèmes courants
+2. 📖 Recherchez dans le [Glossaire](10-GLOSSAIRE.md) les termes techniques
+3. 💬 Contactez le support Systeme.io si le problème persiste
 
 ---
 
@@ -103,20 +104,20 @@ Consultez d'abord la **[FAQ et résolution de problèmes](09-FAQ-TROUBLESHOOTING
 
 **✅ Bonnes pratiques :**
 
-    - 📱 Gardez cette documentation ouverte pendant que vous pratiquez
-    - 🔖 Ajoutez cette page à vos favoris pour un accès rapide
-    - 🔍 Utilisez la barre de recherche en haut pour trouver l'info rapidement
-    - ✍️ Prenez des notes sur ce qui fonctionne pour vous
-    - 🎯 Validez chaque module avec les exercices pratiques
+- 📱 Gardez cette documentation ouverte pendant que vous pratiquez
+- 🔖 Ajoutez cette page à vos favoris pour un accès rapide
+- 🔍 Utilisez la barre de recherche en haut pour trouver l'info rapidement
+- ✍️ Prenez des notes sur ce qui fonctionne pour vous
+- 🎯 Validez chaque module avec les exercices pratiques
 
 !!! warning "Points d'attention"
 
-    **⚠️ Avant de modifier votre site :**
+**⚠️ Avant de modifier votre site :**
 
-    - 💾 Faites toujours une sauvegarde avant une modification majeure
-    - 🧪 Testez vos modifications sur desktop ET mobile
-    - 👀 Relisez attentivement avant de publier
-    - 📊 Consultez vos statistiques régulièrement
+- 💾 Faites toujours une sauvegarde avant une modification majeure
+- 🧪 Testez vos modifications sur desktop ET mobile
+- 👀 Relisez attentivement avant de publier
+- 📊 Consultez vos statistiques régulièrement
 
 ---
 
