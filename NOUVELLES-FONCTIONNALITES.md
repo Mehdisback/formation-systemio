@@ -1,6 +1,6 @@
 # 🚀 Nouvelles Fonctionnalités Ajoutées
 
-Ce document récapitule les 5 nouvelles fonctionnalités ajoutées au projet MkDocs Material.
+Ce document récapitule les 4 nouvelles fonctionnalités ajoutées au projet MkDocs Material.
 
 ---
 
@@ -134,59 +134,7 @@ Une belle page de couverture personnalisée avec :
 
 ---
 
-## ✅ 4. Commentaires GitHub Discussions 💬
-
-### Qu'est-ce que c'est ?
-Système de commentaires intégré basé sur Giscus permettant aux utilisateurs de poser des questions directement sur les guides.
-
-### Configuration
-- **Service** : [Giscus](https://giscus.app)
-- **Template** : `overrides/partials/comments.html`
-- **Configuration** : `mkdocs.yml` lignes 23, 284-295
-
-### Prérequis (à configurer)
-1. ⚠️ **Activer GitHub Discussions** sur le repository
-2. ⚠️ **Obtenir les IDs** via https://giscus.app
-3. ⚠️ **Remplacer les placeholders** dans `mkdocs.yml` :
-
-```yaml
-giscus:
-  repo_id: "REMPLACER_PAR_REPO_ID"      # À obtenir sur giscus.app
-  category_id: "REMPLACER_PAR_CATEGORY_ID"  # À obtenir sur giscus.app
-```
-
-### Comment utiliser
-Pour activer les commentaires sur une page, ajoutez dans le frontmatter :
-
-```yaml
----
-comments: true
----
-```
-
-### Recommandations
-**Activer sur :**
-- ✅ Les guides de formation (questions techniques)
-- ✅ La FAQ (discussions communautaires)
-
-**Ne PAS activer sur :**
-- ❌ Page d'accueil
-- ❌ Glossaire
-- ❌ Pages de configuration
-
-### Documentation complète
-Consultez `docs/CONFIGURATION-GISCUS.md` pour le guide d'installation détaillé.
-
-### Avantages
-- ✅ Interaction communautaire
-- ✅ Support technique direct
-- ✅ Pas de serveur backend nécessaire
-- ✅ Intégration native GitHub
-- ✅ Modération via GitHub Discussions
-
----
-
-## ✅ 5. Callouts Personnalisées 🎨
+## ✅ 4. Callouts Personnalisées 🎨
 
 ### Qu'est-ce que c'est ?
 Blocs colorés (admonitions) pour mettre en valeur des informations importantes avec un style adapté au coaching.

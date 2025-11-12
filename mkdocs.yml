@@ -276,19 +276,6 @@ extra:
       - reject
       - manage
 
-  # Configuration Giscus (commentaires GitHub Discussions)
-  # IMPORTANT: Pour activer les commentaires sur une page, ajoutez dans le frontmatter:
-  # ---
-  # comments: true
-  # ---
-  giscus:
-    # Ces IDs seront fournis par https://giscus.app après configuration
-    # 1. Activez GitHub Discussions sur le repo
-    # 2. Visitez https://giscus.app et suivez les instructions
-    # 3. Remplacez les valeurs ci-dessous
-    repo_id: "REMPLACER_PAR_REPO_ID"
-    category_id: "REMPLACER_PAR_CATEGORY_ID"
-
 # Configuration avancée
 validation:
   nav:
