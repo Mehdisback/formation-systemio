@@ -1,0 +1,17 @@
+# Dépendances MkDocs pour Formation Systeme.io
+# Installation : pip install -r requirements.txt
+
+# Core MkDocs avec thème Material
+mkdocs>=1.5.0
+mkdocs-material>=9.0.0
+
+# Plugins essentiels
+mkdocs-minify-plugin>=0.7.0
+mkdocs-git-revision-date-localized-plugin>=1.2.0
+
+# Dépendance pour le plugin Git
+GitPython>=3.1.0
+
+# Optionnel : Export PDF (décommenter si nécessaire)
+# mkdocs-with-pdf>=0.9.0
+# weasyprint>=60.0
