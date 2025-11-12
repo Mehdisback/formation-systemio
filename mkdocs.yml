@@ -30,7 +30,8 @@ theme:
         name: Passer en mode sombre
 
     # Mode sombre
-    - scheme: slate
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       primary: indigo
       accent: deep-purple
       toggle:
