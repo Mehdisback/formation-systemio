@@ -20,7 +20,6 @@ copyright:
 theme:
   name: material
   language: fr
-  custom_dir: overrides
 
   # Couleurs (adaptez à la charte graphique)
   palette:
