@@ -1,6 +1,9 @@
 # Configuration du site
 site_name: Formation Systeme.io - L'Essentiel en Soi
-site_description: Guide complet pour gérer votre landing page en autonomie
+site_description: >-
+  Formation complète pour maîtriser Systeme.io et gérer votre landing page en autonomie.
+  Guides pratiques pas à pas pour le coaching au féminin : modification de contenu, CTA,
+  design, SEO, analytics. Public non-technique, durée 5h, 10 modules progressifs.
 site_author: Mehdi SLAYKI
 site_url: https://mehdisback.github.io/formation-systemeio/
 
@@ -83,6 +86,19 @@ plugins:
       minify_css: true
       htmlmin_opts:
         remove_comments: true
+  # Plugin pour génération automatique du sitemap XML
+  # Installation: pip install mkdocs-sitemap
+  # - sitemap:
+  #     changefreq: weekly
+  #     priority: 0.8
+  #     exclude:
+  #       - 404.html
+  # Plugin pour afficher date dernière modification (basé sur Git)
+  # Installation: pip install mkdocs-git-revision-date-localized-plugin
+  # - git-revision-date-localized:
+  #     enable_creation_date: true
+  #     type: date
+  #     locale: fr
 
 # Extensions Markdown
 markdown_extensions:
@@ -156,6 +172,64 @@ extra_css:
 
 # Informations supplémentaires
 extra:
+  # Métadonnées SEO avancées
+  meta:
+    - name: keywords
+      content: >-
+        systeme.io, formation systeme.io, landing page, tunnel de vente,
+        coaching féminin, ennéagramme, Armelle Bodénès, guide systeme.io,
+        tutoriel systeme.io, CTA, Calendly, SEO, analytics, autonomie digitale
+    - name: author
+      content: Mehdi SLAYKI - A-Tek Universe pour Armelle Bodénès
+    - name: robots
+      content: index, follow
+    - name: language
+      content: FR
+
+    # Open Graph / Facebook
+    - property: og:type
+      content: website
+    - property: og:title
+      content: Formation Systeme.io - L'Essentiel en Soi | Coaching au Féminin
+    - property: og:description
+      content: >-
+        Maîtrisez Systeme.io en autonomie : 10 guides pratiques pour gérer votre landing page,
+        optimiser vos CTA, améliorer votre SEO. Formation 5h pour coaches non-techniques.
+    - property: og:image
+      content: https://mehdisback.github.io/formation-systemeio/assets/branding/og-image.png
+    - property: og:url
+      content: https://mehdisback.github.io/formation-systemeio/
+    - property: og:site_name
+      content: Formation Systeme.io - Coaching au Féminin
+    - property: og:locale
+      content: fr_FR
+
+    # Twitter Cards
+    - name: twitter:card
+      content: summary_large_image
+    - name: twitter:title
+      content: Formation Systeme.io - L'Essentiel en Soi
+    - name: twitter:description
+      content: Formation complète Systeme.io pour coaches. 10 modules, 5h, public non-technique.
+    - name: twitter:image
+      content: https://mehdisback.github.io/formation-systemeio/assets/branding/og-image.png
+
+  # Analytics - À configurer avec votre ID Google Analytics
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX  # Remplacer par votre ID GA4
+    feedback:
+      title: Cette page vous a-t-elle été utile ?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: Oui, c'était utile
+          data: 1
+          note: Merci pour votre retour positif !
+        - icon: material/thumb-down-outline
+          name: Non, pas vraiment
+          data: 0
+          note: Merci ! Aidez-nous à améliorer cette page en nous contactant.
+
   # Liens réseaux sociaux / contact
   social:
     - icon: fontawesome/solid/globe

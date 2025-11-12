@@ -1,0 +1,18 @@
+# Robots.txt - Formation Systeme.io
+# https://mehdisback.github.io/formation-systemeio/
+
+User-agent: *
+Allow: /
+
+# Sitemap XML (sera généré automatiquement par le plugin mkdocs-sitemap)
+Sitemap: https://mehdisback.github.io/formation-systemeio/sitemap.xml
+
+# Crawl-delay (optionnel, pour limiter la fréquence de crawl)
+# Crawl-delay: 10
+
+# Bloquer certains bots agressifs (optionnel)
+# User-agent: AhrefsBot
+# Disallow: /
+
+# User-agent: SemrushBot
+# Disallow: /
