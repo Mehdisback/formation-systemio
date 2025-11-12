@@ -44,9 +44,11 @@ assets/
 **Nommage** : `XX-nom-descriptif.png` (ex: `01-bouton-connexion.png`)
 
 **Alt text requis** :
+````markdown
 ```markdown
 ![Description précise de ce que montre la capture : action, localisation, éléments importants](chemin/image.png)
 ```
+````
 
 ### Images branding
 
