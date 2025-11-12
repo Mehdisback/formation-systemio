@@ -31,48 +31,48 @@
 
 === "✏️ Modification simple"
 
-**Procédure en 4 étapes :**
+    **Procédure en 4 étapes :**
 
-1. :material-cursor-default-click: **Cliquez** directement sur le titre dans l'éditeur
-2. :material-cursor-text: Le texte devient éditable (curseur clignotant)
-3. :material-keyboard: **Modifiez** le texte comme dans Word
-4. :material-check: Cliquez en dehors ou appuyez sur ++esc++ pour valider
+    1. :material-cursor-default-click: **Cliquez** directement sur le titre dans l'éditeur
+    2. :material-cursor-text: Le texte devient éditable (curseur clignotant)
+    3. :material-keyboard: **Modifiez** le texte comme dans Word
+    4. :material-check: Cliquez en dehors ou appuyez sur ++esc++ pour valider
 
-!!! tip "Validation rapide"
-    Appuyez sur ++esc++ pour sortir du mode édition rapidement
+    !!! tip "Validation rapide"
+        Appuyez sur ++esc++ pour sortir du mode édition rapidement
 
 === "🎨 Personnalisation avancée"
 
-**Options disponibles dans le panneau de droite :**
+    **Options disponibles dans le panneau de droite :**
 
-<div class="grid cards" markdown>
+    <div class="grid cards" markdown>
 
--   :material-format-text: **Contenu**
+    -   :material-format-text: **Contenu**
 
-    ---
+        ---
 
-    - Texte modifiable
-    - Balises HTML (H1, H2, H3)
+        - Texte modifiable
+        - Balises HTML (H1, H2, H3)
 
--   :material-palette: **Style**
+    -   :material-palette: **Style**
 
-    ---
+        ---
 
-    - Police de caractères
-    - Taille (en pixels)
-    - Couleur personnalisée
-    - Gras / Italique
-    - Alignement (gauche, centre, droite)
+        - Police de caractères
+        - Taille (en pixels)
+        - Couleur personnalisée
+        - Gras / Italique
+        - Alignement (gauche, centre, droite)
 
--   :material-arrow-expand-vertical: **Espacement**
+    -   :material-arrow-expand-vertical: **Espacement**
 
-    ---
+        ---
 
-    - Marge haute
-    - Marge basse
-    - Padding intérieur
+        - Marge haute
+        - Marge basse
+        - Padding intérieur
 
-</div>
+    </div>
 
 ### Hiérarchie des titres
 
@@ -95,57 +95,57 @@
 
 === "📝 Édition de texte"
 
-**Procédure :**
+    **Procédure :**
 
-1. :material-cursor-default-click: Cliquez sur le paragraphe
-2. :material-select: Sélectionnez le texte à modifier (comme dans Word)
-3. :material-keyboard: Tapez le nouveau texte
-4. :material-content-save: Enregistrez avec ++ctrl+s++
+    1. :material-cursor-default-click: Cliquez sur le paragraphe
+    2. :material-select: Sélectionnez le texte à modifier (comme dans Word)
+    3. :material-keyboard: Tapez le nouveau texte
+    4. :material-content-save: Enregistrez avec ++ctrl+s++
 
 === "🎨 Mise en forme"
 
-**Mini-barre d'outils disponible :**
+    **Mini-barre d'outils disponible :**
 
-| Format | Raccourci | Icône | Usage |
-|--------|-----------|-------|-------|
-| **Gras** | ++ctrl+b++ | :material-format-bold: | Mettre en évidence |
-| **Italique** | ++ctrl+i++ | :material-format-italic: | Emphase légère |
-| **Souligné** | ++ctrl+u++ | :material-format-underline: | À éviter (confusion avec liens) |
-| **Lien** | ++ctrl+k++ | :material-link: | Créer un lien hypertexte |
-| **Liste** | - | :material-format-list-bulleted: | Liste à puces |
-| **Couleur** | - | :material-palette: | Changer la couleur du texte |
+    | Format | Raccourci | Icône | Usage |
+    |--------|-----------|-------|-------|
+    | **Gras** | ++ctrl+b++ | :material-format-bold: | Mettre en évidence |
+    | **Italique** | ++ctrl+i++ | :material-format-italic: | Emphase légère |
+    | **Souligné** | ++ctrl+u++ | :material-format-underline: | À éviter (confusion avec liens) |
+    | **Lien** | ++ctrl+k++ | :material-link: | Créer un lien hypertexte |
+    | **Liste** | - | :material-format-list-bulleted: | Liste à puces |
+    | **Couleur** | - | :material-palette: | Changer la couleur du texte |
 
-!!! tip "💡 Astuce de mise en forme"
-    Utilisez ==le gras pour les mots-clés importants== et l'*italique pour l'emphase subtile*.
+    !!! tip "💡 Astuce de mise en forme"
+        Utilisez ==le gras pour les mots-clés importants== et l'*italique pour l'emphase subtile*.
 
-**Évitez le souligné** qui est souvent confondu avec un lien cliquable.
+    **Évitez le souligné** qui est souvent confondu avec un lien cliquable.
 
 ### Ajouter ou supprimer du texte
 
 === "➕ Ajouter du texte"
 
-**Pour ajouter un paragraphe :**
+    **Pour ajouter un paragraphe :**
 
-1. :material-cursor-text: Positionnez le curseur à l'endroit souhaité
-2. ++enter++ Appuyez sur **Entrée** pour créer une nouvelle ligne
-3. :material-keyboard: Tapez votre nouveau contenu
-4. :material-content-save: Enregistrez
+    1. :material-cursor-text: Positionnez le curseur à l'endroit souhaité
+    2. ++enter++ Appuyez sur **Entrée** pour créer une nouvelle ligne
+    3. :material-keyboard: Tapez votre nouveau contenu
+    4. :material-content-save: Enregistrez
 
-!!! example "Exemple d'usage"
-    Ajoutez un paragraphe d'introduction avant votre offre principale pour améliorer le contexte.
+    !!! example "Exemple d'usage"
+        Ajoutez un paragraphe d'introduction avant votre offre principale pour améliorer le contexte.
 
 === "➖ Supprimer du texte"
 
-**Suppression sélective :**
+    **Suppression sélective :**
 
-1. :material-select: Sélectionnez le texte à supprimer
-2. ++delete++ ou ++backspace++ Appuyez sur **Suppr** ou **Backspace**
-3. :material-content-save: Enregistrez
+    1. :material-select: Sélectionnez le texte à supprimer
+    2. ++delete++ ou ++backspace++ Appuyez sur **Suppr** ou **Backspace**
+    3. :material-content-save: Enregistrez
 
-!!! danger "⚠️ Attention aux suppressions"
-    Ne supprimez pas les blocs entiers par erreur !
+    !!! danger "⚠️ Attention aux suppressions"
+        Ne supprimez pas les blocs entiers par erreur !
 
-**En cas d'erreur :** ++ctrl+z++ pour annuler immédiatement
+    **En cas d'erreur :** ++ctrl+z++ pour annuler immédiatement
 
 ---
 
@@ -205,39 +205,39 @@ graph TD
 
 === "✏️ Éditer le texte"
 
-**Pour modifier la description :**
+    **Pour modifier la description :**
 
-1. Cliquez sur le paragraphe
-2. Éditez le contenu
-3. Structurez avec des phrases courtes
-4. Enregistrez
+    1. Cliquez sur le paragraphe
+    2. Éditez le contenu
+    3. Structurez avec des phrases courtes
+    4. Enregistrez
 
 === "📝 Modifier la liste à puces"
 
-**Ajouter un élément :**
+    **Ajouter un élément :**
 
-1. :material-cursor-text: Placez le curseur en fin de ligne
-2. ++enter++ Appuyez sur **Entrée**
-3. :material-keyboard: Tapez le nouvel élément
-4. :material-content-save: Enregistrez
+    1. :material-cursor-text: Placez le curseur en fin de ligne
+    2. ++enter++ Appuyez sur **Entrée**
+    3. :material-keyboard: Tapez le nouvel élément
+    4. :material-content-save: Enregistrez
 
-**Supprimer un élément :**
+    **Supprimer un élément :**
 
-1. :material-select: Sélectionnez la ligne entière
-2. ++delete++ Appuyez sur **Suppr**
+    1. :material-select: Sélectionnez la ligne entière
+    2. ++delete++ Appuyez sur **Suppr**
 
-!!! tip "✅ Bonnes pratiques pour les listes"
+    !!! tip "✅ Bonnes pratiques pour les listes"
 
-**À faire :**
-- ✅ Maximum **5-7 points** par liste
-- ✅ Phrases **courtes et percutantes**
-- ✅ Commencez par un **verbe d'action**
-- ✅ Utilisez des **mots-clés** importants
+    **À faire :**
+    - ✅ Maximum **5-7 points** par liste
+    - ✅ Phrases **courtes et percutantes**
+    - ✅ Commencez par un **verbe d'action**
+    - ✅ Utilisez des **mots-clés** importants
 
-**À éviter :**
-- ❌ Phrases trop longues (> 15 mots)
-- ❌ Jargon technique incompréhensible
-- ❌ Listes interminables (> 10 points)
+    **À éviter :**
+    - ❌ Phrases trop longues (> 15 mots)
+    - ❌ Jargon technique incompréhensible
+    - ❌ Listes interminables (> 10 points)
 
 ### Ajouter une nouvelle section de service
 
@@ -268,31 +268,31 @@ graph TD
 
 === "📤 Télécharger depuis votre ordinateur"
 
-**Procédure complète :**
+    **Procédure complète :**
 
-1. :material-cursor-default-click: **Cliquez sur l'image** à modifier
-2. :material-image: Dans le panneau de droite, cliquez sur **"Changer l'image"**
-3. :material-upload: Sélectionnez **"Télécharger"**
-4. :material-folder: Naviguez dans vos fichiers
-5. :material-check: Sélectionnez l'image et cliquez **"Ouvrir"**
-6. :material-loading: L'image est automatiquement uploadée
+    1. :material-cursor-default-click: **Cliquez sur l'image** à modifier
+    2. :material-image: Dans le panneau de droite, cliquez sur **"Changer l'image"**
+    3. :material-upload: Sélectionnez **"Télécharger"**
+    4. :material-folder: Naviguez dans vos fichiers
+    5. :material-check: Sélectionnez l'image et cliquez **"Ouvrir"**
+    6. :material-loading: L'image est automatiquement uploadée
 
-!!! success "✅ Upload réussi"
-    L'image apparaît immédiatement dans votre éditeur !
+    !!! success "✅ Upload réussi"
+        L'image apparaît immédiatement dans votre éditeur !
 
 === "📚 Depuis la bibliothèque"
 
-**Utiliser des images déjà uploadées :**
+    **Utiliser des images déjà uploadées :**
 
-1. :material-cursor-default-click: Cliquez sur l'image
-2. :material-image: Cliquez sur **"Changer l'image"**
-3. :material-folder-image: Sélectionnez **"Bibliothèque"**
-4. :material-view-grid: Parcourez vos images existantes
-5. :material-check-circle: Cliquez sur l'image souhaitée
-6. :material-import: Cliquez sur **"Insérer"**
+    1. :material-cursor-default-click: Cliquez sur l'image
+    2. :material-image: Cliquez sur **"Changer l'image"**
+    3. :material-folder-image: Sélectionnez **"Bibliothèque"**
+    4. :material-view-grid: Parcourez vos images existantes
+    5. :material-check-circle: Cliquez sur l'image souhaitée
+    6. :material-import: Cliquez sur **"Insérer"**
 
-!!! tip "Avantage"
-    Réutilisez vos images sans re-uploader !
+    !!! tip "Avantage"
+        Réutilisez vos images sans re-uploader !
 
 ### Critères de qualité des images
 
@@ -378,68 +378,68 @@ Une fois l'image insérée, **configurez ces paramètres essentiels** :
 
 === "📐 Dimensions"
 
-**Réglages de taille :**
+    **Réglages de taille :**
 
-| Paramètre | Valeur recommandée | Effet |
-|-----------|-------------------|-------|
-| **Largeur** | 100% | Pleine largeur du conteneur |
-| **Hauteur** | Auto | Proportion conservée |
-| **Ajustement** | Cover | Remplit l'espace sans déformation |
+    | Paramètre | Valeur recommandée | Effet |
+    |-----------|-------------------|-------|
+    | **Largeur** | 100% | Pleine largeur du conteneur |
+    | **Hauteur** | Auto | Proportion conservée |
+    | **Ajustement** | Cover | Remplit l'espace sans déformation |
 
-!!! info "Options d'ajustement"
-    - **Cover** : Remplit le cadre (recommandé)
-    - **Contain** : Image entière visible
-    - **Fill** : Étire l'image (éviter)
+    !!! info "Options d'ajustement"
+        - **Cover** : Remplit le cadre (recommandé)
+        - **Contain** : Image entière visible
+        - **Fill** : Étire l'image (éviter)
 
 === "♿ Accessibilité"
 
-**Texte alternatif (Alt text) - CRUCIAL !**
+    **Texte alternatif (Alt text) - CRUCIAL !**
 
-Le texte alternatif décrit l'image pour :
+    Le texte alternatif décrit l'image pour :
 
-- :material-google: **Les moteurs de recherche** (SEO)
-- :material-account-voice: **Les lecteurs d'écran** (accessibilité)
-- :material-image-off: **L'affichage** si l'image ne charge pas
+    - :material-google: **Les moteurs de recherche** (SEO)
+    - :material-account-voice: **Les lecteurs d'écran** (accessibilité)
+    - :material-image-off: **L'affichage** si l'image ne charge pas
 
-!!! example "✅ Exemples de bons textes alternatifs"
+    !!! example "✅ Exemples de bons textes alternatifs"
 
-    | Image | ❌ Mauvais Alt | ✅ Bon Alt |
-    |-------|---------------|-----------|
-    | Photo profil | "photo" | "Armelle Bodénès, coach certifiée ICF spécialisée en coaching féminin" |
-    | Image service | "image1" | "Séance de coaching individuel en visioconférence" |
-    | Illustration | "img" | "Accompagnement ménopause et image de soi - L'Essentiel en Soi" |
+        | Image | ❌ Mauvais Alt | ✅ Bon Alt |
+        |-------|---------------|-----------|
+        | Photo profil | "photo" | "Armelle Bodénès, coach certifiée ICF spécialisée en coaching féminin" |
+        | Image service | "image1" | "Séance de coaching individuel en visioconférence" |
+        | Illustration | "img" | "Accompagnement ménopause et image de soi - L'Essentiel en Soi" |
 
-!!! danger "🚫 Alt text à éviter"
-    - "image", "photo", "img"
-    - Répétition du nom de fichier
-    - Description trop longue (> 125 caractères)
-    - Bourrage de mots-clés
+    !!! danger "🚫 Alt text à éviter"
+        - "image", "photo", "img"
+        - Répétition du nom de fichier
+        - Description trop longue (> 125 caractères)
+        - Bourrage de mots-clés
 
 === "🔗 Lien (optionnel)"
 
-**Rendre une image cliquable :**
+    **Rendre une image cliquable :**
 
-1. Dans les propriétés, section **"Lien"**
-2. Collez l'URL de destination
-3. Cochez **"Ouvrir dans un nouvel onglet"** si externe
-4. Enregistrez
+    1. Dans les propriétés, section **"Lien"**
+    2. Collez l'URL de destination
+    3. Cochez **"Ouvrir dans un nouvel onglet"** si externe
+    4. Enregistrez
 
-**Cas d'usage :**
-- Galerie photo → agrandissement
-- Logo partenaire → site partenaire
-- Certification → page détails
+    **Cas d'usage :**
+    - Galerie photo → agrandissement
+    - Logo partenaire → site partenaire
+    - Certification → page détails
 
-### Ajouter une nouvelle image
+    ### Ajouter une nouvelle image
 
-!!! example "➕ Insérer une image dans une section"
+    !!! example "➕ Insérer une image dans une section"
 
-**Procédure :**
+    **Procédure :**
 
-1. :material-plus-circle: Cliquez sur le **"+"** où vous voulez l'ajouter
-2. :material-image: Sélectionnez **"Image"**
-3. :material-upload: Téléchargez ou choisissez depuis la bibliothèque
-4. :material-resize: Ajustez la taille et l'alignement
-5. :material-content-save: Enregistrez
+    1. :material-plus-circle: Cliquez sur le **"+"** où vous voulez l'ajouter
+    2. :material-image: Sélectionnez **"Image"**
+    3. :material-upload: Téléchargez ou choisissez depuis la bibliothèque
+    4. :material-resize: Ajustez la taille et l'alignement
+    5. :material-content-save: Enregistrez
 
 ---
 
@@ -492,40 +492,40 @@ Vous avez **2 témoignages clients** :
 
 === "✏️ Éditer le contenu"
 
-**Procédure :**
+    **Procédure :**
 
-1. :material-cursor-default-click: Cliquez sur le bloc témoignage
-2. :material-format-quote-open: Modifiez le texte de la citation
-3. :material-account: Changez le nom si nécessaire
-4. :material-briefcase: Ajoutez un titre/contexte (ex: "Cliente depuis 2 ans")
-5. :material-content-save: Enregistrez
+    1. :material-cursor-default-click: Cliquez sur le bloc témoignage
+    2. :material-format-quote-open: Modifiez le texte de la citation
+    3. :material-account: Changez le nom si nécessaire
+    4. :material-briefcase: Ajoutez un titre/contexte (ex: "Cliente depuis 2 ans")
+    5. :material-content-save: Enregistrez
 
 === "📸 Changer la photo"
 
-**Ajouter ou modifier la photo du client :**
+    **Ajouter ou modifier la photo du client :**
 
-1. Cliquez sur la photo du témoignage
-2. Suivez le même processus que la [section images](#modification-des-images)
-3. Choisissez une photo professionnelle et souriante
-4. Ajoutez un Alt text : "Photo de [Prénom], cliente satisfaite"
+    1. Cliquez sur la photo du témoignage
+    2. Suivez le même processus que la [section images](#modification-des-images)
+    3. Choisissez une photo professionnelle et souriante
+    4. Ajoutez un Alt text : "Photo de [Prénom], cliente satisfaite"
 
-!!! tip "✅ Conseils pour des témoignages impactants"
+    !!! tip "✅ Conseils pour des témoignages impactants"
 
-**Caractéristiques d'un bon témoignage :**
+    **Caractéristiques d'un bon témoignage :**
 
-| Critère | Description | Exemple |
-|---------|-------------|---------|
-| :material-account-heart: **Authenticité** | Langage naturel du client | "Au début, j'avais peur..." |
-| :material-target: **Spécificité** | Résultats concrets mesurables | "J'ai retrouvé confiance en 3 mois" |
-| :material-text: **Longueur** | 3-5 phrases, 80-150 mots max | Ni trop court, ni trop long |
-| :material-arrow-up-bold: **Transformation** | Avant → Après visible | "J'étais... Maintenant je..." |
-| :material-emoticon-happy: **Émotion** | Ressenti authentique | "Je me sens enfin moi-même" |
+    | Critère | Description | Exemple |
+    |---------|-------------|---------|
+    | :material-account-heart: **Authenticité** | Langage naturel du client | "Au début, j'avais peur..." |
+    | :material-target: **Spécificité** | Résultats concrets mesurables | "J'ai retrouvé confiance en 3 mois" |
+    | :material-text: **Longueur** | 3-5 phrases, 80-150 mots max | Ni trop court, ni trop long |
+    | :material-arrow-up-bold: **Transformation** | Avant → Après visible | "J'étais... Maintenant je..." |
+    | :material-emoticon-happy: **Émotion** | Ressenti authentique | "Je me sens enfin moi-même" |
 
-**À éviter absolument :**
-- ❌ Trop générique ("très bien", "super", "top")
-- ❌ Trop long (> 200 mots = illisible)
-- ❌ Pas de résultat concret
-- ❌ Langage trop formel ou commercial
+    **À éviter absolument :**
+    - ❌ Trop générique ("très bien", "super", "top")
+    - ❌ Trop long (> 200 mots = illisible)
+    - ❌ Pas de résultat concret
+    - ❌ Langage trop formel ou commercial
 
 ### Ajouter un nouveau témoignage
 
@@ -585,28 +585,28 @@ Vous avez **4 questions-réponses** :
 
 === "✏️ Éditer le contenu"
 
-**Procédure :**
+    **Procédure :**
 
-1. :material-cursor-default-click: Cliquez sur la question à modifier
-2. :material-chevron-down: Le bloc FAQ s'ouvre (système accordéon)
-3. :material-pencil: Modifiez :
-    - **Question** : Cliquez sur le titre
-    - **Réponse** : Cliquez sur le contenu déplié
-4. :material-content-save: Enregistrez
+    1. :material-cursor-default-click: Cliquez sur la question à modifier
+    2. :material-chevron-down: Le bloc FAQ s'ouvre (système accordéon)
+    3. :material-pencil: Modifiez :
+        - **Question** : Cliquez sur le titre
+        - **Réponse** : Cliquez sur le contenu déplié
+    4. :material-content-save: Enregistrez
 
-!!! tip "Double-clic rapide"
-    Double-cliquez directement sur le texte pour un accès rapide à l'édition
+    !!! tip "Double-clic rapide"
+        Double-cliquez directement sur le texte pour un accès rapide à l'édition
 
 === "🎨 Personnaliser le style"
 
-**Options de personnalisation :**
+    **Options de personnalisation :**
 
-- Couleur de fond de la question
-- Icône d'ouverture/fermeture
-- Police et taille du texte
-- Espacement entre les questions
+    - Couleur de fond de la question
+    - Icône d'ouverture/fermeture
+    - Police et taille du texte
+    - Espacement entre les questions
 
-!!! tip "✅ Bonnes pratiques FAQ"
+    !!! tip "✅ Bonnes pratiques FAQ"
 
 **Pour des FAQ efficaces :**
 
@@ -681,49 +681,49 @@ Vous avez **4 questions-réponses** :
 
 === "✏️ Éditer le texte"
 
-**Procédure :**
+    **Procédure :**
 
-1. :material-cursor-default-click: Cliquez sur le bouton
-2. :material-menu: Dans le panneau de droite, section **"Texte"**
-3. :material-pencil: Modifiez le texte du bouton
-4. :material-content-save: Enregistrez
+    1. :material-cursor-default-click: Cliquez sur le bouton
+    2. :material-menu: Dans le panneau de droite, section **"Texte"**
+    3. :material-pencil: Modifiez le texte du bouton
+    4. :material-content-save: Enregistrez
 
-!!! warning "⚠️ Ne touchez pas au lien Calendly"
-    La modification du lien est couverte dans le [Guide 03 - Gestion des CTA et Calendly](03-GESTION-CTA-CALENDLY.md)
+    !!! warning "⚠️ Ne touchez pas au lien Calendly"
+        La modification du lien est couverte dans le [Guide 03 - Gestion des CTA et Calendly](03-GESTION-CTA-CALENDLY.md)
 
 === "🎨 Personnaliser le style"
 
-**Options disponibles :**
+    **Options disponibles :**
 
-<div class="grid cards" markdown>
+    <div class="grid cards" markdown>
 
--   :material-palette: **Couleur**
+    -   :material-palette: **Couleur**
 
-    ---
+        ---
 
-    - Couleur du bouton
-    - Couleur du texte
-    - Contraste important !
+        - Couleur du bouton
+        - Couleur du texte
+        - Contraste important !
 
--   :material-resize: **Taille**
+    -   :material-resize: **Taille**
 
-    ---
+        ---
 
-    - **Grand** : CTA principal (1 seul)
-    - **Moyen** : CTA secondaires
-    - **Petit** : Footer, en-tête
+        - **Grand** : CTA principal (1 seul)
+        - **Moyen** : CTA secondaires
+        - **Petit** : Footer, en-tête
 
--   :material-shape: **Forme**
+    -   :material-shape: **Forme**
 
-    ---
+        ---
 
-    - **Arrondie** : Doux, accueillant
-    - **Carrée** : Professionnel
-    - **Pilule** : Moderne, dynamique
+        - **Arrondie** : Doux, accueillant
+        - **Carrée** : Professionnel
+        - **Pilule** : Moderne, dynamique
 
-</div>
+    </div>
 
-!!! tip "✅ Bonnes pratiques pour les textes de CTA"
+    !!! tip "✅ Bonnes pratiques pour les textes de CTA"
 
 **Transformation des CTA génériques :**
 
@@ -772,37 +772,37 @@ Vous avez **4 questions-réponses** :
 
 === "📝 Vérifications textuelles"
 
-**Relecture complète :**
+    **Relecture complète :**
 
-- [ ] :material-spellcheck: Aucune faute d'orthographe (utilisez un correcteur)
-- [ ] :material-format-text: Ponctuation correcte (virgules, points)
-- [ ] :material-format-header-pound: Titres cohérents et hiérarchisés (H1, H2, H3)
-- [ ] :material-text-short: Phrases courtes et claires (< 20 mots)
-- [ ] :material-account-voice: Ton uniforme (tutoiement OU vouvoiement)
-- [ ] :material-target: Call-to-actions percutants et cohérents
-- [ ] :material-link: Tous les liens fonctionnels
+    - [ ] :material-spellcheck: Aucune faute d'orthographe (utilisez un correcteur)
+    - [ ] :material-format-text: Ponctuation correcte (virgules, points)
+    - [ ] :material-format-header-pound: Titres cohérents et hiérarchisés (H1, H2, H3)
+    - [ ] :material-text-short: Phrases courtes et claires (< 20 mots)
+    - [ ] :material-account-voice: Ton uniforme (tutoiement OU vouvoiement)
+    - [ ] :material-target: Call-to-actions percutants et cohérents
+    - [ ] :material-link: Tous les liens fonctionnels
 
 === "🖼️ Vérifications visuelles"
 
-**Qualité des médias :**
+    **Qualité des médias :**
 
-- [ ] :material-file-image: Images optimisées (poids < 200 Ko chacune)
-- [ ] :material-tag-text: Textes alternatifs (Alt) remplis systématiquement
-- [ ] :material-quality-high: Images de qualité professionnelle (nettes, bien cadrées)
-- [ ] :material-palette: Cohérence visuelle (couleurs de votre charte)
-- [ ] :material-format-align-center: Alignement cohérent
-- [ ] :material-emoticon-happy: Photos souriantes et accueillantes
+    - [ ] :material-file-image: Images optimisées (poids < 200 Ko chacune)
+    - [ ] :material-tag-text: Textes alternatifs (Alt) remplis systématiquement
+    - [ ] :material-quality-high: Images de qualité professionnelle (nettes, bien cadrées)
+    - [ ] :material-palette: Cohérence visuelle (couleurs de votre charte)
+    - [ ] :material-format-align-center: Alignement cohérent
+    - [ ] :material-emoticon-happy: Photos souriantes et accueillantes
 
 === "🔧 Vérifications techniques"
 
-**Tests fonctionnels :**
+    **Tests fonctionnels :**
 
-- [ ] :material-link-variant: Tous les liens testés (clic sur chacun)
-- [ ] :material-cursor-default-click: Boutons CTA cliquables et fonctionnels
-- [ ] :material-cellphone: Page responsive (vue mobile + tablette)
-- [ ] :material-speedometer: Temps de chargement < 3 secondes
-- [ ] :material-reload: Test sur différents navigateurs (Chrome, Safari, Firefox)
-- [ ] :material-web: Vérification en navigation privée (cache vide)
+    - [ ] :material-link-variant: Tous les liens testés (clic sur chacun)
+    - [ ] :material-cursor-default-click: Boutons CTA cliquables et fonctionnels
+    - [ ] :material-cellphone: Page responsive (vue mobile + tablette)
+    - [ ] :material-speedometer: Temps de chargement < 3 secondes
+    - [ ] :material-reload: Test sur différents navigateurs (Chrome, Safari, Firefox)
+    - [ ] :material-web: Vérification en navigation privée (cache vide)
 
 ### Workflow de publication
 
@@ -837,54 +837,54 @@ graph LR
 
 === "🔄 Méthode nettoyage"
 
-1. :material-content-copy: Copiez votre texte depuis Word/Docs
-2. :material-file-document: Collez dans un **éditeur de texte brut** :
-    - Windows : Notepad (Bloc-notes)
-    - Mac : TextEdit (mode texte)
-    - En ligne : [TextCleanr](https://textcleanr.com)
-3. :material-content-copy: Recopiez depuis l'éditeur de texte brut
-4. :material-content-paste: Collez dans Systeme.io
-5. :material-format-text: Reformatez manuellement (gras, titres, etc.)
+    1. :material-content-copy: Copiez votre texte depuis Word/Docs
+    2. :material-file-document: Collez dans un **éditeur de texte brut** :
+        - Windows : Notepad (Bloc-notes)
+        - Mac : TextEdit (mode texte)
+        - En ligne : [TextCleanr](https://textcleanr.com)
+    3. :material-content-copy: Recopiez depuis l'éditeur de texte brut
+    4. :material-content-paste: Collez dans Systeme.io
+    5. :material-format-text: Reformatez manuellement (gras, titres, etc.)
 
 === "⚡ Raccourci clavier"
 
-**Coller sans formatage :**
+    **Coller sans formatage :**
 
-- Windows : ++ctrl+shift+v++
-- Mac : ++cmd+shift+v++
+    - Windows : ++ctrl+shift+v++
+    - Mac : ++cmd+shift+v++
 
-Colle le texte brut directement !
+    Colle le texte brut directement !
 
-### Rechercher/Remplacer du texte
+    ### Rechercher/Remplacer du texte
 
-!!! info "🔍 Fonction de recherche"
+    !!! info "🔍 Fonction de recherche"
 
-**Pour modifier un mot sur toute la page :**
+    **Pour modifier un mot sur toute la page :**
 
-1. ++ctrl+f++ Ouvrez la recherche
-2. :material-magnify: Tapez le mot à chercher
-3. :material-pencil: Modifiez manuellement chaque occurrence
-4. :material-arrow-down: Naviguez avec les flèches Suivant/Précédent
+    1. ++ctrl+f++ Ouvrez la recherche
+    2. :material-magnify: Tapez le mot à chercher
+    3. :material-pencil: Modifiez manuellement chaque occurrence
+    4. :material-arrow-down: Naviguez avec les flèches Suivant/Précédent
 
-!!! warning "Limitation Systeme.io"
-    Pas de fonction "Remplacer tout" native. Modification manuelle nécessaire.
+    !!! warning "Limitation Systeme.io"
+        Pas de fonction "Remplacer tout" native. Modification manuelle nécessaire.
 
-### Dupliquer une section
+    ### Dupliquer une section
 
-!!! tip "📋 Gagner du temps avec la duplication"
+    !!! tip "📋 Gagner du temps avec la duplication"
 
-**Pour sections similaires (services, témoignages...) :**
+    **Pour sections similaires (services, témoignages...) :**
 
-1. :material-cursor-default-click: Cliquez sur le bloc à dupliquer
-2. :material-content-copy: Cliquez sur l'icône **"Dupliquer"** 📋
-3. :material-arrow-down: La copie apparaît juste en dessous
-4. :material-pencil: Modifiez le contenu de la copie
-5. :material-content-save: Enregistrez
+    1. :material-cursor-default-click: Cliquez sur le bloc à dupliquer
+    2. :material-content-copy: Cliquez sur l'icône **"Dupliquer"** 📋
+    3. :material-arrow-down: La copie apparaît juste en dessous
+    4. :material-pencil: Modifiez le contenu de la copie
+    5. :material-content-save: Enregistrez
 
-**Idéal pour :**
-- Ajouter un nouveau service similaire
-- Dupliquer un témoignage pour en ajouter un autre
-- Répéter une structure de section
+    **Idéal pour :**
+    - Ajouter un nouveau service similaire
+    - Dupliquer un témoignage pour en ajouter un autre
+    - Répéter une structure de section
 
 ---
 

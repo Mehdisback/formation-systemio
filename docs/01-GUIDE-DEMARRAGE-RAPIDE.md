@@ -27,27 +27,27 @@ description: >-
 
 === "🌐 Première connexion"
 
-**Étapes détaillées pour débutants :**
+    **Étapes détaillées pour débutants :**
 
-1. :material-web: Ouvrez votre navigateur web (Chrome, Firefox, Safari, Edge)
-2. :material-link: Allez sur : **https://systeme.io/login**
-3. :material-email: Entrez votre **adresse email** de connexion
-4. :material-lock: Saisissez votre **mot de passe sécurisé**
-5. :material-login: Cliquez sur **"Se connecter"**
+    1. :material-web: Ouvrez votre navigateur web (Chrome, Firefox, Safari, Edge)
+    2. :material-link: Allez sur : **https://systeme.io/login**
+    3. :material-email: Entrez votre **adresse email** de connexion
+    4. :material-lock: Saisissez votre **mot de passe sécurisé**
+    5. :material-login: Cliquez sur **"Se connecter"**
 
-[:octicons-arrow-right-24: Accès direct Systeme.io](https://systeme.io/login){ .md-button .md-button--primary }
+    [:octicons-arrow-right-24: Accès direct Systeme.io](https://systeme.io/login){ .md-button .md-button--primary }
 
 === "⚡ Accès rapide"
 
-**Pour les utilisateurs réguliers :**
+    **Pour les utilisateurs réguliers :**
 
-Ajoutez l'URL de connexion à vos favoris pour un accès en 1 clic :
+    Ajoutez l'URL de connexion à vos favoris pour un accès en 1 clic :
 
-1. Appuyez sur ++ctrl+d++ (Windows) ou ++cmd+d++ (Mac)
-2. Nommez le favori "Systeme.io"
-3. Enregistrez dans votre barre de favoris
+    1. Appuyez sur ++ctrl+d++ (Windows) ou ++cmd+d++ (Mac)
+    2. Nommez le favori "Systeme.io"
+    3. Enregistrez dans votre barre de favoris
 
-**Gain de temps :** -20 secondes par connexion !
+    **Gain de temps :** -20 secondes par connexion !
 
 ### Sécurité de votre compte
 
