@@ -434,6 +434,26 @@ Avant de passer au guide suivant, assurez-vous d'avoir :
 
 ---
 
+## 📤 Partager ce guide
+
+<div class="share-buttons">
+  <span class="share-buttons-title">Partager ce guide</span>
+  <a href="https://twitter.com/intent/tweet?url=https://mehdisback.github.io/formation-systemio/07-SUIVI-ANALYTICS/&text=Formation%20Systeme.io%20-%20Suivi et Analytics" class="share-button twitter" target="_blank" rel="noopener noreferrer">
+    🐦 Twitter
+  </a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://mehdisback.github.io/formation-systemio/07-SUIVI-ANALYTICS/" class="share-button facebook" target="_blank" rel="noopener noreferrer">
+    📘 Facebook
+  </a>
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://mehdisback.github.io/formation-systemio/07-SUIVI-ANALYTICS/" class="share-button linkedin" target="_blank" rel="noopener noreferrer">
+    💼 LinkedIn
+  </a>
+  <a href="mailto:?subject=Formation%20Systeme.io%20-%20Suivi et Analytics&body=Je%20partage%20avec%20toi%20ce%20guide%20:%20https://mehdisback.github.io/formation-systemio/07-SUIVI-ANALYTICS/" class="share-button email">
+    ✉️ Email
+  </a>
+</div>
+
+---
+
 ## 🔗 Navigation
 
 - ⬅️ **Précédent** : [Guide 06 - SEO et référencement](06-SEO-REFERENCEMENT.md)
