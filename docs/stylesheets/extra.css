@@ -495,6 +495,58 @@
   }
 }
 
+/* === MODE CLAIR PAR DÉFAUT - FORCER L'APPLICATION === */
+/* Forcer l'application des variables en mode clair pour surcharger MkDocs Material */
+html,
+body {
+  background-color: var(--atek-bg-primary) !important;
+  color: var(--atek-text-primary) !important;
+}
+
+.md-main,
+.md-main__inner {
+  background-color: var(--atek-bg-primary) !important;
+}
+
+.md-content {
+  background-color: transparent !important;
+  color: var(--atek-text-primary) !important;
+}
+
+.md-content__inner {
+  color: var(--atek-text-primary) !important;
+}
+
+/* Tableaux en mode clair */
+table {
+  background-color: #FFFFFF;
+  border: 1px solid var(--atek-border);
+}
+
+tbody td {
+  color: var(--atek-text-primary);
+}
+
+/* Code blocks en mode clair */
+code {
+  background-color: var(--atek-gray-100);
+  color: var(--atek-primary-dark);
+}
+
+pre {
+  background-color: var(--atek-gray-900);
+}
+
+/* Cards en mode clair */
+.card {
+  background-color: #FFFFFF;
+  border-color: var(--atek-gray-200);
+}
+
+.card-title {
+  color: var(--atek-primary);
+}
+
 /* === TRANSITIONS FLUIDES ENTRE MODES === */
 /* Transitions douces pour changement de thème */
 body,
@@ -523,8 +575,7 @@ pre,
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   letter-spacing: -0.01em;
-  background-color: var(--atek-bg-primary);
-  color: var(--atek-text-primary);
+  /* Background et color déjà définis dans la section MODE CLAIR ci-dessus */
 }
 
 h1, h2, h3, h4, h5, h6 {
