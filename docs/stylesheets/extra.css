@@ -306,6 +306,193 @@
   .md-content a:hover {
     border-bottom-color: var(--atek-primary-light);
   }
+
+  /* === ADAPTATION COMPOSANTS ADDITIONNELS AU MODE SOMBRE === */
+
+  /* Doc Cards */
+  .doc-card {
+    background-color: var(--atek-surface);
+    border-color: var(--atek-border);
+    box-shadow: var(--atek-shadow-md);
+  }
+
+  .doc-card:hover {
+    box-shadow: var(--atek-shadow-xl);
+    border-color: var(--atek-primary);
+  }
+
+  .doc-card-title {
+    color: var(--atek-primary-light);
+  }
+
+  .doc-card-content {
+    color: var(--atek-text-primary);
+  }
+
+  .doc-card-highlight {
+    background: linear-gradient(135deg, rgba(126, 155, 255, 0.12) 0%, rgba(179, 157, 219, 0.12) 100%);
+    border-left-color: var(--atek-primary);
+    box-shadow: var(--atek-shadow-md);
+  }
+
+  .doc-card-feature {
+    background-color: var(--atek-surface);
+    border-color: var(--atek-border);
+    box-shadow: var(--atek-shadow-lg);
+  }
+
+  .doc-card-feature:hover {
+    box-shadow: var(--atek-shadow-xl);
+    border-color: var(--atek-accent);
+  }
+
+  .doc-card-feature-title {
+    color: var(--atek-primary-light);
+  }
+
+  /* CTA Buttons */
+  .cta-primary {
+    background: linear-gradient(135deg, var(--atek-primary) 0%, var(--atek-accent) 100%);
+    color: var(--atek-text-on-primary);
+    box-shadow: var(--atek-shadow-md);
+  }
+
+  .cta-primary:hover {
+    box-shadow: var(--atek-shadow-xl);
+  }
+
+  .cta-secondary {
+    color: var(--atek-primary-light);
+    border-color: var(--atek-primary);
+  }
+
+  .cta-secondary::before {
+    background: linear-gradient(135deg, var(--atek-primary) 0%, var(--atek-accent) 100%);
+  }
+
+  .cta-secondary:hover {
+    color: #FFFFFF;
+    border-color: var(--atek-accent);
+  }
+
+  /* CTA Calendly - adaptation mode sombre */
+  .cta-calendly {
+    background: linear-gradient(135deg, #4DB8FF 0%, #3AA3E6 100%);
+    color: #000000;
+    box-shadow: 0 4px 16px rgba(77, 184, 255, 0.4);
+  }
+
+  .cta-calendly:hover {
+    background: linear-gradient(135deg, #3AA3E6 0%, #2891D1 100%);
+    box-shadow: 0 8px 24px rgba(77, 184, 255, 0.5);
+  }
+
+  /* Badges Niveau - adaptation mode sombre avec contrastes AAA */
+  .badge-debutant {
+    background: linear-gradient(135deg, #81C784 0%, #66BB6A 100%);
+    color: #000000; /* Contraste AAA sur vert clair */
+    box-shadow: 0 2px 8px rgba(129, 199, 132, 0.4);
+  }
+
+  .badge-intermediaire {
+    background: linear-gradient(135deg, #FFB74D 0%, #FFA726 100%);
+    color: #000000; /* Contraste AAA sur orange clair */
+    box-shadow: 0 2px 8px rgba(255, 183, 77, 0.4);
+  }
+
+  .badge-avance {
+    background: linear-gradient(135deg, #E57373 0%, #EF5350 100%);
+    color: #000000; /* Contraste AAA sur rouge clair */
+    box-shadow: 0 2px 8px rgba(229, 115, 115, 0.4);
+  }
+
+  /* Accordéons */
+  .accordion {
+    background-color: var(--atek-surface);
+    border-color: var(--atek-border);
+    box-shadow: var(--atek-shadow-sm);
+  }
+
+  .accordion-header {
+    background: linear-gradient(135deg, rgba(126, 155, 255, 0.08) 0%, rgba(179, 157, 219, 0.08) 100%);
+    color: var(--atek-primary-light);
+  }
+
+  .accordion-header:hover {
+    background: linear-gradient(135deg, rgba(126, 155, 255, 0.15) 0%, rgba(179, 157, 219, 0.15) 100%);
+  }
+
+  .accordion-header::after {
+    color: var(--atek-accent-light);
+  }
+
+  .accordion-content {
+    background-color: var(--atek-surface);
+  }
+
+  .accordion-content.active {
+    border-top-color: var(--atek-border-light);
+  }
+
+  /* Highlights */
+  .highlight-box {
+    background: linear-gradient(135deg, rgba(100, 181, 246, 0.15) 0%, rgba(100, 181, 246, 0.08) 100%);
+    border-left-color: var(--atek-info);
+    box-shadow: var(--atek-shadow-sm);
+  }
+
+  .highlight-box:hover {
+    box-shadow: var(--atek-shadow-md);
+  }
+
+  .highlight-tip {
+    background: linear-gradient(135deg, rgba(129, 199, 132, 0.20) 0%, rgba(129, 199, 132, 0.12) 100%);
+    border-left-color: var(--atek-success);
+    box-shadow: var(--atek-shadow-sm);
+  }
+
+  .highlight-warning {
+    background: linear-gradient(135deg, rgba(255, 183, 77, 0.20) 0%, rgba(255, 183, 77, 0.12) 100%);
+    border-left-color: var(--atek-warning);
+    box-shadow: var(--atek-shadow-sm);
+  }
+
+  /* Progress Indicators */
+  .progress-bar {
+    background: var(--atek-gray-200);
+  }
+
+  .progress-bar-fill {
+    background: linear-gradient(90deg, var(--atek-primary) 0%, var(--atek-accent) 100%);
+    box-shadow: 0 0 10px rgba(179, 157, 219, 0.5);
+  }
+
+  .progress-step-circle {
+    background: var(--atek-gray-200);
+    border-color: var(--atek-surface);
+    color: var(--atek-text-secondary);
+    box-shadow: var(--atek-shadow-sm);
+  }
+
+  .progress-step.active .progress-step-circle {
+    background: linear-gradient(135deg, var(--atek-primary) 0%, var(--atek-accent) 100%);
+    color: #FFFFFF;
+    box-shadow: var(--atek-shadow-md);
+  }
+
+  .progress-step.completed .progress-step-circle {
+    background: var(--atek-success);
+    color: #000000; /* Contraste AAA */
+  }
+
+  .progress-step-label {
+    color: var(--atek-text-secondary);
+  }
+
+  .progress-step.active .progress-step-label,
+  .progress-step.completed .progress-step-label {
+    color: var(--atek-primary-light);
+  }
 }
 
 /* === TRANSITIONS FLUIDES ENTRE MODES === */
