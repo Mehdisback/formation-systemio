@@ -85,6 +85,14 @@ plugins:
         - stopWordFilter
         - trimmer
   - tags
+  # Plugin pour afficher date dernière modification (basé sur Git)
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+      locale: fr
+      fallback_to_build_date: true
+  # IMPORTANT: print-site doit être le dernier plugin
+  # pour s'assurer que la page imprimable inclut les modifications des autres plugins
   - print-site:
       add_to_navigation: true
       print_page_title: 'Version imprimable'
@@ -100,24 +108,11 @@ plugins:
       cover_page_template: "docs/snippets/print-cover.html"
       path_to_pdf: "formation-systemio.pdf"
       enabled: true
-  # minify: Temporairement désactivé - problème d'installation
-  # - minify:
-  #     minify_html: true
-  #     minify_js: true
-  #     minify_css: true
-  #     htmlmin_opts:
-  #       remove_comments: true
-  # SITEMAP : Intégré dans MkDocs core, généré automatiquement
-  # Disponible à : /sitemap.xml (configuré via site_url)
-  # Aucun plugin supplémentaire nécessaire
 
-  # Plugin pour afficher date dernière modification (basé sur Git)
-  # Installation: pip install mkdocs-git-revision-date-localized-plugin
-  - git-revision-date-localized:
-      enable_creation_date: true
-      type: date
-      locale: fr
-      fallback_to_build_date: true
+# Notes sur plugins désactivés:
+# - minify: Temporairement désactivé - problème d'installation avec Python 3.11+
+#   Peut être réactivé ultérieurement avec un environnement virtuel
+# - sitemap: Intégré dans MkDocs core, généré automatiquement à /sitemap.xml
 
 # Extensions Markdown
 markdown_extensions:
