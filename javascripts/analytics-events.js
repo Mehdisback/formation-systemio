@@ -15,11 +15,29 @@ const isLocalhost = window.location.hostname === 'localhost' ||
                    window.location.hostname === '127.0.0.1';
 
 // === ATTENDRE QUE GTAG SOIT DISPONIBLE ===
-function waitForGtag(callback, maxAttempts = 50, interval = 100) {
+function waitForGtag(callback, maxAttempts = 100, interval = 100) {
   let attempts = 0;
+  let scriptDetected = false;
+  let diagnosticLogged = false;
 
   const checkGtag = setInterval(() => {
     attempts++;
+
+    // Vérifier si le script GA4 est présent dans le DOM (seulement lors des dernières tentatives)
+    if (!scriptDetected && attempts > maxAttempts - 10) {
+      const gaScripts = document.querySelectorAll('script[src*="googletagmanager.com"]');
+      if (gaScripts.length > 0) {
+        scriptDetected = true;
+        if (!diagnosticLogged) {
+          console.log('[Analytics] 📡 Script Google Analytics détecté dans le DOM');
+          console.log('[Analytics] Nombre de scripts GA4 :', gaScripts.length);
+          gaScripts.forEach((script, idx) => {
+            console.log(`[Analytics]   Script ${idx + 1}:`, script.src);
+          });
+          diagnosticLogged = true;
+        }
+      }
+    }
 
     if (typeof gtag !== 'undefined') {
       clearInterval(checkGtag);
@@ -27,6 +45,31 @@ function waitForGtag(callback, maxAttempts = 50, interval = 100) {
       callback();
     } else if (attempts >= maxAttempts) {
       clearInterval(checkGtag);
+
+      // Diagnostic détaillé du problème
+      console.group('[Analytics] 🔍 Diagnostic du problème');
+      console.log('Hostname:', window.location.hostname);
+      console.log('URL complète:', window.location.href);
+      console.log('Scripts GA4 détectés dans le DOM:', scriptDetected ? '✅ OUI' : '❌ NON');
+
+      if (scriptDetected) {
+        console.warn('[Analytics] ❌ Le script GA4 est présent mais gtag n\'est pas défini');
+        console.warn('[Analytics] 🛡️ Cause probable: Bloqueur de publicité actif');
+        console.log('[Analytics] 💡 Solutions:');
+        console.log('[Analytics]    1. Désactiver uBlock Origin, AdBlock ou autre bloqueur');
+        console.log('[Analytics]    2. Tester en navigation privée sans extensions');
+        console.log('[Analytics]    3. Ajouter une exception pour ce site dans le bloqueur');
+      } else {
+        console.warn('[Analytics] ❌ Aucun script Google Analytics trouvé dans le DOM');
+        console.warn('[Analytics] 🔧 Causes possibles:');
+        console.log('[Analytics]    1. ID GA4 non configuré dans mkdocs.yml');
+        console.log('[Analytics]       → Section: extra.analytics.property');
+        console.log('[Analytics]    2. Version de MkDocs Material < 9.0.0 (vérifier requirements.txt)');
+        console.log('[Analytics]    3. Configuration mkdocs.yml incorrecte (ancienne syntaxe google_analytics)');
+        console.log('[Analytics] 🛠️ Pour diagnostiquer: python scripts/diagnose_analytics.py');
+      }
+      console.groupEnd();
+
       if (isLocalhost) {
         console.log('[Analytics] ℹ️ Mode développement - Simulation du tracking (gtag non chargé)');
         // En dev local, créer un gtag factice pour le debugging
@@ -36,7 +79,6 @@ function waitForGtag(callback, maxAttempts = 50, interval = 100) {
         callback();
       } else {
         console.warn('[Analytics] ⚠️ Google Analytics (gtag) non disponible après', maxAttempts * interval, 'ms');
-        console.warn('[Analytics] Vérifiez que l\'ID GA4 est configuré dans mkdocs.yml');
         console.log('[Analytics] Les événements ne seront pas trackés');
       }
     }
