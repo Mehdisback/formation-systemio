@@ -21,67 +21,67 @@
 
 === "🌐 Première connexion"
 
-    **Étapes détaillées pour débutants :**
+**Étapes détaillées pour débutants :**
 
-    1. :material-web: Ouvrez votre navigateur web (Chrome, Firefox, Safari, Edge)
-    2. :material-link: Allez sur : **https://systeme.io/login**
-    3. :material-email: Entrez votre **adresse email** de connexion
-    4. :material-lock: Saisissez votre **mot de passe sécurisé**
-    5. :material-login: Cliquez sur **"Se connecter"**
+1. :material-web: Ouvrez votre navigateur web (Chrome, Firefox, Safari, Edge)
+2. :material-link: Allez sur : **https://systeme.io/login**
+3. :material-email: Entrez votre **adresse email** de connexion
+4. :material-lock: Saisissez votre **mot de passe sécurisé**
+5. :material-login: Cliquez sur **"Se connecter"**
 
-    [:octicons-arrow-right-24: Accès direct Systeme.io](https://systeme.io/login){ .md-button .md-button--primary }
+[:octicons-arrow-right-24: Accès direct Systeme.io](https://systeme.io/login){ .md-button .md-button--primary }
 
 === "⚡ Accès rapide"
 
-    **Pour les utilisateurs réguliers :**
+**Pour les utilisateurs réguliers :**
 
-    Ajoutez l'URL de connexion à vos favoris pour un accès en 1 clic :
+Ajoutez l'URL de connexion à vos favoris pour un accès en 1 clic :
 
-    1. Appuyez sur ++ctrl+d++ (Windows) ou ++cmd+d++ (Mac)
-    2. Nommez le favori "Systeme.io"
-    3. Enregistrez dans votre barre de favoris
+1. Appuyez sur ++ctrl+d++ (Windows) ou ++cmd+d++ (Mac)
+2. Nommez le favori "Systeme.io"
+3. Enregistrez dans votre barre de favoris
 
-    **Gain de temps :** -20 secondes par connexion !
+**Gain de temps :** -20 secondes par connexion !
 
 ### Sécurité de votre compte
 
 !!! danger "🔒 Sécurité critique - À lire absolument"
     **Gardez vos identifiants en lieu sûr.** Votre compte contient des données sensibles.
 
-    **Règles de sécurité essentielles :**
+**Règles de sécurité essentielles :**
 
-    - :material-check-circle: Mot de passe **unique** (jamais utilisé ailleurs)
-    - :material-check-circle: Minimum **12 caractères**
-    - :material-check-circle: Mélange de lettres, chiffres et symboles
-    - :material-close-circle: Pas de mots du dictionnaire
-    - :material-close-circle: Pas d'informations personnelles évidentes
+- :material-check-circle: Mot de passe **unique** (jamais utilisé ailleurs)
+- :material-check-circle: Minimum **12 caractères**
+- :material-check-circle: Mélange de lettres, chiffres et symboles
+- :material-close-circle: Pas de mots du dictionnaire
+- :material-close-circle: Pas d'informations personnelles évidentes
 
 !!! tip "💡 Gestionnaire de mots de passe recommandé"
     Utilisez un **gestionnaire de mots de passe** professionnel pour sécuriser tous vos accès :
 
-    | Solution | Prix | Avantages |
-    |----------|------|-----------|
-    | **[Bitwarden](https://bitwarden.com)** | Gratuit | Open-source, complet |
-    | **[1Password](https://1password.com)** | ~3€/mois | Interface élégante |
-    | **[LastPass](https://lastpass.com)** | Gratuit/Payant | Très populaire |
+| Solution | Prix | Avantages |
+|----------|------|-----------|
+| **[Bitwarden](https://bitwarden.com)** | Gratuit | Open-source, complet |
+| **[1Password](https://1password.com)** | ~3€/mois | Interface élégante |
+| **[LastPass](https://lastpass.com)** | Gratuit/Payant | Très populaire |
 
-    **Bénéfices :**
+**Bénéfices :**
 
-    - :material-shield-check: Sécurité maximale
-    - :material-timer: Connexion automatique
-    - :material-sync: Synchronisation multi-appareils
-    - :material-key: Un seul mot de passe maître à retenir
+- :material-shield-check: Sécurité maximale
+- :material-timer: Connexion automatique
+- :material-sync: Synchronisation multi-appareils
+- :material-key: Un seul mot de passe maître à retenir
 
 ### Bonnes pratiques de sécurité
 
 !!! info "🛡️ Recommandations avancées"
     **Pour une sécurité optimale :**
 
-    - [ ] Activez l'authentification à deux facteurs (2FA) si disponible
-    - [ ] Ne partagez **JAMAIS** vos identifiants avec quiconque
-    - [ ] Changez votre mot de passe tous les 3-6 mois
-    - [ ] Déconnectez-vous sur les ordinateurs partagés
-    - [ ] Vérifiez l'URL (https://systeme.io) avant de saisir vos identifiants
+- [ ] Activez l'authentification à deux facteurs (2FA) si disponible
+- [ ] Ne partagez **JAMAIS** vos identifiants avec quiconque
+- [ ] Changez votre mot de passe tous les 3-6 mois
+- [ ] Déconnectez-vous sur les ordinateurs partagés
+- [ ] Vérifiez l'URL (https://systeme.io) avant de saisir vos identifiants
 
 ---
 
