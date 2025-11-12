@@ -217,7 +217,7 @@ extra:
   # Analytics - À configurer avec votre ID Google Analytics
   analytics:
     provider: google
-    property: G-XXXXXXXXXX  # Remplacer par votre ID GA4
+    property: G-C0QWPEW72M  # Remplacer par votre ID GA4
     feedback:
       title: Cette page vous a-t-elle été utile ?
       ratings:
