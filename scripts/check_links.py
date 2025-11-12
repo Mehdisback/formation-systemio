@@ -25,7 +25,7 @@ RESET = '\033[0m'
 
 def extract_links(content: str, file_path: Path) -> List[Tuple[str, str, int]]:
     """
-    Extrait tous les liens markdown d'un fichier.
+    Extrait tous les liens markdown d'un fichier, en ignorant ceux dans les blocs de code.
 
     Returns:
         Liste de tuples (texte_lien, url, numéro_ligne)
@@ -36,7 +36,33 @@ def extract_links(content: str, file_path: Path) -> List[Tuple[str, str, int]]:
     # Regex pour liens markdown: [texte](url)
     link_pattern = re.compile(r'\[([^\]]+)\]\(([^\)]+)\)')
 
+    # Regex pour détecter les délimiteurs de blocs de code
+    code_block_pattern = re.compile(r'^(`{3,4})')
+
+    in_code_block = False
+    code_fence = None  # Stocke le type de clôture (``` ou ````)
+
     for line_num, line in enumerate(lines, start=1):
+        # Vérifier si on entre/sort d'un bloc de code
+        fence_match = code_block_pattern.match(line.strip())
+        if fence_match:
+            fence = fence_match.group(1)
+            if not in_code_block:
+                # Début d'un bloc de code
+                in_code_block = True
+                code_fence = fence
+            elif fence == code_fence:
+                # Fin d'un bloc de code (même type de clôture)
+                in_code_block = False
+                code_fence = None
+            # Si c'est un autre type de clôture, on l'ignore (cas du code imbriqué)
+            continue
+
+        # Ne pas extraire les liens si on est dans un bloc de code
+        if in_code_block:
+            continue
+
+        # Extraire les liens de la ligne
         matches = link_pattern.findall(line)
         for text, url in matches:
             # Ignorer les ancres seules (#section)
