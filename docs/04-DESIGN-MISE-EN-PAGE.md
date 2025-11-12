@@ -1,5 +1,9 @@
 ---
 description: "Maîtrisez le design de votre landing page Systeme.io : charte graphique, couleurs, polices, responsive design et accessibilité WCAG. Guide complet pour un site professionnel."
+tags:
+  - intermédiaire
+  - approfondi
+  - design
 ---
 
 # 🎨 04 - Design et mise en page

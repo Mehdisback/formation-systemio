@@ -1,3 +1,10 @@
+---
+tags:
+  - débutant
+  - moyen
+  - analytics
+---
+
 # 📈 07 - Suivi et analytics
 
 ⏱️ **Durée estimée** : 45 minutes

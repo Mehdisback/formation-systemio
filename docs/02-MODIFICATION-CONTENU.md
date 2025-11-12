@@ -1,3 +1,10 @@
+---
+tags:
+  - débutant
+  - moyen
+  - contenu
+---
+
 # ✏️ Guide 02 - Modification du Contenu
 
 !!! success "🎨 Devenez autonome sur votre contenu"

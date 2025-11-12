@@ -1,3 +1,10 @@
+---
+tags:
+  - avancé
+  - approfondi
+  - seo
+---
+
 # 🔍 06 - SEO et référencement
 
 ⏱️ **Durée estimée** : 90 minutes
