@@ -490,8 +490,28 @@ function setupEventTracking() {
 function startAnalytics() {
   console.log('[Analytics] 🚀 Démarrage du système d\'analytics');
 
+  // DEBUG: Afficher le consentement brut
+  const rawConsent = localStorage.getItem('__md_consent');
+  console.log('[Analytics] 🔍 DEBUG - Consentement brut:', rawConsent);
+
+  if (rawConsent) {
+    try {
+      const parsed = JSON.parse(rawConsent);
+      console.log('[Analytics] 🔍 DEBUG - Consentement parsé:', parsed);
+      console.log('[Analytics] 🔍 DEBUG - Propriétés:', Object.keys(parsed));
+      console.log('[Analytics] 🔍 DEBUG - consent.analytics:', parsed.analytics);
+      console.log('[Analytics] 🔍 DEBUG - consent.google:', parsed.google);
+      console.log('[Analytics] 🔍 DEBUG - consent.accepted:', parsed.accepted);
+    } catch (e) {
+      console.warn('[Analytics] ⚠️ Erreur parsing consentement:', e);
+    }
+  }
+
   // Vérifier si on a déjà le consentement
-  if (hasAnalyticsConsent()) {
+  const hasConsent = hasAnalyticsConsent();
+  console.log('[Analytics] 🔍 DEBUG - hasAnalyticsConsent():', hasConsent);
+
+  if (hasConsent) {
     console.log('[Analytics] ✅ Consentement déjà accordé, initialisation...');
     waitForGtag(initializeAnalytics);
   } else {
