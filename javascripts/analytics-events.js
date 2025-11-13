@@ -15,27 +15,35 @@ const isLocalhost = window.location.hostname === 'localhost' ||
                    window.location.hostname === '127.0.0.1';
 
 // === GESTION DU CONSENTEMENT AUX COOKIES ===
-// MkDocs Material stocke le consentement dans localStorage sous la clé "__md_consent"
+// MkDocs Material peut stocker le consentement de plusieurs façons :
+// 1. Dans localStorage sous la clé "__md_consent"
+// 2. En chargeant directement le script GA4 dans le DOM (preuve du consentement)
 function hasAnalyticsConsent() {
   try {
+    // Méthode 1: Vérifier localStorage (peut être null selon la version de MkDocs Material)
     const consent = localStorage.getItem('__md_consent');
-    if (!consent) {
-      // Pas de consentement stocké = pas encore demandé ou refusé
-      return false;
+    if (consent) {
+      const consentData = JSON.parse(consent);
+
+      // Vérifier différents formats possibles de MkDocs Material
+      // Format 1: { analytics: true }
+      if (consentData.analytics === true) return true;
+
+      // Format 2: { google: { analytics: true } }
+      if (consentData.google && consentData.google.analytics === true) return true;
+
+      // Format 3: { accepted: true } (acceptation globale)
+      if (consentData.accepted === true) return true;
     }
 
-    const consentData = JSON.parse(consent);
+    // Méthode 2: Vérifier la présence du script GA4 dans le DOM
+    // Si MkDocs Material a injecté le script, c'est que le consentement a été donné
+    const gaScripts = document.querySelectorAll('script[src*="googletagmanager.com/gtag/js"]');
+    if (gaScripts.length > 0) {
+      return true;
+    }
 
-    // Vérifier différents formats possibles de MkDocs Material
-    // Format 1: { analytics: true }
-    if (consentData.analytics === true) return true;
-
-    // Format 2: { google: { analytics: true } }
-    if (consentData.google && consentData.google.analytics === true) return true;
-
-    // Format 3: { accepted: true } (acceptation globale)
-    if (consentData.accepted === true) return true;
-
+    // Aucune preuve de consentement trouvée
     return false;
   } catch (e) {
     console.warn('[Analytics] Erreur lecture consentement:', e);
@@ -490,33 +498,13 @@ function setupEventTracking() {
 function startAnalytics() {
   console.log('[Analytics] 🚀 Démarrage du système d\'analytics');
 
-  // DEBUG: Afficher le consentement brut
-  const rawConsent = localStorage.getItem('__md_consent');
-  console.log('[Analytics] 🔍 DEBUG - Consentement brut:', rawConsent);
-
-  if (rawConsent) {
-    try {
-      const parsed = JSON.parse(rawConsent);
-      console.log('[Analytics] 🔍 DEBUG - Consentement parsé:', parsed);
-      console.log('[Analytics] 🔍 DEBUG - Propriétés:', Object.keys(parsed));
-      console.log('[Analytics] 🔍 DEBUG - consent.analytics:', parsed.analytics);
-      console.log('[Analytics] 🔍 DEBUG - consent.google:', parsed.google);
-      console.log('[Analytics] 🔍 DEBUG - consent.accepted:', parsed.accepted);
-    } catch (e) {
-      console.warn('[Analytics] ⚠️ Erreur parsing consentement:', e);
-    }
-  }
-
   // Vérifier si on a déjà le consentement
-  const hasConsent = hasAnalyticsConsent();
-  console.log('[Analytics] 🔍 DEBUG - hasAnalyticsConsent():', hasConsent);
-
-  if (hasConsent) {
-    console.log('[Analytics] ✅ Consentement déjà accordé, initialisation...');
+  if (hasAnalyticsConsent()) {
+    console.log('[Analytics] ✅ Consentement accordé (script GA4 détecté), initialisation...');
     waitForGtag(initializeAnalytics);
   } else {
     console.log('[Analytics] ⏳ En attente du consentement utilisateur...');
-    console.log('[Analytics] 💡 Pour activer le tracking, acceptez les cookies Analytics');
+    console.log('[Analytics] 💡 Pour activer le tracking, acceptez les cookies Analytics dans la bannière');
 
     // Écouter les futurs changements de consentement
     listenForConsentChange(function() {
