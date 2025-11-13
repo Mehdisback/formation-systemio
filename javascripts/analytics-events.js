@@ -14,6 +14,103 @@
 const isLocalhost = window.location.hostname === 'localhost' ||
                    window.location.hostname === '127.0.0.1';
 
+// === GESTION DU CONSENTEMENT AUX COOKIES ===
+// MkDocs Material stocke le consentement dans localStorage sous la clé "__md_consent"
+function hasAnalyticsConsent() {
+  try {
+    const consent = localStorage.getItem('__md_consent');
+    if (!consent) {
+      // Pas de consentement stocké = pas encore demandé ou refusé
+      return false;
+    }
+
+    const consentData = JSON.parse(consent);
+
+    // Vérifier différents formats possibles de MkDocs Material
+    // Format 1: { analytics: true }
+    if (consentData.analytics === true) return true;
+
+    // Format 2: { google: { analytics: true } }
+    if (consentData.google && consentData.google.analytics === true) return true;
+
+    // Format 3: { accepted: true } (acceptation globale)
+    if (consentData.accepted === true) return true;
+
+    return false;
+  } catch (e) {
+    console.warn('[Analytics] Erreur lecture consentement:', e);
+    // En cas d'erreur, on considère que le consentement n'est pas donné
+    return false;
+  }
+}
+
+// Écouter les changements de consentement
+function listenForConsentChange(callback) {
+  let callbackExecuted = false;
+
+  function checkAndExecute() {
+    if (!callbackExecuted && hasAnalyticsConsent()) {
+      callbackExecuted = true;
+      console.log('[Analytics] ✅ Consentement Analytics accordé');
+      callback();
+    }
+  }
+
+  // Méthode 1: Observer les changements dans localStorage (autres onglets)
+  window.addEventListener('storage', function(e) {
+    if (e.key === '__md_consent') {
+      console.log('[Analytics] 🔔 Changement de consentement détecté (storage event)');
+      checkAndExecute();
+    }
+  });
+
+  // Méthode 2: Observer les événements personnalisés de MkDocs Material
+  document.addEventListener('consent', function(e) {
+    console.log('[Analytics] 🔔 Événement consentement MkDocs Material détecté');
+    checkAndExecute();
+  });
+
+  // Méthode 3: Observer l'apparition du script GA4 dans le DOM
+  // Quand l'utilisateur accepte, MkDocs Material injecte le script
+  const observer = new MutationObserver(function(mutations) {
+    for (let mutation of mutations) {
+      for (let node of mutation.addedNodes) {
+        if (node.tagName === 'SCRIPT' &&
+            node.src &&
+            node.src.includes('googletagmanager.com')) {
+          console.log('[Analytics] 🔔 Script GA4 ajouté au DOM (consentement accordé)');
+          observer.disconnect(); // Arrêter l'observation
+          checkAndExecute();
+          return;
+        }
+      }
+    }
+  });
+
+  observer.observe(document.documentElement, {
+    childList: true,
+    subtree: true
+  });
+
+  // Méthode 4: Polling périodique (fallback)
+  // Vérifier toutes les 2 secondes pendant 30 secondes max
+  let pollCount = 0;
+  const maxPolls = 15;
+  const pollInterval = setInterval(function() {
+    pollCount++;
+    if (callbackExecuted || pollCount >= maxPolls) {
+      clearInterval(pollInterval);
+      return;
+    }
+
+    if (hasAnalyticsConsent()) {
+      console.log('[Analytics] 🔔 Consentement détecté (polling)');
+      clearInterval(pollInterval);
+      checkAndExecute();
+    }
+  }, 2000);
+}
+
 // === ATTENDRE QUE GTAG SOIT DISPONIBLE ===
 function waitForGtag(callback, maxAttempts = 100, interval = 100) {
   let attempts = 0;
@@ -51,22 +148,32 @@ function waitForGtag(callback, maxAttempts = 100, interval = 100) {
       console.log('Hostname:', window.location.hostname);
       console.log('URL complète:', window.location.href);
       console.log('Scripts GA4 détectés dans le DOM:', scriptDetected ? '✅ OUI' : '❌ NON');
+      console.log('Consentement Analytics:', hasAnalyticsConsent() ? '✅ ACCORDÉ' : '❌ NON ACCORDÉ');
 
       if (scriptDetected) {
-        console.warn('[Analytics] ❌ Le script GA4 est présent mais gtag n\'est pas défini');
-        console.warn('[Analytics] 🛡️ Cause probable: Bloqueur de publicité actif');
-        console.log('[Analytics] 💡 Solutions:');
-        console.log('[Analytics]    1. Désactiver uBlock Origin, AdBlock ou autre bloqueur');
-        console.log('[Analytics]    2. Tester en navigation privée sans extensions');
-        console.log('[Analytics]    3. Ajouter une exception pour ce site dans le bloqueur');
+        if (!hasAnalyticsConsent()) {
+          console.warn('[Analytics] ⚠️ Le script GA4 est présent mais le consentement n\'est pas accordé');
+          console.log('[Analytics] 🍪 Cause: Système de consentement aux cookies actif');
+          console.log('[Analytics] 💡 Solutions:');
+          console.log('[Analytics]    1. Cliquer sur "Accepter" dans la bannière de cookies');
+          console.log('[Analytics]    2. Gérer les préférences et activer "Analytics"');
+          console.log('[Analytics]    3. Le tracking démarrera automatiquement après acceptation');
+        } else {
+          console.warn('[Analytics] ❌ Le script GA4 est présent mais gtag n\'est pas défini');
+          console.warn('[Analytics] 🛡️ Cause probable: Bloqueur de publicité actif');
+          console.log('[Analytics] 💡 Solutions:');
+          console.log('[Analytics]    1. Désactiver uBlock Origin, AdBlock ou autre bloqueur');
+          console.log('[Analytics]    2. Tester en navigation privée sans extensions');
+          console.log('[Analytics]    3. Ajouter une exception pour ce site dans le bloqueur');
+        }
       } else {
         console.warn('[Analytics] ❌ Aucun script Google Analytics trouvé dans le DOM');
         console.warn('[Analytics] 🔧 Causes possibles:');
-        console.log('[Analytics]    1. ID GA4 non configuré dans mkdocs.yml');
+        console.log('[Analytics]    1. Consentement aux cookies non accordé (vérifier la bannière)');
+        console.log('[Analytics]    2. ID GA4 non configuré dans mkdocs.yml');
         console.log('[Analytics]       → Section: extra.analytics.property');
-        console.log('[Analytics]    2. Version de MkDocs Material < 9.0.0 (vérifier requirements.txt)');
-        console.log('[Analytics]    3. Configuration mkdocs.yml incorrecte (ancienne syntaxe google_analytics)');
-        console.log('[Analytics] 🛠️ Pour diagnostiquer: python scripts/diagnose_analytics.py');
+        console.log('[Analytics]    3. Version de MkDocs Material < 9.0.0 (vérifier requirements.txt)');
+        console.log('[Analytics]    4. Configuration mkdocs.yml incorrecte (ancienne syntaxe google_analytics)');
       }
       console.groupEnd();
 
@@ -378,5 +485,30 @@ function setupEventTracking() {
 }
 
 // === POINT D'ENTRÉE ===
-// Attendre que gtag soit disponible, puis initialiser
-waitForGtag(initializeAnalytics);
+// Vérifier d'abord le consentement, puis attendre que gtag soit disponible
+
+function startAnalytics() {
+  console.log('[Analytics] 🚀 Démarrage du système d\'analytics');
+
+  // Vérifier si on a déjà le consentement
+  if (hasAnalyticsConsent()) {
+    console.log('[Analytics] ✅ Consentement déjà accordé, initialisation...');
+    waitForGtag(initializeAnalytics);
+  } else {
+    console.log('[Analytics] ⏳ En attente du consentement utilisateur...');
+    console.log('[Analytics] 💡 Pour activer le tracking, acceptez les cookies Analytics');
+
+    // Écouter les futurs changements de consentement
+    listenForConsentChange(function() {
+      console.log('[Analytics] 🎉 Consentement reçu, initialisation...');
+      waitForGtag(initializeAnalytics);
+    });
+  }
+}
+
+// Démarrer quand le DOM est prêt
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', startAnalytics);
+} else {
+  startAnalytics();
+}
