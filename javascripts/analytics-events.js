@@ -151,29 +151,37 @@ function waitForGtag(callback, maxAttempts = 100, interval = 100) {
     } else if (attempts >= maxAttempts) {
       clearInterval(checkGtag);
 
-      // Diagnostic détaillé du problème
+      // Vérifier si dataLayer existe (preuve que GA4 est actif)
+      if (typeof window.dataLayer !== 'undefined' && Array.isArray(window.dataLayer)) {
+        console.log('[Analytics] 📊 dataLayer détecté avec', window.dataLayer.length, 'éléments');
+        console.log('[Analytics] 🔧 Création de la fonction gtag (MkDocs Material ne la définit pas globalement)');
+
+        // Définir gtag selon la spécification Google Analytics
+        // https://developers.google.com/analytics/devguides/collection/gtagjs
+        window.gtag = function() {
+          window.dataLayer.push(arguments);
+        };
+
+        console.log('[Analytics] ✅ gtag créé et fonctionnel');
+        callback();
+        return;
+      }
+
+      // Diagnostic détaillé si dataLayer n'existe pas non plus
       console.group('[Analytics] 🔍 Diagnostic du problème');
       console.log('Hostname:', window.location.hostname);
       console.log('URL complète:', window.location.href);
       console.log('Scripts GA4 détectés dans le DOM:', scriptDetected ? '✅ OUI' : '❌ NON');
       console.log('Consentement Analytics:', hasAnalyticsConsent() ? '✅ ACCORDÉ' : '❌ NON ACCORDÉ');
+      console.log('dataLayer existe:', typeof window.dataLayer !== 'undefined');
 
       if (scriptDetected) {
-        if (!hasAnalyticsConsent()) {
-          console.warn('[Analytics] ⚠️ Le script GA4 est présent mais le consentement n\'est pas accordé');
-          console.log('[Analytics] 🍪 Cause: Système de consentement aux cookies actif');
-          console.log('[Analytics] 💡 Solutions:');
-          console.log('[Analytics]    1. Cliquer sur "Accepter" dans la bannière de cookies');
-          console.log('[Analytics]    2. Gérer les préférences et activer "Analytics"');
-          console.log('[Analytics]    3. Le tracking démarrera automatiquement après acceptation');
-        } else {
-          console.warn('[Analytics] ❌ Le script GA4 est présent mais gtag n\'est pas défini');
-          console.warn('[Analytics] 🛡️ Cause probable: Bloqueur de publicité actif');
-          console.log('[Analytics] 💡 Solutions:');
-          console.log('[Analytics]    1. Désactiver uBlock Origin, AdBlock ou autre bloqueur');
-          console.log('[Analytics]    2. Tester en navigation privée sans extensions');
-          console.log('[Analytics]    3. Ajouter une exception pour ce site dans le bloqueur');
-        }
+        console.warn('[Analytics] ❌ Le script GA4 est présent mais ni gtag ni dataLayer ne sont disponibles');
+        console.warn('[Analytics] 🛡️ Cause probable: Bloqueur de publicité actif');
+        console.log('[Analytics] 💡 Solutions:');
+        console.log('[Analytics]    1. Désactiver uBlock Origin, AdBlock ou autre bloqueur');
+        console.log('[Analytics]    2. Tester en navigation privée sans extensions');
+        console.log('[Analytics]    3. Ajouter une exception pour ce site dans le bloqueur');
       } else {
         console.warn('[Analytics] ❌ Aucun script Google Analytics trouvé dans le DOM');
         console.warn('[Analytics] 🔧 Causes possibles:');
@@ -186,14 +194,16 @@ function waitForGtag(callback, maxAttempts = 100, interval = 100) {
       console.groupEnd();
 
       if (isLocalhost) {
-        console.log('[Analytics] ℹ️ Mode développement - Simulation du tracking (gtag non chargé)');
-        // En dev local, créer un gtag factice pour le debugging
+        console.log('[Analytics] ℹ️ Mode développement - Simulation du tracking');
+        // En dev local, créer gtag et dataLayer factices pour le debugging
+        window.dataLayer = window.dataLayer || [];
         window.gtag = function(...args) {
           console.log('[Analytics DEV]', ...args);
+          window.dataLayer.push(args);
         };
         callback();
       } else {
-        console.warn('[Analytics] ⚠️ Google Analytics (gtag) non disponible après', maxAttempts * interval, 'ms');
+        console.warn('[Analytics] ⚠️ Google Analytics non disponible après', maxAttempts * interval, 'ms');
         console.log('[Analytics] Les événements ne seront pas trackés');
       }
     }
